@@ -1,4 +1,4 @@
-# frTool
+# FlightRisingTool
 Flight Rising Game's Tool
 
 Choose the breed, genes and colors of one dragon and another dragon, the breeds' rate colors' range and genes' rate will be shown.
