@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fr.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>一只龙 One Dragon</strong></div>
+            <div class="panel-body">
+              <div class="form-horizontal">
+                <div class="form-group">
+                  <label title="Breed" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">品种</label>
+                  <div class="col-sm-4">
+                    <select id="o_breed" class="form-control"></select>
+                  </div>
+                  <div class="col-sm-4"></div>
+                </div>
+                <div class="form-group">
+                  <label title="Primary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">一基因</label>
+                  <div class="col-sm-4">
+                    <select id="o_Primary_gene" class="form-control"></select>
+                  </div>
+                  <div class="col-sm-5">
+                    <select id="o_primary_color" class="form-control"></select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label title="Secondary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">二基因</label>
+                  <div class="col-sm-4">
+                    <select id="o_Secondary_gene" class="form-control"></select>
+                  </div>
+                  <div class="col-sm-5">
+                    <select id="o_secondary_color" class="form-control"></select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label title="Tertiary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">三基因</label>
+                  <div class="col-sm-4">
+                    <select id="o_Tertiary_gene" class="form-control"></select>
+                  </div>
+                  <div class="col-sm-5">
+                    <select id="o_tertiary_color" class="form-control"></select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>另一只龙 Another Dragon</strong></div>
+              <div class="panel-body">
+                <div class="form-horizontal">
+                  <div class="form-group">
+                    <label title="Breed" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">品种</label>
+                    <div class="col-sm-4">
+                      <select id="a_breed" class="form-control"></select>
+                    </div>
+                    <div class="col-sm-4"></div>
+                  </div>
+                  <div class="form-group">
+                    <label title="Primary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">一基因</label>
+                    <div class="col-sm-4">
+                      <select id="a_Primary_gene" class="form-control"></select>
+                    </div>
+                    <div class="col-sm-5">
+                      <select id="a_primary_color" class="form-control"></select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label title="Secondary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">二基因</label>
+                    <div class="col-sm-4">
+                      <select id="a_Secondary_gene" class="form-control"></select>
+                    </div>
+                    <div class="col-sm-5">
+                      <select id="a_secondary_color" class="form-control"></select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label title="Tertiary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">三基因</label>
+                    <div class="col-sm-4">
+                      <select id="a_Tertiary_gene" class="form-control"></select>
+                    </div>
+                    <div class="col-sm-5">
+                      <select id="a_tertiary_color" class="form-control"></select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading"><strong>几率计算 Result</strong></div>
+          <div class="panel-body">
+            <div class="form-horizontal">
+              <div class="form-group">
+                <label title="Breed" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">品种</label>
+                <div style="padding-top: 7px;" class="col-sm-5">
+                  <div class="progress">
+                    <div id="breed_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                    <div id="breed_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                  </div>
+                  <div class="label_text" id="breed_result"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label title="Primary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">一基因</label>
+                <div style="padding-top: 7px;" class="col-sm-5">
+                  <div class="progress">
+                    <div id="gene_Primary_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                    <div id="gene_Primary_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                  </div>
+                  <div class="label_text" id="Primary_result"></div>
+                </div>
+                <div id="primary_color_result" class="col-sm-5 label_text"></div>
+              </div>
+              <div class="form-group">
+                <label title="Secondary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">二基因</label>
+                <div style="padding-top: 7px;" class="col-sm-5">
+                  <div class="progress">
+                    <div id="gene_Secondary_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                    <div id="gene_Secondary_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                  </div>
+                  <div class="label_text" id="Secondary_result"></div>
+                </div>
+                <div id="secondary_color_result" class="col-sm-5 label_text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label title="Tertiary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">三基因</label>
+                <div style="padding-top: 7px;" class="col-sm-5">
+                  <div class="progress">
+                    <div id="gene_Tertiary_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                    <div id="gene_Tertiary_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                  </div>
+                  <div class="label_text" id="Tertiary_result"></div>
+                </div>
+                <div id="tertiary_color_result" class="col-sm-5 label_text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading"><strong>目标培育几率计算</strong></div>
+          <div class="panel-body">
+            <div class="alert alert-warning" role="alert">以下假定龙的性别几率是1:1</div>
+            <div class="form-horizontal">
+              <div class="form-group">
+                <label title="Gender" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标性别</label>
+                <div class="col-sm-4">
+                  <select id="target_gender" class="form-control"><option value ="none">无 None</option></select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label title="Breed" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标品种</label>
+                <div class="col-sm-4">
+                  <select id="target_Breed" class="form-control"><option value ="none">无 None</option></select>
+                </div>
+              </div>
+              <div class="form-group">
+                  <label title="Primary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标一基因</label>
+                  <div class="col-sm-4">
+                    <select id="target_primaryGene" class="form-control"><option value ="none">无 None</option></select>
+                  </div>
+                  <div class="col-sm-4">
+                    <select id="target_primary_Color" class="form-control"><option value ="none">无 None</option></select>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label title="Secondary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标二基因</label>
+                  <div class="col-sm-4">
+                    <select id="target_secondaryGene" class="form-control"><option value ="none">无 None</option></select>
+                  </div>
+                  <div class="col-sm-4">
+                    <select id="target_secondary_Color" class="form-control"><option value ="none">无 None</option></select>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label title="Tertiary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标三基因</label>
+                  <div class="col-sm-4">
+                    <select id="target_tertiaryGene" class="form-control"><option value ="none">无 None</option></select>
+                  </div>
+                  <div class="col-sm-4">
+                    <select id="target_tertiary_Color" class="form-control"><option value ="none">无 None</option></select>
+                  </div>
+              </div>
+              <hr />
+              <div class="form-group">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-4">
+                    <input data-loading-text="计算中..." type="button" class="form-control" id="cal_breed" value="计算机率">
+                  </div>
+                  <div id="input_result" class="col-sm-4 label_text">--.-------- %</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="fr_data.js"></script>
+    <script src="fr_tool.js"></script>
+    <script src="fr.js"></script>
+</body>
+</html>
