@@ -7,49 +7,33 @@ FRTool.Odds = function(name, name_zh) {
     FRTool.Oddss.push(this);
 }
 
-FRTool.Element = function(name, name_zh) {
-    this.Name = name;
-    this.NameZH = name_zh;
-    FRTool.Element[name] = this;
-    FRTool.Elements.push(this);
-    this.Id = function() {
-        return FRTool.Elements.indexOf(this) + 1;
-    }
-}
-
 FRTool.Gender = function(name, name_zh) {
     this.Name = name;
     this.NameZH = name_zh;
     FRTool.Gender[name] = this;
     FRTool.Genders.push(this);
-    this.Id = function() {
-        return FRTool.Genders.indexOf(this);
-    }
 }
 
-FRTool.PrimaryGene = function(id, name, name_zh, odds) {
+FRTool.PrimaryGene = function(name, name_zh, odds) {
     this.Name = name;
     this.NameZH = name_zh;
     this.Odds = FRTool.Odds[odds];
     FRTool.PrimaryGene[name] = this;
     FRTool.PrimaryGenes.push(this);
-    this.Id = id;
 }
 
-FRTool.SecondaryGene = function(id, name, name_zh, odds) {
+FRTool.SecondaryGene = function(name, name_zh, odds) {
     this.Name = name;
     this.NameZH = name_zh;
     this.Odds = FRTool.Odds[odds];
     FRTool.SecondaryGene[name] = this;
     FRTool.SecondaryGenes.push(this);
-    this.Id = id;
 }
 
-FRTool.TertiaryGene = function(id, name, name_zh, odds) {
+FRTool.TertiaryGene = function(name, name_zh, odds) {
     this.Name = name;
     this.NameZH = name_zh;
     this.Odds = FRTool.Odds[odds];
-    this.Id = id;
     FRTool.TertiaryGene[name] = this;
     FRTool.TertiaryGenes.push(this);
 }
@@ -72,13 +56,9 @@ FRTool.Breed = function(name, name_zh, odds, diet) {
     this.Diet = diet;
     FRTool.Breed[name] = this;
     FRTool.Breeds.push(this);
-    this.Id = function() {
-        return FRTool.Breeds.indexOf(this) + 1;
-    }
 }
 
 FRTool.initFR = function(data) {
-    FRTool.Elements = [];
     FRTool.Genders = [];
     FRTool.Oddss = [];
     FRTool.PrimaryGenes = [];
@@ -88,10 +68,6 @@ FRTool.initFR = function(data) {
     FRTool.Colors = [];
     FRTool.BreedRoles = {};
     FRTool.GeneRoles = {};
-    for (var i = 0; i < data.ElementList.length; i++) {
-        new FRTool.Element(data.ElementList[i][0], data.ElementList[i][1]);
-    };
-
     for (var i = 0; i < data.OddsList.length; i++) {
         new FRTool.Odds(data.OddsList[i][0], data.OddsList[i][1]);
     };
@@ -101,15 +77,15 @@ FRTool.initFR = function(data) {
     };
 
     for (var i = 0; i < data.PrimaryGeneList.length; i++) {
-        new FRTool.PrimaryGene(data.PrimaryGeneList[i][0], data.PrimaryGeneList[i][1], data.PrimaryGeneList[i][2], data.PrimaryGeneList[i][3]);
+        new FRTool.PrimaryGene(data.PrimaryGeneList[i][0], data.PrimaryGeneList[i][1], data.PrimaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.SecondaryGeneList.length; i++) {
-        new FRTool.SecondaryGene(data.SecondaryGeneList[i][0], data.SecondaryGeneList[i][1], data.SecondaryGeneList[i][2], data.SecondaryGeneList[i][3]);
+        new FRTool.SecondaryGene(data.SecondaryGeneList[i][0], data.SecondaryGeneList[i][1], data.SecondaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.TertiaryGeneList.length; i++) {
-        new FRTool.TertiaryGene(data.TertiaryGeneList[i][0], data.TertiaryGeneList[i][1], data.TertiaryGeneList[i][2], data.TertiaryGeneList[i][3]);
+        new FRTool.TertiaryGene(data.TertiaryGeneList[i][0], data.TertiaryGeneList[i][1], data.TertiaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.ColorList.length; i++) {
@@ -193,7 +169,9 @@ FRTool.getGene = function(odds, type) {
 }
 
 FRTool.getGeneRate = function(gene1, gene2) {
-    if ((gene1 instanceof FRTool.PrimaryGene && gene2 instanceof FRTool.PrimaryGene) || (gene1 instanceof FRTool.SecondaryGene && gene2 instanceof FRTool.SecondaryGene) || (gene1 instanceof FRTool.TertiaryGene && gene2 instanceof FRTool.TertiaryGene)) {
+    if ((gene1 instanceof FRTool.PrimaryGene && gene2 instanceof FRTool.PrimaryGene) 
+        || (gene1 instanceof FRTool.SecondaryGene && gene2 instanceof FRTool.SecondaryGene) 
+        || (gene1 instanceof FRTool.TertiaryGene && gene2 instanceof FRTool.TertiaryGene)) {
         if (gene1 == gene2) {
             return [1];
         }
@@ -207,7 +185,7 @@ FRTool.getGeneRate = function(gene1, gene2) {
     return [];
 }
 
-FRTool.calRate = function(info1, info2, target) {
+FRTool.calRate = function (info1, info2, target) {
     var result = 1.0
     if (target.gender != undefined) {
         result *= 0.5;
@@ -220,7 +198,7 @@ FRTool.calRate = function(info1, info2, target) {
         var rate = FRTool.getBreedRate(breed1, breed2);
         if (breed == breed1) {
             result *= rate[0];
-        } else if (breed == breed2) {
+        } else if(breed == breed2) {
             result *= rate[1];
         } else {
             return 0;
@@ -270,7 +248,7 @@ FRTool.calRate = function(info1, info2, target) {
         var rate = FRTool.getGeneRate(primaryGene1, primaryGene2);
         if (primaryGene == primaryGene1) {
             result *= rate[0];
-        } else if (primaryGene == primaryGene2) {
+        } else if(primaryGene == primaryGene2) {
             result *= rate[1];
         } else {
             return 0;
@@ -284,7 +262,7 @@ FRTool.calRate = function(info1, info2, target) {
         var rate = FRTool.getGeneRate(secondaryGene1, secondaryGene2);
         if (secondaryGene == secondaryGene1) {
             result *= rate[0];
-        } else if (secondaryGene == secondaryGene2) {
+        } else if(secondaryGene == secondaryGene2) {
             result *= rate[1];
         } else {
             return 0;
@@ -298,25 +276,12 @@ FRTool.calRate = function(info1, info2, target) {
         var rate = FRTool.getGeneRate(tertiaryGene1, tertiaryGene2);
         if (tertiaryGene == tertiaryGene1) {
             result *= rate[0];
-        } else if (tertiaryGene == tertiaryGene2) {
+        } else if(tertiaryGene == tertiaryGene2) {
             result *= rate[1];
         } else {
             return 0;
         }
     }
-
+ 
     return result
-};
-
-FRTool.getPriview = function(gender, breed, element, primaryGene, secondaryGene, tertiaryGene, primaryColor, secondaryColor, tertiaryColor) {
-    return "http://flightrising.com/image_generators/dragonpic2.php?body=" + primaryColor.Id().toString() 
-    + "&wing=" + secondaryColor.Id().toString() 
-    + "&style=" + breed.Id().toString() 
-    + "&gender=" + gender.Id().toString() 
-    + "&ages=1&prig=" + primaryGene.Id.toString() 
-    + "&secg=" + secondaryGene.Id.toString() 
-    + "&tert=" + tertiaryColor.Id().toString() 
-    + "&elem=" + element.Id().toString() 
-    + "&tertgene=" + tertiaryGene.Id.toString() 
-    + "&spec=prev"
-};
+}
