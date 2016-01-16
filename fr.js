@@ -35,11 +35,20 @@ function initGenderSelect(id) {
   for (var i = 0; i < FRTool.Genders.length; i++) {
     $('#' + id).append(
       $("<option></option>")
-      .attr("class", FRTool.Genders[i].Name)
       .attr("value", FRTool.Genders[i].Name)
       .text(FRTool.Genders[i].NameZH + " " + FRTool.Genders[i].Name)
     );
   }
+}
+
+function initElementSelect(id) {
+  for (var i = 0; i < FRTool.Elements.length; i++) {
+    $('#' + id).append(
+      $("<option></option>")
+      .attr("value", FRTool.Elements[i].Name)
+      .text(FRTool.Elements[i].NameZH + " " + FRTool.Elements[i].Name)
+    );
+  };
 }
 
 function UpdateColorClass(colorSelect) {
@@ -77,6 +86,8 @@ initColorSelect('target_primary_Color');
 initColorSelect('target_secondary_Color');
 initColorSelect('target_tertiary_Color');
 initGenderSelect('target_gender');
+initElementSelect('o_element');
+initElementSelect('a_element');
 
 $("[id$=_Color]").change(function() {
   UpdateColorClass($(this));
@@ -219,6 +230,32 @@ $('[data-toggle="tooltip"]').tooltip();
 
 $('[data-toggle="tooltip"]').tooltip();
 
+$('[id^=get_prew_]').click(function(){
+  var type = $(this).attr('id').split('_')[2];
+  var $btn = $("#get_prew_" + type).button('loading');
+  $("#" + type +"_preview").text("");
+  var breed = FRTool.Breed[$("#" + type +"_breed").val()];
+  var gender = null;
+  if (type == "o") {
+    gender = FRTool.Gender.Male;
+  } else {
+    gender = FRTool.Gender.Female;
+  }
+  var element = FRTool.Element[$("#" + type +"_element").val()];
+  var primaryGene = FRTool.PrimaryGene[$("#" + type +"_Primary_gene").val()];
+  var secondaryGene = FRTool.SecondaryGene[$("#" + type +"_Secondary_gene").val()];
+  var tertiaryGene = FRTool.TertiaryGene[$("#" + type +"_Tertiary_gene").val()];
+  var primaryColor = FRTool.Color[$("#" + type +"_primary_color").val()];
+  var secondaryColor = FRTool.Color[$("#" + type +"_secondary_color").val()];
+  var tertiaryColor = FRTool.Color[$("#" + type +"_tertiary_color").val()];  
+  var img_url = FRTool.getPriview(gender, breed, element, primaryGene, secondaryGene, tertiaryGene, primaryColor, secondaryColor, tertiaryColor);
+  var img = $("<img></img>")
+      .attr("class", "img-responsive center-block")
+      .attr("src", img_url);
+  $("#" + type +"_preview").append(img);
+  $btn.button('reset');
+});
+
 setCookie("o_breed", "o_breed");
 setCookie("a_breed", "a_breed");
 
@@ -234,6 +271,11 @@ for (var i = $("[id$=_color]").length - 1; i >= 0; i--) {
 
 for (var i = $("[id^=target_]").length - 1; i >= 0; i--) {
   var form = $($("[id^=target_]")[i]);
+  setCookie(form.attr('id'), form.attr('id'));
+};
+
+for (var i = $("[id$=_element]").length - 1; i >= 0; i--) {
+  var form = $($("[id$=_element]")[i]);
   setCookie(form.attr('id'), form.attr('id'));
 };
 
