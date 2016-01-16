@@ -1,5 +1,19 @@
 var FRData = {};
 
+FRData.ElementList = [
+    ['Earth', '地'],
+    ['Plague', '瘟疫'],
+    ['Wind', '风'],
+    ['Water', '水'],
+    ['Lightning', '电'],
+    ['Ice', '冰'],
+    ['Shadow', '影'],
+    ['Light', '光'],
+    ['Arcane', '奥术'],
+    ['Nature', '自然'],
+    ['Fire', '火']
+];
+
 FRData.OddsList = [
     ['Plentiful', '丰富'],
     ['Common', '常见'],
@@ -14,48 +28,48 @@ FRData.GenderList = [
 ];
 
 FRData.PrimaryGeneList = [
-    ['Basic', '基础', 'Plentiful'],
-    ['Clown', '小丑', 'Common'],
-    ['Piebald', '奶牛', 'Common'],
-    ['Speckle', '霉斑', 'Common'],
-    ['Tiger', '虎纹', 'Common'],
-    ['Bar', '豹纹', 'Uncommon'],
-    ['Cherub', '花卷', 'Uncommon'],
-    ['Ripple', '水纹', 'Uncommon'],
-    ['Vipera', '蛇纹', 'Uncommon'],
-    ['Poison', '毒药', 'Limited'],
-    ['Crystal', '水晶', 'Rare'],
-    ['Iridescent', '身闪', 'Rare']
+    [0, 'Basic', '基础', 'Plentiful'],
+    [1, 'Iridescent', '身闪', 'Rare'],
+    [2, 'Tiger', '虎纹', 'Common'],
+    [3, 'Clown', '小丑', 'Common'],
+    [4, 'Speckle', '霉斑', 'Common'],
+    [5, 'Ripple', '水纹', 'Uncommon'],
+    [6, 'Bar', '豹纹', 'Uncommon'],
+    [7, 'Crystal', '水晶', 'Rare'],
+    [8, 'Vipera', '蛇纹', 'Uncommon'],
+    [9, 'Piebald', '奶牛', 'Common'],
+    [10, 'Cherub', '花卷', 'Uncommon'],
+    [11, 'Poison', '毒药', 'Limited']
 ]
 
 FRData.SecondaryGeneList = [
-    ['Basic', '基础', 'Plentiful'],
-    ['Current', '水纹', 'Common'],
-    ['Daub', '豹纹', 'Common'],
-    ['EyeSpots', '眼斑', 'Common'],
-    ['Freckle', '霉斑', 'Common'],
-    ['Paint', '奶牛', 'Common'],
-    ['Peregrine', '游隼', 'Common'],
-    ['Stripes', '条纹', 'Common'],
-    ['Hypnotic', '迷幻', 'Uncommon'],
-    ['Seraph', '天使', 'Uncommon'],
-    ['Toxin', '毒雾', 'Limited'],
-    ['Facet', '水晶', 'Rare'],
-    ['Shimmer', '翅闪', 'Rare'],
-    ['Butterfly', '蝴蝶', 'Rare']
+    [0, 'Basic', '基础', 'Plentiful'],
+    [1, 'Shimmer', '翅闪', 'Rare'],
+    [2, 'Stripes', '条纹', 'Common'],
+    [3, 'EyeSpots', '眼斑', 'Common'],
+    [4, 'Freckle', '霉斑', 'Common'],
+    [5, 'Seraph', '天使', 'Uncommon'],
+    [6, 'Current', '水纹', 'Common'],
+    [7, 'Daub', '豹纹', 'Common'],
+    [8, 'Facet', '水晶', 'Rare'],
+    [9, 'Hypnotic', '迷幻', 'Uncommon'],
+    [10, 'Paint', '奶牛', 'Common'],
+    [11, 'Peregrine', '游隼', 'Common'],
+    [12, 'Toxin', '毒雾', 'Limited'],
+    [13, 'Butterfly', '蝴蝶', 'Rare']
 ]
 
 FRData.TertiaryGeneList = [
-    ['Basic', '基础', 'Plentiful'],
-    ['Underbelly', '肚皮', 'Common'],
-    ['Thylacine', '袋狼', 'Common'],
-    ['Crackle', '裂纹', 'Uncommon'],
-    ['Okapi', '丝袜', 'Uncommon'],
-    ['Smoke', '烟纹', 'Uncommon'],
-    ['Gembond', '宝石', 'Limited'],
-    ['Spines', '脊刺', 'Limited'],
-    ['Circuit', '电路', 'Rare'],
-    ['Glimmer', '闪肚', 'Rare']
+    [0, 'Basic', '基础', 'Plentiful'],
+    [1, 'Circuit', '电路', 'Rare'],
+    [4, 'Gembond', '宝石', 'Limited'],
+    [5, 'Underbelly', '肚皮', 'Common'],
+    [6, 'Crackle', '裂纹', 'Uncommon'],
+    [7, 'Smoke', '烟纹', 'Uncommon'],
+    [8, 'Spines', '脊刺', 'Limited'],
+    [9, 'Okapi', '丝袜', 'Uncommon'],
+    [10, 'Glimmer', '闪肚', 'Rare'],
+    [11, 'Thylacine', '袋狼', 'Common']
 ]
 
 FRData.ColorList = [
@@ -131,17 +145,17 @@ FRData.ColorList = [
 FRData.BreedList = [
     ['Fae', '精灵', 'Plentiful', ['Insects']],
     ['Guardian', '守护', 'Plentiful', ['Insects', 'Meet', 'Seafood', 'Plants']],
-    ['Tundra', '毛毛', 'Plentiful', ['Plants']],
     ['Mirror', '镜子', 'Plentiful', ['Meet', 'Seafood']],
     ['Pearlcatcher', '寻珠', 'Common', ['Insects', 'Plants']],
     ['Ridgeback', '山脊', 'Common', ['Seafood']],
-    ['Snapper', '肥肥', 'Common', ['Plants', 'Seafood']],
+    ['Tundra', '毛毛', 'Plentiful', ['Plants']],
     ['Spiral', '圈圈', 'Common', ['Insects', 'Meet']],
-    ['Skydancer', '天舞', 'Uncommon', ['Insects', 'Plants']],
     ['Imperial', '帝王', 'Limited', ['Insects', 'Meet', 'Seafood', 'Plants']],
-    ['Nocturne', '夜曲', 'Limited', ['Meet', 'Insects']],
+    ['Snapper', '肥肥', 'Common', ['Plants', 'Seafood']],
     ['Wildclaw', '野爪', 'Rare', ['Meet']],
-    ['Coatl', '羽蛇', 'Rare', ['Seafood']]
+    ['Nocturne', '夜曲', 'Limited', ['Meet', 'Insects']],
+    ['Coatl', '羽蛇', 'Rare', ['Seafood']],
+    ['Skydancer', '天舞', 'Uncommon', ['Insects', 'Plants']]
 ]
 
 FRData.BreedRuleList = [
