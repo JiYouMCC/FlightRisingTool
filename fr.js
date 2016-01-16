@@ -274,10 +274,10 @@ for (var i = $("[id^=target_]").length - 1; i >= 0; i--) {
   setCookie(form.attr('id'), form.attr('id'));
 };
 
-for (var i = $("[id$=_element]").length - 1; i >= 0; i--) {
+/*for (var i = $("[id$=_element]").length - 1; i >= 0; i--) {
   var form = $($("[id$=_element]")[i]);
   setCookie(form.attr('id'), form.attr('id'));
-};
+};*/
 
 $("[id$=_color]").change();
 $("[id$=_Color]").change();
