@@ -70,3 +70,8 @@
     padding-top: 7px;
     text-align:center;
   }
+
+.cup_image {
+    float: left;
+    margin-right: 20px;
+}
