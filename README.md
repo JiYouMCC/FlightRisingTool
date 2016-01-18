@@ -16,3 +16,15 @@ http://www.jithee.name/fr
 ![](https://raw.githubusercontent.com/JiYouMCC/frTool/master/img/Rate.PNG)
 
 
+##Dependency
+
+[jQuery v1.11.3](https://github.com/jquery/jquery)
+
+[jQuery Cookie Plugin v1.4.1](https://github.com/carhartl/jquery-cookie)
+
+[Bootstrap v3.3.5](https://github.com/twbs/bootstrap)
+
+
+
+
+
