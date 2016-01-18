@@ -18,7 +18,7 @@ http://www.jithee.name/fr
 
 ##Dependency
 
-[jQuery v1.11.3](https://jquery.com/)
+[jQuery v1.11.3](https://github.com/jquery/jquery)
 
 [jQuery Cookie Plugin v1.4.1](https://github.com/carhartl/jquery-cookie)
 
