@@ -164,9 +164,15 @@ $("[id$=_color]").change(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
+$("[id^=target").change(function() {
+  var id = $(this).attr('id');
+  $.cookie(id, $(this).val());
+});
+
 $("#cal_breed").click(function() {
   var $btn = $(this).button('loading');
   $('#input_result').text('--.-------- %');
+
   var target = {};
   $('#input_result').val("");
   if ($('#target_gender').val() != "none") {
@@ -241,3 +247,4 @@ $("[id$=_color]").change();
 $("[id$=_Color]").change();
 $("[id$=_breed]").change();
 $("[id$=_gene]").change();
+$("#cal_breed").click();
