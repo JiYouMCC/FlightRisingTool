@@ -91,19 +91,22 @@ $("[id$=_breed]").change(function() {
   var a_breed = FRTool.Breed[$('#a_breed').val()];
   var rate = FRTool.getBreedRate(o_breed, a_breed);
   if (rate.length == 1) {
-    s += o_breed.NameZH + " " + o_breed.Name + " " + rate[0] * 100 + "% ";
+    var rate0 = rate[0] * 100 | 0;
+    s += o_breed.NameZH + " " + o_breed.Name + " " + rate0 + "% ";
     $("#breed_bar_0").text(o_breed.NameZH + " " + o_breed.Name)
-      .css("width", rate[0] * 100 + "% ")
-      .attr("aria-valuenow", rate[0] * 100);
+      .css("width", rate0 + "% ")
+      .attr("aria-valuenow", rate0);
   } else {
-    s += o_breed.NameZH + " " + o_breed.Name + " " + rate[0] * 100 + "% ";
-    s += a_breed.NameZH + " " + a_breed.Name + " " + rate[1] * 100 + "% ";
+    var rate0 = rate[0] * 100 | 0;
+    var rate1 = rate[1] * 100 | 0;
+    s += o_breed.NameZH + " " + o_breed.Name + " " + rate0 + "% ";
+    s += a_breed.NameZH + " " + a_breed.Name + " " + rate1 + "% ";
     $("#breed_bar_0").text(o_breed.NameZH + " " + o_breed.Name)
-      .css("width", rate[0] * 100 + "% ")
-      .attr("aria-valuenow", rate[0] * 100);
+      .css("width", rate0 + "% ")
+      .attr("aria-valuenow", rate0);
     $("#breed_bar_1").text(a_breed.NameZH + " " + a_breed.Name)
-      .css("width", rate[1] * 100 + "% ")
-      .attr("aria-valuenow", rate[1] * 100);
+      .css("width", rate1 + "% ")
+      .attr("aria-valuenow", rate1);
 
   }
 
@@ -120,19 +123,22 @@ $("[id$=_gene]").change(function() {
   var a_gene = FRTool[gene_type + "Gene"][$('#a_' + gene_type + '_gene').val()];
   var rate = FRTool.getGeneRate(o_gene, a_gene);
   if (rate.length == 1) {
-    s += o_gene.NameZH + " " + o_gene.Name + " " + rate[0] * 100 + "% ";
+    var rate0 = rate[0] * 100 | 0;
+    s += o_gene.NameZH + " " + o_gene.Name + " " + rate0 + "% ";
     $("#gene_" + gene_type + "_bar_0").text(o_gene.NameZH + " " + o_gene.Name)
-      .css("width", rate[0] * 100 + "% ")
-      .attr("aria-valuenow", rate[0] * 100);
+      .css("width", rate0 + "% ")
+      .attr("aria-valuenow", rate0);
   } else {
-    s += o_gene.NameZH + " " + o_gene.Name + " " + rate[0] * 100 + "% ";
-    s += a_gene.NameZH + " " + a_gene.Name + " " + rate[1] * 100 + "% ";
+    var rate0 = rate[0] * 100 | 0;
+    var rate1 = rate[1] * 100 | 0;
+    s += o_gene.NameZH + " " + o_gene.Name + " " + rate0 + "% ";
+    s += a_gene.NameZH + " " + a_gene.Name + " " + rate1 + "% ";
     $("#gene_" + gene_type + "_bar_0").text(o_gene.NameZH + " " + o_gene.Name)
-      .css("width", rate[0] * 100 + "% ")
-      .attr("aria-valuenow", rate[0] * 100);
+      .css("width", rate0 + "% ")
+      .attr("aria-valuenow", rate0);
     $("#gene_" + gene_type + "_bar_1").text(a_gene.NameZH + " " + a_gene.Name)
-      .css("width", rate[1] * 100 + "% ")
-      .attr("aria-valuenow", rate[1] * 100);
+      .css("width", rate1 + "% ")
+      .attr("aria-valuenow", rate1);
 
   }
 
