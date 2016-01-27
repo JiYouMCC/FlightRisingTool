@@ -1,11 +1,11 @@
 var FRData = {};
 
 FRData.OddsList = [
-    ['Plentiful', '丰富'],
-    ['Common', '常见'],
-    ['Uncommon', '罕见'],
-    ['Limited', '限定'],
-    ['Rare', '稀有']
+    ['Plentiful', '丰富',15],
+    ['Common', '常见', 20],
+    ['Uncommon', '罕见', 25],
+    ['Limited', '限定', 30],
+    ['Rare', '稀有', 35]
 ];
 
 FRData.GenderList = [
