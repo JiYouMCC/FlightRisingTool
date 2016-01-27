@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/gutools.css" rel="stylesheet">
+    <link href="css/fr.css" rel="stylesheet">
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    <title>Flight Rising 工具.数据</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page_head panel panel-default">
+        <div class="panel-heading">
+          <h2><strong>Flight Rising 工具.数据</strong></h2>
+          <h5 title="Flight Rising Tool to get color range and gene rate of two dragons." data-toggle="tooltip" data-placement="bottom">#Flight Rising 工具，计算2只龙后代的颜色和基因范围。计算确定目标的龙的出现几率。</h5>
+        </div>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+              <li class="dropdown active">
+                <a title="Data" data-toggle="tooltip" data-placement="bottom" href="data.html" role="button" aria-haspopup="true" aria-expanded="false">数据</a>
+              </li>
+                <li class="dropdown">
+                  <a title="Github Repository" data-toggle="tooltip" data-placement="bottom" href="https://github.com/JiYouMCC/FlightRisingTool" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Github代码库</a>
+                </li>
+                <li class="dropdown">
+                  <a title="Ping me in FR" data-toggle="tooltip" data-placement="bottom" href="http://flightrising.com/main.php?p=view&tab=userpage&id=200704" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">在FR中找我</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="alert alert-warning" role="alert">以下基因和品种非标准翻译，为群内称呼综合排版需求的标示，以英语为准。</div>
+          <h4><strong>性别列表 Gender List</strong></h4>
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+              <thead><tr><th>名称</th><th>Name</th></tr></thead>
+              <tbody id="gender_list"></tbody>
+            </table>
+          </div>
+          <h4><strong>几率列表 Odds List</strong></h4>
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+              <thead>
+                <tr>
+                  <th>名称</th><th>Name</th><th>产假 Cooldown</th>
+                </tr>
+              </thead>
+              <tbody id="odd_list"></tbody>
+            </table>
+          </div>
+          <h4><strong>品种列表 Breed List</strong></h4>
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+              <thead>
+                <tr>
+                  <th>名称</th><th>Name</th><th>几率</th><th>Odds</th>
+                </tr>
+              </thead>
+              <tbody id="breed_list">
+              </tbody>
+            </table>
+          </div>
+          <h4><strong>第一基因列表 Primary Gene List</strong></h4>
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+              <thead>
+                <tr>
+                  <th>名称</th><th>Name</th><th>几率</th><th>Odds</th>
+                </tr>
+              </thead>
+              <tbody id="primary_gene_list">
+              </tbody>
+            </table>
+          </div>
+          <h4><strong>第二基因列表 Secondary Gene List</strong></h4>
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+              <thead>
+                <tr>
+                  <th>名称</th><th>Name</th><th>几率</th><th>Odds</th>
+                </tr>
+              </thead>
+              <tbody id="secondary_gene_list"></tbody>
+            </table>
+          </div>
+          <h4><strong>第三基因列表 Tertiary Gene List</strong></h4>
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+              <thead>
+                <tr>
+                  <th>名称</th><th>Name</th><th>几率</th><th>Odds</th>
+                </tr>
+              </thead>
+              <tbody id="tertiary_gene_list"></tbody>
+            </table>
+          </div>
+          <h4><strong>颜色列表 Color List</strong></h4>
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+              <thead>
+                <tr>
+                  <th>名称</th><th>Name</th><th>Hex</th>
+                </tr>
+              </thead>
+              <tbody id="color_list"></tbody>
+            </table>
+          </div>
+          <h4><strong>品种规则列表 Breed Role List</strong></h4>
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+              <thead>
+                <tr>
+                  <th>几率1</th>
+                  <th>Odds I</th>
+                  <th>几率2</th>
+                  <th>Odds II</th>
+                  <th>百分比1 Rate I</th>
+                  <th>百分比2 Rate II</th>
+                </tr>
+              </thead>
+              <tbody id="breed_rule_list"></tbody>
+            </table>
+          </div>
+          <h4><strong>基因规则列表 Gene Role List</strong></h4>
+          <p>（我怀疑其实和品种一样…………）</p>
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+              <thead>
+                <tr>
+                  <th>几率1</th>
+                  <th>Odds I</th>
+                  <th>几率2</th>
+                  <th>Odds II</th>
+                  <th>百分比1 Rate I</th>
+                  <th>百分比2 Rate II</th>
+                </tr>
+              </thead>
+              <tbody id="gene_rule_list"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <img class="img-responsive center-block" src="img/cup-big.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page_footer panel panel-default">
+        <div class="panel-footer">
+          <h5>
+            <span><strong>Powered By</strong> <a target="_blank" href="https://pages.github.com/">Github Pages</a>.</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="fr_data.js"></script>
+    <script src="fr_tool.js"></script>
+    <script src="data.js"></script>
+  </body>
+</html>

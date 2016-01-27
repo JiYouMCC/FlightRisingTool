@@ -1,8 +1,9 @@
 FRTool = {}
 
-FRTool.Odds = function(name, name_zh) {
+FRTool.Odds = function(name, name_zh, cooldown) {
     this.Name = name;
     this.NameZH = name_zh;
+    this.CoolDown = cooldown;
     FRTool.Odds[name] = this;
     FRTool.Oddss.push(this);
 }
@@ -69,7 +70,7 @@ FRTool.initFR = function(data) {
     FRTool.BreedRoles = {};
     FRTool.GeneRoles = {};
     for (var i = 0; i < data.OddsList.length; i++) {
-        new FRTool.Odds(data.OddsList[i][0], data.OddsList[i][1]);
+        new FRTool.Odds(data.OddsList[i][0], data.OddsList[i][1], data.OddsList[i][2]);
     };
 
     for (var i = 0; i < data.GenderList.length; i++) {
