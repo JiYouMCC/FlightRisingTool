@@ -229,8 +229,6 @@ $("#cal_breed").click(function() {
 
 $('[data-toggle="tooltip"]').tooltip();
 
-$('[data-toggle="tooltip"]').tooltip();
-
 setCookie("o_breed", "o_breed");
 setCookie("a_breed", "a_breed");
 

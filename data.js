@@ -1,3 +1,4 @@
+$('[data-toggle="tooltip"]').tooltip();
 FRTool.initFR(FRData);
 
 for (var i = 0; i < FRTool.Genders.length; i++) {
