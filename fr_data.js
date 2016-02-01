@@ -56,7 +56,7 @@ FRData.TertiaryGeneList = [
     ['Spines', '脊刺', 'Limited'],
     ['Circuit', '电路', 'Rare'],
     ['Glimmer', '闪肚', 'Rare'],
-    ['Stained', '污染', 'Rare']
+    ['Stained', '滤镜', 'Rare']
 ]
 
 FRData.ColorList = [
