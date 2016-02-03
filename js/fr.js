@@ -170,7 +170,7 @@ $("[id$=_color]").change(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-$("[id^=target").change(function() {
+$("[id^=target]").change(function() {
   var id = $(this).attr('id');
   $.cookie(id, $(this).val());
 });
