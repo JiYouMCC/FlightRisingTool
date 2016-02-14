@@ -101,35 +101,11 @@ for (key in FRTool.GeneRoles) {
 
 $("body").attr("data-spy", "scroll");
 $("body").attr("data-target", "#affix-nav");
-
-$("#affix-nav-ul").append(
-    $("<li></li>").append(
-        $("<a></a>")
-        .attr("href", "#top")
-        .append(
-            $("<span></span>").attr("class", "glyphicon glyphicon-triangle-top")
-            )
-        )
-    );
-
-
 for (var i = 0; i < $("h4").length ; i ++) {
     $($("h4")[i]).attr("id", "title_"+i);
-    $("#affix-nav-ul").append(
         $("<li></li>").append(
             $("<a></a>")
             .attr("href", "#title_" + i)
             .text($($("h4")[i]).text())
-            )
-        );
+            ).insertBefore('#nav_bottom');
 }
-
-$("#affix-nav-ul").append(
-    $("<li></li>").append(
-        $("<a></a>")
-        .attr("href", "#bottom")
-        .append(
-            $("<span></span>").attr("class", "glyphicon glyphicon-triangle-bottom")
-            )
-        )
-    );
