@@ -1,0 +1,357 @@
+{% extends "basic.html" %}
+{% block title %}Flight Rising 工具{% endblock %}
+{% block head_link %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/fr.css" %}" />
+{% endblock %}
+{% block content %}
+<div class="panel panel-default">
+  <div class="panel-body">
+  FR工具，查看两只龙的后代范围。目前使用的数据在<a href="/fr/data"><button type="button" class="btn btn-link">这里</button></a>可以查到，基本是wikia或者论坛抠来的。<br />
+      如有任何bug，数据错误，翻译建议可以在<a href="/guestbook" target="_blank"><button type="button" class="btn btn-link">简易留言本</button></a>留言。FR Id: <a href="http://flightrising.com/main.php?p=view&tab=userpage&id=200704" target="_blank"><button type="button" class="btn btn-link">JiYou (200704)</button></a><br />
+  </div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>一只龙 One Dragon</strong></div>
+  <div class="panel-body">
+    <div class="form-horizontal">
+      <div class="form-group">
+        <label title="Breed" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">品种</label>
+        <div class="col-sm-4">
+          <select id="o_breed" class="form-control">
+            {% for odds, breed in breeds.items %}
+            <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+              {% for b in breed %}
+              <option value ="{{ b.name }}">{{ b.name_zh }} {{ b.name }}</option>
+              {% endfor %}
+            </optgroup>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <div class="form-group">
+        <label title="Primary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">一基因</label>
+        <div class="col-sm-4">
+          <select id="o_PrimaryGene_gene" class="form-control">
+            {% for odds, genes in primaryGenes.items %}
+            <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+              {% for gene in genes %}
+              <option value ="{{ gene.name }}">{{ gene.name_zh }} {{ gene.name }}</option>
+              {% endfor %}
+            </optgroup>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-sm-5">
+          <select id="o_primary_color" class="form-control">
+            {% for color in colors %}
+            <option class="{{ color.name }}" value="{{ color.name }}">{{ color.name_zh }} {{ color.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label title="Secondary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">二基因</label>
+        <div class="col-sm-4">
+          <select id="o_SecondaryGene_gene" class="form-control">
+            {% for odds, genes in secondaryGenes.items %}
+            <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+              {% for gene in genes %}
+              <option value ="{{ gene.name }}">{{ gene.name_zh }} {{ gene.name }}</option>
+              {% endfor %}
+            </optgroup>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-sm-5">
+          <select id="o_secondary_color" class="form-control">
+            {% for color in colors %}
+            <option class="{{ color.name }}" value="{{ color.name }}">{{ color.name_zh }} {{ color.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label title="Tertiary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">三基因</label>
+        <div class="col-sm-4">
+          <select id="o_TertiaryGene_gene" class="form-control">
+            {% for odds, genes in tertiaryGenes.items %}
+            <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+              {% for gene in genes %}
+              <option value ="{{ gene.name }}">{{ gene.name_zh }} {{ gene.name }}</option>
+              {% endfor %}
+            </optgroup>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-sm-5">
+          <select id="o_tertiary_color" class="form-control">
+            {% for color in colors %}
+            <option class="{{ color.name }}" value="{{ color.name }}">{{ color.name_zh }} {{ color.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>另一只龙 Another Dragon</strong></div>
+  <div class="panel-body">
+    <div class="form-horizontal">
+      <div class="form-group">
+        <label title="Breed" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">品种</label>
+        <div class="col-sm-4">
+          <select id="a_breed" class="form-control">
+            {% for odds, breed in breeds.items %}
+            <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+              {% for b in breed %}
+              <option value ="{{ b.name }}">{{ b.name_zh }} {{ b.name }}</option>
+              {% endfor %}
+            </optgroup>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <div class="form-group">
+        <label title="Primary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">一基因</label>
+        <div class="col-sm-4">
+          <select id="a_PrimaryGene_gene" class="form-control">
+            {% for odds, genes in primaryGenes.items %}
+            <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+              {% for gene in genes %}
+              <option value ="{{ gene.name }}">{{ gene.name_zh }} {{ gene.name }}</option>
+              {% endfor %}
+            </optgroup>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-sm-5">
+          <select id="a_primary_color" class="form-control">
+            {% for color in colors %}
+            <option class="{{ color.name }}" value="{{ color.name }}">{{ color.name_zh }} {{ color.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label title="Secondary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">二基因</label>
+        <div class="col-sm-4">
+          <select id="a_SecondaryGene_gene" class="form-control">
+            {% for odds, genes in secondaryGenes.items %}
+            <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+              {% for gene in genes %}
+              <option value ="{{ gene.name }}">{{ gene.name_zh }} {{ gene.name }}</option>
+              {% endfor %}
+            </optgroup>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-sm-5">
+          <select id="a_secondary_color" class="form-control">
+            {% for color in colors %}
+            <option class="{{ color.name }}" value="{{ color.name }}">{{ color.name_zh }} {{ color.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label title="Tertiary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">三基因</label>
+        <div class="col-sm-4">
+          <select id="a_TertiaryGene_gene" class="form-control">
+            {% for odds, genes in tertiaryGenes.items %}
+            <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+              {% for gene in genes %}
+              <option value ="{{ gene.name }}">{{ gene.name_zh }} {{ gene.name }}</option>
+              {% endfor %}
+            </optgroup>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-sm-5">
+          <select id="a_tertiary_color" class="form-control">
+            {% for color in colors %}
+            <option class="{{ color.name }}" value="{{ color.name }}">{{ color.name_zh }} {{ color.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>几率计算 Result</strong></div>
+  <div class="panel-body">
+  <div class="form-horizontal">
+    <div class="form-group">
+      <label title="Breed" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">品种</label>
+      <div style="padding-top: 7px;" class="col-sm-5">
+        <div class="progress">
+          <div id="breed_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+          <div id="breed_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+        </div>
+        <div class="label_text" id="breed_result"></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label title="Primary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">一基因</label>
+      <div style="padding-top: 7px;" class="col-sm-5">
+        <div class="progress">
+          <div id="gene_PrimaryGene_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+          <div id="gene_PrimaryGene_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+        </div>
+        <div class="label_text" id="PrimaryGene_result"></div>
+      </div>
+        <div id="primary_color_result" class="col-sm-5 label_text"></div>
+    </div>
+    <div class="form-group">
+      <label title="Secondary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">二基因</label>
+      <div style="padding-top: 7px;" class="col-sm-5">
+        <div class="progress">
+          <div id="gene_SecondaryGene_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+          <div id="gene_SecondaryGene_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+        </div>
+        <div class="label_text" id="SecondaryGene_result"></div>
+      </div>
+      <div id="secondary_color_result" class="col-sm-5 label_text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label title="Tertiary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">三基因</label>
+      <div style="padding-top: 7px;" class="col-sm-5">
+        <div class="progress">
+          <div id="gene_TertiaryGene_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+          <div id="gene_TertiaryGene_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+        </div>
+        <div class="label_text" id="TertiaryGene_result"></div>
+      </div>
+      <div id="tertiary_color_result" class="col-sm-5 label_text"></div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>目标培育几率计算</strong></div>
+  <div class="panel-body">
+    <div class="alert alert-warning" role="alert">以下假定龙的性别几率是1:1</div>
+    <div class="form-horizontal">
+      <div class="form-group">
+        <label title="Gender" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标性别</label>
+        <div class="col-sm-4">
+          <select id="target_gender" class="form-control">
+            <option value ="none">无 None</option>
+            {% for gender in genders %}
+            <option value ="{{ gender.name }}">{{ gender.name_zh }} {{ gender.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label title="Breed" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标品种</label>
+        <div class="col-sm-4">
+          <select id="target_Breed" class="form-control">
+            <option value ="none">无 None</option>
+            {% for odds, breed in breeds.items %}
+            <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+              {% for b in breed %}
+              <option value ="{{ b.name }}">{{ b.name_zh }} {{ b.name }}</option>
+              {% endfor %}
+            </optgroup>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+          <label title="Primary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标一基因</label>
+          <div class="col-sm-4">
+            <select id="target_primaryGene" class="form-control">
+              <option value ="none">无 None</option>
+              {% for odds, genes in primaryGenes.items %}
+              <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+                {% for gene in genes %}
+                <option value ="{{ gene.name }}">{{ gene.name_zh }} {{ gene.name }}</option>
+                {% endfor %}
+              </optgroup>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <select id="target_primaryColor" class="form-control">
+                <option value ="none">无 None</option>
+              {% for color in colors %}
+              <option class="{{ color.name }}" value="{{ color.name }}">{{ color.name_zh }} {{ color.name }}</option>
+              {% endfor %}
+            </select>
+          </div>
+      </div>
+      <div class="form-group">
+          <label title="Secondary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标二基因</label>
+          <div class="col-sm-4">
+            <select id="target_secondaryGene" class="form-control">
+                <option value ="none">无 None</option>
+              {% for odds, genes in secondaryGenes.items %}
+              <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+                {% for gene in genes %}
+                <option value ="{{ gene.name }}">{{ gene.name_zh }} {{ gene.name }}</option>
+                {% endfor %}
+              </optgroup>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <select id="target_secondaryColor" class="form-control">
+                <option value ="none">无 None</option>
+              {% for color in colors %}
+              <option class="{{ color.name }}" value="{{ color.name }}">{{ color.name_zh }} {{ color.name }}</option>
+              {% endfor %}
+            </select>
+          </div>
+      </div>
+      <div class="form-group">
+          <label title="Tertiary Gene" class="col-sm-2 control-label" data-toggle="tooltip" data-placement="bottom">目标三基因</label>
+          <div class="col-sm-4">
+            <select id="target_tertiaryGene" class="form-control">
+                <option value ="none">无 None</option>
+              {% for odds, genes in tertiaryGenes.items %}
+              <optgroup label="{{ odds.name_zh }} {{ odds.name }}">
+                {% for gene in genes %}
+                <option value ="{{ gene.name }}">{{ gene.name_zh }} {{ gene.name }}</option>
+                {% endfor %}
+              </optgroup>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <select id="target_tertiaryColor" class="form-control">
+                <option value ="none">无 None</option>
+              {% for color in colors %}
+              <option class="{{ color.name }}" value="{{ color.name }}">{{ color.name_zh }} {{ color.name }}</option>
+              {% endfor %}
+            </select>
+          </div>
+      </div>
+      <hr />
+      <div class="form-group">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4">
+            <input data-loading-text="计算中..." type="button" class="form-control" id="cal_breed" value="计算机率">
+          </div>
+          <div id="input_result" class="col-sm-4 label_text">--.-------- %</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block right %}{% endblock %}
+{% block js_link %}
+<script src="{% static "js/fr.js" %}"></script>
+{% endblock %}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %} - {{ blog.blog_name }}</title>
+    {% load staticfiles %}
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "css/gutools.css" %}" rel="stylesheet">
+    <link rel="Shortcut Icon" href="{% static "favicon.ico" %}" type="image/x-icon">
+    {% for feed in blog.feed %}<link rel="alternate" type="application/atom+xml" title="{{ feed.title }}" href="{{ feed.link }}">
+    {% endfor %}
+    {% block head_link %}{% endblock %}
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="page_head panel panel-default">
+        <div class="panel-heading">
+        {% block head %}
+        <h2><strong>{{ blog.blog_name }}{% if page_title %}.{{ page_title }}{% endif %}</strong></h2>
+        <h5>#{{ blog.description }}</h5>
+        {% endblock %}
+        </div>
+          <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        {% block nav %}
+        {% include 'blog/nav.html' %}
+        {% endblock %}
+          </ul>
+      <form class="navbar-form navbar-right" role="search" action="/blog/search" method="get">
+        <div class="input-group">
+          <div class="input-group-btn">
+            <input name="string" type="text" class="form-control">
+          </div>
+          <div class="input-group-btn">
+            <select name="type" class="form-control">
+              <option value="all">所有</option>
+              <option value="title">标题</option>
+              <option value="content">正文</option>
+              <option value="comment">评论</option>
+            </select>
+          </div>
+          <div class="input-group-btn">
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+      </div>
+        <div class="row">
+          <div class="col-md-9">
+          {% if breadcrumb %}
+          <ol class="breadcrumb">
+            {% for link in breadcrumb %}
+              {% if link.link %}
+                <li><a href="{{ link.link }}">{{ link.name }}</a></li>
+              {% else %}
+                <li class="active">{{ link.name }}</li>
+              {% endif %}
+            {% endfor %}
+          </ol>
+          {% endif %}
+          {% block content %}{% endblock %}</div>
+          
+          <div class="col-md-3">
+          {% block right %}
+          {% include 'blog/right.html' %}
+          {% endblock %}
+          </div>
+        </div>
+        <div class="page_footer panel panel-default">
+          <div class="panel-footer">
+            {% block footer %}
+            <h5>
+                <span><strong>Powered By</strong> <a target="_blank" href="http://sae.sina.com.cn/">Sina App Engine</a>.</span>
+                <span><strong>Established by</strong> <a target="_blank" href="https://www.djangoproject.com/">Django {{ django_version }}</a></span>
+            <h5>
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backtotop"><h5><span class="glyphicon glyphicon-triangle-top"></span></h5></div>
+    <div class="backtobottom"><h5><span class="glyphicon glyphicon-triangle-bottom"></span></h5></div>
+    {% include 'accounts/login.html' %}
+    {% include 'accounts/register.html' %}
+    {% include 'accounts/change_password.html' %}
+    <script src="{% static "js/jquery.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/jquery.validate.min.js" %}"></script> 
+    <script src="{% static "js/jquery.cookie.js" %}"></script> 
+    <script src="{% static "js/accounts.js" %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('.backtotop').click(function(){
+             $('html, body').animate(
+                      { scrollTop: 0 }, 
+                      'slow'
+              );  
+          });
+          
+          $('.backtobottom').click(function(){
+             $("html, body").animate(
+                 { scrollTop: $(document).height() },
+                 'slow'
+             );
+         });
+		});
+    </script>
+    {% block js_link %}{% endblock %}
+  </body>
+</html>

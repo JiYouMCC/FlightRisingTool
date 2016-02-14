@@ -1,0 +1,167 @@
+{% extends "basic.html" %}
+{% block title %}Flight Rising 工具{% endblock %}
+{% block head_link %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/fr.css" %}" />
+{% endblock %}
+{% block content %}
+<div class="alert alert-warning" role="alert">以下基因和品种非标准翻译，为群内称呼综合排版需求的标示，以英语为准。</div>
+<h4><strong>性别列表 Gender List</strong></h4>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>名称</th><th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for gender in genders %}
+      <tr><td>{{ gender.name_zh }}</td><td>{{ gender.name }}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+<h4><strong>几率列表 Odds List</strong></h4>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>名称</th><th>Name</th><th>产假 Cooldown</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for odds in oddss %}
+      <tr><td>{{ odds.name_zh }}</td><td>{{ odds.name }}</td><td>{{ odds.cooldown }}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+<h4><strong>品种列表 Breed List</strong></h4>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>名称</th><th>Name</th><th>几率</th><th>Odds</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for breed in breeds %} 
+      <tr><td>{{ breed.name_zh }}</td><td>{{ breed.name }}</td><td>{{ breed.odds.name_zh }}</td><td>{{ breed.odds.name }}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+<h4><strong>第一基因列表 Primary Gene List</strong></h4>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>名称</th><th>Name</th><th>几率</th><th>Odds</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for gene in primaryGenes %} 
+      <tr><td>{{ gene.name_zh }}</td><td>{{ gene.name }}</td><td>{{ gene.odds.name_zh }}</td><td>{{ gene.odds.name }}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+<h4><strong>第二基因列表 Secondary Gene List</strong></h4>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>名称</th><th>Name</th><th>几率</th><th>Odds</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for gene in secondaryGenes %} 
+      <tr><td>{{ gene.name_zh }}</td><td>{{ gene.name }}</td><td>{{ gene.odds.name_zh }}</td><td>{{ gene.odds.name }}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+<h4><strong>第三基因列表 Tertiary Gene List</strong></h4>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>名称</th><th>Name</th><th>几率</th><th>Odds</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for gene in tertiaryGenes %} 
+      <tr><td>{{ gene.name_zh }}</td><td>{{ gene.name }}</td><td>{{ gene.odds.name_zh }}</td><td>{{ gene.odds.name }}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+<h4><strong>颜色列表 Color List</strong></h4>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>名称</th><th>Name</th><th>Hex</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for color in colors %} 
+      <tr><td>{{ color.name_zh }}</td><td>{{ color.name }}</td><td class="{{ color.name }}">{{ color.color.hex_l }}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+<h4><strong>品种规则列表 Breed Role List</strong></h4>
+<p>（程序自己生成的，这顺序我也是醉了……）</p>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>几率1</th>
+        <th>Odds I</th>
+        <th>几率2</th>
+        <th>Odds II</th>
+        <th>百分比1 Rate I</th>
+        <th>百分比2 Rate II</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for key, value in breedRoles.items %} 
+      <tr>
+        {% for k in key %}
+        <td>{{ k.name_zh }}</td>
+        <td>{{ k.name }}</td>
+        {% endfor %}
+        {% for v in value %}
+        <td>{{ v }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h4><strong>基因规则列表 Gene Role List</strong></h4>
+<p>（我怀疑其实和品种一样…………）</p>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>几率1</th>
+        <th>Odds I</th>
+        <th>几率2</th>
+        <th>Odds II</th>
+        <th>百分比1 Rate I</th>
+        <th>百分比2 Rate II</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for key, value in geneRoles.items %} 
+      <tr>
+        {% for k in key %}
+        <td>{{ k.name_zh }}</td>
+        <td>{{ k.name }}</td>
+        {% endfor %}
+        {% for v in value %}
+        <td>{{ v }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+{% block right %}{% endblock %}
