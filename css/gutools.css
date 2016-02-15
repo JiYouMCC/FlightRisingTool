@@ -33,3 +33,11 @@
 body {
   position: relative;
 }
+
+.affix {
+  top: 20px;
+}
+
+.affix-bottom{
+  position: absolute;
+}

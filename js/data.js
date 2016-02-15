@@ -109,3 +109,24 @@ for (var i = 0; i < $("h4").length ; i ++) {
             .text($($("h4")[i]).text())
             ).insertBefore('#nav_bottom');
 }
+
+$('#affix-nav').affix({
+  offset: {
+    top: function() {
+      return (this.top = $('#top').outerHeight(true));
+    },
+    bottom: function () {
+      return (this.bottom = $('#bottom').outerHeight(true) + 20);
+    }
+  }
+})
+
+$('.affix-top').width($('.affix-top').width());
+
+$(window).resize(function () {
+    $('.affix').width($('.affix-top').width());
+});
+
+$(window).scroll(function () {
+    $('.affix').width($('.affix-top').width());
+});
