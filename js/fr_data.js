@@ -138,7 +138,7 @@ FRData.BreedList = [
     ['Ridgeback', '山脊', 'Common', ['Seafood']],
     ['Snapper', '肥肥', 'Common', ['Plants', 'Seafood']],
     ['Spiral', '圈圈', 'Common', ['Insects', 'Meet']],
-    ['Skydancer', '天舞', 'Uncommon', ['Plants'， 'Insects']],
+    ['Skydancer', '天舞', 'Uncommon', ['Plants', 'Insects']],
     ['Imperial', '帝王', 'Limited', ['Insects', 'Meet', 'Seafood', 'Plants']],
     ['Nocturne', '夜曲', 'Limited', ['Meet', 'Insects']],
     ['Wildclaw', '野爪', 'Rare', ['Meet']],
