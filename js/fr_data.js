@@ -131,14 +131,14 @@ FRData.ColorList = [
 
 FRData.BreedList = [
     ['Fae', '精灵', 'Plentiful', ['Insects']],
-    ['Guardian', '守护', 'Plentiful', ['Insects', 'Meet', 'Seafood', 'Plants']],
+    ['Guardian', '守护', 'Plentiful', ['Meet', 'Seafood', 'Insects', 'Plants']],
     ['Tundra', '毛毛', 'Plentiful', ['Plants']],
     ['Mirror', '镜子', 'Plentiful', ['Meet', 'Seafood']],
     ['Pearlcatcher', '寻珠', 'Common', ['Insects', 'Plants']],
     ['Ridgeback', '山脊', 'Common', ['Seafood']],
     ['Snapper', '肥肥', 'Common', ['Plants', 'Seafood']],
     ['Spiral', '圈圈', 'Common', ['Insects', 'Meet']],
-    ['Skydancer', '天舞', 'Uncommon', ['Insects', 'Plants']],
+    ['Skydancer', '天舞', 'Uncommon', ['Plants'， 'Insects']],
     ['Imperial', '帝王', 'Limited', ['Insects', 'Meet', 'Seafood', 'Plants']],
     ['Nocturne', '夜曲', 'Limited', ['Meet', 'Insects']],
     ['Wildclaw', '野爪', 'Rare', ['Meet']],
