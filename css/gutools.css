@@ -80,6 +80,6 @@ body {
     color: #F3F8F1;
 }
 
-#affix-nav-ul  li > a:before {
+/*#affix-nav-ul li > a:before {
     content: "@ ";
-}
+}*/
