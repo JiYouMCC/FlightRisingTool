@@ -321,3 +321,4 @@ $("[id$=_color]").change(function() {
 });
 
 $('[data-toggle="tooltip"]').tooltip();
+$("[id$=_color]").change();
