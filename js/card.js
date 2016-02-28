@@ -316,7 +316,7 @@ $("[id=draw]").click(function(){
     drawCard('canvas_1', card_data);
 });
 
-$("[id$=_Color]").change(function() {
+$("[id$=_color]").change(function() {
   UpdateColorClass($(this));
 });
 
