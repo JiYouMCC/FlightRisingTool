@@ -28,6 +28,17 @@ function initColorSelect(id) {
   }
 }
 
+function initBreedSelect(id) {
+  for (var i = 0; i < FRTool.Oddss.length; i++) {
+    var breeds = FRTool.getBreed(FRTool.Oddss[i]);
+    var group = $("<optgroup></optgroup>").attr("label", FRTool.Oddss[i].NameZH + " " + FRTool.Oddss[i].Name);
+    for (var j = 0; j < breeds.length; j++) {
+      group.append($("<option></option>").attr("value", breeds[j].Name).text(breeds[j].NameZH + " " + breeds[j].Name));
+    };
+    $('#' + id).append(group);
+  };
+}
+
 function UpdateColorClass(colorSelect) {
   colorSelect.removeClass();
   colorSelect.addClass("form-control");
@@ -50,25 +61,47 @@ function drawCard(canvasId, cardData) {
     canvasContext.fillStyle = cardData.background;
     canvasContext.fillRect(0, 0, 640, 240);
 
+    // breed
+    {
+        canvasContext.font = cardData.geneFont;
+        if (cardData.dragon1.breed == cardData.dragon2.breed) {
+            canvasContext.textAlign = "center";
+            canvasContext.fillStyle = cardData.geneColor.basic;
+            canvasContext.fillText(cardData.dragon1.breed.Name, 320, 31);
+            canvasContext.fillRect(280, 35, 80, 3);
+        } else {
+            var rate = FRTool.getBreedRate(cardData.dragon1.breed, cardData.dragon2.breed);
+            canvasContext.textAlign = "end";
+            canvasContext.fillStyle = gene_color_left;
+            canvasContext.fillText(cardData.dragon1.breed.Name, 314, 31);
+            canvasContext.fillRect(239, 35, 160 * rate[0], 3);
+
+            canvasContext.textAlign = "start";
+            canvasContext.fillStyle = gene_color_right;
+            canvasContext.fillText(cardData.dragon2.breed.Name, 326, 31);
+            canvasContext.fillRect(241 + 160 * rate[0], 35, 160 * rate[1], 3);
+        }
+    }
+
     // primary gene
     {
         canvasContext.font = cardData.geneFont;
         if (cardData.dragon1.primarygene == cardData.dragon2.primarygene) {
             canvasContext.textAlign = "center";
             canvasContext.fillStyle = cardData.geneColor.basic;
-            canvasContext.fillText(cardData.dragon1.primarygene.Name, 320, 46);
-            canvasContext.fillRect(280, 50, 80, 3);
+            canvasContext.fillText(cardData.dragon1.primarygene.Name, 320, 66);
+            canvasContext.fillRect(280, 70, 80, 3);
         } else {
             var rate = FRTool.getGeneRate(cardData.dragon1.primarygene, cardData.dragon2.primarygene);
             canvasContext.textAlign = "end";
             canvasContext.fillStyle = gene_color_left;
-            canvasContext.fillText(cardData.dragon1.primarygene.Name, 314, 46);
-            canvasContext.fillRect(239, 50, 160 * rate[0], 3);
+            canvasContext.fillText(cardData.dragon1.primarygene.Name, 314, 66);
+            canvasContext.fillRect(239, 70, 160 * rate[0], 3);
 
             canvasContext.textAlign = "start";
             canvasContext.fillStyle = gene_color_right;
-            canvasContext.fillText(cardData.dragon2.primarygene.Name, 326, 46);
-            canvasContext.fillRect(241 + 160 * rate[0], 50, 160 * rate[1], 3);
+            canvasContext.fillText(cardData.dragon2.primarygene.Name, 326, 66);
+            canvasContext.fillRect(241 + 160 * rate[0], 70, 160 * rate[1], 3);
         }
     }
 
@@ -86,11 +119,11 @@ function drawCard(canvasId, cardData) {
             canvasContext.beginPath();
             canvasContext.lineWidth = "2";
             canvasContext.strokeStyle = line_color;
-            canvasContext.rect(startX, 60, single, 20);
+            canvasContext.rect(startX, 80, single, 20);
             canvasContext.stroke();
 
             canvasContext.fillStyle = range[i].Color;
-            canvasContext.fillRect(startX, 60, single, 20);
+            canvasContext.fillRect(startX, 80, single, 20);
             startX += single + 1;
         }
     }
@@ -101,19 +134,19 @@ function drawCard(canvasId, cardData) {
         if (cardData.dragon1.secondarygene == cardData.dragon2.secondarygene) {
             canvasContext.textAlign = "center";
             canvasContext.fillStyle = cardData.geneColor.basic;
-            canvasContext.fillText(cardData.dragon1.secondarygene.Name, 320, 108);
-            canvasContext.fillRect(280, 112, 80, 3);
+            canvasContext.fillText(cardData.dragon1.secondarygene.Name, 320, 128);
+            canvasContext.fillRect(280, 132, 80, 3);
         } else {
             var rate = FRTool.getGeneRate(cardData.dragon1.secondarygene, cardData.dragon2.secondarygene);
             canvasContext.textAlign = "end";
             canvasContext.fillStyle = gene_color_left;
-            canvasContext.fillText(cardData.dragon1.secondarygene.Name, 314, 108);
-            canvasContext.fillRect(239, 112, 160 * rate[0], 3);
+            canvasContext.fillText(cardData.dragon1.secondarygene.Name, 314, 128);
+            canvasContext.fillRect(239, 132, 160 * rate[0], 3);
 
             canvasContext.textAlign = "start";
             canvasContext.fillStyle = gene_color_right;
-            canvasContext.fillText(cardData.dragon2.secondarygene.Name, 326, 108);
-            canvasContext.fillRect(241 + 160 * rate[0], 112, 160 * rate[1], 3);
+            canvasContext.fillText(cardData.dragon2.secondarygene.Name, 326, 128);
+            canvasContext.fillRect(241 + 160 * rate[0], 132, 160 * rate[1], 3);
         }
     }
 
@@ -131,11 +164,11 @@ function drawCard(canvasId, cardData) {
             canvasContext.beginPath();
             canvasContext.lineWidth = "2";
             canvasContext.strokeStyle = line_color;
-            canvasContext.rect(startX, 122, single, 20);
+            canvasContext.rect(startX, 142, single, 20);
             canvasContext.stroke();
 
             canvasContext.fillStyle = range[i].Color;
-            canvasContext.fillRect(startX, 122, single, 20);
+            canvasContext.fillRect(startX, 142, single, 20);
             startX += single + 1;
         }
     }
@@ -146,19 +179,19 @@ function drawCard(canvasId, cardData) {
         if (cardData.dragon1.tertiarygene == cardData.dragon2.tertiarygene) {
             canvasContext.textAlign = "center";
             canvasContext.fillStyle = cardData.geneColor.basic;
-            canvasContext.fillText(cardData.dragon1.tertiarygene.Name, 320, 170);
-            canvasContext.fillRect(280, 174, 80, 3);
+            canvasContext.fillText(cardData.dragon1.tertiarygene.Name, 320, 190);
+            canvasContext.fillRect(280, 194, 80, 3);
         } else {
             var rate = FRTool.getGeneRate(cardData.dragon1.tertiarygene, cardData.dragon2.tertiarygene);
             canvasContext.textAlign = "end";
             canvasContext.fillStyle = gene_color_left;
-            canvasContext.fillText(cardData.dragon1.tertiarygene.Name, 314, 170);
-            canvasContext.fillRect(239, 174, 160 * rate[0], 3);
+            canvasContext.fillText(cardData.dragon1.tertiarygene.Name, 314, 190);
+            canvasContext.fillRect(239, 194, 160 * rate[0], 3);
 
             canvasContext.textAlign = "start";
             canvasContext.fillStyle = gene_color_right;
-            canvasContext.fillText(cardData.dragon2.tertiarygene.Name, 326, 170);
-            canvasContext.fillRect(241 + 160 * rate[0], 174, 160 * rate[1], 3);
+            canvasContext.fillText(cardData.dragon2.tertiarygene.Name, 326, 190);
+            canvasContext.fillRect(241 + 160 * rate[0], 194, 160 * rate[1], 3);
         }
     }
 
@@ -176,11 +209,11 @@ function drawCard(canvasId, cardData) {
             canvasContext.beginPath();
             canvasContext.lineWidth = "2";
             canvasContext.strokeStyle = line_color;
-            canvasContext.rect(startX, 184, single, 20);
+            canvasContext.rect(startX, 204, single, 20);
             canvasContext.stroke();
 
             canvasContext.fillStyle = range[i].Color;
-            canvasContext.fillRect(startX, 184, single, 20);
+            canvasContext.fillRect(startX, 204, single, 20);
             startX += single + 1;
         }
     }
@@ -223,6 +256,8 @@ function drawCard(canvasId, cardData) {
 
     return canvas;
 }
+initBreedSelect('o_breed');
+initBreedSelect('a_breed');
 
 initGeneSelect('o_Primary_gene', 'Primary');
 initGeneSelect('a_Primary_gene', 'Primary');
@@ -244,6 +279,7 @@ $("[id=draw]").click(function(){
         'dragon1': {
             'id':$('#o_id').val(),
             'name':$('#o_name').val(),
+            'breed':FRTool.Breed[$('#o_breed').val()],
             'primarygene':FRTool.PrimaryGene[$('#o_Primary_gene').val()],
             'secondarygene':FRTool.SecondaryGene[$('#o_Secondary_gene').val()],
             'tertiarygene': FRTool.TertiaryGene[$('#o_Tertiary_gene').val()],
@@ -254,6 +290,7 @@ $("[id=draw]").click(function(){
         'dragon2': {
             'id':$('#a_id').val(),
             'name':$('#a_name').val(),
+            'breed':FRTool.Breed[$('#a_breed').val()],
             'primarygene':FRTool.PrimaryGene[$('#a_Primary_gene').val()],
             'secondarygene':FRTool.SecondaryGene[$('#a_Secondary_gene').val()],
             'tertiarygene': FRTool.TertiaryGene[$('#a_Tertiary_gene').val()],
