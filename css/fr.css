@@ -69,9 +69,15 @@
 .label_text {
     padding-top: 7px;
     text-align:center;
-  }
+}
 
 .cup_image {
     float: left;
     margin-right: 20px;
+}
+
+.canvas_1 {
+    width:640px;
+    height:240px;
+    border: 1px solid black;
 }

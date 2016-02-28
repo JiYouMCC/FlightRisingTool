@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/gutools.css" rel="stylesheet">
+    <link href="css/fr.css" rel="stylesheet">
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    <title>Flight Rising 工具.结婚证</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="top" class="page_head panel panel-default">
+        <div class="panel-heading">
+          <h2><strong>Flight Rising 工具.结婚证</strong></h2>
+          <h5 title="Flight Rising breeding card." data-toggle="tooltip" data-placement="bottom">#Flight Rising 结婚证，为结婚的龙打结婚证。</h5>
+        </div>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a target="_blank" title="To my blog" data-toggle="tooltip" data-placement="bottom" class="navbar-brand" href="http://www.jithee.name">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a title="Flight Rising Tool" data-toggle="tooltip" data-placement="bottom" href="/" role="button" aria-haspopup="true" aria-expanded="false">Flight Rising工具</a>
+              </li>
+              <li class="dropdown active">
+                <a title="Breeding Card" data-toggle="tooltip" data-placement="bottom" href="card.html" role="button" aria-haspopup="true" aria-expanded="false">结婚证</a>
+              </li>
+              <li class="dropdown">
+                <a title="Data" data-toggle="tooltip" data-placement="bottom" href="data.html" role="button" aria-haspopup="true" aria-expanded="false">数据</a>
+              </li>
+                <li class="dropdown">
+                  <a title="Github Repository" data-toggle="tooltip" data-placement="bottom" href="https://github.com/JiYouMCC/FlightRisingTool" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Github代码库</a>
+                </li>
+                <li class="dropdown">
+                  <a title="Ping me in FR" data-toggle="tooltip" data-placement="bottom" href="http://flightrising.com/main.php?p=view&tab=userpage&id=200704" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">在FR中找我</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="text-center">
+            <canvas id="canvas_1" class="canvas_1">
+          Your browser does not support the canvas element.
+            </canvas>
+            <div><button class="btn btn-default" id="draw">生成 Generate</button></div>
+          </div>
+          <p></p>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-heading"><strong>一只龙 One Dragon</strong></div>
+                <div class="panel-body">
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                      <label title="Id" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">编号</label>
+                      <div class="col-sm-8">
+                        <input id="o_id" type="text" class="form-control" value="18581573">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label title="Name" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">名字</label>
+                      <div class="col-sm-8">
+                        <input id="o_name" type="text" class="form-control" value="ZhangSan">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label title="Primary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">一基因</label>
+                      <div class="col-sm-4">
+                        <select id="o_Primary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="o_primary_color" class="form-control"></select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label title="Secondary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">二基因</label>
+                      <div class="col-sm-4">
+                        <select id="o_Secondary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="o_secondary_color" class="form-control"></select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label title="Tertiary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">三基因</label>
+                      <div class="col-sm-4">
+                        <select id="o_Tertiary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="o_tertiary_color" class="form-control"></select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-heading"><strong>另一只龙 Another Dragon</strong></div>
+                <div class="panel-body">
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                      <label title="Id" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">编号</label>
+                      <div class="col-sm-8">
+                        <input id="a_id" type="text" class="form-control" value="19127262">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label title="Name" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">名字</label>
+                      <div class="col-sm-8">
+                        <input id="a_name" type="text" class="form-control" value="Azyl">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label title="Primary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">一基因</label>
+                      <div class="col-sm-4">
+                        <select id="a_Primary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="a_primary_color" class="form-control"></select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label title="Secondary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">二基因</label>
+                      <div class="col-sm-4">
+                        <select id="a_Secondary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="a_secondary_color" class="form-control"></select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label title="Tertiary Gene" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">三基因</label>
+                      <div class="col-sm-4">
+                        <select id="a_Tertiary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="a_tertiary_color" class="form-control"></select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>设置 Settings</strong></div>
+            <div class="panel-body">
+              <div class="form-horizontal">
+                <div class="form-group">
+                  <label title="Gene font" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">基因字体</label>
+                  <div class="col-sm-8">
+                  <input id="gene_font" type="text" class="form-control" value="14pt cursive">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label title="Left gene font color" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">基因颜色（左）</label>
+                  <div class="col-sm-8">
+                  <input id="gene_color_left" type="color" class="form-control" value="#31708f">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label title="Right gene font color" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">基因颜色（右）</label>
+                  <div class="col-sm-8">
+                  <input id="gene_color_right" type="color" class="form-control" value="#be002e">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label title="Gene font color" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">基因颜色（相同）</label>
+                  <div class="col-sm-8">
+                  <input id="gene_color" type="color" class="form-control" value="#77385e">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label title="Name font" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">龙名字体</label>
+                  <div class="col-sm-8">
+                  <input id="name_font" type="text" class="form-control" value="24pt cursive">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label title="Name font color" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">龙名颜色</label>
+                  <div class="col-sm-8">
+                  <input id="name_color" type="color" class="form-control" value="#161824">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label title="Name font shadow color" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">龙名阴影</label>
+                  <div class="col-sm-8">
+                  <input id="name_color_shadow" type="color" class="form-control" value="#e9f0f6">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label title="Color range form border color" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">色区框色</label>
+                  <div class="col-sm-8">
+                  <input id="line_color" type="color" class="form-control" value="#e9f0f6">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label title="Background" class="col-sm-3 control-label" data-toggle="tooltip" data-placement="bottom">背景</label>
+                  <div class="col-sm-8">
+                    <input id="background" class="form-control" value="transparent">
+                  </div>
+                </div>
+
+                <div class="alert alert-warning" role="alert">背景可以设置为transparent, red, #f0f0f0 之类的，回头我会整一整背景图片。<br />
+                基因颜色指的是如果两个基因不同，左边就用左色，右边用右色，如果相同就用基因颜色。基因下面的小线条代表了比例的百分比。<br />
+                龙的名字可以打中文，不过长度大小字体什么看着办。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+      <div id="bottom" class="page_footer panel panel-default">
+        <div class="panel-footer">
+          <h5>
+            <span><strong>Powered By</strong> <a target="_blank" href="https://pages.github.com/">Github Pages</a>.</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/fr_data.js"></script>
+    <script src="js/fr_tool.js"></script>
+    <script src="js/card.js"></script>
+  </body>
+</html>
