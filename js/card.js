@@ -45,6 +45,98 @@ function UpdateColorClass(colorSelect) {
     colorSelect.addClass(colorSelect.val());
 }
 
+function drawName(canvasContext, text, x, y, font, textAlign, color, shadowcolor) {
+    canvasContext.font = font;
+    canvasContext.textAlign = textAlign
+    canvasContext.shadowOffsetX = 2;
+    canvasContext.shadowOffsetY = 2;
+    canvasContext.shadowBlur = 2;
+    canvasContext.shadowColor = shadowcolor;
+    canvasContext.fillStyle = color;
+    canvasContext.fillText(text, x, y);
+}
+
+function drawImage(canvasContext, src, x, y, width, height, flip, callback) {
+    var img = new Image();
+    img.src = src;
+    img.onload = function() {
+        if(flip) {
+            canvasContext.scale(-1, 1);
+            canvasContext.drawImage(img, -x - width, y, width, height);
+            canvasContext.scale(-1, 1);
+        } else {
+            canvasContext.drawImage(img, x, y, width, height);
+        }
+        callback();
+    }
+}
+
+function drawColorRange(canvasContext, range, lineColor, y) {
+    var single = 10;
+    var width;
+    do {
+        single -= 1;
+        width = range.length * (single + 1);
+    } while (width > 200);
+    var startX = 320 - width / 2;
+    for (var i = 0; i < range.length; i++) {
+        canvasContext.lineWidth = "2";
+        canvasContext.strokeStyle = lineColor;
+        canvasContext.lineCap = "square";
+        canvasContext.beginPath();
+        canvasContext.rect(startX, y, single, 20);
+        canvasContext.stroke();
+
+        canvasContext.fillStyle = range[i].Color;
+        canvasContext.fillRect(startX, y, single, 20);
+        startX += single + 1;
+    }
+}
+
+function drawGene(canvasContext, font, gene1, gene2, color, leftcolor, rightcolor, y) {
+    var width = 80;
+    var imgWidth = 640;
+    canvasContext.font = font;
+        if (gene1 == gene2) {
+            canvasContext.textAlign = "center";
+            canvasContext.fillStyle = color;
+            canvasContext.fillText(gene1.Name, imgWidth / 2, y);
+            canvasContext.fillRect((imgWidth - width)/2, y + 4, width, 3);
+        } else {
+            var rate = FRTool.getGeneRate(gene1, gene2);
+            canvasContext.textAlign = "end";
+            canvasContext.fillStyle = leftcolor;
+            canvasContext.fillText(gene1.Name, imgWidth / 2 - 6, y);
+            canvasContext.fillRect(imgWidth / 2 - width - 1, y + 4, width * 2 * rate[0], 3);
+            canvasContext.textAlign = "start";
+            canvasContext.fillStyle = rightcolor;
+            canvasContext.fillText(gene2.Name, imgWidth / 2 + 6, y);
+            canvasContext.fillRect(imgWidth / 2 - width + 1 + width * 2 * rate[0], y + 4, width * 2 * rate[1], 3);
+        }
+}
+
+function drawBreed(canvasContext, font, breed1, breed2, color, leftcolor, rightcolor, y) {
+    var width = 80;
+    var imgWidth = 640;
+    canvasContext.font = font;
+        if (breed1 == breed2) {
+            canvasContext.textAlign = "center";
+            canvasContext.fillStyle = color;
+            canvasContext.fillText(breed1.Name, imgWidth / 2, y);
+            canvasContext.fillRect((imgWidth - width)/2, y + 4, width, 3);
+        } else {
+            var rate = FRTool.getBreedRate(breed1, breed2);
+            canvasContext.textAlign = "end";
+            canvasContext.fillStyle = leftcolor;
+            canvasContext.fillText(breed1.Name, imgWidth / 2 - 6, y);
+            canvasContext.fillRect(imgWidth / 2 - width - 1, y + 4, width * 2 * rate[0], 3);
+            canvasContext.textAlign = "start";
+            canvasContext.fillStyle = rightcolor;
+            canvasContext.fillText(breed2.Name, imgWidth / 2 + 6, y);
+            canvasContext.fillRect(imgWidth / 2 - width + 1 + width * 2 * rate[0], y + 4, width * 2 * rate[1], 3);
+        }
+}
+
 function drawCard(canvasId, cardData) {
     var canvas = document.getElementById(canvasId);
     canvas.setAttribute('width', '640');
@@ -55,217 +147,69 @@ function drawCard(canvasId, cardData) {
     var gene_color_left = cardData.geneColor.left;
     var gene_color_right = cardData.geneColor.right;
     var gene_color = cardData.geneColor.basic;
-    var line_color = cardData.lineColor;
 
     // background
     canvasContext.fillStyle = cardData.background;
     canvasContext.fillRect(0, 0, 640, 240);
 
     // breed
-    {
-        canvasContext.font = cardData.geneFont;
-        if (cardData.dragon1.breed == cardData.dragon2.breed) {
-            canvasContext.textAlign = "center";
-            canvasContext.fillStyle = cardData.geneColor.basic;
-            canvasContext.fillText(cardData.dragon1.breed.Name, 320, 31);
-            canvasContext.fillRect(280, 35, 80, 3);
-        } else {
-            var rate = FRTool.getBreedRate(cardData.dragon1.breed, cardData.dragon2.breed);
-            canvasContext.textAlign = "end";
-            canvasContext.fillStyle = gene_color_left;
-            canvasContext.fillText(cardData.dragon1.breed.Name, 314, 31);
-            canvasContext.fillRect(239, 35, 160 * rate[0], 3);
-
-            canvasContext.textAlign = "start";
-            canvasContext.fillStyle = gene_color_right;
-            canvasContext.fillText(cardData.dragon2.breed.Name, 326, 31);
-            canvasContext.fillRect(241 + 160 * rate[0], 35, 160 * rate[1], 3);
-        }
-    }
+    drawBreed(canvasContext, cardData.geneFont, 
+        cardData.dragon1.breed, cardData.dragon2.breed, 
+        cardData.geneColor.basic, cardData.geneColor.left, cardData.geneColor.right, 31);
 
     // primary gene
-    {
-        canvasContext.font = cardData.geneFont;
-        if (cardData.dragon1.primarygene == cardData.dragon2.primarygene) {
-            canvasContext.textAlign = "center";
-            canvasContext.fillStyle = cardData.geneColor.basic;
-            canvasContext.fillText(cardData.dragon1.primarygene.Name, 320, 66);
-            canvasContext.fillRect(280, 70, 80, 3);
-        } else {
-            var rate = FRTool.getGeneRate(cardData.dragon1.primarygene, cardData.dragon2.primarygene);
-            canvasContext.textAlign = "end";
-            canvasContext.fillStyle = gene_color_left;
-            canvasContext.fillText(cardData.dragon1.primarygene.Name, 314, 66);
-            canvasContext.fillRect(239, 70, 160 * rate[0], 3);
-
-            canvasContext.textAlign = "start";
-            canvasContext.fillStyle = gene_color_right;
-            canvasContext.fillText(cardData.dragon2.primarygene.Name, 326, 66);
-            canvasContext.fillRect(241 + 160 * rate[0], 70, 160 * rate[1], 3);
-        }
-    }
+    drawGene(canvasContext, cardData.geneFont, 
+        cardData.dragon1.primarygene, cardData.dragon2.primarygene, 
+        cardData.geneColor.basic, cardData.geneColor.left, cardData.geneColor.right, 66);
 
     // primary color
-    {
-        var range = FRTool.getColorRange(cardData.dragon1.primarycolor, cardData.dragon2.primarycolor);
-        var single = 10;
-        var width;
-        do {
-            single -= 1;
-            width = range.length * (single + 1);
-        } while (width > 200);
-        var startX = 320 - width / 2;
-        for (var i = 0; i < range.length; i++) {
-            canvasContext.beginPath();
-            canvasContext.lineWidth = "2";
-            canvasContext.strokeStyle = line_color;
-            canvasContext.rect(startX, 80, single, 20);
-            canvasContext.stroke();
-
-            canvasContext.fillStyle = range[i].Color;
-            canvasContext.fillRect(startX, 80, single, 20);
-            startX += single + 1;
-        }
-    }
+    drawColorRange(canvasContext, 
+        FRTool.getColorRange(cardData.dragon1.primarycolor, cardData.dragon2.primarycolor), 
+        cardData.lineColor, 80);
 
     // secondary gene
-    {
-        canvasContext.font = cardData.geneFont;
-        if (cardData.dragon1.secondarygene == cardData.dragon2.secondarygene) {
-            canvasContext.textAlign = "center";
-            canvasContext.fillStyle = cardData.geneColor.basic;
-            canvasContext.fillText(cardData.dragon1.secondarygene.Name, 320, 128);
-            canvasContext.fillRect(280, 132, 80, 3);
-        } else {
-            var rate = FRTool.getGeneRate(cardData.dragon1.secondarygene, cardData.dragon2.secondarygene);
-            canvasContext.textAlign = "end";
-            canvasContext.fillStyle = gene_color_left;
-            canvasContext.fillText(cardData.dragon1.secondarygene.Name, 314, 128);
-            canvasContext.fillRect(239, 132, 160 * rate[0], 3);
-
-            canvasContext.textAlign = "start";
-            canvasContext.fillStyle = gene_color_right;
-            canvasContext.fillText(cardData.dragon2.secondarygene.Name, 326, 128);
-            canvasContext.fillRect(241 + 160 * rate[0], 132, 160 * rate[1], 3);
-        }
-    }
+    drawGene(canvasContext, cardData.geneFont, 
+        cardData.dragon1.secondarygene, cardData.dragon2.secondarygene, 
+        cardData.geneColor.basic, cardData.geneColor.left, cardData.geneColor.right, 128);
 
     // secondary color
-    {
-        var range = FRTool.getColorRange(cardData.dragon1.secondarycolor, cardData.dragon2.secondarycolor);
-        var single = 10;
-        var width;
-        do {
-            single -= 1;
-            width = range.length * (single + 1);
-        } while (width > 200);
-        var startX = 320 - width / 2;
-        for (var i = 0; i < range.length; i++) {
-            canvasContext.beginPath();
-            canvasContext.lineWidth = "2";
-            canvasContext.strokeStyle = line_color;
-            canvasContext.rect(startX, 142, single, 20);
-            canvasContext.stroke();
-
-            canvasContext.fillStyle = range[i].Color;
-            canvasContext.fillRect(startX, 142, single, 20);
-            startX += single + 1;
-        }
-    }
+    drawColorRange(canvasContext, 
+        FRTool.getColorRange(cardData.dragon1.secondarycolor, cardData.dragon2.secondarycolor), 
+        cardData.lineColor, 142);
 
     // tertiary gene
-    {
-        canvasContext.font = cardData.geneFont;
-        if (cardData.dragon1.tertiarygene == cardData.dragon2.tertiarygene) {
-            canvasContext.textAlign = "center";
-            canvasContext.fillStyle = cardData.geneColor.basic;
-            canvasContext.fillText(cardData.dragon1.tertiarygene.Name, 320, 190);
-            canvasContext.fillRect(280, 194, 80, 3);
-        } else {
-            var rate = FRTool.getGeneRate(cardData.dragon1.tertiarygene, cardData.dragon2.tertiarygene);
-            canvasContext.textAlign = "end";
-            canvasContext.fillStyle = gene_color_left;
-            canvasContext.fillText(cardData.dragon1.tertiarygene.Name, 314, 190);
-            canvasContext.fillRect(239, 194, 160 * rate[0], 3);
-
-            canvasContext.textAlign = "start";
-            canvasContext.fillStyle = gene_color_right;
-            canvasContext.fillText(cardData.dragon2.tertiarygene.Name, 326, 190);
-            canvasContext.fillRect(241 + 160 * rate[0], 194, 160 * rate[1], 3);
-        }
-    }
+    drawGene(canvasContext, cardData.geneFont, 
+        cardData.dragon1.tertiarygene, cardData.dragon2.tertiarygene, 
+        cardData.geneColor.basic, cardData.geneColor.left, cardData.geneColor.right, 190);
 
     // tertiary color
-    {
-        var range = FRTool.getColorRange(cardData.dragon1.tertiarycolor, cardData.dragon2.tertiarycolor);
-        var single = 10;
-        var width;
-        do {
-            single -= 1;
-            width = range.length * (single + 1);
-        } while (width > 200);
-        var startX = 320 - width / 2;
-        for (var i = 0; i < range.length; i++) {
-            canvasContext.beginPath();
-            canvasContext.lineWidth = "2";
-            canvasContext.strokeStyle = line_color;
-            canvasContext.rect(startX, 204, single, 20);
-            canvasContext.stroke();
-
-            canvasContext.fillStyle = range[i].Color;
-            canvasContext.fillRect(startX, 204, single, 20);
-            startX += single + 1;
-        }
-    }
+    drawColorRange(canvasContext, 
+        FRTool.getColorRange(cardData.dragon1.tertiarycolor, cardData.dragon2.tertiarycolor), 
+        cardData.lineColor, 204);
 
     // image 1
-    {
-        var img1 = new Image();
-        img1.src = getImgUrl(cardData.dragon1.id);
-        img1.onload = function() {
-            if(cardData.dragon1.imgflip) {
-                canvasContext.scale(-1, 1);
-                canvasContext.drawImage(img1, -240, 0, 240, 240);
-                canvasContext.scale(-1, 1);
-            } else {
-                canvasContext.drawImage(img1, 0, 0, 240, 240);
-            }
+    drawImage(canvasContext, getImgUrl(cardData.dragon1.id), 
+        0, 0, 240, 240, cardData.dragon1.imgflip, 
+        function(){
             if (cardData.dragonName.enable) {
-                canvasContext.font = cardData.dragonName.font;
-                canvasContext.textAlign = "start";
-                canvasContext.fillStyle = cardData.dragonName.shadowcolor;
-                canvasContext.fillText(cardData.dragon1.name, 21, 201);
-                canvasContext.fillText(cardData.dragon1.name, 19, 199);
-                canvasContext.fillStyle = cardData.dragonName.color;
-                canvasContext.fillText(cardData.dragon1.name, 20, 200);
+                drawName(canvasContext, 
+                    cardData.dragon1.name, 20, 200, 
+                    cardData.dragonName.font, "start", 
+                    cardData.dragonName.color, cardData.dragonName.shadowcolor);
             }
-        }
-    }
+        });
 
     // image 2
-    {
-        var img2 = new Image();
-        img2.src = getImgUrl(cardData.dragon2.id);
-        img2.onload = function() {
-             if(cardData.dragon2.imgflip) {
-                canvasContext.scale(-1, 1);
-                canvasContext.drawImage(img2, -640, 0, 240, 240);
-                canvasContext.scale(-1, 1);
-            } else {
-                canvasContext.drawImage(img2, 400, 0, 240, 240);
-            }
-            canvasContext.translate(0, 0);
+    drawImage(canvasContext, getImgUrl(cardData.dragon2.id), 
+        400, 0, 240, 240, cardData.dragon2.imgflip, 
+        function(){
             if (cardData.dragonName.enable) {
-                canvasContext.font = cardData.dragonName.font;
-                canvasContext.textAlign = "end";
-                canvasContext.fillStyle = cardData.dragonName.shadowcolor;
-                canvasContext.fillText(cardData.dragon2.name, 621, 201);
-                canvasContext.fillText(cardData.dragon2.name, 619, 199);
-                canvasContext.fillStyle = cardData.dragonName.color;
-                canvasContext.fillText(cardData.dragon2.name, 620, 200);
+                drawName(canvasContext, 
+                    cardData.dragon2.name, 620, 200, 
+                    cardData.dragonName.font, "end", 
+                    cardData.dragonName.color, cardData.dragonName.shadowcolor);
             }
-        }
-    }
+        });
 
     return canvas;
 }
