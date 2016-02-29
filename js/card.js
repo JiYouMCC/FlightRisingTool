@@ -222,7 +222,6 @@ function drawCard(canvasId, cardData) {
     {
         var img1 = new Image();
         img1.src = getImgUrl(cardData.dragon1.id);
-        img1.crossOrigin = "Anonymous";
         img1.onload = function() {
             canvasContext.drawImage(img1, 0, 0, 240, 240);
             if (cardData.dragonName.enable) {
@@ -241,7 +240,6 @@ function drawCard(canvasId, cardData) {
     {
         var img2 = new Image();
         img2.src = getImgUrl(cardData.dragon2.id);
-        img2.crossOrigin = "Anonymous";
         img2.onload = function() {
             canvasContext.drawImage(img2, 400, 0, 240, 240);
             if (cardData.dragonName.enable) {
