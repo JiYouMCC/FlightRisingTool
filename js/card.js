@@ -175,7 +175,7 @@ function drawCard(canvasId, cardData) {
 
     // tertiary gene
     {
-        canvasContext.font = "14pt cursive";
+        canvasContext.font = cardData.geneFont;
         if (cardData.dragon1.tertiarygene == cardData.dragon2.tertiarygene) {
             canvasContext.textAlign = "center";
             canvasContext.fillStyle = cardData.geneColor.basic;
