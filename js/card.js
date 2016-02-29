@@ -7,42 +7,42 @@ function getImgUrl(dragonID) {
 }
 
 function initGeneSelect(id, type) {
-  for (var i = 0; i < FRTool.Oddss.length; i++) {
-    var genes = FRTool.getGene(FRTool.Oddss[i], type);
-    var group = $("<optgroup></optgroup>").attr("label", FRTool.Oddss[i].NameZH + " " + FRTool.Oddss[i].Name);
-    for (var j = 0; j < genes.length; j++) {
-      group.append($("<option></option>").attr("value", genes[j].Name).text(genes[j].NameZH + " " + genes[j].Name));
+    for (var i = 0; i < FRTool.Oddss.length; i++) {
+        var genes = FRTool.getGene(FRTool.Oddss[i], type);
+        var group = $("<optgroup></optgroup>").attr("label", FRTool.Oddss[i].NameZH + " " + FRTool.Oddss[i].Name);
+        for (var j = 0; j < genes.length; j++) {
+            group.append($("<option></option>").attr("value", genes[j].Name).text(genes[j].NameZH + " " + genes[j].Name));
+        };
+        $('#' + id).append(group);
     };
-    $('#' + id).append(group);
-  };
 }
 
 function initColorSelect(id) {
-  for (var i = 0; i < FRTool.Colors.length; i++) {
-    $('#' + id).append(
-      $("<option></option>")
-      .attr("class", FRTool.Colors[i].Name)
-      .attr("value", FRTool.Colors[i].Name)
-      .text(FRTool.Colors[i].NameZH + " " + FRTool.Colors[i].Name)
-    );
-  }
+    for (var i = 0; i < FRTool.Colors.length; i++) {
+        $('#' + id).append(
+            $("<option></option>")
+            .attr("class", FRTool.Colors[i].Name)
+            .attr("value", FRTool.Colors[i].Name)
+            .text(FRTool.Colors[i].NameZH + " " + FRTool.Colors[i].Name)
+        );
+    }
 }
 
 function initBreedSelect(id) {
-  for (var i = 0; i < FRTool.Oddss.length; i++) {
-    var breeds = FRTool.getBreed(FRTool.Oddss[i]);
-    var group = $("<optgroup></optgroup>").attr("label", FRTool.Oddss[i].NameZH + " " + FRTool.Oddss[i].Name);
-    for (var j = 0; j < breeds.length; j++) {
-      group.append($("<option></option>").attr("value", breeds[j].Name).text(breeds[j].NameZH + " " + breeds[j].Name));
+    for (var i = 0; i < FRTool.Oddss.length; i++) {
+        var breeds = FRTool.getBreed(FRTool.Oddss[i]);
+        var group = $("<optgroup></optgroup>").attr("label", FRTool.Oddss[i].NameZH + " " + FRTool.Oddss[i].Name);
+        for (var j = 0; j < breeds.length; j++) {
+            group.append($("<option></option>").attr("value", breeds[j].Name).text(breeds[j].NameZH + " " + breeds[j].Name));
+        };
+        $('#' + id).append(group);
     };
-    $('#' + id).append(group);
-  };
 }
 
 function UpdateColorClass(colorSelect) {
-  colorSelect.removeClass();
-  colorSelect.addClass("form-control");
-  colorSelect.addClass(colorSelect.val());
+    colorSelect.removeClass();
+    colorSelect.addClass("form-control");
+    colorSelect.addClass(colorSelect.val());
 }
 
 function drawCard(canvasId, cardData) {
@@ -110,8 +110,8 @@ function drawCard(canvasId, cardData) {
         var range = FRTool.getColorRange(cardData.dragon1.primarycolor, cardData.dragon2.primarycolor);
         var single = 10;
         var width;
-        do{
-            single -=1 ;
+        do {
+            single -= 1;
             width = range.length * (single + 1);
         } while (width > 200);
         var startX = 320 - width / 2;
@@ -155,8 +155,8 @@ function drawCard(canvasId, cardData) {
         var range = FRTool.getColorRange(cardData.dragon1.secondarycolor, cardData.dragon2.secondarycolor);
         var single = 10;
         var width;
-        do{
-            single -=1 ;
+        do {
+            single -= 1;
             width = range.length * (single + 1);
         } while (width > 200);
         var startX = 320 - width / 2;
@@ -200,8 +200,8 @@ function drawCard(canvasId, cardData) {
         var range = FRTool.getColorRange(cardData.dragon1.tertiarycolor, cardData.dragon2.tertiarycolor);
         var single = 10;
         var width;
-        do{
-            single -= 1 ;
+        do {
+            single -= 1;
             width = range.length * (single + 1);
         } while (width > 200);
         var startX = 320 - width / 2;
@@ -223,7 +223,13 @@ function drawCard(canvasId, cardData) {
         var img1 = new Image();
         img1.src = getImgUrl(cardData.dragon1.id);
         img1.onload = function() {
-            canvasContext.drawImage(img1, 0, 0, 240, 240);
+            if(cardData.dragon1.imgflip) {
+                canvasContext.scale(-1, 1);
+                canvasContext.drawImage(img1, -240, 0, 240, 240);
+                canvasContext.scale(-1, 1);
+            } else {
+                canvasContext.drawImage(img1, 0, 0, 240, 240);
+            }
             if (cardData.dragonName.enable) {
                 canvasContext.font = cardData.dragonName.font;
                 canvasContext.textAlign = "start";
@@ -241,7 +247,14 @@ function drawCard(canvasId, cardData) {
         var img2 = new Image();
         img2.src = getImgUrl(cardData.dragon2.id);
         img2.onload = function() {
-            canvasContext.drawImage(img2, 400, 0, 240, 240);
+             if(cardData.dragon2.imgflip) {
+                canvasContext.scale(-1, 1);
+                canvasContext.drawImage(img2, -640, 0, 240, 240);
+                canvasContext.scale(-1, 1);
+            } else {
+                canvasContext.drawImage(img2, 400, 0, 240, 240);
+            }
+            canvasContext.translate(0, 0);
             if (cardData.dragonName.enable) {
                 canvasContext.font = cardData.dragonName.font;
                 canvasContext.textAlign = "end";
@@ -256,6 +269,7 @@ function drawCard(canvasId, cardData) {
 
     return canvas;
 }
+
 initBreedSelect('o_breed');
 initBreedSelect('a_breed');
 
@@ -274,50 +288,52 @@ initColorSelect('a_secondary_color');
 initColorSelect('a_tertiary_color');
 
 
-$("[id=draw]").click(function(){
+$("[id=draw]").click(function() {
     var card_data = {
         'dragon1': {
-            'id':$('#o_id').val(),
-            'name':$('#o_name').val(),
-            'breed':FRTool.Breed[$('#o_breed').val()],
-            'primarygene':FRTool.PrimaryGene[$('#o_Primary_gene').val()],
-            'secondarygene':FRTool.SecondaryGene[$('#o_Secondary_gene').val()],
+            'id': $('#o_id').val(),
+            'name': $('#o_name').val(),
+            'breed': FRTool.Breed[$('#o_breed').val()],
+            'primarygene': FRTool.PrimaryGene[$('#o_Primary_gene').val()],
+            'secondarygene': FRTool.SecondaryGene[$('#o_Secondary_gene').val()],
             'tertiarygene': FRTool.TertiaryGene[$('#o_Tertiary_gene').val()],
             'primarycolor': FRTool.Color[$('#o_primary_color').val()],
             'secondarycolor': FRTool.Color[$('#o_secondary_color').val()],
-            'tertiarycolor': FRTool.Color[$('#o_tertiary_color').val()]
+            'tertiarycolor': FRTool.Color[$('#o_tertiary_color').val()],
+            'imgflip' : $('#o_flip').is(':checked')
         },
         'dragon2': {
-            'id':$('#a_id').val(),
-            'name':$('#a_name').val(),
-            'breed':FRTool.Breed[$('#a_breed').val()],
-            'primarygene':FRTool.PrimaryGene[$('#a_Primary_gene').val()],
-            'secondarygene':FRTool.SecondaryGene[$('#a_Secondary_gene').val()],
+            'id': $('#a_id').val(),
+            'name': $('#a_name').val(),
+            'breed': FRTool.Breed[$('#a_breed').val()],
+            'primarygene': FRTool.PrimaryGene[$('#a_Primary_gene').val()],
+            'secondarygene': FRTool.SecondaryGene[$('#a_Secondary_gene').val()],
             'tertiarygene': FRTool.TertiaryGene[$('#a_Tertiary_gene').val()],
             'primarycolor': FRTool.Color[$('#a_primary_color').val()],
             'secondarycolor': FRTool.Color[$('#a_secondary_color').val()],
-            'tertiarycolor': FRTool.Color[$('#a_tertiary_color').val()]
+            'tertiarycolor': FRTool.Color[$('#a_tertiary_color').val()],
+            'imgflip' : $('#a_flip').is(':checked')
         },
-        'dragonName' : {
+        'dragonName': {
             'enable': true,
-            'font' : $('#name_font').val(),
-            'color' : $('#name_color').val(),
-            'shadowcolor' : $('#name_color_shadow').val()
+            'font': $('#name_font').val(),
+            'color': $('#name_color').val(),
+            'shadowcolor': $('#name_color_shadow').val()
         },
-        'geneColor' : {
-            'left':$('#gene_color_left').val(),
-            'right':$('#gene_color_right').val(),
-            'basic':$('#gene_color').val()
+        'geneColor': {
+            'left': $('#gene_color_left').val(),
+            'right': $('#gene_color_right').val(),
+            'basic': $('#gene_color').val()
         },
-        'geneFont' : $('#gene_font').val(),
-        'lineColor' : $('#line_color').val(),
-        'background' : $('#background').val()
+        'geneFont': $('#gene_font').val(),
+        'lineColor': $('#line_color').val(),
+        'background': $('#background').val()
     }
     drawCard('canvas_1', card_data);
 });
 
 $("[id$=_color]").change(function() {
-  UpdateColorClass($(this));
+    UpdateColorClass($(this));
 });
 
 $('[data-toggle="tooltip"]').tooltip();
