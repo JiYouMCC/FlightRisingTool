@@ -1,9 +1,14 @@
 function initBreedSelect(id) {
   for (var i = 0; i < FRTool.Oddss.length; i++) {
     var breeds = FRTool.getBreed(FRTool.Oddss[i]);
-    var group = $("<optgroup></optgroup>").attr("label", FRTool.Oddss[i].NameZH + " " + FRTool.Oddss[i].Name);
+    var group = $("<optgroup></optgroup>")
+    .attr("data-localize", FRTool.Oddss[i].Name)
+    .attr("label", FRTool.Oddss[i].Name);
     for (var j = 0; j < breeds.length; j++) {
-      group.append($("<option></option>").attr("value", breeds[j].Name).text(breeds[j].NameZH + " " + breeds[j].Name));
+      group.append($("<option></option>")
+        .attr("data-localize", breeds[j].Name)
+        .attr("value", breeds[j].Name)
+        .text(breeds[j].Name));
     };
     $('#' + id).append(group);
   };
@@ -12,9 +17,14 @@ function initBreedSelect(id) {
 function initGeneSelect(id, type) {
   for (var i = 0; i < FRTool.Oddss.length; i++) {
     var genes = FRTool.getGene(FRTool.Oddss[i], type);
-    var group = $("<optgroup></optgroup>").attr("label", FRTool.Oddss[i].NameZH + " " + FRTool.Oddss[i].Name);
+    var group = $("<optgroup></optgroup>")
+      .attr("data-localize", FRTool.Oddss[i].Name)
+      .attr("label", FRTool.Oddss[i].Name);
     for (var j = 0; j < genes.length; j++) {
-      group.append($("<option></option>").attr("value", genes[j].Name).text(genes[j].NameZH + " " + genes[j].Name));
+      group.append($("<option></option>")
+        .attr("data-localize", genes[j].Name)
+        .attr("value", genes[j].Name)
+        .text(genes[j].Name));
     };
     $('#' + id).append(group);
   };
@@ -24,9 +34,10 @@ function initColorSelect(id) {
   for (var i = 0; i < FRTool.Colors.length; i++) {
     $('#' + id).append(
       $("<option></option>")
+      .attr("data-localize", FRTool.Colors[i].Name)
       .attr("class", FRTool.Colors[i].Name)
       .attr("value", FRTool.Colors[i].Name)
-      .text(FRTool.Colors[i].NameZH + " " + FRTool.Colors[i].Name)
+      .text(FRTool.Colors[i].Name)
     );
   }
 }
@@ -35,6 +46,7 @@ function initGenderSelect(id) {
   for (var i = 0; i < FRTool.Genders.length; i++) {
     $('#' + id).append(
       $("<option></option>")
+      .attr("data-localize", FRTool.Genders[i].Name)
       .attr("class", FRTool.Genders[i].Name)
       .attr("value", FRTool.Genders[i].Name)
       .text(FRTool.Genders[i].NameZH + " " + FRTool.Genders[i].Name)
@@ -207,23 +219,23 @@ $("#cal_breed").click(function() {
   }
   var info1 = {
     'breed': $('#o_breed').val(),
-    'primaryColor':$('#o_primary_color').val(),
-    'secondaryColor':$('#o_secondary_color').val(),
-    'tertiaryColor':$('#o_tertiary_color').val(),
-    'primaryGene':$('#o_Primary_gene').val(),
-    'secondaryGene':$('#o_Secondary_gene').val(),
-    'tertiaryGene':$('#o_Tertiary_gene').val()
+    'primaryColor': $('#o_primary_color').val(),
+    'secondaryColor': $('#o_secondary_color').val(),
+    'tertiaryColor': $('#o_tertiary_color').val(),
+    'primaryGene': $('#o_Primary_gene').val(),
+    'secondaryGene': $('#o_Secondary_gene').val(),
+    'tertiaryGene': $('#o_Tertiary_gene').val()
   };
   var info2 = {
     'breed': $('#a_breed').val(),
-    'primaryColor':$('#a_primary_color').val(),
-    'secondaryColor':$('#a_secondary_color').val(),
-    'tertiaryColor':$('#a_tertiary_color').val(),
-    'primaryGene':$('#a_Primary_gene').val(),
-    'secondaryGene':$('#a_Secondary_gene').val(),
-    'tertiaryGene':$('#a_Tertiary_gene').val()
+    'primaryColor': $('#a_primary_color').val(),
+    'secondaryColor': $('#a_secondary_color').val(),
+    'tertiaryColor': $('#a_tertiary_color').val(),
+    'primaryGene': $('#a_Primary_gene').val(),
+    'secondaryGene': $('#a_Secondary_gene').val(),
+    'tertiaryGene': $('#a_Tertiary_gene').val()
   };
-  $('#input_result').text((FRTool.calRate(info1,info2,target) * 100).toFixed(8) + " %");
+  $('#input_result').text((FRTool.calRate(info1, info2, target) * 100).toFixed(8) + " %");
   $btn.button('reset');
 });
 

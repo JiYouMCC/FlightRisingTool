@@ -7,36 +7,47 @@ function getImgUrl(dragonID) {
 }
 
 function initGeneSelect(id, type) {
-    for (var i = 0; i < FRTool.Oddss.length; i++) {
-        var genes = FRTool.getGene(FRTool.Oddss[i], type);
-        var group = $("<optgroup></optgroup>").attr("label", FRTool.Oddss[i].NameZH + " " + FRTool.Oddss[i].Name);
-        for (var j = 0; j < genes.length; j++) {
-            group.append($("<option></option>").attr("value", genes[j].Name).text(genes[j].NameZH + " " + genes[j].Name));
-        };
-        $('#' + id).append(group);
+  for (var i = 0; i < FRTool.Oddss.length; i++) {
+    var genes = FRTool.getGene(FRTool.Oddss[i], type);
+    var group = $("<optgroup></optgroup>")
+      .attr("data-localize", FRTool.Oddss[i].Name)
+      .attr("label", FRTool.Oddss[i].Name);
+    for (var j = 0; j < genes.length; j++) {
+      group.append($("<option></option>")
+        .attr("data-localize", genes[j].Name)
+        .attr("value", genes[j].Name)
+        .text(genes[j].Name));
     };
+    $('#' + id).append(group);
+  };
 }
 
 function initColorSelect(id) {
-    for (var i = 0; i < FRTool.Colors.length; i++) {
-        $('#' + id).append(
-            $("<option></option>")
-            .attr("class", FRTool.Colors[i].Name)
-            .attr("value", FRTool.Colors[i].Name)
-            .text(FRTool.Colors[i].NameZH + " " + FRTool.Colors[i].Name)
-        );
-    }
+  for (var i = 0; i < FRTool.Colors.length; i++) {
+    $('#' + id).append(
+      $("<option></option>")
+      .attr("data-localize", FRTool.Colors[i].Name)
+      .attr("class", FRTool.Colors[i].Name)
+      .attr("value", FRTool.Colors[i].Name)
+      .text(FRTool.Colors[i].Name)
+    );
+  }
 }
 
 function initBreedSelect(id) {
-    for (var i = 0; i < FRTool.Oddss.length; i++) {
-        var breeds = FRTool.getBreed(FRTool.Oddss[i]);
-        var group = $("<optgroup></optgroup>").attr("label", FRTool.Oddss[i].NameZH + " " + FRTool.Oddss[i].Name);
-        for (var j = 0; j < breeds.length; j++) {
-            group.append($("<option></option>").attr("value", breeds[j].Name).text(breeds[j].NameZH + " " + breeds[j].Name));
-        };
-        $('#' + id).append(group);
+  for (var i = 0; i < FRTool.Oddss.length; i++) {
+    var breeds = FRTool.getBreed(FRTool.Oddss[i]);
+    var group = $("<optgroup></optgroup>")
+    .attr("data-localize", FRTool.Oddss[i].Name)
+    .attr("label", FRTool.Oddss[i].Name);
+    for (var j = 0; j < breeds.length; j++) {
+      group.append($("<option></option>")
+        .attr("data-localize", breeds[j].Name)
+        .attr("value", breeds[j].Name)
+        .text(breeds[j].Name));
     };
+    $('#' + id).append(group);
+  };
 }
 
 function UpdateColorClass(colorSelect) {
@@ -59,8 +70,10 @@ function drawName(canvasContext, text, x, y, font, textAlign, color, shadowcolor
 function drawImage(canvasContext, src, x, y, width, height, flip, callback) {
     var img = new Image();
     img.src = src;
+
     img.onload = function() {
         if(flip) {
+            img.crossOrigin = "Anonymous";
             canvasContext.scale(-1, 1);
             canvasContext.drawImage(img, -x - width, y, width, height);
             canvasContext.scale(-1, 1);

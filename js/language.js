@@ -26,10 +26,9 @@ for (var i = 0; i < language_setting.languages.length; i++) {
     );
 }
 
+var language_code = language_setting.default.code;
+var language_title = language_setting.default.title;
 $(document).ready(function(){
-    var language_code = language_setting.default.code;
-    var language_title = language_setting.default.title;
-
     if ($.cookie("local_language_code")) {
         language_code = $.cookie("local_language_code")
     }
@@ -58,6 +57,8 @@ $("[id^=language_]").click(function() {
             $.cookie("local_language_code", language);
             $.cookie("local_language_title", text);
             $("#current_language").text(text);
+            language_code = language;
+            language_title = text;
         }
     });
     
