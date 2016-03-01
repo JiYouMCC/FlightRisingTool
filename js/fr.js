@@ -95,66 +95,136 @@ $("[id$=_Color]").change(function() {
 });
 
 $("[id$=_breed]").change(function() {
-  $('#breed_result').text("...");
+  $('#breed_result').text("");
   $.cookie("o_breed", $('#o_breed').val());
   $.cookie("a_breed", $('#a_breed').val());
-  var s = "";
   var o_breed = FRTool.Breed[$('#o_breed').val()];
   var a_breed = FRTool.Breed[$('#a_breed').val()];
   var rate = FRTool.getBreedRate(o_breed, a_breed);
   if (rate.length == 1) {
     var rate0 = rate[0] * 100 | 0;
-    s += o_breed.NameZH + " " + o_breed.Name + " " + rate0 + "% ";
-    $("#breed_bar_0").text(o_breed.NameZH + " " + o_breed.Name)
+    $("#breed_bar_0").text(o_breed.Name)
+      .attr("data-localize", o_breed.Name)
+      .attr("data-localize-breed", true)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
+
+    $('#breed_result').append(
+      $("<span></span>")
+        .attr("data-localize", o_breed.Name)
+        .attr("data-localize-breed", true)
+        .text(o_breed.Name)
+      );
+    $('#breed_result').append(
+      $("<span></span>")
+        .text( " " + rate0 + "% ")
+      );
   } else {
     var rate0 = rate[0] * 100 | 0;
     var rate1 = rate[1] * 100 | 0;
-    s += o_breed.NameZH + " " + o_breed.Name + " " + rate0 + "% ";
-    s += a_breed.NameZH + " " + a_breed.Name + " " + rate1 + "% ";
-    $("#breed_bar_0").text(o_breed.NameZH + " " + o_breed.Name)
+    $("#breed_bar_0").text(o_breed.Name)
+      .attr("data-localize", o_breed.Name)
+      .attr("data-localize-breed", true)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
-    $("#breed_bar_1").text(a_breed.NameZH + " " + a_breed.Name)
+    $("#breed_bar_1").text(a_breed.Name)
+      .attr("data-localize", a_breed.Name)
+      .attr("data-localize-breed", true)
       .css("width", rate1 + "% ")
       .attr("aria-valuenow", rate1);
 
+    $('#breed_result').append(
+      $("<span></span>")
+        .attr("data-localize", o_breed.Name)
+        .attr("data-localize-breed", true)
+        .text(o_breed.Name)
+      );
+    $('#breed_result').append(
+      $("<span></span>")
+        .text( " " + rate0 + "% ")
+      );
+    $('#breed_result').append(
+      $("<span></span>")
+        .attr("data-localize", a_breed.Name)
+        .attr("data-localize-breed", true)
+        .text(a_breed.Name)
+      );
+    $('#breed_result').append(
+      $("<span></span>")
+        .text( " " + rate1 + "% ")
+      );
   }
 
-  $('#breed_result').text(s);
+  $("[data-localize-breed]").localize("lg/basic", {language: language_code});
 });
 
 $("[id$=_gene]").change(function() {
   var gene_type = $(this).attr('id').split('_')[1];
   $.cookie('o_' + gene_type, $('#o_' + gene_type + '_gene').val());
   $.cookie('a_' + gene_type, $('#a_' + gene_type + '_gene').val());
-  $('#' + gene_type + '_result').text("...");
-  var s = "";
+  $('#' + gene_type + '_result').text("");
   var o_gene = FRTool[gene_type + "Gene"][$('#o_' + gene_type + '_gene').val()];
   var a_gene = FRTool[gene_type + "Gene"][$('#a_' + gene_type + '_gene').val()];
   var rate = FRTool.getGeneRate(o_gene, a_gene);
   if (rate.length == 1) {
     var rate0 = rate[0] * 100 | 0;
-    s += o_gene.NameZH + " " + o_gene.Name + " " + rate0 + "% ";
-    $("#gene_" + gene_type + "_bar_0").text(o_gene.NameZH + " " + o_gene.Name)
+    $("#gene_" + gene_type + "_bar_0")
+      .attr("data-localize", o_gene.Name)
+      .attr("data-localize-gene", true)
+      .text(o_gene.Name)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
+
+    $('#' + gene_type + '_result').append(
+      $("<span></span>")
+        .attr("data-localize", o_gene.Name)
+        .attr("data-localize-gene", true)
+        .text(o_gene.Name)
+      );
+    $('#' + gene_type + '_result').append(
+      $("<span></span>")
+        .text( " " + rate0 + "% ")
+      );
   } else {
     var rate0 = rate[0] * 100 | 0;
     var rate1 = rate[1] * 100 | 0;
-    s += o_gene.NameZH + " " + o_gene.Name + " " + rate0 + "% ";
-    s += a_gene.NameZH + " " + a_gene.Name + " " + rate1 + "% ";
-    $("#gene_" + gene_type + "_bar_0").text(o_gene.NameZH + " " + o_gene.Name)
+    $("#gene_" + gene_type + "_bar_0")
+      .attr("data-localize", o_gene.Name)
+      .attr("data-localize-gene", true)
+      .text(o_gene.Name)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
-    $("#gene_" + gene_type + "_bar_1").text(a_gene.NameZH + " " + a_gene.Name)
+    $("#gene_" + gene_type + "_bar_1")
+      .attr("data-localize", a_gene.Name)
+      .attr("data-localize-gene", true)
+      .text(a_gene.Name)
       .css("width", rate1 + "% ")
       .attr("aria-valuenow", rate1);
 
+    $('#' + gene_type + '_result').append(
+      $("<span></span>")
+        .attr("data-localize", o_gene.Name)
+        .attr("data-localize-gene", true)
+        .text(o_gene.Name)
+      );
+    $('#' + gene_type + '_result').append(
+      $("<span></span>")
+        .text( " " + rate0 + "% ")
+      );
+
+    $('#' + gene_type + '_result').append(
+      $("<span></span>")
+        .attr("data-localize", a_gene.Name)
+        .attr("data-localize-gene", true)
+        .text(o_gene.Name)
+      );
+    $('#' + gene_type + '_result').append(
+      $("<span></span>")
+        .text( " " + rate1 + "% ")
+      );
   }
 
-  $('#' + gene_type + '_result').text(s);
+  $("[data-localize-gene]").localize("lg/basic", {language: language_code});
 });
 
 $("[id$=_color]").change(function() {
