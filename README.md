@@ -14,7 +14,7 @@ http://fr.jithee.name/
 
 Python版本已经全部重定向到js版本，不再继续更新，ajax请求也已经关闭。Python version is no longer updated. All links are redirected to js version including ajax.
 
-![](https://raw.githubusercontent.com/JiYouMCC/frTool/master/img/Rate.PNG)
+![](http://fr.jithee.name/img/Rate.PNG)
 
 ##Dependency / 依赖包
 
