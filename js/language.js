@@ -22,7 +22,7 @@ for (var i = 0; i < language_setting.languages.length; i++) {
     );
 }
 
-var language_code = navigator.language.split('_')[0];
+var language_code = navigator.language.split('-')[0];
 
 $(document).ready(function(){
     if ($.cookie("local_language_code")) {
