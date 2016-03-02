@@ -22,7 +22,22 @@ for (var i = 0; i < language_setting.languages.length; i++) {
     );
 }
 
+function languageSupported(language) {
+    var result = false;
+    for (var i = 0; i < language_setting.languages.length; i++) {
+        if (language_setting.languages[i].code == language) {
+            result = true;
+            break;
+        }
+    }
+
+    return result;
+}
+
 var language_code = navigator.language.split('-')[0];
+if (!languageSupported(language_code)) {
+    language_code = "en";
+}
 
 $(document).ready(function(){
     if ($.cookie("local_language_code")) {
