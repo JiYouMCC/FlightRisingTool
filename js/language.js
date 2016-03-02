@@ -5,7 +5,7 @@ language_setting = {
             "code":"en"
         },
         {
-            "title":"中文（简体）",
+            "title":"中文",
             "code":"zh"
         },
     ]
