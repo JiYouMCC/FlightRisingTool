@@ -258,7 +258,6 @@ $("[id^=target]").change(function() {
 });
 
 $("#cal_breed").click(function() {
-  var $btn = $(this).button('loading');
   $('#input_result').text('--.-------- %');
 
   var target = {};
@@ -306,7 +305,6 @@ $("#cal_breed").click(function() {
     'tertiaryGene': $('#a_Tertiary_gene').val()
   };
   $('#input_result').text((FRTool.calRate(info1, info2, target) * 100).toFixed(8) + " %");
-  $btn.button('reset');
 });
 
 $('[data-toggle="tooltip"]').tooltip();
