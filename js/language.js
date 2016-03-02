@@ -2,11 +2,11 @@ language_setting = {
     "languages":[
         {
             "title":"English",
-            "code":"en-US"
+            "code":"en"
         },
         {
             "title":"中文（简体）",
-            "code":"zh-CN"
+            "code":"zh"
         },
     ]
 }
