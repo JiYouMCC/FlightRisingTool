@@ -26,7 +26,7 @@ Python版本已经全部重定向到js版本，不再继续更新，ajax请求�
 
 [Bootstrap v3.3.5](https://github.com/twbs/bootstrap)
 
-
+[Localize v0.1.0](https://github.com/coderifous/jquery-localize)
 
 
 
