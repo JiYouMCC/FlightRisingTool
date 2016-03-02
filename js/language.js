@@ -6,13 +6,9 @@ language_setting = {
         },
         {
             "title":"中文",
-            "code":"cn"
+            "code":"zh"
         },
-    ],
-    "default":{
-        "title":"中文",
-        "code":"cn"
-    }
+    ]
 }
 
 for (var i = 0; i < language_setting.languages.length; i++) {
@@ -26,39 +22,27 @@ for (var i = 0; i < language_setting.languages.length; i++) {
     );
 }
 
-var language_code = language_setting.default.code;
-var language_title = language_setting.default.title;
+var language_code = navigator.language;
+
 $(document).ready(function(){
     if ($.cookie("local_language_code")) {
         language_code = $.cookie("local_language_code")
     }
 
-    if ($.cookie("local_language_title")) {
-        language_title = $.cookie("local_language_title")
-    }
-
     $("[data-localize]").localize("lg/basic", {
-        language: language_code,
-        callback: function(data, defaultCallback){
-            defaultCallback(data);
-            $("#current_language").text(language_title);
-        }
+        language: language_code
     });
 });
 
 
 $("[id^=language_]").click(function() {
     var language = $(this).attr('id').split('language_')[1];
-    var text = $(this).text();
     $("[data-localize]").localize("lg/basic", {
         language: language,
         callback: function(data, defaultCallback){
             defaultCallback(data);
             $.cookie("local_language_code", language);
-            $.cookie("local_language_title", text);
-            $("#current_language").text(text);
             language_code = language;
-            language_title = text;
         }
     });
     
