@@ -273,6 +273,11 @@ for (var i = $("[id$=_color]").length - 1; i >= 0; i--) {
   setCookie(form.attr('id'), form.attr('id'));
 };
 
+for (var i = $("[id$=_Color]").length - 1; i >= 0; i--) {
+  var form = $($("[id$=_Color]")[i]);
+  setCookie(form.attr('id'), form.attr('id'));
+};
+
 $("[id=draw]").click(function() {
     var card_data = {
         'dragon1': {
