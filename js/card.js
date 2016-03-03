@@ -2,7 +2,7 @@ FRTool.initFR(FRData);
 
 function getImgUrl(dragonID) {
     if (dragonID == "") {
-        console.log(Please enter the dragon ID. );
+        console.log("Please enter the dragon ID. ");
         return
     }
     var dragonID = parseInt(dragonID);
