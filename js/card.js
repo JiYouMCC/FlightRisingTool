@@ -1,8 +1,11 @@
 FRTool.initFR(FRData);
+var DEFAULT_FONT = "14pt cursive";
+var DEFAULT_BACKGROUND = "transparent";
+var DEFAULT_NAME_FONT = "24pt cursive";
 
 function getImgUrl(dragonID) {
     if (dragonID == "") {
-        console.log("Please enter the dragon ID. ");
+        console.log("Please enter the dragon ID.");
         return
     }
     var dragonID = parseInt(dragonID);
@@ -61,7 +64,7 @@ function UpdateColorClass(colorSelect) {
 }
 
 function drawName(canvasContext, text, x, y, font, textAlign, color, shadowcolor) {
-    canvasContext.font = font;
+    canvasContext.font = font || DEFAULT_NAME_FONT;
     canvasContext.textAlign = textAlign
     canvasContext.shadowOffsetX = 2;
     canvasContext.shadowOffsetY = 2;
@@ -115,7 +118,7 @@ function drawColorRange(canvasContext, range, lineColor, y) {
 function drawGene(canvasContext, font, gene1, gene2, color, leftcolor, rightcolor, y) {
     var width = 80;
     var imgWidth = 640;
-    canvasContext.font = font;
+    canvasContext.font = font || DEFAULT_FONT;
         if (gene1 == gene2) {
             canvasContext.textAlign = "center";
             canvasContext.fillStyle = color;
@@ -137,7 +140,7 @@ function drawGene(canvasContext, font, gene1, gene2, color, leftcolor, rightcolo
 function drawBreed(canvasContext, font, breed1, breed2, color, leftcolor, rightcolor, y) {
     var width = 80;
     var imgWidth = 640;
-    canvasContext.font = font;
+    canvasContext.font = font || DEFAULT_FONT;
         if (breed1 == breed2) {
             canvasContext.textAlign = "center";
             canvasContext.fillStyle = color;
@@ -163,12 +166,9 @@ function drawCard(canvasId, cardData) {
     var canvasContext = canvas.getContext("2d");
     canvasContext.clearRect(0, 0, 640, 240);
 
-    var gene_color_left = cardData.geneColor.left;
-    var gene_color_right = cardData.geneColor.right;
-    var gene_color = cardData.geneColor.basic;
 
     // background
-    canvasContext.fillStyle = cardData.background;
+    canvasContext.fillStyle = cardData.background || DEFAULT_BACKGROUND;
     canvasContext.fillRect(0, 0, 640, 240);
 
     // breed
