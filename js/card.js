@@ -214,7 +214,7 @@ function drawCard(canvasId, cardData) {
         cardData.lineColor, 204);
 
     // image 1
-    drawImage(canvasContext, getImgUrl(cardData.dragon1.id), 
+    drawImage(canvasContext, getImgUrl(cardData.dragon1.id, false), 
         0, 0, 240, 240, cardData.dragon1.imgflip, 
         function(){
             if (cardData.dragonName.enable) {
@@ -226,7 +226,7 @@ function drawCard(canvasId, cardData) {
         });
 
     // image 2
-    drawImage(canvasContext, getImgUrl(cardData.dragon2.id), 
+    drawImage(canvasContext, getImgUrl(cardData.dragon2.id, true), 
         400, 0, 240, 240, cardData.dragon2.imgflip, 
         function(){
             if (cardData.dragonName.enable) {
