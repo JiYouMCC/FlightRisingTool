@@ -3,10 +3,17 @@ var DEFAULT_FONT = "14pt cursive";
 var DEFAULT_BACKGROUND = "transparent";
 var DEFAULT_NAME_FONT = "24pt cursive";
 
-function getImgUrl(dragonID) {
+function getRandomNumber(range) {
+    return range[Math.floor(Math.random() * range.length)];
+}
+
+function getImgUrl(dragonID, isLeft) {
     if (dragonID == "") {
-        console.log("Please enter the dragon ID.");
-        return
+        if(isLeft){
+            dragonID = getRandomNumber([1, 6, 7, 8, 9, 11]);
+        } else {
+            dragonID = getRandomNumber([2, 3, 4, 5, 10]);
+        }
     }
     var dragonID = parseInt(dragonID);
     var miniDragonId = Math.ceil(dragonID / 100);
