@@ -246,6 +246,12 @@ function setCookie(cookie, label) {
   }
 }
 
+function setCheckCookie(cookie, label) {
+  if(Cookies.get(cookie)){
+    $('#' + label).prop("checked", Cookies.get(cookie));
+  }
+}
+
 initBreedSelect('o_breed');
 initBreedSelect('a_breed');
 
@@ -269,8 +275,8 @@ setCookie("o_name", "o_name");
 setCookie("a_name", "a_name");
 setCookie("o_id", "o_id");
 setCookie("a_id", "a_id");
-setCookie("o_flip", "o_flip");
-setCookie("a_flip", "a_flip");
+setCheckCookie("o_flip", "o_flip");
+setCheckCookie("a_flip", "a_flip");
 
 for (var i = $("[id$=_gene]").length - 1; i >= 0; i--) {
   var form = $($("[id$=_gene]")[i]);
@@ -363,7 +369,7 @@ $("[id$=_id]").change(function() {
 });
 
 $("[id$=_flip]").change(function() {
-  Cookies.set($(this).attr('id'), $(this).val());
+  Cookies.set($(this).attr('id'), $(this).prop('checked'));
 });
 
 $("[id$=_gene]").change(function() {
