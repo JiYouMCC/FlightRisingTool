@@ -105,14 +105,12 @@ $("[id$=_breed]").change(function() {
     var rate0 = rate[0] * 100 | 0;
     $("#breed_bar_0").text(o_breed.Name)
       .attr("data-localize", o_breed.Name)
-      .attr("data-localize-breed", true)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
 
     $('#breed_result').append(
       $("<span></span>")
         .attr("data-localize", o_breed.Name)
-        .attr("data-localize-breed", true)
         .text(o_breed.Name)
       );
     $('#breed_result').append(
@@ -124,19 +122,16 @@ $("[id$=_breed]").change(function() {
     var rate1 = rate[1] * 100 | 0;
     $("#breed_bar_0").text(o_breed.Name)
       .attr("data-localize", o_breed.Name)
-      .attr("data-localize-breed", true)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
     $("#breed_bar_1").text(a_breed.Name)
       .attr("data-localize", a_breed.Name)
-      .attr("data-localize-breed", true)
       .css("width", rate1 + "% ")
       .attr("aria-valuenow", rate1);
 
     $('#breed_result').append(
       $("<span></span>")
         .attr("data-localize", o_breed.Name)
-        .attr("data-localize-breed", true)
         .text(o_breed.Name)
       );
     $('#breed_result').append(
@@ -146,7 +141,6 @@ $("[id$=_breed]").change(function() {
     $('#breed_result').append(
       $("<span></span>")
         .attr("data-localize", a_breed.Name)
-        .attr("data-localize-breed", true)
         .text(a_breed.Name)
       );
     $('#breed_result').append(
@@ -155,7 +149,7 @@ $("[id$=_breed]").change(function() {
       );
   }
 
-  $("[data-localize-breed]").localize("lg/basic", {language: language_code});
+  $("[data-localize]").localize("lg/basic", {language: language_code});
 });
 
 $("[id$=_gene]").change(function() {
@@ -170,7 +164,6 @@ $("[id$=_gene]").change(function() {
     var rate0 = rate[0] * 100 | 0;
     $("#gene_" + gene_type + "_bar_0")
       .attr("data-localize", o_gene.Name)
-      .attr("data-localize-gene", true)
       .text(o_gene.Name)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
@@ -178,7 +171,6 @@ $("[id$=_gene]").change(function() {
     $('#' + gene_type + '_result').append(
       $("<span></span>")
         .attr("data-localize", o_gene.Name)
-        .attr("data-localize-gene", true)
         .text(o_gene.Name)
       );
     $('#' + gene_type + '_result').append(
@@ -190,13 +182,11 @@ $("[id$=_gene]").change(function() {
     var rate1 = rate[1] * 100 | 0;
     $("#gene_" + gene_type + "_bar_0")
       .attr("data-localize", o_gene.Name)
-      .attr("data-localize-gene", true)
       .text(o_gene.Name)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
     $("#gene_" + gene_type + "_bar_1")
       .attr("data-localize", a_gene.Name)
-      .attr("data-localize-gene", true)
       .text(a_gene.Name)
       .css("width", rate1 + "% ")
       .attr("aria-valuenow", rate1);
@@ -204,7 +194,6 @@ $("[id$=_gene]").change(function() {
     $('#' + gene_type + '_result').append(
       $("<span></span>")
         .attr("data-localize", o_gene.Name)
-        .attr("data-localize-gene", true)
         .text(o_gene.Name)
       );
     $('#' + gene_type + '_result').append(
@@ -215,7 +204,6 @@ $("[id$=_gene]").change(function() {
     $('#' + gene_type + '_result').append(
       $("<span></span>")
         .attr("data-localize", a_gene.Name)
-        .attr("data-localize-gene", true)
         .text(o_gene.Name)
       );
     $('#' + gene_type + '_result').append(
@@ -224,7 +212,7 @@ $("[id$=_gene]").change(function() {
       );
   }
 
-  $("[data-localize-gene]").localize("lg/basic", {language: language_code});
+  $("[data-localize]").localize("lg/basic", {language: language_code});
 });
 
 $("[id$=_color]").change(function() {
