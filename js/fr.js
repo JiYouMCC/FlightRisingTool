@@ -234,7 +234,8 @@ $("[id$=_color]").change(function() {
   for (var i = 0; i < rate.length; i++) {
     var item = rate[i];
     var row = $("<span></span>")
-      .attr("title", item.NameZH + " " + item.Name)
+      .attr("title", item.Name)
+      .attr("data-localize", item.Name)
       .attr("data-toggle", "tooltip")
       .attr("data-placement", "bottom")
       .css("width", "7.5px")
