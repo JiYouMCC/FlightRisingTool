@@ -72,19 +72,21 @@ function drawName(canvasContext, text, x, y, font, textAlign, color, shadowcolor
 }
 
 function drawImage(canvasContext, src, x, y, width, height, flip, callback) {
-    var img = new Image();
-    img.src = src;
+    if (src) {
+        var img = new Image();
+        img.src = src;
 
-    img.onload = function() {
-        if(flip) {
-            img.crossOrigin = "Anonymous";
-            canvasContext.scale(-1, 1);
-            canvasContext.drawImage(img, -x - width, y, width, height);
-            canvasContext.scale(-1, 1);
-        } else {
-            canvasContext.drawImage(img, x, y, width, height);
+        img.onload = function() {
+            if(flip) {
+                img.crossOrigin = "Anonymous";
+                canvasContext.scale(-1, 1);
+                canvasContext.drawImage(img, -x - width, y, width, height);
+                canvasContext.scale(-1, 1);
+            } else {
+                canvasContext.drawImage(img, x, y, width, height);
+            }
+            callback();
         }
-        callback();
     }
 }
 
@@ -270,6 +272,11 @@ for (var i = $("[id$=_gene]").length - 1; i >= 0; i--) {
 
 for (var i = $("[id$=_color]").length - 1; i >= 0; i--) {
   var form = $($("[id$=_color]")[i]);
+  setCookie(form.attr('id'), form.attr('id'));
+};
+
+for (var i = $("[id$=_Color]").length - 1; i >= 0; i--) {
+  var form = $($("[id$=_Color]")[i]);
   setCookie(form.attr('id'), form.attr('id'));
 };
 
