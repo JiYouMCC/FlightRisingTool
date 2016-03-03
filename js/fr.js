@@ -104,6 +104,7 @@ $("[id$=_breed]").change(function() {
   if (rate.length == 1) {
     var rate0 = rate[0] * 100 | 0;
     $("#breed_bar_0").text(o_breed.Name)
+      .data("localize", o_breed.Name)
       .attr("data-localize", o_breed.Name)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
@@ -121,10 +122,12 @@ $("[id$=_breed]").change(function() {
     var rate0 = rate[0] * 100 | 0;
     var rate1 = rate[1] * 100 | 0;
     $("#breed_bar_0").text(o_breed.Name)
+      .data("localize", o_breed.Name)
       .attr("data-localize", o_breed.Name)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
     $("#breed_bar_1").text(a_breed.Name)
+      .data("localize", a_breed.Name)
       .attr("data-localize", a_breed.Name)
       .css("width", rate1 + "% ")
       .attr("aria-valuenow", rate1);
@@ -163,6 +166,7 @@ $("[id$=_gene]").change(function() {
   if (rate.length == 1) {
     var rate0 = rate[0] * 100 | 0;
     $("#gene_" + gene_type + "_bar_0")
+      .data("localize", o_gene.Name)
       .attr("data-localize", o_gene.Name)
       .text(o_gene.Name)
       .css("width", rate0 + "% ")
@@ -181,11 +185,13 @@ $("[id$=_gene]").change(function() {
     var rate0 = rate[0] * 100 | 0;
     var rate1 = rate[1] * 100 | 0;
     $("#gene_" + gene_type + "_bar_0")
+      .data("localize", o_gene.Name)
       .attr("data-localize", o_gene.Name)
       .text(o_gene.Name)
       .css("width", rate0 + "% ")
       .attr("aria-valuenow", rate0);
     $("#gene_" + gene_type + "_bar_1")
+      .data("localize", a_gene.Name)
       .attr("data-localize", a_gene.Name)
       .text(a_gene.Name)
       .css("width", rate1 + "% ")
