@@ -3376,16 +3376,16 @@ output {
 }
 
 .form-control::-moz-placeholder {
-  color: #424b50;
+  color: #a1afc9;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #424b50;
+  color: #a1afc9;
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #424b50;
+  color: #a1afc9;
 }
 
 .form-control[disabled],
