@@ -1,6 +1,10 @@
 FRTool.initFR(FRData);
 
 function getImgUrl(dragonID) {
+    if (dragonID == "") {
+        console.log(Please enter the dragon ID. );
+        return
+    }
     var dragonID = parseInt(dragonID);
     var miniDragonId = Math.ceil(dragonID / 100);
     return 'http://flightrising.com/rendern/350/' + miniDragonId + '/' + dragonID + '_350.png'
