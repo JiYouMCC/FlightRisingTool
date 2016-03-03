@@ -61,8 +61,8 @@ function UpdateColorClass(colorSelect) {
 }
 
 function setCookie(cookie, label) {
-  if ($.cookie(cookie)) {
-    $('#' + label).val($.cookie(cookie));
+  if(Cookies.get(cookie)){
+    $('#' + label).val(Cookies.get(cookie));
   }
 }
 
@@ -96,8 +96,8 @@ $("[id$=_Color]").change(function() {
 
 $("[id$=_breed]").change(function() {
   $('#breed_result').text("");
-  $.cookie("o_breed", $('#o_breed').val());
-  $.cookie("a_breed", $('#a_breed').val());
+  Cookies.set('o_breed', $('#o_breed').val());
+  Cookies.set('a_breed', $('#a_breed').val());
   var o_breed = FRTool.Breed[$('#o_breed').val()];
   var a_breed = FRTool.Breed[$('#a_breed').val()];
   var rate = FRTool.getBreedRate(o_breed, a_breed);
@@ -160,8 +160,8 @@ $("[id$=_breed]").change(function() {
 
 $("[id$=_gene]").change(function() {
   var gene_type = $(this).attr('id').split('_')[1];
-  $.cookie('o_' + gene_type, $('#o_' + gene_type + '_gene').val());
-  $.cookie('a_' + gene_type, $('#a_' + gene_type + '_gene').val());
+  Cookies.set('o_' + gene_type, $('#o_' + gene_type + '_gene').val());
+  Cookies.set('a_' + gene_type, $('#a_' + gene_type + '_gene').val());
   $('#' + gene_type + '_result').text("");
   var o_gene = FRTool[gene_type + "Gene"][$('#o_' + gene_type + '_gene').val()];
   var a_gene = FRTool[gene_type + "Gene"][$('#a_' + gene_type + '_gene').val()];
@@ -230,8 +230,8 @@ $("[id$=_gene]").change(function() {
 $("[id$=_color]").change(function() {
   UpdateColorClass($(this));
   var color_type = $(this).attr('id').split('_')[1];
-  $.cookie('o_' + color_type + '_color', $('#o_' + color_type + '_color').val());
-  $.cookie('a_' + color_type + '_color', $('#a_' + color_type + '_color').val());
+  Cookies.set('o_' + color_type + '_color', $('#o_' + color_type + '_color').val());
+  Cookies.set('a_' + color_type + '_color', $('#a_' + color_type + '_color').val());
   var s = "";
   var o_color = FRTool.Color[$('#o_' + color_type + '_color').val()];
   var a_color = FRTool.Color[$('#a_' + color_type + '_color').val()];
@@ -254,7 +254,7 @@ $("[id$=_color]").change(function() {
 
 $("[id^=target]").change(function() {
   var id = $(this).attr('id');
-  $.cookie(id, $(this).val());
+  Cookies.set(id, $(this).val());
 });
 
 $("#cal_breed").click(function() {
