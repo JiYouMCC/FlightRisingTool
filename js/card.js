@@ -227,6 +227,12 @@ function drawCard(canvasId, cardData) {
     return canvas;
 }
 
+function setCookie(cookie, label) {
+  if(Cookies.get(cookie)){
+    $('#' + label).val(Cookies.get(cookie));
+  }
+}
+
 initBreedSelect('o_breed');
 initBreedSelect('a_breed');
 
@@ -244,6 +250,24 @@ initColorSelect('a_primary_color');
 initColorSelect('a_secondary_color');
 initColorSelect('a_tertiary_color');
 
+setCookie("o_breed", "o_breed");
+setCookie("a_breed", "a_breed");
+setCookie("o_name", "o_name");
+setCookie("a_name", "a_name");
+setCookie("o_id", "o_id");
+setCookie("a_id", "a_id");
+setCookie("o_flip", "o_flip");
+setCookie("a_flip", "a_flip");
+
+for (var i = $("[id$=_gene]").length - 1; i >= 0; i--) {
+  var form = $($("[id$=_gene]")[i]);
+  setCookie(form.attr('id').substring(0, form.attr('id').length - 5), form.attr('id'));
+};
+
+for (var i = $("[id$=_color]").length - 1; i >= 0; i--) {
+  var form = $($("[id$=_color]")[i]);
+  setCookie(form.attr('id'), form.attr('id'));
+};
 
 $("[id=draw]").click(function() {
     var card_data = {
@@ -291,7 +315,31 @@ $("[id=draw]").click(function() {
 
 $("[id$=_color]").change(function() {
     UpdateColorClass($(this));
+    Cookies.set($(this).attr('id'), $(this).val());
+});
+
+$("[id$=_color]").change();
+
+$("[id$=_breed]").change(function() {
+  Cookies.set($(this).attr('id'), $(this).val());
+});
+
+$("[id$=_name]").change(function() {
+  Cookies.set($(this).attr('id'), $(this).val());
+});
+
+$("[id$=_id]").change(function() {
+  Cookies.set($(this).attr('id'), $(this).val());
+});
+
+$("[id$=_flip]").change(function() {
+  Cookies.set($(this).attr('id'), $(this).val());
+});
+
+$("[id$=_gene]").change(function() {
+  var this_id = $(this).attr('id').split('_');
+  var cookie_value = this_id[0] + "_" + this_id[1];
+  Cookies.set(cookie_value, $(this).val());
 });
 
 $('[data-toggle="tooltip"]').tooltip();
-$("[id$=_color]").change();

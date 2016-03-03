@@ -1,3 +1,15 @@
+function languageSupported(language) {
+    var result = false;
+    for (var i = 0; i < language_setting.languages.length; i++) {
+        if (language_setting.languages[i].code == language) {
+            result = true;
+            break;
+        }
+    }
+
+    return result;
+}
+
 language_setting = {
     "languages":[
         {
@@ -22,26 +34,14 @@ for (var i = 0; i < language_setting.languages.length; i++) {
     );
 }
 
-function languageSupported(language) {
-    var result = false;
-    for (var i = 0; i < language_setting.languages.length; i++) {
-        if (language_setting.languages[i].code == language) {
-            result = true;
-            break;
-        }
-    }
-
-    return result;
-}
-
 var language_code = navigator.language.split('-')[0];
 if (!languageSupported(language_code)) {
     language_code = "en";
 }
 
 $(document).ready(function(){
-    if ($.cookie("local_language_code")) {
-        language_code = $.cookie("local_language_code")
+    if(Cookies.get("local_language_code")){
+        language_code = Cookies.get("local_language_code");
     }
 
     $("[data-localize]").localize("lg/basic", {
@@ -56,9 +56,8 @@ $("[id^=language_]").click(function() {
         language: language,
         callback: function(data, defaultCallback){
             defaultCallback(data);
-            $.cookie("local_language_code", language);
+            Cookies.set("local_language_code", language);
             language_code = language;
         }
     });
-    
 });
