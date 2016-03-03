@@ -245,6 +245,7 @@ $("[id$=_color]").change(function() {
     $('#' + color_type + '_color_result').append(row);
   };
   $('[data-toggle="tooltip"]').tooltip();
+  $("[data-localize]").localize("lg/basic", {language: language_code});
 });
 
 $("[id^=target]").change(function() {
