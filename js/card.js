@@ -302,16 +302,16 @@ $("[id=draw]").click(function() {
         'dragonName': {
             'enable': true,
             'font': $('#name_font').val(),
-            'color': $('#name_color').val(),
-            'shadowcolor': $('#name_color_shadow').val()
+            'color': $('#name_Color').val(),
+            'shadowcolor': $('#name_shadow_Color').val()
         },
         'geneColor': {
-            'left': $('#gene_color_left').val(),
-            'right': $('#gene_color_right').val(),
-            'basic': $('#gene_color').val()
+            'left': $('#gene_left_Color').val(),
+            'right': $('#gene_right_Color').val(),
+            'basic': $('#gene_Color').val()
         },
         'geneFont': $('#gene_font').val(),
-        'lineColor': $('#line_color').val(),
+        'lineColor': $('#line_Color').val(),
         'background': $('#background').val()
     }
     drawCard('canvas_1', card_data);
@@ -319,6 +319,18 @@ $("[id=draw]").click(function() {
 
 $("[id$=_color]").change(function() {
     UpdateColorClass($(this));
+    Cookies.set($(this).attr('id'), $(this).val());
+});
+
+$("[id$=_Color]").change(function() {
+    Cookies.set($(this).attr('id'), $(this).val());
+});
+
+$("[id$=_font]").change(function() {
+    Cookies.set($(this).attr('id'), $(this).val());
+});
+
+$("#background").change(function() {
     Cookies.set($(this).attr('id'), $(this).val());
 });
 
