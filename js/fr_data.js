@@ -26,7 +26,8 @@ FRData.PrimaryGeneList = [
     ['Vipera', '蛇纹', 'Uncommon'],
     ['Poison', '毒药', 'Limited'],
     ['Crystal', '水晶', 'Rare'],
-    ['Iridescent', '身闪', 'Rare']
+    ['Iridescent', '身闪', 'Rare'],
+    ['Petals', '花瓣', 'Rare']
 ]
 
 FRData.SecondaryGeneList = [
