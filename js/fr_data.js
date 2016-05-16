@@ -52,6 +52,7 @@ FRData.TertiaryGeneList = [
     ['Basic', '基础', 'Plentiful'],
     ['Underbelly', '肚皮', 'Common'],
     ['Thylacine', '袋狼', 'Common'],
+    ['Contour', '校服', 'Common'],
     ['Crackle', '裂纹', 'Uncommon'],
     ['Okapi', '丝袜', 'Uncommon'],
     ['Smoke', '烟纹', 'Uncommon'],
