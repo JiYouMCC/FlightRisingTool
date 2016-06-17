@@ -65,10 +65,10 @@ FRData.TertiaryGeneList = [
 
 FRData.ColorList = [
     ['Maize', '嫩黄色', '#FFFDEA'],
-    ['Cream', '', '#FFEFDC'],
-    ['Antique', '', '#D8D6CD'],
+    ['Cream', '奶油', '#FFEFDC'],
+    ['Antique', '古董白', '#D8D6CD'],
     ['White', '白色', '#FFFFFF'],
-    ['Moon', '', '#D8D7D8'],
+    ['Moon', '月白', '#D8D7D8'],
     ['Ice', '冰蓝', '#F1F3FF'],
     ['Orca', '', '#E0DFFF'],
     ['Platinum', '银灰', '#C8BECE'],
@@ -240,7 +240,7 @@ FRData.ColorList = [
     ['Pink', '粉红', '#E77FBF'],
     ['Bubblegum', '', '#EAA9FF'],
     ['Rose', '玫瑰色', '#FFD6F6'],
-    ['Pearl', '', '#FBE9F8']
+    ['Pearl', '珍珠红', '#FBE9F8']
 ]
 
 FRData.BreedList = [
