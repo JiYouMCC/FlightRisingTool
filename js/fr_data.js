@@ -124,7 +124,7 @@ FRData.ColorList = [
     ['Steel', '#556979'],
     ['Denim', '#2F4557'],
     ['Abyss', '#0D1E24'],
-    ['Phtalo', '#0B2D46'],
+    ['Phthalo', '#0B2D46'],
     ['Azure', '#0A3D67'],
     ['Caribbean', '#0086CE'],
     ['Teal', '#2B768F'],
