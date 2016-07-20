@@ -1,181 +1,180 @@
-.Maize { background-image: none; color: #000; background-color: #fffdea; text-shadow: 1px 0 1px #fffdea, 0 1px 1px #fffdea, -1px 0 1px #fffdea, 0 -1px 1px #fffdea; }
-.Dust { background-image: none; color: #000; background-color: #9c9c9e; text-shadow: 1px 0 1px #9c9c9e, 0 1px 1px #9c9c9e, -1px 0 1px #9c9c9e, 0 -1px 1px #9c9c9e; }
-.Moss { background-image: none; color: #FFF; background-color: #7e7745; text-shadow: 1px 0 1px #7e7745, 0 1px 1px #7e7745, -1px 0 1px #7e7745, 0 -1px 1px #7e7745; }
-.Goldenrod { background-image: none; color: #000; background-color: #bea55d; text-shadow: 1px 0 1px #bea55d, 0 1px 1px #bea55d, -1px 0 1px #bea55d, 0 -1px 1px #bea55d; }
-.Amber { background-image: none; color: #000; background-color: #c18e1b; text-shadow: 1px 0 1px #c18e1b, 0 1px 1px #c18e1b, -1px 0 1px #c18e1b, 0 -1px 1px #c18e1b; }
-.Honey { background-image: none; color: #000; background-color: #d1b300; text-shadow: 1px 0 1px #d1b300, 0 1px 1px #d1b300, -1px 0 1px #d1b300, 0 -1px 1px #d1b300; }
-.Lemon { background-image: none; color: #000; background-color: #ffe63b; text-shadow: 1px 0 1px #ffe63b, 0 1px 1px #ffe63b, -1px 0 1px #ffe63b, 0 -1px 1px #ffe63b; }
-.Yellow { background-image: none; color: #000; background-color: #f9e255; text-shadow: 1px 0 1px #f9e255, 0 1px 1px #f9e255, -1px 0 1px #f9e255, 0 -1px 1px #f9e255; }
-.Grapefruit { background-image: none; color: #000; background-color: #f7ff6f; text-shadow: 1px 0 1px #f7ff6f, 0 1px 1px #f7ff6f, -1px 0 1px #f7ff6f, 0 -1px 1px #f7ff6f; }
-.Banana { background-image: none; color: #000; background-color: #ffec80; text-shadow: 1px 0 1px #ffec80, 0 1px 1px #ffec80, -1px 0 1px #ffec80, 0 -1px 1px #ffec80; }
-.Sanddollar { background-image: none; color: #000; background-color: #ebe7ae; text-shadow: 1px 0 1px #ebe7ae, 0 1px 1px #ebe7ae, -1px 0 1px #ebe7ae, 0 -1px 1px #ebe7ae; }
-.Flaxen { background-image: none; color: #000; background-color: #fde9ae; text-shadow: 1px 0 1px #fde9ae, 0 1px 1px #fde9ae, -1px 0 1px #fde9ae, 0 -1px 1px #fde9ae; }
-.Grey { background-image: none; color: #FFF; background-color: #808080; text-shadow: 1px 0 1px #808080, 0 1px 1px #808080, -1px 0 1px #808080, 0 -1px 1px #808080; }
-.Ivory { background-image: none; color: #000; background-color: #ffd297; text-shadow: 1px 0 1px #ffd297, 0 1px 1px #ffd297, -1px 0 1px #ffd297, 0 -1px 1px #ffd297; }
-.Buttercup { background-image: none; color: #000; background-color: #f6bf6b; text-shadow: 1px 0 1px #f6bf6b, 0 1px 1px #f6bf6b, -1px 0 1px #f6bf6b, 0 -1px 1px #f6bf6b; }
-.Gold { background-image: none; color: #000; background-color: #e8af49; text-shadow: 1px 0 1px #e8af49, 0 1px 1px #e8af49, -1px 0 1px #e8af49, 0 -1px 1px #e8af49; }
-.Metals { background-image: none; color: #000; background-color: #d1b046; text-shadow: 1px 0 1px #d1b046, 0 1px 1px #d1b046, -1px 0 1px #d1b046, 0 -1px 1px #d1b046; }
-.Marigold { background-image: none; color: #000; background-color: #ffb43b; text-shadow: 1px 0 1px #ffb43b, 0 1px 1px #ffb43b, -1px 0 1px #ffb43b, 0 -1px 1px #ffb43b; }
-.Sunshine { background-image: none; color: #000; background-color: #fa912b; text-shadow: 1px 0 1px #fa912b, 0 1px 1px #fa912b, -1px 0 1px #fa912b, 0 -1px 1px #fa912b; }
-.Saffron { background-image: none; color: #000; background-color: #ff8400; text-shadow: 1px 0 1px #ff8400, 0 1px 1px #ff8400, -1px 0 1px #ff8400, 0 -1px 1px #ff8400; }
-.Sunset { background-image: none; color: #000; background-color: #ffa248; text-shadow: 1px 0 1px #ffa248, 0 1px 1px #ffa248, -1px 0 1px #ffa248, 0 -1px 1px #ffa248; }
-.Peach { background-image: none; color: #000; background-color: #ffb576; text-shadow: 1px 0 1px #ffb576, 0 1px 1px #ffb576, -1px 0 1px #ffb576, 0 -1px 1px #ffb576; }
-.Cantaloupe { background-image: none; color: #000; background-color: #ff984f; text-shadow: 1px 0 1px #ff984f, 0 1px 1px #ff984f, -1px 0 1px #ff984f, 0 -1px 1px #ff984f; }
-.Smoke { background-image: none; color: #000; background-color: #9494a9; text-shadow: 1px 0 1px #9494a9, 0 1px 1px #9494a9, -1px 0 1px #9494a9, 0 -1px 1px #9494a9; }
-.Orange { background-image: none; color: #FFF; background-color: #d5602b; text-shadow: 1px 0 1px #d5602b, 0 1px 1px #d5602b, -1px 0 1px #d5602b, 0 -1px 1px #d5602b; }
-.Bronze { background-image: none; color: #FFF; background-color: #b2560d; text-shadow: 1px 0 1px #b2560d, 0 1px 1px #b2560d, -1px 0 1px #b2560d, 0 -1px 1px #b2560d; }
-.Terracotta { background-image: none; color: #FFF; background-color: #b23b07; text-shadow: 1px 0 1px #b23b07, 0 1px 1px #b23b07, -1px 0 1px #b23b07, 0 -1px 1px #b23b07; }
-.Carrot { background-image: none; color: #000; background-color: #ff5500; text-shadow: 1px 0 1px #ff5500, 0 1px 1px #ff5500, -1px 0 1px #ff5500, 0 -1px 1px #ff5500; }
-.Fire { background-image: none; color: #FFF; background-color: #ef5c23; text-shadow: 1px 0 1px #ef5c23, 0 1px 1px #ef5c23, -1px 0 1px #ef5c23, 0 -1px 1px #ef5c23; }
-.Pumpkin { background-image: none; color: #000; background-color: #ff6840; text-shadow: 1px 0 1px #ff6840, 0 1px 1px #ff6840, -1px 0 1px #ff6840, 0 -1px 1px #ff6840; }
-.Tangerine { background-image: none; color: #000; background-color: #ff7360; text-shadow: 1px 0 1px #ff7360, 0 1px 1px #ff7360, -1px 0 1px #ff7360, 0 -1px 1px #ff7360; }
-.Cinnamon { background-image: none; color: #FFF; background-color: #c05a39; text-shadow: 1px 0 1px #c05a39, 0 1px 1px #c05a39, -1px 0 1px #c05a39, 0 -1px 1px #c05a39; }
-.Caramel { background-image: none; color: #FFF; background-color: #c67047; text-shadow: 1px 0 1px #c67047, 0 1px 1px #c67047, -1px 0 1px #c67047, 0 -1px 1px #c67047; }
-.Sand { background-image: none; color: #FFF; background-color: #b27749; text-shadow: 1px 0 1px #b27749, 0 1px 1px #b27749, -1px 0 1px #b27749, 0 -1px 1px #b27749; }
-.Gloom { background-image: none; color: #FFF; background-color: #535264; text-shadow: 1px 0 1px #535264, 0 1px 1px #535264, -1px 0 1px #535264, 0 -1px 1px #535264; }
-.Tan { background-image: none; color: #000; background-color: #c49a70; text-shadow: 1px 0 1px #c49a70, 0 1px 1px #c49a70, -1px 0 1px #c49a70, 0 -1px 1px #c49a70; }
-.Beige { background-image: none; color: #000; background-color: #cabba2; text-shadow: 1px 0 1px #cabba2, 0 1px 1px #cabba2, -1px 0 1px #cabba2, 0 -1px 1px #cabba2; }
-.Stone { background-image: none; color: #FFF; background-color: #827a64; text-shadow: 1px 0 1px #827a64, 0 1px 1px #827a64, -1px 0 1px #827a64, 0 -1px 1px #827a64; }
-.Taupe { background-image: none; color: #FFF; background-color: #6d665a; text-shadow: 1px 0 1px #6d665a, 0 1px 1px #6d665a, -1px 0 1px #6d665a, 0 -1px 1px #6d665a; }
-.Slate { background-image: none; color: #FFF; background-color: #564d48; text-shadow: 1px 0 1px #564d48, 0 1px 1px #564d48, -1px 0 1px #564d48, 0 -1px 1px #564d48; }
-.Driftwood { background-image: none; color: #FFF; background-color: #766359; text-shadow: 1px 0 1px #766359, 0 1px 1px #766359, -1px 0 1px #766359, 0 -1px 1px #766359; }
-.Latte { background-image: none; color: #FFF; background-color: #977b6c; text-shadow: 1px 0 1px #977b6c, 0 1px 1px #977b6c, -1px 0 1px #977b6c, 0 -1px 1px #977b6c; }
-.Dirt { background-image: none; color: #FFF; background-color: #76483f; text-shadow: 1px 0 1px #76483f, 0 1px 1px #76483f, -1px 0 1px #76483f, 0 -1px 1px #76483f; }
-.Clay { background-image: none; color: #FFF; background-color: #603f3d; text-shadow: 1px 0 1px #603f3d, 0 1px 1px #603f3d, -1px 0 1px #603f3d, 0 -1px 1px #603f3d; }
-.Sable { background-image: none; color: #FFF; background-color: #57372c; text-shadow: 1px 0 1px #57372c, 0 1px 1px #57372c, -1px 0 1px #57372c, 0 -1px 1px #57372c; }
-.Lead { background-image: none; color: #FFF; background-color: #413c3f; text-shadow: 1px 0 1px #413c3f, 0 1px 1px #413c3f, -1px 0 1px #413c3f, 0 -1px 1px #413c3f; }
-.Umber { background-image: none; color: #FFF; background-color: #2f1e1a; text-shadow: 1px 0 1px #2f1e1a, 0 1px 1px #2f1e1a, -1px 0 1px #2f1e1a, 0 -1px 1px #2f1e1a; }
-.Soil { background-image: none; color: #FFF; background-color: #5a4534; text-shadow: 1px 0 1px #5a4534, 0 1px 1px #5a4534, -1px 0 1px #5a4534, 0 -1px 1px #5a4534; }
-.Hickory { background-image: none; color: #FFF; background-color: #725639; text-shadow: 1px 0 1px #725639, 0 1px 1px #725639, -1px 0 1px #725639, 0 -1px 1px #725639; }
-.Tarnish { background-image: none; color: #FFF; background-color: #855c32; text-shadow: 1px 0 1px #855c32, 0 1px 1px #855c32, -1px 0 1px #855c32, 0 -1px 1px #855c32; }
-.Ginger { background-image: none; color: #FFF; background-color: #90532b; text-shadow: 1px 0 1px #90532b, 0 1px 1px #90532b, -1px 0 1px #90532b, 0 -1px 1px #90532b; }
-.Brown { background-image: none; color: #FFF; background-color: #8e5b3f; text-shadow: 1px 0 1px #8e5b3f, 0 1px 1px #8e5b3f, -1px 0 1px #8e5b3f, 0 -1px 1px #8e5b3f; }
-.Chocolate { background-image: none; color: #FFF; background-color: #563012; text-shadow: 1px 0 1px #563012, 0 1px 1px #563012, -1px 0 1px #563012, 0 -1px 1px #563012; }
-.Auburn { background-image: none; color: #FFF; background-color: #7b3c1d; text-shadow: 1px 0 1px #7b3c1d, 0 1px 1px #7b3c1d, -1px 0 1px #7b3c1d, 0 -1px 1px #7b3c1d; }
-.Copper { background-image: none; color: #FFF; background-color: #a44b28; text-shadow: 1px 0 1px #a44b28, 0 1px 1px #a44b28, -1px 0 1px #a44b28, 0 -1px 1px #a44b28; }
-.Rust { background-image: none; color: #FFF; background-color: #8b3220; text-shadow: 1px 0 1px #8b3220, 0 1px 1px #8b3220, -1px 0 1px #8b3220, 0 -1px 1px #8b3220; }
-.Shale { background-image: none; color: #FFF; background-color: #4d4850; text-shadow: 1px 0 1px #4d4850, 0 1px 1px #4d4850, -1px 0 1px #4d4850, 0 -1px 1px #4d4850; }
-.Tomato { background-image: none; color: #FFF; background-color: #ba311c; text-shadow: 1px 0 1px #ba311c, 0 1px 1px #ba311c, -1px 0 1px #ba311c, 0 -1px 1px #ba311c; }
-.Vermilion { background-image: none; color: #FFF; background-color: #e22d17; text-shadow: 1px 0 1px #e22d17, 0 1px 1px #e22d17, -1px 0 1px #e22d17, 0 -1px 1px #e22d17; }
-.Ruby { background-image: none; color: #FFF; background-color: #cd000e; text-shadow: 1px 0 1px #cd000e, 0 1px 1px #cd000e, -1px 0 1px #cd000e, 0 -1px 1px #cd000e; }
-.Cherry { background-image: none; color: #FFF; background-color: #aa0024; text-shadow: 1px 0 1px #aa0024, 0 1px 1px #aa0024, -1px 0 1px #aa0024, 0 -1px 1px #aa0024; }
-.Crimson { background-image: none; color: #FFF; background-color: #850012; text-shadow: 1px 0 1px #850012, 0 1px 1px #850012, -1px 0 1px #850012, 0 -1px 1px #850012; }
-.Garnet { background-image: none; color: #FFF; background-color: #5b0f14; text-shadow: 1px 0 1px #5b0f14, 0 1px 1px #5b0f14, -1px 0 1px #5b0f14, 0 -1px 1px #5b0f14; }
-.Sanguine { background-image: none; color: #FFF; background-color: #2e0002; text-shadow: 1px 0 1px #2e0002, 0 1px 1px #2e0002, -1px 0 1px #2e0002, 0 -1px 1px #2e0002; }
-.Blood { background-image: none; color: #FFF; background-color: #451717; text-shadow: 1px 0 1px #451717, 0 1px 1px #451717, -1px 0 1px #451717, 0 -1px 1px #451717; }
-.Maroon { background-image: none; color: #FFF; background-color: #652127; text-shadow: 1px 0 1px #652127, 0 1px 1px #652127, -1px 0 1px #652127, 0 -1px 1px #652127; }
-.Berry { background-image: none; color: #FFF; background-color: #8b272c; text-shadow: 1px 0 1px #8b272c, 0 1px 1px #8b272c, -1px 0 1px #8b272c, 0 -1px 1px #8b272c; }
-.Flint { background-image: none; color: #FFF; background-color: #626268; text-shadow: 1px 0 1px #626268, 0 1px 1px #626268, -1px 0 1px #626268, 0 -1px 1px #626268; }
-.Red { background-image: none; color: #FFF; background-color: #c1272d; text-shadow: 1px 0 1px #c1272d, 0 1px 1px #c1272d, -1px 0 1px #c1272d, 0 -1px 1px #c1272d; }
-.Strawberry { background-image: none; color: #FFF; background-color: #de3235; text-shadow: 1px 0 1px #de3235, 0 1px 1px #de3235, -1px 0 1px #de3235, 0 -1px 1px #de3235; }
-.Cerise { background-image: none; color: #FFF; background-color: #a22929; text-shadow: 1px 0 1px #a22929, 0 1px 1px #a22929, -1px 0 1px #a22929, 0 -1px 1px #a22929; }
-.Carmine { background-image: none; color: #FFF; background-color: #b13a3a; text-shadow: 1px 0 1px #b13a3a, 0 1px 1px #b13a3a, -1px 0 1px #b13a3a, 0 -1px 1px #b13a3a; }
-.Brick { background-image: none; color: #FFF; background-color: #9a534d; text-shadow: 1px 0 1px #9a534d, 0 1px 1px #9a534d, -1px 0 1px #9a534d, 0 -1px 1px #9a534d; }
-.Coral { background-image: none; color: #000; background-color: #cc6f6f; text-shadow: 1px 0 1px #cc6f6f, 0 1px 1px #cc6f6f, -1px 0 1px #cc6f6f, 0 -1px 1px #cc6f6f; }
-.Blush { background-image: none; color: #000; background-color: #ffa2a2; text-shadow: 1px 0 1px #ffa2a2, 0 1px 1px #ffa2a2, -1px 0 1px #ffa2a2, 0 -1px 1px #ffa2a2; }
-.Cottoncandy { background-image: none; color: #000; background-color: #eb7997; text-shadow: 1px 0 1px #eb7997, 0 1px 1px #eb7997, -1px 0 1px #eb7997, 0 -1px 1px #eb7997; }
-.Watermelon { background-image: none; color: #000; background-color: #db518d; text-shadow: 1px 0 1px #db518d, 0 1px 1px #db518d, -1px 0 1px #db518d, 0 -1px 1px #db518d; }
-.Magenta { background-image: none; color: #000; background-color: #e934aa; text-shadow: 1px 0 1px #e934aa, 0 1px 1px #e934aa, -1px 0 1px #e934aa, 0 -1px 1px #e934aa; }
-.Charcoal { background-image: none; color: #FFF; background-color: #545454; text-shadow: 1px 0 1px #545454, 0 1px 1px #545454, -1px 0 1px #545454, 0 -1px 1px #545454; }
-.Fuchsia { background-image: none; color: #FFF; background-color: #ec0089; text-shadow: 1px 0 1px #ec0089, 0 1px 1px #ec0089, -1px 0 1px #ec0089, 0 -1px 1px #ec0089; }
-.Raspberry { background-image: none; color: #FFF; background-color: #8a0249; text-shadow: 1px 0 1px #8a0249, 0 1px 1px #8a0249, -1px 0 1px #8a0249, 0 -1px 1px #8a0249; }
-.Wine { background-image: none; color: #FFF; background-color: #4d0f28; text-shadow: 1px 0 1px #4d0f28, 0 1px 1px #4d0f28, -1px 0 1px #4d0f28, 0 -1px 1px #4d0f28; }
-.Mauve { background-image: none; color: #FFF; background-color: #9c4875; text-shadow: 1px 0 1px #9c4875, 0 1px 1px #9c4875, -1px 0 1px #9c4875, 0 -1px 1px #9c4875; }
-.Pink { background-image: none; color: #000; background-color: #e77fbf; text-shadow: 1px 0 1px #e77fbf, 0 1px 1px #e77fbf, -1px 0 1px #e77fbf, 0 -1px 1px #e77fbf; }
-.Bubblegum { background-image: none; color: #000; background-color: #eaa9ff; text-shadow: 1px 0 1px #eaa9ff, 0 1px 1px #eaa9ff, -1px 0 1px #eaa9ff, 0 -1px 1px #eaa9ff; }
-.Rose { background-image: none; color: #000; background-color: #ffd6f6; text-shadow: 1px 0 1px #ffd6f6, 0 1px 1px #ffd6f6, -1px 0 1px #ffd6f6, 0 -1px 1px #ffd6f6; }
-.Pearl { background-image: none; color: #000; background-color: #fbe9f8; text-shadow: 1px 0 1px #fbe9f8, 0 1px 1px #fbe9f8, -1px 0 1px #fbe9f8, 0 -1px 1px #fbe9f8; }
-.Coal { background-image: none; color: #FFF; background-color: #4b4946; text-shadow: 1px 0 1px #4b4946, 0 1px 1px #4b4946, -1px 0 1px #4b4946, 0 -1px 1px #4b4946; }
-.Oilslick { background-image: none; color: #FFF; background-color: #342b25; text-shadow: 1px 0 1px #342b25, 0 1px 1px #342b25, -1px 0 1px #342b25, 0 -1px 1px #342b25; }
-.Cream { background-image: none; color: #000; background-color: #ffefdc; text-shadow: 1px 0 1px #ffefdc, 0 1px 1px #ffefdc, -1px 0 1px #ffefdc, 0 -1px 1px #ffefdc; }
-.Black { background-image: none; color: #FFF; background-color: #333333; text-shadow: 1px 0 1px #333333, 0 1px 1px #333333, -1px 0 1px #333333, 0 -1px 1px #333333; }
-.Obsidian { background-image: none; color: #FFF; background-color: #1d2224; text-shadow: 1px 0 1px #1d2224, 0 1px 1px #1d2224, -1px 0 1px #1d2224, 0 -1px 1px #1d2224; }
-.Eldritch { background-image: none; color: #FFF; background-color: #252a25; text-shadow: 1px 0 1px #252a25, 0 1px 1px #252a25, -1px 0 1px #252a25, 0 -1px 1px #252a25; }
-.Midnight { background-image: none; color: #FFF; background-color: #252735; text-shadow: 1px 0 1px #252735, 0 1px 1px #252735, -1px 0 1px #252735, 0 -1px 1px #252735; }
-.Shadow { background-image: none; color: #FFF; background-color: #3a2e44; text-shadow: 1px 0 1px #3a2e44, 0 1px 1px #3a2e44, -1px 0 1px #3a2e44, 0 -1px 1px #3a2e44; }
-.Blackberry { background-image: none; color: #FFF; background-color: #4b294f; text-shadow: 1px 0 1px #4b294f, 0 1px 1px #4b294f, -1px 0 1px #4b294f, 0 -1px 1px #4b294f; }
-.Mulberry { background-image: none; color: #FFF; background-color: #6e235d; text-shadow: 1px 0 1px #6e235d, 0 1px 1px #6e235d, -1px 0 1px #6e235d, 0 -1px 1px #6e235d; }
-.Plum { background-image: none; color: #FFF; background-color: #853390; text-shadow: 1px 0 1px #853390, 0 1px 1px #853390, -1px 0 1px #853390, 0 -1px 1px #853390; }
-.Wisteria { background-image: none; color: #FFF; background-color: #724e7b; text-shadow: 1px 0 1px #724e7b, 0 1px 1px #724e7b, -1px 0 1px #724e7b, 0 -1px 1px #724e7b; }
-.Thistle { background-image: none; color: #000; background-color: #8f7c8b; text-shadow: 1px 0 1px #8f7c8b, 0 1px 1px #8f7c8b, -1px 0 1px #8f7c8b, 0 -1px 1px #8f7c8b; }
-.Antique { background-image: none; color: #000; background-color: #d8d6cd; text-shadow: 1px 0 1px #d8d6cd, 0 1px 1px #d8d6cd, -1px 0 1px #d8d6cd, 0 -1px 1px #d8d6cd; }
-.Fog { background-image: none; color: #000; background-color: #a593b0; text-shadow: 1px 0 1px #a593b0, 0 1px 1px #a593b0, -1px 0 1px #a593b0, 0 -1px 1px #a593b0; }
-.Mist { background-image: none; color: #000; background-color: #e1ceff; text-shadow: 1px 0 1px #e1ceff, 0 1px 1px #e1ceff, -1px 0 1px #e1ceff, 0 -1px 1px #e1ceff; }
-.Lavender { background-image: none; color: #000; background-color: #cca4e0; text-shadow: 1px 0 1px #cca4e0, 0 1px 1px #cca4e0, -1px 0 1px #cca4e0, 0 -1px 1px #cca4e0; }
-.Heather { background-image: none; color: #000; background-color: #9777bd; text-shadow: 1px 0 1px #9777bd, 0 1px 1px #9777bd, -1px 0 1px #9777bd, 0 -1px 1px #9777bd; }
-.Purple { background-image: none; color: #FFF; background-color: #a261cf; text-shadow: 1px 0 1px #a261cf, 0 1px 1px #a261cf, -1px 0 1px #a261cf, 0 -1px 1px #a261cf; }
-.Orchid { background-image: none; color: #000; background-color: #d950ff; text-shadow: 1px 0 1px #d950ff, 0 1px 1px #d950ff, -1px 0 1px #d950ff, 0 -1px 1px #d950ff; }
-.Amethyst { background-image: none; color: #FFF; background-color: #993bd0; text-shadow: 1px 0 1px #993bd0, 0 1px 1px #993bd0, -1px 0 1px #993bd0, 0 -1px 1px #993bd0; }
-.Nightshade { background-image: none; color: #FFF; background-color: #782eb2; text-shadow: 1px 0 1px #782eb2, 0 1px 1px #782eb2, -1px 0 1px #782eb2, 0 -1px 1px #782eb2; }
-.Violet { background-image: none; color: #FFF; background-color: #643f9c; text-shadow: 1px 0 1px #643f9c, 0 1px 1px #643f9c, -1px 0 1px #643f9c, 0 -1px 1px #643f9c; }
-.Grape { background-image: none; color: #FFF; background-color: #570fc0; text-shadow: 1px 0 1px #570fc0, 0 1px 1px #570fc0, -1px 0 1px #570fc0, 0 -1px 1px #570fc0; }
-.White { background-image: none; color: #000; background-color: #ffffff; text-shadow: 1px 0 1px #ffffff, 0 1px 1px #ffffff, -1px 0 1px #ffffff, 0 -1px 1px #ffffff; }
-.Royal { background-image: none; color: #FFF; background-color: #4d2c89; text-shadow: 1px 0 1px #4d2c89, 0 1px 1px #4d2c89, -1px 0 1px #4d2c89, 0 -1px 1px #4d2c89; }
-.Eggplant { background-image: none; color: #FFF; background-color: #332b65; text-shadow: 1px 0 1px #332b65, 0 1px 1px #332b65, -1px 0 1px #332b65, 0 -1px 1px #332b65; }
-.Iris { background-image: none; color: #FFF; background-color: #535195; text-shadow: 1px 0 1px #535195, 0 1px 1px #535195, -1px 0 1px #535195, 0 -1px 1px #535195; }
-.Storm { background-image: none; color: #000; background-color: #757adb; text-shadow: 1px 0 1px #757adb, 0 1px 1px #757adb, -1px 0 1px #757adb, 0 -1px 1px #757adb; }
-.Twilight { background-image: none; color: #FFF; background-color: #474aa0; text-shadow: 1px 0 1px #474aa0, 0 1px 1px #474aa0, -1px 0 1px #474aa0, 0 -1px 1px #474aa0; }
-.Indigo { background-image: none; color: #FFF; background-color: #2d237a; text-shadow: 1px 0 1px #2d237a, 0 1px 1px #2d237a, -1px 0 1px #2d237a, 0 -1px 1px #2d237a; }
-.Sapphire { background-image: none; color: #FFF; background-color: #0d095b; text-shadow: 1px 0 1px #0d095b, 0 1px 1px #0d095b, -1px 0 1px #0d095b, 0 -1px 1px #0d095b; }
-.Navy { background-image: none; color: #FFF; background-color: #212b5f; text-shadow: 1px 0 1px #212b5f, 0 1px 1px #212b5f, -1px 0 1px #212b5f, 0 -1px 1px #212b5f; }
-.Cobalt { background-image: none; color: #FFF; background-color: #003484; text-shadow: 1px 0 1px #003484, 0 1px 1px #003484, -1px 0 1px #003484, 0 -1px 1px #003484; }
-.Ultramarine { background-image: none; color: #FFF; background-color: #1c51e7; text-shadow: 1px 0 1px #1c51e7, 0 1px 1px #1c51e7, -1px 0 1px #1c51e7, 0 -1px 1px #1c51e7; }
-.Moon { background-image: none; color: #000; background-color: #d8d7d8; text-shadow: 1px 0 1px #d8d7d8, 0 1px 1px #d8d7d8, -1px 0 1px #d8d7d8, 0 -1px 1px #d8d7d8; }
-.Blue { background-image: none; color: #FFF; background-color: #324ba9; text-shadow: 1px 0 1px #324ba9, 0 1px 1px #324ba9, -1px 0 1px #324ba9, 0 -1px 1px #324ba9; }
-.Periwinkle { background-image: none; color: #FFF; background-color: #4866d5; text-shadow: 1px 0 1px #4866d5, 0 1px 1px #4866d5, -1px 0 1px #4866d5, 0 -1px 1px #4866d5; }
-.Lapis { background-image: none; color: #FFF; background-color: #2b84ff; text-shadow: 1px 0 1px #2b84ff, 0 1px 1px #2b84ff, -1px 0 1px #2b84ff, 0 -1px 1px #2b84ff; }
-.Splash { background-image: none; color: #000; background-color: #324ba9; text-shadow: 1px 0 1px #324ba9, 0 1px 1px #324ba9, -1px 0 1px #324ba9, 0 -1px 1px #324ba9; }
-.Cornflower { background-image: none; color: #000; background-color: #75a8ff; text-shadow: 1px 0 1px #75a8ff, 0 1px 1px #75a8ff, -1px 0 1px #75a8ff, 0 -1px 1px #75a8ff; }
-.Sky { background-image: none; color: #000; background-color: #aec8ff; text-shadow: 1px 0 1px #aec8ff, 0 1px 1px #aec8ff, -1px 0 1px #aec8ff, 0 -1px 1px #aec8ff; }
-.Stonewash { background-image: none; color: #000; background-color: #7895c1; text-shadow: 1px 0 1px #7895c1, 0 1px 1px #7895c1, -1px 0 1px #7895c1, 0 -1px 1px #7895c1; }
-.Overcast { background-image: none; color: #FFF; background-color: #444f69; text-shadow: 1px 0 1px #444f69, 0 1px 1px #444f69, -1px 0 1px #444f69, 0 -1px 1px #444f69; }
-.Steel { background-image: none; color: #FFF; background-color: #556979; text-shadow: 1px 0 1px #556979, 0 1px 1px #556979, -1px 0 1px #556979, 0 -1px 1px #556979; }
-.Denim { background-image: none; color: #FFF; background-color: #2f4557; text-shadow: 1px 0 1px #2f4557, 0 1px 1px #2f4557, -1px 0 1px #2f4557, 0 -1px 1px #2f4557; }
-.Ice { background-image: none; color: #000; background-color: #ebefff; text-shadow: 1px 0 1px #ebefff, 0 1px 1px #ebefff, -1px 0 1px #ebefff, 0 -1px 1px #ebefff; }
-.Abyss { background-image: none; color: #FFF; background-color: #0d1e24; text-shadow: 1px 0 1px #0d1e24, 0 1px 1px #0d1e24, -1px 0 1px #0d1e24, 0 -1px 1px #0d1e24; }
-.Phthalo { background-image: none; color: #FFF; background-color: #0b2d46; text-shadow: 1px 0 1px #0b2d46, 0 1px 1px #0b2d46, -1px 0 1px #0b2d46, 0 -1px 1px #0b2d46; }
-.Azure { background-image: none; color: #FFF; background-color: #0a3d67; text-shadow: 1px 0 1px #0a3d67, 0 1px 1px #0a3d67, -1px 0 1px #0a3d67, 0 -1px 1px #0a3d67; }
-.Caribbean { background-image: none; color: #FFF; background-color: #0086ce; text-shadow: 1px 0 1px #0086ce, 0 1px 1px #0086ce, -1px 0 1px #0086ce, 0 -1px 1px #0086ce; }
-.Teal { background-image: none; color: #FFF; background-color: #2b768f; text-shadow: 1px 0 1px #2b768f, 0 1px 1px #2b768f, -1px 0 1px #2b768f, 0 -1px 1px #2b768f; }
-.Cerulean { background-image: none; color: #FFF; background-color: #00b4d6; text-shadow: 1px 0 1px #00b4d6, 0 1px 1px #00b4d6, -1px 0 1px #00b4d6, 0 -1px 1px #00b4d6; }
-.Cyan { background-image: none; color: #000; background-color: #00fff0; text-shadow: 1px 0 1px #00fff0, 0 1px 1px #00fff0, -1px 0 1px #00fff0, 0 -1px 1px #00fff0; }
-.Robin { background-image: none; color: #000; background-color: #9aeaef; text-shadow: 1px 0 1px #9aeaef, 0 1px 1px #9aeaef, -1px 0 1px #9aeaef, 0 -1px 1px #9aeaef; }
-.Aqua { background-image: none; color: #000; background-color: #72c4c4; text-shadow: 1px 0 1px #72c4c4, 0 1px 1px #72c4c4, -1px 0 1px #72c4c4, 0 -1px 1px #72c4c4; }
-.Turquoise { background-image: none; color: #FFF; background-color: #3aa0a1; text-shadow: 1px 0 1px #3aa0a1, 0 1px 1px #3aa0a1, -1px 0 1px #3aa0a1, 0 -1px 1px #3aa0a1; }
-.Orca { background-image: none; color: #000; background-color: #e0dfff; text-shadow: 1px 0 1px #e0dfff, 0 1px 1px #e0dfff, -1px 0 1px #e0dfff, 0 -1px 1px #e0dfff; }
-.Spruce { background-image: none; color: #000; background-color: #8bbbb2; text-shadow: 1px 0 1px #8bbbb2, 0 1px 1px #8bbbb2, -1px 0 1px #8bbbb2, 0 -1px 1px #8bbbb2; }
-.Pistachio { background-image: none; color: #000; background-color: #e2ffe6; text-shadow: 1px 0 1px #e2ffe6, 0 1px 1px #e2ffe6, -1px 0 1px #e2ffe6, 0 -1px 1px #e2ffe6; }
-.Seafoam { background-image: none; color: #000; background-color: #b2e2bd; text-shadow: 1px 0 1px #b2e2bd, 0 1px 1px #b2e2bd, -1px 0 1px #b2e2bd, 0 -1px 1px #b2e2bd; }
-.Mint { background-image: none; color: #000; background-color: #9affc7; text-shadow: 1px 0 1px #9affc7, 0 1px 1px #9affc7, -1px 0 1px #9affc7, 0 -1px 1px #9affc7; }
-.Jade { background-image: none; color: #FFF; background-color: #61ab89; text-shadow: 1px 0 1px #61ab89, 0 1px 1px #61ab89, -1px 0 1px #61ab89, 0 -1px 1px #61ab89; }
-.Spearmint { background-image: none; color: #FFF; background-color: #148e67; text-shadow: 1px 0 1px #148e67, 0 1px 1px #148e67, -1px 0 1px #148e67, 0 -1px 1px #148e67; }
-.Thicket { background-image: none; color: #FFF; background-color: #005e48; text-shadow: 1px 0 1px #005e48, 0 1px 1px #005e48, -1px 0 1px #005e48, 0 -1px 1px #005e48; }
-.Peacock { background-image: none; color: #FFF; background-color: #1f4739; text-shadow: 1px 0 1px #1f4739, 0 1px 1px #1f4739, -1px 0 1px #1f4739, 0 -1px 1px #1f4739; }
-.Emerald { background-image: none; color: #FFF; background-color: #20603f; text-shadow: 1px 0 1px #20603f, 0 1px 1px #20603f, -1px 0 1px #20603f, 0 -1px 1px #20603f; }
-.Shamrock { background-image: none; color: #FFF; background-color: #236925; text-shadow: 1px 0 1px #236925, 0 1px 1px #236925, -1px 0 1px #236925, 0 -1px 1px #236925; }
-.Platinum { background-image: none; color: #000; background-color: #c8bece; text-shadow: 1px 0 1px #c8bece, 0 1px 1px #c8bece, -1px 0 1px #c8bece, 0 -1px 1px #c8bece; }
-.Jungle { background-image: none; color: #FFF; background-color: #1e361a; text-shadow: 1px 0 1px #1e361a, 0 1px 1px #1e361a, -1px 0 1px #1e361a, 0 -1px 1px #1e361a; }
-.Hunter { background-image: none; color: #FFF; background-color: #1d2715; text-shadow: 1px 0 1px #1d2715, 0 1px 1px #1d2715, -1px 0 1px #1d2715, 0 -1px 1px #1d2715; }
-.Forest { background-image: none; color: #FFF; background-color: #425035; text-shadow: 1px 0 1px #425035, 0 1px 1px #425035, -1px 0 1px #425035, 0 -1px 1px #425035; }
-.Camo { background-image: none; color: #FFF; background-color: #51684c; text-shadow: 1px 0 1px #51684c, 0 1px 1px #51684c, -1px 0 1px #51684c, 0 -1px 1px #51684c; }
-.Algae { background-image: none; color: #000; background-color: #97af8b; text-shadow: 1px 0 1px #97af8b, 0 1px 1px #97af8b, -1px 0 1px #97af8b, 0 -1px 1px #97af8b; }
-.Swamp { background-image: none; color: #FFF; background-color: #687f67; text-shadow: 1px 0 1px #687f67, 0 1px 1px #687f67, -1px 0 1px #687f67, 0 -1px 1px #687f67; }
-.Avocado { background-image: none; color: #FFF; background-color: #567c34; text-shadow: 1px 0 1px #567c34, 0 1px 1px #567c34, -1px 0 1px #567c34, 0 -1px 1px #567c34; }
-.Green { background-image: none; color: #FFF; background-color: #629c3f; text-shadow: 1px 0 1px #629c3f, 0 1px 1px #629c3f, -1px 0 1px #629c3f, 0 -1px 1px #629c3f; }
-.Fern { background-image: none; color: #000; background-color: #7ece73; text-shadow: 1px 0 1px #7ece73, 0 1px 1px #7ece73, -1px 0 1px #7ece73, 0 -1px 1px #7ece73; }
-.Mantis { background-image: none; color: #000; background-color: #99ff9c; text-shadow: 1px 0 1px #99ff9c, 0 1px 1px #99ff9c, -1px 0 1px #99ff9c, 0 -1px 1px #99ff9c; }
-.Silver { background-image: none; color: #000; background-color: #bbbabf; text-shadow: 1px 0 1px #bbbabf, 0 1px 1px #bbbabf, -1px 0 1px #bbbabf, 0 -1px 1px #bbbabf; }
-.Pear { background-image: none; color: #000; background-color: #8ecd55; text-shadow: 1px 0 1px #8ecd55, 0 1px 1px #8ecd55, -1px 0 1px #8ecd55, 0 -1px 1px #8ecd55; }
-.Leaf { background-image: none; color: #000; background-color: #a5e32d; text-shadow: 1px 0 1px #a5e32d, 0 1px 1px #a5e32d, -1px 0 1px #a5e32d, 0 -1px 1px #a5e32d; }
-.Radioactive { background-image: none; color: #000; background-color: #c6ff00; text-shadow: 1px 0 1px #c6ff00, 0 1px 1px #c6ff00, -1px 0 1px #c6ff00, 0 -1px 1px #c6ff00; }
-.Honeydew { background-image: none; color: #000; background-color: #d0e672; text-shadow: 1px 0 1px #d0e672, 0 1px 1px #d0e672, -1px 0 1px #d0e672, 0 -1px 1px #d0e672; }
-.Peridot { background-image: none; color: #000; background-color: #e8ffb5; text-shadow: 1px 0 1px #e8ffb5, 0 1px 1px #e8ffb5, -1px 0 1px #e8ffb5, 0 -1px 1px #e8ffb5; }
-.Chartreuse { background-image: none; color: #000; background-color: #b4cd3c; text-shadow: 1px 0 1px #b4cd3c, 0 1px 1px #b4cd3c, -1px 0 1px #b4cd3c, 0 -1px 1px #b4cd3c; }
-.Spring { background-image: none; color: #FFF; background-color: #a9a832; text-shadow: 1px 0 1px #a9a832, 0 1px 1px #a9a832, -1px 0 1px #a9a832, 0 -1px 1px #a9a832; }
-.Crocodile { background-image: none; color: #FFF; background-color: #828335; text-shadow: 1px 0 1px #828335, 0 1px 1px #828335, -1px 0 1px #828335, 0 -1px 1px #828335; }
-.Olive { background-image: none; color: #FFF; background-color: #697135; text-shadow: 1px 0 1px #697135, 0 1px 1px #697135, -1px 0 1px #697135, 0 -1px 1px #697135; }
-.Murk { background-image: none; color: #FFF; background-color: #4b4420; text-shadow: 1px 0 1px #4b4420, 0 1px 1px #4b4420, -1px 0 1px #4b4420, 0 -1px 1px #4b4420; }
-
+.Maize { background-image: none; background-color: #FFFDEA; color: #000; text-shadow: 1px 0 1px #FFFDEA, 0 1px 1px #FFFDEA, -1px 0 1px #FFFDEA, 0 -1px 1px #FFFDEA;}
+.Cream { background-image: none; background-color: #FFEFDC; color: #000; text-shadow: 1px 0 1px #FFEFDC, 0 1px 1px #FFEFDC, -1px 0 1px #FFEFDC, 0 -1px 1px #FFEFDC;}
+.Antique { background-image: none; background-color: #D8D6CD; color: #000; text-shadow: 1px 0 1px #D8D6CD, 0 1px 1px #D8D6CD, -1px 0 1px #D8D6CD, 0 -1px 1px #D8D6CD;}
+.White { background-image: none; background-color: #FFFFFF; color: #000; text-shadow: 1px 0 1px #FFFFFF, 0 1px 1px #FFFFFF, -1px 0 1px #FFFFFF, 0 -1px 1px #FFFFFF;}
+.Moon { background-image: none; background-color: #D8D7D8; color: #000; text-shadow: 1px 0 1px #D8D7D8, 0 1px 1px #D8D7D8, -1px 0 1px #D8D7D8, 0 -1px 1px #D8D7D8;}
+.Ice { background-image: none; background-color: #F1F3FF; color: #000; text-shadow: 1px 0 1px #F1F3FF, 0 1px 1px #F1F3FF, -1px 0 1px #F1F3FF, 0 -1px 1px #F1F3FF;}
+.Orca { background-image: none; background-color: #E0DFFF; color: #000; text-shadow: 1px 0 1px #E0DFFF, 0 1px 1px #E0DFFF, -1px 0 1px #E0DFFF, 0 -1px 1px #E0DFFF;}
+.Platinum { background-image: none; background-color: #C8BECE; color: #000; text-shadow: 1px 0 1px #C8BECE, 0 1px 1px #C8BECE, -1px 0 1px #C8BECE, 0 -1px 1px #C8BECE;}
+.Silver { background-image: none; background-color: #BBBABF; color: #000; text-shadow: 1px 0 1px #BBBABF, 0 1px 1px #BBBABF, -1px 0 1px #BBBABF, 0 -1px 1px #BBBABF;}
+.Dust { background-image: none; background-color: #9C9C9E; color: #fff; text-shadow: 1px 0 1px #9C9C9E, 0 1px 1px #9C9C9E, -1px 0 1px #9C9C9E, 0 -1px 1px #9C9C9E;}
+.Grey { background-image: none; background-color: #808080; color: #fff; text-shadow: 1px 0 1px #808080, 0 1px 1px #808080, -1px 0 1px #808080, 0 -1px 1px #808080;}
+.Smoke { background-image: none; background-color: #9494A9; color: #fff; text-shadow: 1px 0 1px #9494A9, 0 1px 1px #9494A9, -1px 0 1px #9494A9, 0 -1px 1px #9494A9;}
+.Gloom { background-image: none; background-color: #535264; color: #fff; text-shadow: 1px 0 1px #535264, 0 1px 1px #535264, -1px 0 1px #535264, 0 -1px 1px #535264;}
+.Lead { background-image: none; background-color: #413C3F; color: #fff; text-shadow: 1px 0 1px #413C3F, 0 1px 1px #413C3F, -1px 0 1px #413C3F, 0 -1px 1px #413C3F;}
+.Shale { background-image: none; background-color: #4D4850; color: #fff; text-shadow: 1px 0 1px #4D4850, 0 1px 1px #4D4850, -1px 0 1px #4D4850, 0 -1px 1px #4D4850;}
+.Flint { background-image: none; background-color: #626268; color: #fff; text-shadow: 1px 0 1px #626268, 0 1px 1px #626268, -1px 0 1px #626268, 0 -1px 1px #626268;}
+.Charcoal { background-image: none; background-color: #545454; color: #fff; text-shadow: 1px 0 1px #545454, 0 1px 1px #545454, -1px 0 1px #545454, 0 -1px 1px #545454;}
+.Coal { background-image: none; background-color: #4B4946; color: #fff; text-shadow: 1px 0 1px #4B4946, 0 1px 1px #4B4946, -1px 0 1px #4B4946, 0 -1px 1px #4B4946;}
+.Oilslick { background-image: none; background-color: #342B25; color: #fff; text-shadow: 1px 0 1px #342B25, 0 1px 1px #342B25, -1px 0 1px #342B25, 0 -1px 1px #342B25;}
+.Black { background-image: none; background-color: #333333; color: #fff; text-shadow: 1px 0 1px #333333, 0 1px 1px #333333, -1px 0 1px #333333, 0 -1px 1px #333333;}
+.Obsidian { background-image: none; background-color: #1D2224; color: #fff; text-shadow: 1px 0 1px #1D2224, 0 1px 1px #1D2224, -1px 0 1px #1D2224, 0 -1px 1px #1D2224;}
+.Eldritch { background-image: none; background-color: #252A25; color: #fff; text-shadow: 1px 0 1px #252A25, 0 1px 1px #252A25, -1px 0 1px #252A25, 0 -1px 1px #252A25;}
+.Midnight { background-image: none; background-color: #292B38; color: #fff; text-shadow: 1px 0 1px #292B38, 0 1px 1px #292B38, -1px 0 1px #292B38, 0 -1px 1px #292B38;}
+.Shadow { background-image: none; background-color: #392D43; color: #fff; text-shadow: 1px 0 1px #392D43, 0 1px 1px #392D43, -1px 0 1px #392D43, 0 -1px 1px #392D43;}
+.Blackberry { background-image: none; background-color: #4B294F; color: #fff; text-shadow: 1px 0 1px #4B294F, 0 1px 1px #4B294F, -1px 0 1px #4B294F, 0 -1px 1px #4B294F;}
+.Mulberry { background-image: none; background-color: #545454; color: #fff; text-shadow: 1px 0 1px #545454, 0 1px 1px #545454, -1px 0 1px #545454, 0 -1px 1px #545454;}
+.Plum { background-image: none; background-color: #853390; color: #fff; text-shadow: 1px 0 1px #853390, 0 1px 1px #853390, -1px 0 1px #853390, 0 -1px 1px #853390;}
+.Wisteria { background-image: none; background-color: #724E7B; color: #fff; text-shadow: 1px 0 1px #724E7B, 0 1px 1px #724E7B, -1px 0 1px #724E7B, 0 -1px 1px #724E7B;}
+.Thistle { background-image: none; background-color: #8F7C8B; color: #fff; text-shadow: 1px 0 1px #8F7C8B, 0 1px 1px #8F7C8B, -1px 0 1px #8F7C8B, 0 -1px 1px #8F7C8B;}
+.Fog { background-image: none; background-color: #A593B0; color: #fff; text-shadow: 1px 0 1px #A593B0, 0 1px 1px #A593B0, -1px 0 1px #A593B0, 0 -1px 1px #A593B0;}
+.Mist { background-image: none; background-color: #E1CEFF; color: #000; text-shadow: 1px 0 1px #E1CEFF, 0 1px 1px #E1CEFF, -1px 0 1px #E1CEFF, 0 -1px 1px #E1CEFF;}
+.Lavender { background-image: none; background-color: #CCA4E0; color: #000; text-shadow: 1px 0 1px #CCA4E0, 0 1px 1px #CCA4E0, -1px 0 1px #CCA4E0, 0 -1px 1px #CCA4E0;}
+.Heather { background-image: none; background-color: #9777BD; color: #fff; text-shadow: 1px 0 1px #9777BD, 0 1px 1px #9777BD, -1px 0 1px #9777BD, 0 -1px 1px #9777BD;}
+.Purple { background-image: none; background-color: #A261CF; color: #fff; text-shadow: 1px 0 1px #A261CF, 0 1px 1px #A261CF, -1px 0 1px #A261CF, 0 -1px 1px #A261CF;}
+.Orchid { background-image: none; background-color: #D950FF; color: #000; text-shadow: 1px 0 1px #D950FF, 0 1px 1px #D950FF, -1px 0 1px #D950FF, 0 -1px 1px #D950FF;}
+.Amethyst { background-image: none; background-color: #993BD0; color: #fff; text-shadow: 1px 0 1px #993BD0, 0 1px 1px #993BD0, -1px 0 1px #993BD0, 0 -1px 1px #993BD0;}
+.Nightshade { background-image: none; background-color: #782EB2; color: #fff; text-shadow: 1px 0 1px #782EB2, 0 1px 1px #782EB2, -1px 0 1px #782EB2, 0 -1px 1px #782EB2;}
+.Violet { background-image: none; background-color: #643F9C; color: #fff; text-shadow: 1px 0 1px #643F9C, 0 1px 1px #643F9C, -1px 0 1px #643F9C, 0 -1px 1px #643F9C;}
+.Grape { background-image: none; background-color: #570FC0; color: #fff; text-shadow: 1px 0 1px #570FC0, 0 1px 1px #570FC0, -1px 0 1px #570FC0, 0 -1px 1px #570FC0;}
+.Royal { background-image: none; background-color: #4D2C89; color: #fff; text-shadow: 1px 0 1px #4D2C89, 0 1px 1px #4D2C89, -1px 0 1px #4D2C89, 0 -1px 1px #4D2C89;}
+.Eggplant { background-image: none; background-color: #332B65; color: #fff; text-shadow: 1px 0 1px #332B65, 0 1px 1px #332B65, -1px 0 1px #332B65, 0 -1px 1px #332B65;}
+.Iris { background-image: none; background-color: #535195; color: #fff; text-shadow: 1px 0 1px #535195, 0 1px 1px #535195, -1px 0 1px #535195, 0 -1px 1px #535195;}
+.Storm { background-image: none; background-color: #757ADB; color: #fff; text-shadow: 1px 0 1px #757ADB, 0 1px 1px #757ADB, -1px 0 1px #757ADB, 0 -1px 1px #757ADB;}
+.Twilight { background-image: none; background-color: #474AA0; color: #fff; text-shadow: 1px 0 1px #474AA0, 0 1px 1px #474AA0, -1px 0 1px #474AA0, 0 -1px 1px #474AA0;}
+.Indigo { background-image: none; background-color: #2D237A; color: #fff; text-shadow: 1px 0 1px #2D237A, 0 1px 1px #2D237A, -1px 0 1px #2D237A, 0 -1px 1px #2D237A;}
+.Sapphire { background-image: none; background-color: #0D095B; color: #fff; text-shadow: 1px 0 1px #0D095B, 0 1px 1px #0D095B, -1px 0 1px #0D095B, 0 -1px 1px #0D095B;}
+.Navy { background-image: none; background-color: #212B5F; color: #fff; text-shadow: 1px 0 1px #212B5F, 0 1px 1px #212B5F, -1px 0 1px #212B5F, 0 -1px 1px #212B5F;}
+.Cobalt { background-image: none; background-color: #003484; color: #fff; text-shadow: 1px 0 1px #003484, 0 1px 1px #003484, -1px 0 1px #003484, 0 -1px 1px #003484;}
+.Ultramarine { background-image: none; background-color: #1C51E7; color: #fff; text-shadow: 1px 0 1px #1C51E7, 0 1px 1px #1C51E7, -1px 0 1px #1C51E7, 0 -1px 1px #1C51E7;}
+.Blue { background-image: none; background-color: #324BA9; color: #fff; text-shadow: 1px 0 1px #324BA9, 0 1px 1px #324BA9, -1px 0 1px #324BA9, 0 -1px 1px #324BA9;}
+.Periwinkle { background-image: none; background-color: #4866D5; color: #fff; text-shadow: 1px 0 1px #4866D5, 0 1px 1px #4866D5, -1px 0 1px #4866D5, 0 -1px 1px #4866D5;}
+.Lapis { background-image: none; background-color: #2B84FF; color: #fff; text-shadow: 1px 0 1px #2B84FF, 0 1px 1px #2B84FF, -1px 0 1px #2B84FF, 0 -1px 1px #2B84FF;}
+.Splash { background-image: none; background-color: #6394DD; color: #fff; text-shadow: 1px 0 1px #6394DD, 0 1px 1px #6394DD, -1px 0 1px #6394DD, 0 -1px 1px #6394DD;}
+.Cornflower { background-image: none; background-color: #75A8FF; color: #000; text-shadow: 1px 0 1px #75A8FF, 0 1px 1px #75A8FF, -1px 0 1px #75A8FF, 0 -1px 1px #75A8FF;}
+.Sky { background-image: none; background-color: #AEC8FF; color: #000; text-shadow: 1px 0 1px #AEC8FF, 0 1px 1px #AEC8FF, -1px 0 1px #AEC8FF, 0 -1px 1px #AEC8FF;}
+.Stonewash { background-image: none; background-color: #7895C1; color: #fff; text-shadow: 1px 0 1px #7895C1, 0 1px 1px #7895C1, -1px 0 1px #7895C1, 0 -1px 1px #7895C1;}
+.Overcast { background-image: none; background-color: #444F69; color: #fff; text-shadow: 1px 0 1px #444F69, 0 1px 1px #444F69, -1px 0 1px #444F69, 0 -1px 1px #444F69;}
+.Steel { background-image: none; background-color: #556979; color: #fff; text-shadow: 1px 0 1px #556979, 0 1px 1px #556979, -1px 0 1px #556979, 0 -1px 1px #556979;}
+.Denim { background-image: none; background-color: #2F4557; color: #fff; text-shadow: 1px 0 1px #2F4557, 0 1px 1px #2F4557, -1px 0 1px #2F4557, 0 -1px 1px #2F4557;}
+.Abyss { background-image: none; background-color: #0D1E24; color: #fff; text-shadow: 1px 0 1px #0D1E24, 0 1px 1px #0D1E24, -1px 0 1px #0D1E24, 0 -1px 1px #0D1E24;}
+.Phtalo { background-image: none; background-color: #0B2D46; color: #fff; text-shadow: 1px 0 1px #0B2D46, 0 1px 1px #0B2D46, -1px 0 1px #0B2D46, 0 -1px 1px #0B2D46;}
+.Azure { background-image: none; background-color: #0A3D67; color: #fff; text-shadow: 1px 0 1px #0A3D67, 0 1px 1px #0A3D67, -1px 0 1px #0A3D67, 0 -1px 1px #0A3D67;}
+.Caribbean { background-image: none; background-color: #0086CE; color: #fff; text-shadow: 1px 0 1px #0086CE, 0 1px 1px #0086CE, -1px 0 1px #0086CE, 0 -1px 1px #0086CE;}
+.Teal { background-image: none; background-color: #2B768F; color: #fff; text-shadow: 1px 0 1px #2B768F, 0 1px 1px #2B768F, -1px 0 1px #2B768F, 0 -1px 1px #2B768F;}
+.Cerulean { background-image: none; background-color: #00B4D6; color: #fff; text-shadow: 1px 0 1px #00B4D6, 0 1px 1px #00B4D6, -1px 0 1px #00B4D6, 0 -1px 1px #00B4D6;}
+.Cyan { background-image: none; background-color: #00FFF0; color: #fff; text-shadow: 1px 0 1px #00FFF0, 0 1px 1px #00FFF0, -1px 0 1px #00FFF0, 0 -1px 1px #00FFF0;}
+.Robin { background-image: none; background-color: #9AEAEF; color: #000; text-shadow: 1px 0 1px #9AEAEF, 0 1px 1px #9AEAEF, -1px 0 1px #9AEAEF, 0 -1px 1px #9AEAEF;}
+.Aqua { background-image: none; background-color: #72C4C4; color: #fff; text-shadow: 1px 0 1px #72C4C4, 0 1px 1px #72C4C4, -1px 0 1px #72C4C4, 0 -1px 1px #72C4C4;}
+.Turquoise { background-image: none; background-color: #3AA0A1; color: #fff; text-shadow: 1px 0 1px #3AA0A1, 0 1px 1px #3AA0A1, -1px 0 1px #3AA0A1, 0 -1px 1px #3AA0A1;}
+.Spruce { background-image: none; background-color: #8BBBB2; color: #fff; text-shadow: 1px 0 1px #8BBBB2, 0 1px 1px #8BBBB2, -1px 0 1px #8BBBB2, 0 -1px 1px #8BBBB2;}
+.Pistachio { background-image: none; background-color: #E2FFE6; color: #000; text-shadow: 1px 0 1px #E2FFE6, 0 1px 1px #E2FFE6, -1px 0 1px #E2FFE6, 0 -1px 1px #E2FFE6;}
+.Seafoam { background-image: none; background-color: #B2E2BD; color: #000; text-shadow: 1px 0 1px #B2E2BD, 0 1px 1px #B2E2BD, -1px 0 1px #B2E2BD, 0 -1px 1px #B2E2BD;}
+.Mint { background-image: none; background-color: #9AFFC7; color: #000; text-shadow: 1px 0 1px #9AFFC7, 0 1px 1px #9AFFC7, -1px 0 1px #9AFFC7, 0 -1px 1px #9AFFC7;}
+.Jade { background-image: none; background-color: #61AB89; color: #fff; text-shadow: 1px 0 1px #61AB89, 0 1px 1px #61AB89, -1px 0 1px #61AB89, 0 -1px 1px #61AB89;}
+.Spearmint { background-image: none; background-color: #148E67; color: #fff; text-shadow: 1px 0 1px #148E67, 0 1px 1px #148E67, -1px 0 1px #148E67, 0 -1px 1px #148E67;}
+.Thicket { background-image: none; background-color: #005E48; color: #fff; text-shadow: 1px 0 1px #005E48, 0 1px 1px #005E48, -1px 0 1px #005E48, 0 -1px 1px #005E48;}
+.Peacock { background-image: none; background-color: #1F4739; color: #fff; text-shadow: 1px 0 1px #1F4739, 0 1px 1px #1F4739, -1px 0 1px #1F4739, 0 -1px 1px #1F4739;}
+.Emerald { background-image: none; background-color: #20603F; color: #fff; text-shadow: 1px 0 1px #20603F, 0 1px 1px #20603F, -1px 0 1px #20603F, 0 -1px 1px #20603F;}
+.Shamrock { background-image: none; background-color: #236925; color: #fff; text-shadow: 1px 0 1px #236925, 0 1px 1px #236925, -1px 0 1px #236925, 0 -1px 1px #236925;}
+.Jungle { background-image: none; background-color: #1E361A; color: #fff; text-shadow: 1px 0 1px #1E361A, 0 1px 1px #1E361A, -1px 0 1px #1E361A, 0 -1px 1px #1E361A;}
+.Hunter { background-image: none; background-color: #1D2715; color: #fff; text-shadow: 1px 0 1px #1D2715, 0 1px 1px #1D2715, -1px 0 1px #1D2715, 0 -1px 1px #1D2715;}
+.Forest { background-image: none; background-color: #425035; color: #fff; text-shadow: 1px 0 1px #425035, 0 1px 1px #425035, -1px 0 1px #425035, 0 -1px 1px #425035;}
+.Camo { background-image: none; background-color: #51684C; color: #fff; text-shadow: 1px 0 1px #51684C, 0 1px 1px #51684C, -1px 0 1px #51684C, 0 -1px 1px #51684C;}
+.Algae { background-image: none; background-color: #97AF8B; color: #fff; text-shadow: 1px 0 1px #97AF8B, 0 1px 1px #97AF8B, -1px 0 1px #97AF8B, 0 -1px 1px #97AF8B;}
+.Swamp { background-image: none; background-color: #687F67; color: #fff; text-shadow: 1px 0 1px #687F67, 0 1px 1px #687F67, -1px 0 1px #687F67, 0 -1px 1px #687F67;}
+.Avocado { background-image: none; background-color: #567C34; color: #fff; text-shadow: 1px 0 1px #567C34, 0 1px 1px #567C34, -1px 0 1px #567C34, 0 -1px 1px #567C34;}
+.Green { background-image: none; background-color: #629C3F; color: #fff; text-shadow: 1px 0 1px #629C3F, 0 1px 1px #629C3F, -1px 0 1px #629C3F, 0 -1px 1px #629C3F;}
+.Fern { background-image: none; background-color: #7ECE73; color: #fff; text-shadow: 1px 0 1px #7ECE73, 0 1px 1px #7ECE73, -1px 0 1px #7ECE73, 0 -1px 1px #7ECE73;}
+.Mantis { background-image: none; background-color: #99FF9C; color: #000; text-shadow: 1px 0 1px #99FF9C, 0 1px 1px #99FF9C, -1px 0 1px #99FF9C, 0 -1px 1px #99FF9C;}
+.Pear { background-image: none; background-color: #8ECD55; color: #fff; text-shadow: 1px 0 1px #8ECD55, 0 1px 1px #8ECD55, -1px 0 1px #8ECD55, 0 -1px 1px #8ECD55;}
+.Leaf { background-image: none; background-color: #A5E32D; color: #fff; text-shadow: 1px 0 1px #A5E32D, 0 1px 1px #A5E32D, -1px 0 1px #A5E32D, 0 -1px 1px #A5E32D;}
+.Radioactive { background-image: none; background-color: #C6FF00; color: #fff; text-shadow: 1px 0 1px #C6FF00, 0 1px 1px #C6FF00, -1px 0 1px #C6FF00, 0 -1px 1px #C6FF00;}
+.Honeydew { background-image: none; background-color: #D0E672; color: #000; text-shadow: 1px 0 1px #D0E672, 0 1px 1px #D0E672, -1px 0 1px #D0E672, 0 -1px 1px #D0E672;}
+.Peridot { background-image: none; background-color: #E8FFB5; color: #000; text-shadow: 1px 0 1px #E8FFB5, 0 1px 1px #E8FFB5, -1px 0 1px #E8FFB5, 0 -1px 1px #E8FFB5;}
+.Chartreuse { background-image: none; background-color: #B4CD3C; color: #fff; text-shadow: 1px 0 1px #B4CD3C, 0 1px 1px #B4CD3C, -1px 0 1px #B4CD3C, 0 -1px 1px #B4CD3C;}
+.Spring { background-image: none; background-color: #A9A032; color: #fff; text-shadow: 1px 0 1px #A9A032, 0 1px 1px #A9A032, -1px 0 1px #A9A032, 0 -1px 1px #A9A032;}
+.Crocodile { background-image: none; background-color: #828335; color: #fff; text-shadow: 1px 0 1px #828335, 0 1px 1px #828335, -1px 0 1px #828335, 0 -1px 1px #828335;}
+.Olive { background-image: none; background-color: #697135; color: #fff; text-shadow: 1px 0 1px #697135, 0 1px 1px #697135, -1px 0 1px #697135, 0 -1px 1px #697135;}
+.Murk { background-image: none; background-color: #4B4420; color: #fff; text-shadow: 1px 0 1px #4B4420, 0 1px 1px #4B4420, -1px 0 1px #4B4420, 0 -1px 1px #4B4420;}
+.Moss { background-image: none; background-color: #7E7745; color: #fff; text-shadow: 1px 0 1px #7E7745, 0 1px 1px #7E7745, -1px 0 1px #7E7745, 0 -1px 1px #7E7745;}
+.Goldenrod { background-image: none; background-color: #BEA55D; color: #fff; text-shadow: 1px 0 1px #BEA55D, 0 1px 1px #BEA55D, -1px 0 1px #BEA55D, 0 -1px 1px #BEA55D;}
+.Amber { background-image: none; background-color: #C18E1B; color: #fff; text-shadow: 1px 0 1px #C18E1B, 0 1px 1px #C18E1B, -1px 0 1px #C18E1B, 0 -1px 1px #C18E1B;}
+.Honey { background-image: none; background-color: #D1B300; color: #fff; text-shadow: 1px 0 1px #D1B300, 0 1px 1px #D1B300, -1px 0 1px #D1B300, 0 -1px 1px #D1B300;}
+.Lemon { background-image: none; background-color: #FFE63B; color: #000; text-shadow: 1px 0 1px #FFE63B, 0 1px 1px #FFE63B, -1px 0 1px #FFE63B, 0 -1px 1px #FFE63B;}
+.Yellow { background-image: none; background-color: #F9E255; color: #000; text-shadow: 1px 0 1px #F9E255, 0 1px 1px #F9E255, -1px 0 1px #F9E255, 0 -1px 1px #F9E255;}
+.Grapefruit { background-image: none; background-color: #F7FF6F; color: #000; text-shadow: 1px 0 1px #F7FF6F, 0 1px 1px #F7FF6F, -1px 0 1px #F7FF6F, 0 -1px 1px #F7FF6F;}
+.Banana { background-image: none; background-color: #FFEC80; color: #000; text-shadow: 1px 0 1px #FFEC80, 0 1px 1px #FFEC80, -1px 0 1px #FFEC80, 0 -1px 1px #FFEC80;}
+.Sanddollar { background-image: none; background-color: #EBE7AE; color: #000; text-shadow: 1px 0 1px #EBE7AE, 0 1px 1px #EBE7AE, -1px 0 1px #EBE7AE, 0 -1px 1px #EBE7AE;}
+.Flaxen { background-image: none; background-color: #FDE9AE; color: #000; text-shadow: 1px 0 1px #FDE9AE, 0 1px 1px #FDE9AE, -1px 0 1px #FDE9AE, 0 -1px 1px #FDE9AE;}
+.Ivory { background-image: none; background-color: #FFD297; color: #000; text-shadow: 1px 0 1px #FFD297, 0 1px 1px #FFD297, -1px 0 1px #FFD297, 0 -1px 1px #FFD297;}
+.Buttercup { background-image: none; background-color: #F6BF6B; color: #000; text-shadow: 1px 0 1px #F6BF6B, 0 1px 1px #F6BF6B, -1px 0 1px #F6BF6B, 0 -1px 1px #F6BF6B;}
+.Gold { background-image: none; background-color: #E8AF49; color: #fff; text-shadow: 1px 0 1px #E8AF49, 0 1px 1px #E8AF49, -1px 0 1px #E8AF49, 0 -1px 1px #E8AF49;}
+.Metals { background-image: none; background-color: #D1B046; color: #fff; text-shadow: 1px 0 1px #D1B046, 0 1px 1px #D1B046, -1px 0 1px #D1B046, 0 -1px 1px #D1B046;}
+.Marigold { background-image: none; background-color: #FFB43B; color: #fff; text-shadow: 1px 0 1px #FFB43B, 0 1px 1px #FFB43B, -1px 0 1px #FFB43B, 0 -1px 1px #FFB43B;}
+.Sunshine { background-image: none; background-color: #FA912B; color: #fff; text-shadow: 1px 0 1px #FA912B, 0 1px 1px #FA912B, -1px 0 1px #FA912B, 0 -1px 1px #FA912B;}
+.Saffron { background-image: none; background-color: #FF8400; color: #fff; text-shadow: 1px 0 1px #FF8400, 0 1px 1px #FF8400, -1px 0 1px #FF8400, 0 -1px 1px #FF8400;}
+.Sunset { background-image: none; background-color: #FFA248; color: #fff; text-shadow: 1px 0 1px #FFA248, 0 1px 1px #FFA248, -1px 0 1px #FFA248, 0 -1px 1px #FFA248;}
+.Peach { background-image: none; background-color: #FFB576; color: #000; text-shadow: 1px 0 1px #FFB576, 0 1px 1px #FFB576, -1px 0 1px #FFB576, 0 -1px 1px #FFB576;}
+.Cantaloupe { background-image: none; background-color: #FF984F; color: #fff; text-shadow: 1px 0 1px #FF984F, 0 1px 1px #FF984F, -1px 0 1px #FF984F, 0 -1px 1px #FF984F;}
+.Orange { background-image: none; background-color: #D5602B; color: #fff; text-shadow: 1px 0 1px #D5602B, 0 1px 1px #D5602B, -1px 0 1px #D5602B, 0 -1px 1px #D5602B;}
+.Bronze { background-image: none; background-color: #B2560D; color: #fff; text-shadow: 1px 0 1px #B2560D, 0 1px 1px #B2560D, -1px 0 1px #B2560D, 0 -1px 1px #B2560D;}
+.Terracotta { background-image: none; background-color: #B23B07; color: #fff; text-shadow: 1px 0 1px #B23B07, 0 1px 1px #B23B07, -1px 0 1px #B23B07, 0 -1px 1px #B23B07;}
+.Carrot { background-image: none; background-color: #FF5500; color: #fff; text-shadow: 1px 0 1px #FF5500, 0 1px 1px #FF5500, -1px 0 1px #FF5500, 0 -1px 1px #FF5500;}
+.Fire { background-image: none; background-color: #EF5C23; color: #fff; text-shadow: 1px 0 1px #EF5C23, 0 1px 1px #EF5C23, -1px 0 1px #EF5C23, 0 -1px 1px #EF5C23;}
+.Pumpkin { background-image: none; background-color: #FF6840; color: #fff; text-shadow: 1px 0 1px #FF6840, 0 1px 1px #FF6840, -1px 0 1px #FF6840, 0 -1px 1px #FF6840;}
+.Tangerine { background-image: none; background-color: #FF7360; color: #fff; text-shadow: 1px 0 1px #FF7360, 0 1px 1px #FF7360, -1px 0 1px #FF7360, 0 -1px 1px #FF7360;}
+.Cinnamon { background-image: none; background-color: #C05A39; color: #fff; text-shadow: 1px 0 1px #C05A39, 0 1px 1px #C05A39, -1px 0 1px #C05A39, 0 -1px 1px #C05A39;}
+.Caramel { background-image: none; background-color: #C67047; color: #fff; text-shadow: 1px 0 1px #C67047, 0 1px 1px #C67047, -1px 0 1px #C67047, 0 -1px 1px #C67047;}
+.Sand { background-image: none; background-color: #B27749; color: #fff; text-shadow: 1px 0 1px #B27749, 0 1px 1px #B27749, -1px 0 1px #B27749, 0 -1px 1px #B27749;}
+.Tan { background-image: none; background-color: #C49A70; color: #fff; text-shadow: 1px 0 1px #C49A70, 0 1px 1px #C49A70, -1px 0 1px #C49A70, 0 -1px 1px #C49A70;}
+.Beige { background-image: none; background-color: #CABBA2; color: #000; text-shadow: 1px 0 1px #CABBA2, 0 1px 1px #CABBA2, -1px 0 1px #CABBA2, 0 -1px 1px #CABBA2;}
+.Stone { background-image: none; background-color: #827A64; color: #fff; text-shadow: 1px 0 1px #827A64, 0 1px 1px #827A64, -1px 0 1px #827A64, 0 -1px 1px #827A64;}
+.Taupe { background-image: none; background-color: #6D665A; color: #fff; text-shadow: 1px 0 1px #6D665A, 0 1px 1px #6D665A, -1px 0 1px #6D665A, 0 -1px 1px #6D665A;}
+.Slate { background-image: none; background-color: #564D48; color: #fff; text-shadow: 1px 0 1px #564D48, 0 1px 1px #564D48, -1px 0 1px #564D48, 0 -1px 1px #564D48;}
+.Driftwood { background-image: none; background-color: #766359; color: #fff; text-shadow: 1px 0 1px #766359, 0 1px 1px #766359, -1px 0 1px #766359, 0 -1px 1px #766359;}
+.Latte { background-image: none; background-color: #977B6C; color: #fff; text-shadow: 1px 0 1px #977B6C, 0 1px 1px #977B6C, -1px 0 1px #977B6C, 0 -1px 1px #977B6C;}
+.Dirt { background-image: none; background-color: #76483F; color: #fff; text-shadow: 1px 0 1px #76483F, 0 1px 1px #76483F, -1px 0 1px #76483F, 0 -1px 1px #76483F;}
+.Clay { background-image: none; background-color: #603F3D; color: #fff; text-shadow: 1px 0 1px #603F3D, 0 1px 1px #603F3D, -1px 0 1px #603F3D, 0 -1px 1px #603F3D;}
+.Sable { background-image: none; background-color: #57372C; color: #fff; text-shadow: 1px 0 1px #57372C, 0 1px 1px #57372C, -1px 0 1px #57372C, 0 -1px 1px #57372C;}
+.Umber { background-image: none; background-color: #2F1E1A; color: #fff; text-shadow: 1px 0 1px #2F1E1A, 0 1px 1px #2F1E1A, -1px 0 1px #2F1E1A, 0 -1px 1px #2F1E1A;}
+.Soil { background-image: none; background-color: #5A4534; color: #fff; text-shadow: 1px 0 1px #5A4534, 0 1px 1px #5A4534, -1px 0 1px #5A4534, 0 -1px 1px #5A4534;}
+.Hickory { background-image: none; background-color: #725639; color: #fff; text-shadow: 1px 0 1px #725639, 0 1px 1px #725639, -1px 0 1px #725639, 0 -1px 1px #725639;}
+.Tarnish { background-image: none; background-color: #855C32; color: #fff; text-shadow: 1px 0 1px #855C32, 0 1px 1px #855C32, -1px 0 1px #855C32, 0 -1px 1px #855C32;}
+.Ginger { background-image: none; background-color: #90532B; color: #fff; text-shadow: 1px 0 1px #90532B, 0 1px 1px #90532B, -1px 0 1px #90532B, 0 -1px 1px #90532B;}
+.Brown { background-image: none; background-color: #8E5B3F; color: #fff; text-shadow: 1px 0 1px #8E5B3F, 0 1px 1px #8E5B3F, -1px 0 1px #8E5B3F, 0 -1px 1px #8E5B3F;}
+.Chocolate { background-image: none; background-color: #563012; color: #fff; text-shadow: 1px 0 1px #563012, 0 1px 1px #563012, -1px 0 1px #563012, 0 -1px 1px #563012;}
+.Auburn { background-image: none; background-color: #7B3C1D; color: #fff; text-shadow: 1px 0 1px #7B3C1D, 0 1px 1px #7B3C1D, -1px 0 1px #7B3C1D, 0 -1px 1px #7B3C1D;}
+.Copper { background-image: none; background-color: #A44B28; color: #fff; text-shadow: 1px 0 1px #A44B28, 0 1px 1px #A44B28, -1px 0 1px #A44B28, 0 -1px 1px #A44B28;}
+.Rust { background-image: none; background-color: #8B3220; color: #fff; text-shadow: 1px 0 1px #8B3220, 0 1px 1px #8B3220, -1px 0 1px #8B3220, 0 -1px 1px #8B3220;}
+.Tomato { background-image: none; background-color: #BA311C; color: #fff; text-shadow: 1px 0 1px #BA311C, 0 1px 1px #BA311C, -1px 0 1px #BA311C, 0 -1px 1px #BA311C;}
+.Vermillion { background-image: none; background-color: #E22D17; color: #fff; text-shadow: 1px 0 1px #E22D17, 0 1px 1px #E22D17, -1px 0 1px #E22D17, 0 -1px 1px #E22D17;}
+.Ruby { background-image: none; background-color: #CD000E; color: #fff; text-shadow: 1px 0 1px #CD000E, 0 1px 1px #CD000E, -1px 0 1px #CD000E, 0 -1px 1px #CD000E;}
+.Cherry { background-image: none; background-color: #AA0024; color: #fff; text-shadow: 1px 0 1px #AA0024, 0 1px 1px #AA0024, -1px 0 1px #AA0024, 0 -1px 1px #AA0024;}
+.Crimson { background-image: none; background-color: #850012; color: #fff; text-shadow: 1px 0 1px #850012, 0 1px 1px #850012, -1px 0 1px #850012, 0 -1px 1px #850012;}
+.Garnet { background-image: none; background-color: #5B0F14; color: #fff; text-shadow: 1px 0 1px #5B0F14, 0 1px 1px #5B0F14, -1px 0 1px #5B0F14, 0 -1px 1px #5B0F14;}
+.Sanguine { background-image: none; background-color: #2E0002; color: #fff; text-shadow: 1px 0 1px #2E0002, 0 1px 1px #2E0002, -1px 0 1px #2E0002, 0 -1px 1px #2E0002;}
+.Blood { background-image: none; background-color: #451717; color: #fff; text-shadow: 1px 0 1px #451717, 0 1px 1px #451717, -1px 0 1px #451717, 0 -1px 1px #451717;}
+.Maroon { background-image: none; background-color: #652127; color: #fff; text-shadow: 1px 0 1px #652127, 0 1px 1px #652127, -1px 0 1px #652127, 0 -1px 1px #652127;}
+.Berry { background-image: none; background-color: #8B272C; color: #fff; text-shadow: 1px 0 1px #8B272C, 0 1px 1px #8B272C, -1px 0 1px #8B272C, 0 -1px 1px #8B272C;}
+.Red { background-image: none; background-color: #C1272D; color: #fff; text-shadow: 1px 0 1px #C1272D, 0 1px 1px #C1272D, -1px 0 1px #C1272D, 0 -1px 1px #C1272D;}
+.Strawberry { background-image: none; background-color: #DE3235; color: #fff; text-shadow: 1px 0 1px #DE3235, 0 1px 1px #DE3235, -1px 0 1px #DE3235, 0 -1px 1px #DE3235;}
+.Cerise { background-image: none; background-color: #A22929; color: #fff; text-shadow: 1px 0 1px #A22929, 0 1px 1px #A22929, -1px 0 1px #A22929, 0 -1px 1px #A22929;}
+.Carmine { background-image: none; background-color: #B13A3A; color: #fff; text-shadow: 1px 0 1px #B13A3A, 0 1px 1px #B13A3A, -1px 0 1px #B13A3A, 0 -1px 1px #B13A3A;}
+.Brick { background-image: none; background-color: #9A534D; color: #fff; text-shadow: 1px 0 1px #9A534D, 0 1px 1px #9A534D, -1px 0 1px #9A534D, 0 -1px 1px #9A534D;}
+.Coral { background-image: none; background-color: #CC6F6F; color: #fff; text-shadow: 1px 0 1px #CC6F6F, 0 1px 1px #CC6F6F, -1px 0 1px #CC6F6F, 0 -1px 1px #CC6F6F;}
+.Blush { background-image: none; background-color: #FFA2A2; color: #000; text-shadow: 1px 0 1px #FFA2A2, 0 1px 1px #FFA2A2, -1px 0 1px #FFA2A2, 0 -1px 1px #FFA2A2;}
+.Cottoncandy { background-image: none; background-color: #EB7997; color: #fff; text-shadow: 1px 0 1px #EB7997, 0 1px 1px #EB7997, -1px 0 1px #EB7997, 0 -1px 1px #EB7997;}
+.Watermelon { background-image: none; background-color: #DB518D; color: #fff; text-shadow: 1px 0 1px #DB518D, 0 1px 1px #DB518D, -1px 0 1px #DB518D, 0 -1px 1px #DB518D;}
+.Magenta { background-image: none; background-color: #E934AA; color: #fff; text-shadow: 1px 0 1px #E934AA, 0 1px 1px #E934AA, -1px 0 1px #E934AA, 0 -1px 1px #E934AA;}
+.Fuchsia { background-image: none; background-color: #EC0089; color: #fff; text-shadow: 1px 0 1px #EC0089, 0 1px 1px #EC0089, -1px 0 1px #EC0089, 0 -1px 1px #EC0089;}
+.Raspberry { background-image: none; background-color: #8A0249; color: #fff; text-shadow: 1px 0 1px #8A0249, 0 1px 1px #8A0249, -1px 0 1px #8A0249, 0 -1px 1px #8A0249;}
+.Wine { background-image: none; background-color: #4D0F28; color: #fff; text-shadow: 1px 0 1px #4D0F28, 0 1px 1px #4D0F28, -1px 0 1px #4D0F28, 0 -1px 1px #4D0F28;}
+.Mauve { background-image: none; background-color: #9C4875; color: #fff; text-shadow: 1px 0 1px #9C4875, 0 1px 1px #9C4875, -1px 0 1px #9C4875, 0 -1px 1px #9C4875;}
+.Pink { background-image: none; background-color: #E77FBF; color: #000; text-shadow: 1px 0 1px #E77FBF, 0 1px 1px #E77FBF, -1px 0 1px #E77FBF, 0 -1px 1px #E77FBF;}
+.Bubblegum { background-image: none; background-color: #EAA9FF; color: #000; text-shadow: 1px 0 1px #EAA9FF, 0 1px 1px #EAA9FF, -1px 0 1px #EAA9FF, 0 -1px 1px #EAA9FF;}
+.Rose { background-image: none; background-color: #FFD6F6; color: #000; text-shadow: 1px 0 1px #FFD6F6, 0 1px 1px #FFD6F6, -1px 0 1px #FFD6F6, 0 -1px 1px #FFD6F6;}
+.Pearl { background-image: none; background-color: #FBE9F8; color: #000; text-shadow: 1px 0 1px #FBE9F8, 0 1px 1px #FBE9F8, -1px 0 1px #FBE9F8, 0 -1px 1px #FBE9F8;}
 .label_text { padding-top: 7px; text-align: center; }
 .cup_image { float: left; margin-right: 20px; }
 .canvas_1 { border: 1px solid black; }
