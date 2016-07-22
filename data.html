@@ -8,14 +8,14 @@
     <link href="css/gutools.css" rel="stylesheet">
     <link href="css/fr.css" rel="stylesheet">
     <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
-    <title>Flight Rising 工具.数据</title>
+    <title data-localize="Flight Rising Tool">Flight Rising</title>
   </head>
   <body>
     <div class="container">
       <div id="top" class="page_head panel panel-default">
         <div class="panel-heading">
-          <h2><strong>Flight Rising 工具.数据</strong></h2>
-          <h5 title="Flight Rising Tool to get color range and gene rate of two dragons." data-toggle="tooltip" data-placement="bottom">#Flight Rising 工具，计算2只龙后代的颜色和基因范围。计算确定目标的龙的出现几率。</h5>
+          <h2><strong data-localize="Flight Rising Tool">Flight Rising</strong>.<strong data-localize="Data">Data</strong></strong></h2>
+          <h5>#<span data-localize="Data description">Data table.</span>
         </div>
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
@@ -32,20 +32,26 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a title="Flight Rising Tool" data-toggle="tooltip" data-placement="bottom" href="/" role="button" aria-haspopup="true" aria-expanded="false">Flight Rising工具</a>
+                <li>
+                  <a data-localize="Breeding Tool" href="/" role="button" aria-haspopup="true" aria-expanded="false">Breeding Tool</a>
               </li>
-              <li class="dropdown">
-                <a title="Breeding Card" data-toggle="tooltip" data-placement="bottom" href="card.html" role="button" aria-haspopup="true" aria-expanded="false">结婚证</a>
+              <li>
+                <a data-localize="Breeding Card" href="card.html" role="button" aria-haspopup="true" aria-expanded="false">Breeding Card</a>
               </li>
-              <li class="dropdown active">
-                <a title="Data" data-toggle="tooltip" data-placement="bottom" href="data.html" role="button" aria-haspopup="true" aria-expanded="false">数据</a>
-              </li>
-                <li class="dropdown">
-                  <a title="Github Repository" data-toggle="tooltip" data-placement="bottom" href="https://github.com/JiYouMCC/FlightRisingTool" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Github代码库</a>
+                <li class="active">
+                  <a data-localize="Data" href="data.html" role="button" aria-haspopup="true" aria-expanded="false">Data</a>
                 </li>
+                <li>
+                  <a data-localize="Github Repository" href="https://github.com/JiYouMCC/FlightRisingTool" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Github Repository</a>
+                </li>
+                <li>
+                  <a data-localize="Find me in FR" href="http://flightrising.com/main.php?p=view&tab=userpage&id=200704" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Find me in FR</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                  <a title="Ping me in FR" data-toggle="tooltip" data-placement="bottom" href="http://flightrising.com/main.php?p=view&tab=userpage&id=200704" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">在FR中找我</a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <span data-localize="Language">English</span><span class="caret"></span></a>
+                  <ul id="dropdown_language" class="dropdown-menu"></ul>
                 </li>
               </ul>
             </div>
@@ -54,105 +60,104 @@
       </div>
       <div class="row">
         <div class="col-md-9">
-          <h4><strong>性别列表 Gender List</strong></h4>
+          <h4><strong data-localize="Gender List">Gender List</strong></h4>
           <div class="table-responsive">
             <table class="table table-condensed table-striped">
-              <thead><tr><th>Name</th></tr></thead>
+              <thead><tr><th data-localize="Name">Name</th></tr></thead>
               <tbody id="gender_list"></tbody>
             </table>
           </div>
-          <h4><strong>几率列表 Odds List</strong></h4>
+          <h4><strong data-localize="Odds List">Odds List</strong></h4>
           <div class="table-responsive">
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>
-                  <th>Name</th><th>产假 Cooldown</th>
+                  <th data-localize="Name">Name</th><th data-localize="Cooldown">Cooldown</th>
                 </tr>
               </thead>
               <tbody id="odd_list"></tbody>
             </table>
           </div>
-          <h4><strong>品种列表 Breed List</strong></h4>
+          <h4><strong data-localize="Breed List">Breed List</strong></h4>
           <div class="table-responsive">
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>
-                  <th>Name</th><th>Odds</th>
+                  <th data-localize="Name">Name</th><th data-localize="Odds">Odds</th>
                 </tr>
               </thead>
               <tbody id="breed_list">
               </tbody>
             </table>
           </div>
-          <h4><strong>第一基因列表 Primary Gene List</strong></h4>
+          <h4><strong data-localize="Primary Gene List">Primary Gene List</strong></h4>
           <div class="table-responsive">
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>
-                  <th>Name</th><th>Odds</th>
+                  <th data-localize="Name">Name</th><th data-localize="Odds">Odds</th>
                 </tr>
               </thead>
               <tbody id="primary_gene_list">
               </tbody>
             </table>
           </div>
-          <h4><strong>第二基因列表 Secondary Gene List</strong></h4>
+          <h4><strong data-localize="Secondary Gene List">Secondary Gene List</strong></h4>
           <div class="table-responsive">
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>
-                  <th>Name</th><th>Odds</th>
+                  <th data-localize="Name">Name</th><th data-localize="Odds">Odds</th>
                 </tr>
               </thead>
               <tbody id="secondary_gene_list"></tbody>
             </table>
           </div>
-          <h4><strong>第三基因列表 Tertiary Gene List</strong></h4>
+          <h4><strong data-localize="Tertiary Gene List">Tertiary Gene List</strong></h4>
           <div class="table-responsive">
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>
-                  <th>Name</th><th>Odds</th>
+                  <th data-localize="Name">Name</th><th data-localize="Odds">Odds</th>
                 </tr>
               </thead>
               <tbody id="tertiary_gene_list"></tbody>
             </table>
           </div>
-          <h4><strong>颜色列表 Color List</strong></h4>
+          <h4><strong data-localize="Color List">Color List</strong></h4>
           <div class="table-responsive">
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>
-                  <th>Name</th><th>Hex</th>
+                  <th data-localize="Name">Name</th><th>Hex</th>
                 </tr>
               </thead>
               <tbody id="color_list"></tbody>
             </table>
           </div>
-          <h4><strong>品种规则列表 Breed Role List</strong></h4>
+          <h4><strong data-localize="Breed Role List">Breed Role List</strong></h4>
           <div class="table-responsive">
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>
-                  <th>Odds I</th>
-                  <th>Odds II</th>
-                  <th>Rate I</th>
-                  <th>Rate II</th>
+                  <th><span data-localize="Odds">Odds</span> I</th>
+                  <th><span data-localize="Odds">Odds</span> II</th>
+                  <th><span data-localize="Rate">Rate</span> I</th>
+                  <th><span data-localize="Rate">Rate</span> II</th>
                 </tr>
               </thead>
               <tbody id="breed_rule_list"></tbody>
             </table>
           </div>
-          <h4><strong>基因规则列表 Gene Role List</strong></h4>
-          <p>（我怀疑其实和品种一样…………）</p>
+          <h4><strong data-localize="Gene Role List">Gene Role List</strong></h4>
           <div class="table-responsive">
             <table class="table table-condensed table-striped">
               <thead>
                 <tr>
-                  <th>Odds I</th>
-                  <th>Odds II</th>
-                  <th>Rate I</th>
-                  <th>Rate II</th>
+                  <th><span data-localize="Odds">Odds</span> I</th>
+                  <th><span data-localize="Odds">Odds</span> II</th>
+                  <th><span data-localize="Rate">Rate</span> I</th>
+                  <th><span data-localize="Rate">Rate</span> II</th>
                 </tr>
               </thead>
               <tbody id="gene_rule_list"></tbody>
@@ -169,7 +174,7 @@
           </div>
           <div class="panel panel-default">
             <ol id="affix-nav-ul" class="nav nav-stacked" role="tablist">
-            <li ><a href="#top"><span class="glyphicon glyphicon-triangle-top"></span></a></li>
+            <li id="nav_top"><a href="#top"><span class="glyphicon glyphicon-triangle-top"></span></a></li>
             <li id="nav_bottom"><a href="#bottom"><span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
             </ol>
           </div>
@@ -184,10 +189,13 @@
         </div>
       </div>
     </div>
+    <script src="lib/js.cookie.min.js"></script>
     <script src="lib/jquery.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/jquery.localize.min.js"></script>
     <script src="js/fr_data.js"></script>
     <script src="js/fr_tool.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/language.js"></script>
   </body>
 </html>
