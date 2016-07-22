@@ -27,7 +27,8 @@ FRData.PrimaryGeneList = [
     ['Poison', 'Limited'],
     ['Crystal', 'Rare'],
     ['Iridescent', 'Rare'],
-    ['Petals', 'Rare']
+    ['Petals', 'Rare'],
+    ['Jupiter','Uncommon']
 ]
 
 FRData.SecondaryGeneList = [
@@ -45,7 +46,8 @@ FRData.SecondaryGeneList = [
     ['Toxin', 'Limited'],
     ['Facet', 'Rare'],
     ['Shimmer', 'Rare'],
-    ['Butterfly', 'Rare']
+    ['Butterfly', 'Rare'],
+    ['Saturn','Common']
 ]
 
 FRData.TertiaryGeneList = [
