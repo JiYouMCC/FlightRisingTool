@@ -19,16 +19,17 @@ FRData.PrimaryGeneList = [
     ['Piebald', 'Common'],
     ['Speckle', 'Common'],
     ['Tiger', 'Common'],
-    ['Giraffe', 'Common'],
     ['Bar', 'Uncommon'],
     ['Cherub', 'Uncommon'],
     ['Ripple', 'Uncommon'],
     ['Vipera', 'Uncommon'],
+    ['Jupiter','Uncommon'],
+    ['Giraffe', 'Uncommon'],
     ['Poison', 'Limited'],
+    ['Skink', 'Limited'],
     ['Crystal', 'Rare'],
     ['Iridescent', 'Rare'],
-    ['Petals', 'Rare'],
-    ['Jupiter','Uncommon']
+    ['Petals', 'Rare']
 ]
 
 FRData.SecondaryGeneList = [
@@ -40,14 +41,15 @@ FRData.SecondaryGeneList = [
     ['Paint', 'Common'],
     ['Peregrine', 'Common'],
     ['Stripes', 'Common'],
-    ['Hex', 'Common'],
     ['Hypnotic', 'Uncommon'],
     ['Seraph', 'Uncommon'],
+    ['Hex', 'Uncommon'],
+    ['Saturn','Uncommon'],
     ['Toxin', 'Limited'],
+    ['Spinner', 'Limited'],
     ['Facet', 'Rare'],
     ['Shimmer', 'Rare'],
-    ['Butterfly', 'Rare'],
-    ['Saturn','Common']
+    ['Butterfly', 'Rare']
 ]
 
 FRData.TertiaryGeneList = [
