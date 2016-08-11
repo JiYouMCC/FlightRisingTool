@@ -35,12 +35,12 @@ FRData.PrimaryGeneList = [
 FRData.SecondaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
     ['Freckle', 'Common', '90000 T'],
+    ['Stripes', 'Common', '90000 T'],
     ['EyeSpots', 'Common', '110000 T'],
     ['Peregrine', 'Common', '140000 T'],
     ['Current', 'Common', '165000 T'],
     ['Daub', 'Common', '165000 T'],
     ['Paint', 'Common', '165000 T'],
-    ['Stripes', 'Common', '90000 T'],
     ['Seraph', 'Uncommon', '125000 T'],
     ['Hex', 'Uncommon', '160000 T'],
     ['Saturn', 'Uncommon', '160000 T'],
