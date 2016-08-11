@@ -32,6 +32,7 @@
         "value": "Calculate"
     },
     "Odds": "Odds",
+    "Price": "Price",
     "Generate": "Generate",
     "Settings": "Settings",
     "Gene Font": "Gene Font",
@@ -79,7 +80,7 @@
     "Crystal": "Crystal",
     "Iridescent": "Iridescent",
     "Petals": "Petals",
-    "Skink":"Skink",
+    "Skink": "Skink",
 
 
     "Current": "Current",
@@ -96,7 +97,7 @@
     "Facet": "Facet",
     "Shimmer": "Shimmer",
     "Butterfly": "Butterfly",
-    "Spinner":"Spinner",
+    "Spinner": "Spinner",
 
 
     "Underbelly": "Underbelly",

@@ -27,6 +27,7 @@ for (var i = 0; i < FRTool.PrimaryGenes.length; i++) {
         $("<tr></tr>")
         .append($("<td></td>").text(FRTool.PrimaryGenes[i].Name).attr("data-localize", FRTool.PrimaryGenes[i].Name))
         .append($("<td></td>").text(FRTool.PrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.PrimaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.PrimaryGenes[i].Price))
     );
 }
 
@@ -35,6 +36,7 @@ for (var i = 0; i < FRTool.SecondaryGenes.length; i++) {
         $("<tr></tr>")
         .append($("<td></td>").text(FRTool.SecondaryGenes[i].Name).attr("data-localize", FRTool.SecondaryGenes[i].Name))
         .append($("<td></td>").text(FRTool.SecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.SecondaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.SecondaryGenes[i].Price))
     );
 }
 
@@ -43,6 +45,7 @@ for (var i = 0; i < FRTool.TertiaryGenes.length; i++) {
         $("<tr></tr>")
         .append($("<td></td>").text(FRTool.TertiaryGenes[i].Name).attr("data-localize", FRTool.TertiaryGenes[i].Name))
         .append($("<td></td>").text(FRTool.TertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.TertiaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.TertiaryGenes[i].Price))
     );
 }
 

@@ -18,6 +18,7 @@
     "Name": "名称",
     "Gender": "性别",
     "Odds": "几率",
+    "Price": "价格",
     "Cooldown": "产假",
     "Rate": "比率",
     "Gene": "基因",
@@ -57,7 +58,6 @@
     "Gene Role List": "基因规则列表",
 
 
-
     "Plentiful": "丰富 Plentiful",
     "Common": "常见 Common",
     "Uncommon": "罕见 Uncommon",
@@ -82,8 +82,8 @@
     "Crystal": "水晶 Crystal",
     "Iridescent": "身闪 Iridescent",
     "Petals": "花瓣 Petals",
-    "Jupiter":"木星 Jupiter",
-    "Skink":"蜥蜴 Skink",
+    "Jupiter": "木星 Jupiter",
+    "Skink": "蜥蜴 Skink",
 
     "Current": "水纹 Current",
     "Daub": "豹纹 Daub",
@@ -99,8 +99,8 @@
     "Facet": "水晶 Facet",
     "Shimmer": "翅闪 Shimmer",
     "Butterfly": "蝴蝶 Butterfly",
-    "Saturn":"土星 Saturn",
-    "Spinner":"纺锤 Spinner",
+    "Saturn": "土星 Saturn",
+    "Spinner": "纺锤 Spinner",
 
     "Underbelly": "肚皮 Underbelly",
     "Thylacine": "袋狼 Thylacine",
