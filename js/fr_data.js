@@ -60,8 +60,9 @@ FRData.TertiaryGeneList = [
     ['Crackle', 'Uncommon', '190000 T'],
     ['Okapi', 'Uncommon', '190000 T'],
     ['Smoke', 'Uncommon', '190000 T'],
-    ['Gembond', 'Limited', '200000 T'],
     ['Spines', 'Limited', '190000 T'],
+    ['Runes', 'Limited', '190000 T'],
+    ['Gembond', 'Limited', '200000 T'],
     ['Circuit', 'Rare', '1200 G'],
     ['Glimmer', 'Rare', '1200 G'],
     ['Stained', 'Rare', '1200 G']
