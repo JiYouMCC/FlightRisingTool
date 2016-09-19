@@ -9,6 +9,31 @@
     <link href="css/fr.css" rel="stylesheet">
     <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
     <title data-localize="Flight Rising Tool">Flight Rising</title>
+    <style type="text/css">
+      th[data-order="asc"]:after
+      {
+        content: "\e155";
+        position: relative;
+        left: 5px;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      th[data-order="desc"]:after
+      { 
+        content: "\e156";
+        position: relative;
+        left: 5px;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      table thead tr th {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -62,82 +87,82 @@
         <div class="col-md-9">
           <h4><strong data-localize="Gender List">Gender List</strong></h4>
           <div class="table-responsive">
-            <table class="table table-condensed table-striped">
+            <table id="gender_list" class="table table-condensed table-striped">
               <thead><tr><th data-localize="Name">Name</th></tr></thead>
-              <tbody id="gender_list"></tbody>
+              <tbody></tbody>
             </table>
           </div>
           <h4><strong data-localize="Odds List">Odds List</strong></h4>
           <div class="table-responsive">
-            <table class="table table-condensed table-striped">
+            <table id="odd_list" class="table table-condensed table-striped">
               <thead>
                 <tr>
                   <th data-localize="Name">Name</th><th data-localize="Cooldown">Cooldown</th>
                 </tr>
               </thead>
-              <tbody id="odd_list"></tbody>
+              <tbody></tbody>
             </table>
           </div>
           <h4><strong data-localize="Breed List">Breed List</strong></h4>
           <div class="table-responsive">
-            <table class="table table-condensed table-striped">
+            <table id="breed_list" class="table table-condensed table-striped">
               <thead>
                 <tr>
                   <th data-localize="Name">Name</th><th data-localize="Odds">Odds</th>
                 </tr>
               </thead>
-              <tbody id="breed_list">
+              <tbody>
               </tbody>
             </table>
           </div>
           <h4><strong data-localize="Primary Gene List">Primary Gene List</strong></h4>
           <div class="table-responsive">
-            <table class="table table-condensed table-striped">
+            <table id="primary_gene_list" class="table table-condensed table-striped">
               <thead>
                 <tr>
                   <th data-localize="Name">Name</th><th data-localize="Odds">Odds</th><th data-localize="Price">Price</th>
                 </tr>
               </thead>
-              <tbody id="primary_gene_list">
+              <tbody>
               </tbody>
             </table>
           </div>
           <h4><strong data-localize="Secondary Gene List">Secondary Gene List</strong></h4>
           <div class="table-responsive">
-            <table class="table table-condensed table-striped">
+            <table id="secondary_gene_list" class="table table-condensed table-striped">
               <thead>
                 <tr>
                   <th data-localize="Name">Name</th><th data-localize="Odds">Odds</th><th data-localize="Price">Price</th>
                 </tr>
               </thead>
-              <tbody id="secondary_gene_list"></tbody>
+              <tbody></tbody>
             </table>
           </div>
           <h4><strong data-localize="Tertiary Gene List">Tertiary Gene List</strong></h4>
           <div class="table-responsive">
-            <table class="table table-condensed table-striped">
+            <table id="tertiary_gene_list" class="table table-condensed table-striped">
               <thead>
                 <tr>
                   <th data-localize="Name">Name</th><th data-localize="Odds">Odds</th><th data-localize="Price">Price</th>
                 </tr>
               </thead>
-              <tbody id="tertiary_gene_list"></tbody>
+              <tbody></tbody>
             </table>
           </div>
           <h4><strong data-localize="Color List">Color List</strong></h4>
           <div class="table-responsive">
-            <table class="table table-condensed table-striped">
+            <table id="color_list" class="table table-condensed table-striped">
               <thead>
                 <tr>
                   <th data-localize="Name">Name</th><th>Hex</th>
                 </tr>
               </thead>
-              <tbody id="color_list"></tbody>
+              <tbody></tbody>
             </table>
           </div>
           <h4><strong data-localize="Breed Role List">Breed Role List</strong></h4>
           <div class="table-responsive">
-            <table class="table table-condensed table-striped">
+            <table id="breed_rule_list" class="table table-condensed table-striped">
               <thead>
                 <tr>
                   <th><span data-localize="Odds">Odds</span> I</th>
@@ -146,12 +171,12 @@
                   <th><span data-localize="Rate">Rate</span> II</th>
                 </tr>
               </thead>
-              <tbody id="breed_rule_list"></tbody>
+              <tbody></tbody>
             </table>
           </div>
           <h4><strong data-localize="Gene Role List">Gene Role List</strong></h4>
           <div class="table-responsive">
-            <table class="table table-condensed table-striped">
+            <table id="gene_rule_list" class="table table-condensed table-striped">
               <thead>
                 <tr>
                   <th><span data-localize="Odds">Odds</span> I</th>
@@ -160,7 +185,7 @@
                   <th><span data-localize="Rate">Rate</span> II</th>
                 </tr>
               </thead>
-              <tbody id="gene_rule_list"></tbody>
+              <tbody></tbody>
             </table>
           </div>
         </div>
@@ -193,6 +218,7 @@
     <script src="lib/jquery.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
     <script src="lib/jquery.localize.min.js"></script>
+    <script src="lib/tinysort.min.js"></script>
     <script src="js/fr_data.js"></script>
     <script src="js/fr_tool.js"></script>
     <script src="js/data.js"></script>

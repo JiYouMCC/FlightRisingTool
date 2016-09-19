@@ -1,13 +1,13 @@
 FRTool.initFR(FRData);
 
 for (var i = 0; i < FRTool.Genders.length; i++) {
-    $('#gender_list').append(
+    $('#gender_list').find("tbody").append(
         $("<tr></tr>").append($("<td></td>").text(FRTool.Genders[i].Name).attr("data-localize", FRTool.Genders[i].Name))
     );
 }
 
 for (var i = 0; i < FRTool.Oddss.length; i++) {
-    $('#odd_list').append(
+    $('#odd_list').find("tbody").append(
         $("<tr></tr>")
         .append($("<td></td>").text(FRTool.Oddss[i].Name).attr("data-localize", FRTool.Oddss[i].Name))
         .append($("<td></td>").text(FRTool.Oddss[i].CoolDown))
@@ -15,7 +15,7 @@ for (var i = 0; i < FRTool.Oddss.length; i++) {
 }
 
 for (var i = 0; i < FRTool.Breeds.length; i++) {
-    $('#breed_list').append(
+    $('#breed_list').find("tbody").append(
         $("<tr></tr>")
         .append($("<td></td>").text(FRTool.Breeds[i].Name).attr("data-localize", FRTool.Breeds[i].Name))
         .append($("<td></td>").text(FRTool.Breeds[i].Odds.Name).attr("data-localize", FRTool.Breeds[i].Odds.Name))
@@ -23,7 +23,7 @@ for (var i = 0; i < FRTool.Breeds.length; i++) {
 }
 
 for (var i = 0; i < FRTool.PrimaryGenes.length; i++) {
-    $('#primary_gene_list').append(
+    $('#primary_gene_list').find("tbody").append(
         $("<tr></tr>")
         .append($("<td></td>").text(FRTool.PrimaryGenes[i].Name).attr("data-localize", FRTool.PrimaryGenes[i].Name))
         .append($("<td></td>").text(FRTool.PrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.PrimaryGenes[i].Odds.Name))
@@ -32,7 +32,7 @@ for (var i = 0; i < FRTool.PrimaryGenes.length; i++) {
 }
 
 for (var i = 0; i < FRTool.SecondaryGenes.length; i++) {
-    $('#secondary_gene_list').append(
+    $('#secondary_gene_list').find("tbody").append(
         $("<tr></tr>")
         .append($("<td></td>").text(FRTool.SecondaryGenes[i].Name).attr("data-localize", FRTool.SecondaryGenes[i].Name))
         .append($("<td></td>").text(FRTool.SecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.SecondaryGenes[i].Odds.Name))
@@ -41,7 +41,7 @@ for (var i = 0; i < FRTool.SecondaryGenes.length; i++) {
 }
 
 for (var i = 0; i < FRTool.TertiaryGenes.length; i++) {
-    $('#tertiary_gene_list').append(
+    $('#tertiary_gene_list').find("tbody").append(
         $("<tr></tr>")
         .append($("<td></td>").text(FRTool.TertiaryGenes[i].Name).attr("data-localize", FRTool.TertiaryGenes[i].Name))
         .append($("<td></td>").text(FRTool.TertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.TertiaryGenes[i].Odds.Name))
@@ -50,7 +50,7 @@ for (var i = 0; i < FRTool.TertiaryGenes.length; i++) {
 }
 
 for (var i = 0; i < FRTool.Colors.length; i++) {
-    $('#color_list').append(
+    $('#color_list').find("tbody").append(
         $("<tr></tr>")
         //.append($("<td></td>").text(FRTool.Colors[i].NameZH))
         .append($("<td></td>").text(FRTool.Colors[i].Name).attr("data-localize", FRTool.Colors[i].Name))
@@ -63,7 +63,7 @@ for (key in FRTool.BreedRoles) {
     var odds2 = FRTool.Odds[key.split(',')[1]];
     var rate1 = FRTool.BreedRoles[key][0];
     var rate2 = FRTool.BreedRoles[key][1];
-    $('#breed_rule_list').append(
+    $('#breed_rule_list').find("tbody").append(
         $("<tr></tr>")
         .append($("<td></td>").text(odds1.Name).attr("data-localize", odds1.Name))
         .append($("<td></td>").text(odds2.Name).attr("data-localize", odds2.Name))
@@ -77,7 +77,7 @@ for (key in FRTool.GeneRoles) {
     var odds2 = FRTool.Odds[key.split(',')[1]];
     var rate1 = FRTool.GeneRoles[key][0];
     var rate2 = FRTool.GeneRoles[key][1];
-    $('#gene_rule_list').append(
+    $('#gene_rule_list').find("tbody").append(
         $("<tr></tr>")
         .append($("<td></td>").text(odds1.Name).attr("data-localize", odds1.Name))
         .append($("<td></td>").text(odds2.Name).attr("data-localize", odds2.Name))
@@ -102,11 +102,6 @@ for (var i = 0; i < $("h4").length; i++) {
         .insertBefore('#nav_bottom');
 }
 
-function updateAffix() {
-
-}
-//<li id="nav_bottom"><a href="#bottom"><span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
-
 $('#affix-nav').affix({
     offset: {
         top: function() {
@@ -130,3 +125,46 @@ $(window).scroll(function() {
 });
 
 $('[data-toggle="tooltip"]').tooltip();
+
+function allowSort(tableId) {
+    var table = document.getElementById(tableId),
+        tableHead = table.querySelector('thead'),
+        tableHeaders = tableHead.querySelectorAll('th'),
+        tableBody = table.querySelector('tbody');
+    tableHead.addEventListener('click', function(e) {
+        var tableHeader = e.target,
+            textContent = tableHeader.textContent,
+            tableHeaderIndex, isAscending, order;
+        while (tableHeader.nodeName !== 'TH') {
+            tableHeader = tableHeader.parentNode;
+        }
+
+        tableHeaderIndex = Array.prototype.indexOf.call(tableHeaders, tableHeader);
+
+        for (var i = 0; i < tableHeaders.length; i++) {
+            if (i != tableHeaderIndex) {
+                tableHeaders[i].setAttribute('data-order', "");
+            }
+        }
+
+        isAscending = tableHeader.getAttribute('data-order') === 'asc';
+        order = isAscending ? 'desc' : 'asc';
+        tableHeader.setAttribute('data-order', order);
+        tinysort(
+            tableBody.querySelectorAll('tr'), {
+                selector: 'td:nth-child(' + (tableHeaderIndex + 1) + ')',
+                order: order
+            }
+        );
+    });
+}
+
+allowSort("gender_list");
+allowSort("odd_list");
+allowSort("breed_list");
+allowSort("primary_gene_list");
+allowSort("secondary_gene_list");
+allowSort("tertiary_gene_list");
+allowSort("color_list");
+allowSort("breed_rule_list");
+allowSort("gene_rule_list");
