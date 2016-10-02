@@ -250,17 +250,18 @@ FRData.ColorList = [
 
 FRData.BreedList = [
     ['Fae', 'Plentiful', ['Insects']],
-    ['Guardian', 'Plentiful', ['Meet', 'Seafood', 'Insects', 'Plants']],
+    ['Guardian', 'Plentiful', ['Meat', 'Seafood', 'Insects', 'Plants']],
     ['Tundra', 'Plentiful', ['Plants']],
-    ['Mirror', 'Plentiful', ['Meet', 'Seafood']],
+    ['Mirror', 'Plentiful', ['Meat', 'Seafood']],
     ['Pearlcatcher', 'Common', ['Insects', 'Plants']],
     ['Ridgeback', 'Common', ['Seafood']],
     ['Snapper', 'Common', ['Plants', 'Seafood']],
     ['Spiral', 'Common', ['Insects', 'Meet']],
     ['Skydancer', 'Uncommon', ['Plants', 'Insects']],
-    ['Imperial', 'Limited', ['Insects', 'Meet', 'Seafood', 'Plants']],
-    ['Nocturne', 'Limited', ['Meet', 'Insects']],
-    ['Wildclaw', 'Rare', ['Meet']],
+    ['Bogsneak', 'Uncommon',['Plants','Meat']],
+    ['Imperial', 'Limited', ['Insects', 'Meat', 'Seafood', 'Plants']],
+    ['Nocturne', 'Limited', ['Meat', 'Insects']],
+    ['Wildclaw', 'Rare', ['Meat']],
     ['Coatl', 'Rare', ['Seafood']]
 ]
 
