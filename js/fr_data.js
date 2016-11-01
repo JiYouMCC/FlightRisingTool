@@ -17,6 +17,7 @@ FRData.PrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
     ['Speckle', 'Common', '125000 T'],
     ['Tiger', 'Common', '135000 T'],
+    ['Falcon', 'Common', '170000 T'],
     ['Clown', 'Common', '175000 T'],
     ['Piebald', 'Common', '235000 T'],
     ['Cherub', 'Uncommon', '185000 T'],
