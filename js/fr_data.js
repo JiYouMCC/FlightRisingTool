@@ -65,9 +65,10 @@ FRData.TertiaryGeneList = [
     ['Spines', 'Limited', '190000 T'],
     ['Runes', 'Limited', '190000 T'],
     ['Gembond', 'Limited', '200000 T'],
+    ['Scales', 'Limited', '100000 T (Baldwin)'],
     ['Circuit', 'Rare', '1200 G'],
     ['Glimmer', 'Rare', '1200 G'],
-    ['Stained', 'Rare', '1200 G']
+    ['Stained', 'Rare', '1200 G']   
 ]
 
 FRData.ColorList = [
