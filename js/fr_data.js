@@ -51,7 +51,8 @@ FRData.SecondaryGeneList = [
     ['Toxin', 'Limited', '100000 T (Baldwin)'],
     ['Facet', 'Rare', '1200 G'],
     ['Shimmer', 'Rare', '1200 G'],
-    ['Butterfly', 'Rare', '1200 G']
+    ['Butterfly', 'Rare', '1200 G'],
+    ['Alloy', 'Rare', '1200 G']
 ]
 
 FRData.TertiaryGeneList = [
