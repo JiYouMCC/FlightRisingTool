@@ -17,6 +17,9 @@ function getImgUrl(dragonID, isLeft) {
     }
     var dragonID = parseInt(dragonID);
     var miniDragonId = Math.ceil(dragonID / 100);
+    if (dragonId % 100 == 0) {
+        miniDragonId += 1;
+    }
     return 'http://flightrising.com/rendern/350/' + miniDragonId + '/' + dragonID + '_350.png'
 }
 
