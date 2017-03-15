@@ -60,6 +60,7 @@ FRData.TertiaryGeneList = [
     ['Underbelly', 'Common', '150000 T'],
     ['Thylacine', 'Common', '155000 T'],
     ['Contour', 'Common', '150000 T'],
+    ['Lace', 'Uncommon', '155000 T'],
     ['Crackle', 'Uncommon', '190000 T'],
     ['Okapi', 'Uncommon', '190000 T'],
     ['Smoke', 'Uncommon', '190000 T'],
