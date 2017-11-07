@@ -7,7 +7,7 @@ Flight Rising的工具 / Flight Rising Game's Tool
 
 然后选择培育目标的龙的品种、基因和颜色，点计算按钮，可以算出几率。Then choose the breed, genes or colors of target of dragon, click the button, shows the rate.
 
-**Since I'm AFK, if you want to add new gene, please refer to [How-To-Add-New-Gene.md](How-To-Add-New-Gene.md) **
+**Since I'm AFK, if you want to add new gene, please refer to [How-To-Add-New-Gene.md](How-To-Add-New-Gene.md)**
 
 **因为我已经不玩了，所以如果要加新基因请参考[How-To-Add-New-Gene.md](How-To-Add-New-Gene.md)这个文档**
 
