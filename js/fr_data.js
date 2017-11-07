@@ -52,7 +52,8 @@ FRData.SecondaryGeneList = [
     ['Facet', 'Rare', '1200 G'],
     ['Shimmer', 'Rare', '1200 G'],
     ['Butterfly', 'Rare', '1200 G'],
-    ['Alloy', 'Rare', '1200 G']
+    ['Alloy', 'Rare', '1200 G'],
+    ['Bee', 'Rare', '1200 G']
 ]
 
 FRData.TertiaryGeneList = [
@@ -70,7 +71,8 @@ FRData.TertiaryGeneList = [
     ['Scales', 'Limited', '100000 T (Baldwin)'],
     ['Circuit', 'Rare', '1200 G'],
     ['Glimmer', 'Rare', '1200 G'],
-    ['Stained', 'Rare', '1200 G']   
+    ['Stained', 'Rare', '1200 G'],
+    ['Opal', 'Rare', '1200 G']
 ]
 
 FRData.ColorList = [
