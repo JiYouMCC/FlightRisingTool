@@ -49,7 +49,6 @@ FRData.SecondaryGeneList = [
     ['Daub', 'Common', '165000 T'],
     ['Paint', 'Common', '165000 T'],
     ['Striation', 'Common', '120000 T'],
-    ['Stripes', 'Common', '120000 T'],
     ['Safari', 'Common', '120000 T'],
     ['Seraph', 'Uncommon', '125000 T'],
     ['Hex', 'Uncommon', '160000 T'],
