@@ -88,7 +88,10 @@
     "Pinstripe": "细条纹 Pinstripe",
     "Falcon": "猎鹰 Falcon",
     "Metallic": "金属 Metallic",
-
+    "Savannah": "Savannah",
+    "Jaguar": "Jaguar",
+    "Wasp": "Wasp",
+    
     "Current": "水纹 Current",
     "Daub": "豹纹 Daub",
     "EyeSpots": "眼斑 EyeSpots",
@@ -109,6 +112,8 @@
     "Spinner": "纺锤 Spinner",
     "Alloy": "合金 Alloy",
     "Bee": "蜜蜂 Bee",
+    "Safari": "Safari",
+    "Rosette": "Rosette",
 
     "Underbelly": "肚皮 Underbelly",
     "Thylacine": "袋狼 Thylacine",
@@ -127,6 +132,7 @@
     "Capsule": "胶囊 Capsule",
     "Lace": "蕾丝 Lace",
     "Opal": "蛋白石 Opal",
+    "Smirch": "Smirch",
 
     "Fae": "精灵 Fae",
     "Guardian": "守护 Guardian",
