@@ -15,11 +15,6 @@ JS 版本(javascript+jquary)搭载在 / Js version (javascript+jquary) published
 
 http://fr.jithee.name/
 
-<s>Python版本(python+django)-(ajax)-(javascript+jquary)搭载在新浪云 / Python version (python+django)-(ajax)-(javascript+jquary) published on SAE: </s>
-<s>http://www.jithee.name/fr</s>
-
-Python版本已经全部重定向到js版本，不再继续更新，ajax请求也已经关闭。Python version is no longer updated. All links are redirected to js version including ajax.
-
 ![](http://fr.jithee.name/img/Rate.PNG)
 
 ##Dependency / 依赖包
@@ -32,5 +27,10 @@ Python版本已经全部重定向到js版本，不再继续更新，ajax请求�
 
 [Localize v0.1.0](https://github.com/coderifous/jquery-localize)
 
+##Contributors / 贡献者
 
+[shinykari](https://github.com/shinykari)
 
+[Pspiljak](https://github.com/Pspiljak)
+
+[Scribix](https://github.com/Scribix)
