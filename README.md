@@ -17,7 +17,7 @@ http://fr.jithee.name/
 
 ![](http://fr.jithee.name/img/Rate.PNG)
 
-##Dependency / 依赖包
+## Dependency / 依赖包
 
 [jQuery v1.11.3](https://github.com/jquery/jquery)
 
@@ -27,10 +27,12 @@ http://fr.jithee.name/
 
 [Localize v0.1.0](https://github.com/coderifous/jquery-localize)
 
-##Contributors / 贡献者
+## Contributors / 贡献者
 
 [shinykari](https://github.com/shinykari)
 
 [Pspiljak](https://github.com/Pspiljak)
 
 [Scribix](https://github.com/Scribix)
+
+[CharlotteHan](https://github.com/CharlotteHan)
