@@ -36,3 +36,5 @@ http://fr.jithee.name/
 [Scribix](https://github.com/Scribix)
 
 [CharlotteHan](https://github.com/CharlotteHan)
+
+[LordZarcock](https://github.com/LordZarcock)
