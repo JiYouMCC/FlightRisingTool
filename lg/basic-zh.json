@@ -91,6 +91,7 @@
     "Savannah": "热带草原 Savannah",
     "Jaguar": "美洲豹 Jaguar",
     "Wasp": "黄蜂 Wasp",
+    "Python": "蟒蛇 Python",
     
     "Current": "水纹 Current",
     "Daub": "豹纹 Daub",
@@ -114,6 +115,7 @@
     "Bee": "蜜蜂 Bee",
     "Safari": "狩猎 Safari",
     "Rosette": "玫瑰花环 Rosette",
+    "Morph": "巨蟒 Morph",
 
     "Underbelly": "肚皮 Underbelly",
     "Thylacine": "袋狼 Thylacine",
@@ -133,6 +135,8 @@
     "Lace": "蕾丝 Lace",
     "Opal": "蛋白石 Opal",
     "Smirch": "蜘蛛网 Smirch",
+    "Filigree": "掐丝 Filigree",
+    "Firefly": "萤火虫 Firefly",
 
     "Fae": "精灵 Fae",
     "Guardian": "守护 Guardian",

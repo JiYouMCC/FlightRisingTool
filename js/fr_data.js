@@ -29,6 +29,7 @@ FRData.PrimaryGeneList = [
     ['Jaguar', 'Uncommon', '250000 T'],
     ['Ripple', 'Uncommon', '250000 T'],
     ['Jupiter', 'Uncommon', '230000 T'],
+    ['Python', 'Uncommon', 'The Coliseum'],
     ['Skink', 'Limited', '95000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
@@ -55,6 +56,7 @@ FRData.SecondaryGeneList = [
     ['Saturn', 'Uncommon', '160000 T'],
     ['Hypnotic', 'Uncommon', '185000 T'],
     ['Rosette', 'Uncommon', '185000 T'],
+    ['Morph', 'Uncommon', 'The Coliseum'],
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
     ['Toxin', 'Limited', '100000 T (Baldwin)'],
     ['Trail', 'Limited', '100000 T (Baldwin)'],
@@ -81,10 +83,12 @@ FRData.TertiaryGeneList = [
     ['Smirch', 'Limited', '200000 T'],
     ['Scales', 'Limited', '100000 T (Baldwin)'],
     ['Capsule', 'Limited', '110000 T (Baldwin)'],
+    ['Firefly', 'Limited', "Swipp's Swap Stand"],
     ['Circuit', 'Rare', '1200 G'],
     ['Glimmer', 'Rare', '1200 G'],
     ['Stained', 'Rare', '1200 G'],
-    ['Opal', 'Rare', '1200 G']
+    ['Opal', 'Rare', '1200 G'],
+    ['Filigree', 'Rare', '1200 G']
 ]
 
 FRData.ColorList = [
