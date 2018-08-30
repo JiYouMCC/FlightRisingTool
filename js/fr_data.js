@@ -37,7 +37,8 @@ FRData.PrimaryGeneList = [
     ['Iridescent', 'Rare', '1500 G'],
     ['Petals', 'Rare', '1500 G'],
     ['Wasp', 'Rare', '1500 G'],
-    ['Metallic', 'Rare', '1500 G']
+    ['Metallic', 'Rare', '1500 G'],
+    ['Starmap', 'Rare', '1500 G']
 ]
 
 FRData.SecondaryGeneList = [
