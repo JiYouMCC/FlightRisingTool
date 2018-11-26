@@ -30,6 +30,7 @@ FRData.PrimaryGeneList = [
     ['Ripple', 'Uncommon', '250000 T'],
     ['Jupiter', 'Uncommon', '230000 T'],
     ['Python', 'Uncommon', 'The Coliseum'],
+    ['Lionfish', 'Uncommon', '230000 T'],
     ['Skink', 'Limited', '95000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
@@ -58,6 +59,7 @@ FRData.SecondaryGeneList = [
     ['Hypnotic', 'Uncommon', '185000 T'],
     ['Rosette', 'Uncommon', '185000 T'],
     ['Morph', 'Uncommon', 'The Coliseum'],
+    ['Noxtide', 'Uncommon', '170000 T'],
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
     ['Toxin', 'Limited', '100000 T (Baldwin)'],
     ['Trail', 'Limited', '100000 T (Baldwin)'],
@@ -65,7 +67,8 @@ FRData.SecondaryGeneList = [
     ['Shimmer', 'Rare', '1200 G'],
     ['Butterfly', 'Rare', '1200 G'],
     ['Alloy', 'Rare', '1200 G'],
-    ['Bee', 'Rare', '1200 G']
+    ['Bee', 'Rare', '1200 G'],
+    ['Constellation', 'Rare', '1200 G']
 ]
 
 FRData.TertiaryGeneList = [
@@ -78,6 +81,7 @@ FRData.TertiaryGeneList = [
     ['Okapi', 'Uncommon', '190000 T'],
     ['Smoke', 'Uncommon', '190000 T'],
     ['Ghost', 'Uncommon', '160000 T'],
+    ['Ringlets', 'Uncommon', '155000 T'],
     ['Spines', 'Limited', '190000 T'],
     ['Runes', 'Limited', '190000 T'],
     ['Gembond', 'Limited', '200000 T'],
