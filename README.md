@@ -38,3 +38,6 @@ http://fr.jithee.name/
 [CharlotteHan](https://github.com/CharlotteHan)
 
 [LordZarcock](https://github.com/LordZarcock)
+
+[azciira](https://github.com/azciira)
+
