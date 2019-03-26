@@ -94,7 +94,7 @@ FRData.TertiaryGeneList = [
     ['Stained', 'Rare', '1200 G'],
     ['Opal', 'Rare', '1200 G'],
     ['Filigree', 'Rare', '1200 G'],
-    ['Peacock', 'Common', '150000 T']
+    ['Peacock-Gene', 'Common', '150000 T']
 ]
 
 FRData.ColorList = [
