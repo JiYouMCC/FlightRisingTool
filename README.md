@@ -41,3 +41,5 @@ http://fr.jithee.name/
 
 [azciira](https://github.com/azciira)
 
+[Oddbird](https://github.com/Oddlybird)
+
