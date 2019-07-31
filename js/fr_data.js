@@ -137,7 +137,7 @@ FRData.ColorList = [
     ['Midnight', '#292B38'],
     ['Shadow', '#392D43'],
     ['Blackberry', '#4B294F'],
-    ['Mulberry', '#545454'],
+    ['Mulberry', '#6e235d'],
     ['Plum', '#853390'],
     ['Wisteria', '#724E7B'],
     ['Thistle', '#8F7C8B'],
