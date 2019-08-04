@@ -111,6 +111,69 @@ FRData.TertiaryGeneList = [
     ['Stained', 'Rare', '1200 G']
 ]
 
+FRData.AncientPrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Falcon', 'Common', '85000 T'],
+    ['Piebald', 'Common', '117500 T'],
+    ['Shaggy', 'Common', '112500 T'],
+    ['Tapir', 'Common', '92500 T'],
+    ['Tiger', 'Common', '67500 T'],
+
+    ['Bar', 'Uncommon', '125000 T'],
+    ['Giraffe', 'Uncommon', '112500 T'],
+    ['Jaguar', 'Uncommon', '70000 T'],
+    ['Mosaic', 'Uncommon', '150000 T'],
+
+    ['Phantom', 'Limited', 'The Coliseum'],
+    ['Pinstripe', 'Limited', '50000 T (?)'],
+
+    ['Crystal', 'Rare', '750 G'],
+    ['Wasp', 'Rare', '750 G']
+]
+
+FRData.AncientSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Daub', 'Common', '82500 T'],
+    ['Paint', 'Common', '75000 T'],
+    ['Peregrine', 'Common', '70000 T'],
+    ['Streak', 'Common', '80000 T'],
+    ['Striation', 'Common', '60000 T'],
+    ['Stripes', 'Common', '45000 T'],
+
+    ['Breakup', 'Uncommon', '100000 T'],
+    ['Hex', 'Uncommon', '80000 T'],
+    ['Rosette', 'Uncommon', '50000 T'],
+
+    ['Spirit', 'Limited', 'The Coliseum'],
+    ['Trail', 'Limited', '50000 T (?)'],
+
+    ['Bee', 'Rare', '600 G'],
+    ['Facet', 'Rare', '600 G'],
+]
+
+FRData.AncientTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Shardflank', 'Common', '75000 T'],
+    ['Thylacine', 'Common', '77500 T'],
+    ['Underbelly', 'Common', '75000 T'],
+
+    ['Blossom', 'Limited', '?'],
+    ['Runes', 'Limited', '77500 T'],
+    ['Scorpion', 'Limited', '45000 T (?)'],
+    ['Weathered', 'Limited', 'The Coliseum'],
+
+    ['Ghost', 'Uncommon', '80000 T'],
+    ['Ringlets', 'Uncommon', '77500 T'],
+    ['Smoke', 'Uncommon', '95000 T'],
+    ['Wintercoat', 'Uncommon', '95000 T'],
+
+    ['Gnarlhorns', 'Rare', '500 G'],
+    ['Opal', 'Rare', '500 G']
+]
+
 FRData.ColorList = [
     ['Maize', '#FFFDEA'],
     ['Cream', '#FFEFDC'],
@@ -310,6 +373,10 @@ FRData.BreedList = [
 
     ['Coatl', 'Rare', ['Seafood']],
     ['Wildclaw', 'Rare', ['Meat']]
+]
+
+FRData.AncientBreedList = [
+    ['Gaoler', 'Common', ['Meat', 'Plants']]
 ]
 
 FRData.BreedRuleList = [
