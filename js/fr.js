@@ -126,8 +126,8 @@ $("[id$=age]").change(function() {
   initBreedSelect('o_breed', age);
   initBreedSelect('a_breed', age);
   initBreedSelect('target_Breed', age);
-  $("[id$=_breed]").change();
-  $("[id$=_gene]").change();
+/*  $("[id$=_breed]").change();
+  $("[id$=_gene]").change();*/
   $("[data-localize]").localize("lg/basic", {language: language_code});
 });
 
