@@ -352,6 +352,7 @@ $("#cal_breed").click(function() {
 $('[data-toggle="tooltip"]').tooltip();
 
 setCookie("age", "age");
+$("[id$=age]").change();
 setCookie("o_breed", "o_breed");
 setCookie("a_breed", "a_breed");
 
@@ -370,7 +371,7 @@ for (var i = $("[id^=target_]").length - 1; i >= 0; i--) {
   setCookie(form.attr('id'), form.attr('id'));
 };
 
-$("[id$=age]").change();
+
 $("[id$=_color]").change();
 $("[id$=_Color]").change();
 $("[id$=_breed]").change();
