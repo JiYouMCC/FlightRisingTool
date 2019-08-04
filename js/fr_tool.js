@@ -37,6 +37,30 @@ FRTool.TertiaryGene = function(name, odds, price) {
     FRTool.TertiaryGenes.push(this);
 }
 
+FRTool.AncientPrimaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.AncientPrimaryGene[name] = this;
+    FRTool.AncientPrimaryGenes.push(this);
+}
+
+FRTool.AncientSecondaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.AncientSecondaryGene[name] = this;
+    FRTool.AncientSecondaryGenes.push(this);
+}
+
+FRTool.AncientTertiaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.AncientTertiaryGene[name] = this;
+    FRTool.AncientTertiaryGenes.push(this);
+}
+
 FRTool.Color = function(name, color) {
     this.Name = name;
     this.Color = color;
@@ -55,13 +79,26 @@ FRTool.Breed = function(name, odds, diet) {
     FRTool.Breeds.push(this);
 }
 
+FRTool.AncientBreed = function(name, odds, diet) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Diet = diet;
+    FRTool.AncientBreed[name] = this;
+    FRTool.AncientBreeds.push(this);
+}
+
+
 FRTool.initFR = function(data) {
     FRTool.Genders = [];
     FRTool.Oddss = [];
     FRTool.PrimaryGenes = [];
     FRTool.SecondaryGenes = [];
     FRTool.TertiaryGenes = [];
+    FRTool.AncientPrimaryGenes = [];
+    FRTool.AncientSecondaryGenes = [];
+    FRTool.AncientTertiaryGenes = [];
     FRTool.Breeds = [];
+    FRTool.AncientBreeds = [];
     FRTool.Colors = [];
     FRTool.BreedRoles = {};
     FRTool.GeneRoles = {};
@@ -85,6 +122,18 @@ FRTool.initFR = function(data) {
         new FRTool.TertiaryGene(data.TertiaryGeneList[i][0], data.TertiaryGeneList[i][1], data.TertiaryGeneList[i][2]);
     };
 
+    for (var i = 0; i < data.AncientPrimaryGeneList.length; i++) {
+        new FRTool.AncientPrimaryGene(data.AncientPrimaryGeneList[i][0], data.AncientPrimaryGeneList[i][1], data.AncientPrimaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.AncientSecondaryGeneList.length; i++) {
+        new FRTool.AncientSecondaryGene(data.AncientSecondaryGeneList[i][0], data.AncientSecondaryGeneList[i][1], data.AncientSecondaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.AncientTertiaryGeneList.length; i++) {
+        new FRTool.AncientTertiaryGene(data.AncientTertiaryGeneList[i][0], data.AncientTertiaryGeneList[i][1], data.AncientTertiaryGeneList[i][2]);
+    };
+
     for (var i = 0; i < data.ColorList.length; i++) {
         new FRTool.Color(data.ColorList[i][0], data.ColorList[i][1]);
     };
@@ -99,6 +148,10 @@ FRTool.initFR = function(data) {
 
     for (var i = 0; i < data.BreedList.length; i++) {
         new FRTool.Breed(data.BreedList[i][0], data.BreedList[i][1], data.BreedList[i][2], data.BreedList[i][3]);
+    };
+
+    for (var i = 0; i < data.AncientBreedList.length; i++) {
+        new FRTool.AncientBreed(data.AncientBreedList[i][0], data.AncientBreedList[i][1], data.AncientBreedList[i][2], data.AncientBreedList[i][3]);
     };
 }
 
