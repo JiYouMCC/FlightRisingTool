@@ -377,6 +377,7 @@ $("[id=draw]").click(function() {
 });
 
 setCookie("age", "age");
+$("[id$=age]").change();
 
 $("[id$=_color]").change(function() {
   UpdateColorClass($(this));
