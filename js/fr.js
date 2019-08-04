@@ -351,9 +351,9 @@ $("#cal_breed").click(function() {
 
 $('[data-toggle="tooltip"]').tooltip();
 
+setCookie("age", "age");
 setCookie("o_breed", "o_breed");
 setCookie("a_breed", "a_breed");
-setCookie("age", "age");
 
 for (var i = $("[id$=_gene]").length - 1; i >= 0; i--) {
   var form = $($("[id$=_gene]")[i]);
