@@ -13,7 +13,7 @@ FRData.GenderList = [
     ['Female']
 ];
 
-FRData.PrimaryGeneList = [
+FRData.ModernPrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Clown', 'Common', '175000 T'],
@@ -47,7 +47,7 @@ FRData.PrimaryGeneList = [
     ['Wasp', 'Rare', '1500 G']
 ]
 
-FRData.SecondaryGeneList = [
+FRData.ModernSecondaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Current', 'Common', '165000 T'],
@@ -81,7 +81,7 @@ FRData.SecondaryGeneList = [
     ['Shimmer', 'Rare', '1200 G']
 ]
 
-FRData.TertiaryGeneList = [
+FRData.ModernTertiaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Contour', 'Common', '150000 T'],
@@ -354,7 +354,7 @@ FRData.ColorList = [
     ['Pearl', '#FBE9F8']
 ]
 
-FRData.BreedList = [
+FRData.ModernBreedList = [
     ['Fae', 'Plentiful', ['Insects']],
     ['Guardian', 'Plentiful', ['Meat', 'Seafood', 'Insects', 'Plants']],
     ['Mirror', 'Plentiful', ['Meat', 'Seafood']],
@@ -503,4 +503,9 @@ FRData.GeneRuleList = [
         ['Rare', 'Rare'],
         [0.5, 0.5]
     ]
+]
+
+FRData.Age = [
+    'Modern',
+    'Ancient'
 ]
