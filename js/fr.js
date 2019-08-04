@@ -299,6 +299,7 @@ $("[id^=target]").change(function() {
 });
 
 $("#cal_breed").click(function() {
+  var age = $('#age').val();
   $('#input_result').text('--.-------- %');
 
   var target = {};
@@ -345,7 +346,7 @@ $("#cal_breed").click(function() {
     'secondaryGene': $('#a_Secondary_gene').val(),
     'tertiaryGene': $('#a_Tertiary_gene').val()
   };
-  $('#input_result').text((FRTool.calRate(info1, info2, target) * 100).toFixed(8) + " %");
+  $('#input_result').text((FRTool.calRate(info1, info2, target, age) * 100).toFixed(8) + " %");
 });
 
 $('[data-toggle="tooltip"]').tooltip();
