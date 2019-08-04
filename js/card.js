@@ -376,6 +376,8 @@ $("[id=draw]").click(function() {
   drawCard('canvas_1', card_data);
 });
 
+setCookie("age", "age");
+
 $("[id$=_color]").change(function() {
   UpdateColorClass($(this));
   Cookies.set($(this).attr('id'), $(this).val());
