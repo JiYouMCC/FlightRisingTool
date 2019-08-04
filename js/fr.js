@@ -369,6 +369,7 @@ for (var i = $("[id^=target_]").length - 1; i >= 0; i--) {
   setCookie(form.attr('id'), form.attr('id'));
 };
 
+$("[id$=age]").change();
 $("[id$=_color]").change();
 $("[id$=_Color]").change();
 $("[id$=_breed]").change();
