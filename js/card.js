@@ -291,6 +291,9 @@ initColorSelect('a_tertiary_color');
 initAgeSelect('age');
 
 setCookie("age", "age");
+$("[id$=age]").change();
+
+setCookie("age", "age");
 setCookie("o_breed", "o_breed");
 setCookie("a_breed", "a_breed");
 setCookie("o_name", "o_name");
@@ -376,8 +379,7 @@ $("[id=draw]").click(function() {
   drawCard('canvas_1', card_data);
 });
 
-setCookie("age", "age");
-$("[id$=age]").change();
+
 
 $("[id$=_color]").change(function() {
   UpdateColorClass($(this));
