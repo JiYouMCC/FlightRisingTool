@@ -114,6 +114,7 @@ $("[id$=age]").change(function() {
   });
   $("[id$=_breed]").change();
   $("[id$=_gene]").change();
+  $("[id^=target]").change();
   $("#cal_breed").click();
 });
 
