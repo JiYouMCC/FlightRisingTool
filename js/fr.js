@@ -1,3 +1,5 @@
+var defaultAge = 'Modern';
+
 function initAgeSelect(id) {
   for (var i = 0; i < FRTool.Ages.length; i++) {
     $('#' + id).append(
@@ -82,19 +84,34 @@ function setCookie(cookie, label) {
   }
 }
 
+$("[id$=age]").change(function() {
+  Cookies.set('age', $('#age').val());
+  defaultAge = $('#age').val();
+  if (defaultAge == undefined || defaultAge == "") {
+    defaultAge = 'Modern';
+  }
+  initGeneSelect('o_Primary_gene', 'Primary', defaultAge);
+  initGeneSelect('a_Primary_gene', 'Primary', defaultAge);
+  initGeneSelect('target_primaryGene', 'Primary', defaultAge);
+  initGeneSelect('o_Secondary_gene', 'Secondary', defaultAge);
+  initGeneSelect('a_Secondary_gene', 'Secondary', defaultAge);
+  initGeneSelect('target_secondaryGene', 'Secondary', defaultAge);
+  initGeneSelect('o_Tertiary_gene', 'Tertiary', defaultAge);
+  initGeneSelect('a_Tertiary_gene', 'Tertiary', defaultAge);
+  initGeneSelect('target_tertiaryGene', 'Tertiary', defaultAge);
+  initBreedSelect('o_breed', defaultAge);
+  initBreedSelect('a_breed', defaultAge);
+  initBreedSelect('target_Breed', defaultAge);
+  $("[data-localize]").localize("lg/basic", {
+    language: language_code
+  });
+});
+
 FRTool.initFR(FRData);
-initBreedSelect('o_breed', 'Modern');
-initBreedSelect('a_breed', 'Modern');
-initBreedSelect('target_Breed', 'Modern');
-initGeneSelect('o_Primary_gene', 'Primary', 'Modern');
-initGeneSelect('a_Primary_gene', 'Primary', 'Modern');
-initGeneSelect('target_primaryGene', 'Primary', 'Modern');
-initGeneSelect('o_Secondary_gene', 'Secondary', 'Modern');
-initGeneSelect('a_Secondary_gene', 'Secondary', 'Modern');
-initGeneSelect('target_secondaryGene', 'Secondary', 'Modern');
-initGeneSelect('o_Tertiary_gene', 'Tertiary', 'Modern');
-initGeneSelect('a_Tertiary_gene', 'Tertiary', 'Modern');
-initGeneSelect('target_tertiaryGene', 'Tertiary', 'Modern');
+initAgeSelect('age');
+setCookie("age", "age");
+$("[id$=age]").change();
+
 initColorSelect('o_primary_color');
 initColorSelect('o_secondary_color');
 initColorSelect('o_tertiary_color');
@@ -105,39 +122,17 @@ initColorSelect('target_primary_Color');
 initColorSelect('target_secondary_Color');
 initColorSelect('target_tertiary_Color');
 initGenderSelect('target_gender');
-initAgeSelect('age');
 
 $("[id$=_Color]").change(function() {
   UpdateColorClass($(this));
 });
 
-$("[id$=age]").change(function() {
-  Cookies.set('age', $('#age').val());
-  var age = $('#age').val()
-  initGeneSelect('o_Primary_gene', 'Primary', age);
-  initGeneSelect('a_Primary_gene', 'Primary', age);
-  initGeneSelect('target_primaryGene', 'Primary', age);
-  initGeneSelect('o_Secondary_gene', 'Secondary', age);
-  initGeneSelect('a_Secondary_gene', 'Secondary', age);
-  initGeneSelect('target_secondaryGene', 'Secondary', age);
-  initGeneSelect('o_Tertiary_gene', 'Tertiary', age);
-  initGeneSelect('a_Tertiary_gene', 'Tertiary', age);
-  initGeneSelect('target_tertiaryGene', 'Tertiary', age);
-  initBreedSelect('o_breed', age);
-  initBreedSelect('a_breed', age);
-  initBreedSelect('target_Breed', age);
-/*  $("[id$=_breed]").change();
-  $("[id$=_gene]").change();*/
-  $("[data-localize]").localize("lg/basic", {language: language_code});
-});
-
 $("[id$=_breed]").change(function() {
   $('#breed_result').text("");
-  var age = $('#age').val();
   Cookies.set('o_breed', $('#o_breed').val());
   Cookies.set('a_breed', $('#a_breed').val());
-  var o_breed = FRTool[age + 'Breed'][$('#o_breed').val()];
-  var a_breed = FRTool[age + 'Breed'][$('#a_breed').val()];
+  var o_breed = FRTool[defaultAge + 'Breed'][$('#o_breed').val()];
+  var a_breed = FRTool[defaultAge + 'Breed'][$('#a_breed').val()];
   var rate = FRTool.getBreedRate(o_breed, a_breed);
   if (rate.length == 1) {
     var rate0 = rate[0] * 100 | 0;
@@ -197,12 +192,11 @@ $("[id$=_breed]").change(function() {
 
 $("[id$=_gene]").change(function() {
   var gene_type = $(this).attr('id').split('_')[1];
-  var age = $('#age').val();
   Cookies.set('o_' + gene_type, $('#o_' + gene_type + '_gene').val());
   Cookies.set('a_' + gene_type, $('#a_' + gene_type + '_gene').val());
   $('#' + gene_type + '_result').text("");
-  var o_gene = FRTool[age + gene_type + "Gene"][$('#o_' + gene_type + '_gene').val()];
-  var a_gene = FRTool[age + gene_type + "Gene"][$('#a_' + gene_type + '_gene').val()];
+  var o_gene = FRTool[defaultAge + gene_type + "Gene"][$('#o_' + gene_type + '_gene').val()];
+  var a_gene = FRTool[defaultAge + gene_type + "Gene"][$('#a_' + gene_type + '_gene').val()];
   var rate = FRTool.getGeneRate(o_gene, a_gene);
   if (rate.length == 1) {
     var rate0 = rate[0] * 100 | 0;
@@ -299,7 +293,6 @@ $("[id^=target]").change(function() {
 });
 
 $("#cal_breed").click(function() {
-  var age = $('#age').val();
   $('#input_result').text('--.-------- %');
 
   var target = {};
@@ -346,13 +339,11 @@ $("#cal_breed").click(function() {
     'secondaryGene': $('#a_Secondary_gene').val(),
     'tertiaryGene': $('#a_Tertiary_gene').val()
   };
-  $('#input_result').text((FRTool.calRate(info1, info2, target, age) * 100).toFixed(8) + " %");
+  $('#input_result').text((FRTool.calRate(info1, info2, target, defaultAge) * 100).toFixed(8) + " %");
 });
 
 $('[data-toggle="tooltip"]').tooltip();
 
-setCookie("age", "age");
-$("[id$=age]").change();
 setCookie("o_breed", "o_breed");
 setCookie("a_breed", "a_breed");
 
