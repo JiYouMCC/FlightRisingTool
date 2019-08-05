@@ -12,6 +12,28 @@ function initAgeSelect(id) {
   }
 }
 
+function ageChangeInit() {
+  defaultAge = $('#age').val();
+  if (defaultAge == undefined || defaultAge == "") {
+    defaultAge = 'Modern';
+  }
+  initGeneSelect('o_Primary_gene', 'Primary', defaultAge);
+  initGeneSelect('a_Primary_gene', 'Primary', defaultAge);
+  initGeneSelect('target_primaryGene', 'Primary', defaultAge);
+  initGeneSelect('o_Secondary_gene', 'Secondary', defaultAge);
+  initGeneSelect('a_Secondary_gene', 'Secondary', defaultAge);
+  initGeneSelect('target_secondaryGene', 'Secondary', defaultAge);
+  initGeneSelect('o_Tertiary_gene', 'Tertiary', defaultAge);
+  initGeneSelect('a_Tertiary_gene', 'Tertiary', defaultAge);
+  initGeneSelect('target_tertiaryGene', 'Tertiary', defaultAge);
+  initBreedSelect('o_breed', defaultAge);
+  initBreedSelect('a_breed', defaultAge);
+  initBreedSelect('target_Breed', defaultAge);
+  $("[data-localize]").localize("lg/basic", {
+    language: language_code
+  });
+}
+
 function initBreedSelect(id, age) {
   $('#' + id).html("");
   for (var i = 0; i < FRTool.Oddss.length; i++) {
@@ -86,31 +108,19 @@ function setCookie(cookie, label) {
 
 $("[id$=age]").change(function() {
   Cookies.set('age', $('#age').val());
-  defaultAge = $('#age').val();
-  if (defaultAge == undefined || defaultAge == "") {
-    defaultAge = 'Modern';
-  }
-  initGeneSelect('o_Primary_gene', 'Primary', defaultAge);
-  initGeneSelect('a_Primary_gene', 'Primary', defaultAge);
-  initGeneSelect('target_primaryGene', 'Primary', defaultAge);
-  initGeneSelect('o_Secondary_gene', 'Secondary', defaultAge);
-  initGeneSelect('a_Secondary_gene', 'Secondary', defaultAge);
-  initGeneSelect('target_secondaryGene', 'Secondary', defaultAge);
-  initGeneSelect('o_Tertiary_gene', 'Tertiary', defaultAge);
-  initGeneSelect('a_Tertiary_gene', 'Tertiary', defaultAge);
-  initGeneSelect('target_tertiaryGene', 'Tertiary', defaultAge);
-  initBreedSelect('o_breed', defaultAge);
-  initBreedSelect('a_breed', defaultAge);
-  initBreedSelect('target_Breed', defaultAge);
+  ageChangeInit();  
   $("[data-localize]").localize("lg/basic", {
     language: language_code
   });
+  $("[id$=_breed]").change();
+  $("[id$=_gene]").change();
+  $("#cal_breed").click();
 });
 
 FRTool.initFR(FRData);
 initAgeSelect('age');
 setCookie("age", "age");
-$("[id$=age]").change();
+ageChangeInit();
 
 initColorSelect('o_primary_color');
 initColorSelect('o_secondary_color');
