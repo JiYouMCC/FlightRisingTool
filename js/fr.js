@@ -36,6 +36,12 @@ function ageChangeInit() {
 
 function initBreedSelect(id, age) {
   $('#' + id).html("");
+  if (id.startsWith("target")) {
+    $('#' + id).append($("<option></option>")
+      .attr("data-localize", "None")
+      .attr("value", "none")
+      .text("None"));
+  }
   for (var i = 0; i < FRTool.Oddss.length; i++) {
     var breeds = FRTool.getBreed(FRTool.Oddss[i], age);
     var group = $("<optgroup></optgroup>")
@@ -89,12 +95,6 @@ function initColorSelect(id) {
 }
 
 function initGenderSelect(id) {
-  if (id.startsWith("target")) {
-    $('#' + id).append($("<option></option>")
-      .attr("data-localize", "None")
-      .attr("value", "none")
-      .text("None"));
-  }
   for (var i = 0; i < FRTool.Genders.length; i++) {
     $('#' + id).append(
       $("<option></option>")
