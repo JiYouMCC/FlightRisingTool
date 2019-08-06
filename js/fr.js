@@ -121,9 +121,6 @@ function setCookie(cookie, label) {
 $("[id$=age]").change(function() {
   Cookies.set('age', $('#age').val());
   ageChangeInit();
-  $("[data-localize]").localize("lg/basic", {
-    language: language_code
-  });
   $("[id$=_breed]").change();
   $("[id$=_gene]").change();
   $("[id^=target]").change();

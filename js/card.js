@@ -2,6 +2,7 @@ FRTool.initFR(FRData);
 var DEFAULT_FONT = "14pt cursive";
 var DEFAULT_BACKGROUND = "transparent";
 var DEFAULT_NAME_FONT = "24pt cursive";
+var defaultAge = 'Modern';
 
 function getRandomNumber(range) {
   return range[Math.floor(Math.random() * range.length)];
@@ -21,6 +22,24 @@ function getImgUrl(dragonID, isLeft) {
     miniDragonId += 1;
   }
   return 'http://flightrising.com/rendern/350/' + miniDragonId + '/' + dragonID + '_350.png'
+}
+
+function ageChangeInit() {
+  defaultAge = $('#age').val();
+  if (defaultAge == undefined || defaultAge == "") {
+    defaultAge = 'Modern';
+  }
+  initGeneSelect('o_Primary_gene', 'Primary', defaultAge);
+  initGeneSelect('a_Primary_gene', 'Primary', defaultAge);
+  initGeneSelect('o_Secondary_gene', 'Secondary', defaultAge);
+  initGeneSelect('a_Secondary_gene', 'Secondary', defaultAge);
+  initGeneSelect('o_Tertiary_gene', 'Tertiary', defaultAge);
+  initGeneSelect('a_Tertiary_gene', 'Tertiary', defaultAge);
+  initBreedSelect('o_breed', defaultAge);
+  initBreedSelect('a_breed', defaultAge);
+  $("[data-localize]").localize("lg/basic", {
+    language: language_code
+  });
 }
 
 function initGeneSelect(id, type, age) {
@@ -271,15 +290,10 @@ function setCheckCookie(cookie, label) {
   }
 }
 
-initBreedSelect('o_breed', 'Modern');
-initBreedSelect('a_breed', 'Modern');
 
-initGeneSelect('o_Primary_gene', 'Primary', 'Modern');
-initGeneSelect('a_Primary_gene', 'Primary', 'Modern');
-initGeneSelect('o_Secondary_gene', 'Secondary', 'Modern');
-initGeneSelect('a_Secondary_gene', 'Secondary', 'Modern');
-initGeneSelect('o_Tertiary_gene', 'Tertiary', 'Modern');
-initGeneSelect('a_Tertiary_gene', 'Tertiary', 'Modern');
+initAgeSelect('age');
+setCookie("age", "age");
+ageChangeInit();
 
 initColorSelect('o_primary_color');
 initColorSelect('o_secondary_color');
@@ -288,12 +302,6 @@ initColorSelect('a_primary_color');
 initColorSelect('a_secondary_color');
 initColorSelect('a_tertiary_color');
 
-initAgeSelect('age');
-
-setCookie("age", "age");
-$("[id$=age]").change();
-
-setCookie("age", "age");
 setCookie("o_breed", "o_breed");
 setCookie("a_breed", "a_breed");
 setCookie("o_name", "o_name");
@@ -320,18 +328,9 @@ for (var i = $("[id$=_Color]").length - 1; i >= 0; i--) {
 
 $("[id$=age]").change(function() {
   Cookies.set('age', $('#age').val());
-  var age = $('#age').val()
-  initGeneSelect('o_Primary_gene', 'Primary', age);
-  initGeneSelect('a_Primary_gene', 'Primary', age);
-  initGeneSelect('o_Secondary_gene', 'Secondary', age);
-  initGeneSelect('a_Secondary_gene', 'Secondary', age);
-  initGeneSelect('o_Tertiary_gene', 'Tertiary', age);
-  initGeneSelect('a_Tertiary_gene', 'Tertiary', age);
-  initBreedSelect('o_breed', age);
-  initBreedSelect('a_breed', age);
-  $("[data-localize]").localize("lg/basic", {
-    language: language_code
-  });
+  ageChangeInit();
+  $("[id$=_breed]").change();
+  $("[id$=_gene]").change();
 });
 
 $("[id=draw]").click(function() {
@@ -378,8 +377,6 @@ $("[id=draw]").click(function() {
   }
   drawCard('canvas_1', card_data);
 });
-
-
 
 $("[id$=_color]").change(function() {
   UpdateColorClass($(this));
