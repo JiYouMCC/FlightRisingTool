@@ -47,7 +47,7 @@ function initBreedSelect(id, age) {
         .attr("value", breeds[j].Name)
         .text(breeds[j].Name));
     };
-    if (breeds.length > 0){
+    if (breeds.length > 0) {
       $('#' + id).append(group);
     }
   };
@@ -55,6 +55,12 @@ function initBreedSelect(id, age) {
 
 function initGeneSelect(id, type, age) {
   $('#' + id).html("");
+  if (id.startsWith("target")) {
+    $('#' + id).append($("<option></option>")
+      .attr("data-localize", "None")
+      .attr("value", "none")
+      .text("None"));
+  }
   for (var i = 0; i < FRTool.Oddss.length; i++) {
     var genes = FRTool.getGene(FRTool.Oddss[i], type, age);
     var group = $("<optgroup></optgroup>")
@@ -83,6 +89,12 @@ function initColorSelect(id) {
 }
 
 function initGenderSelect(id) {
+  if (id.startsWith("target")) {
+    $('#' + id).append($("<option></option>")
+      .attr("data-localize", "None")
+      .attr("value", "none")
+      .text("None"));
+  }
   for (var i = 0; i < FRTool.Genders.length; i++) {
     $('#' + id).append(
       $("<option></option>")
@@ -108,7 +120,7 @@ function setCookie(cookie, label) {
 
 $("[id$=age]").change(function() {
   Cookies.set('age', $('#age').val());
-  ageChangeInit();  
+  ageChangeInit();
   $("[data-localize]").localize("lg/basic", {
     language: language_code
   });
