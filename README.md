@@ -1,7 +1,9 @@
 # FlightRisingTool
-**Since I'm AFK, if you want to add new gene, please refer to [How-To-Add-New-Gene.md](How-To-Add-New-Gene.md)**
+**Hi all, I'm back. Feel free to contact me by Github/FR for suggestions/bugs/requests. :D**
 
-**因为我已经不玩了，所以如果要加新基因请参考[How-To-Add-New-Gene.md](How-To-Add-New-Gene.md)这个文档**
+**If you want to add new gene, please refer to [How-To-Add-New-Gene.md](How-To-Add-New-Gene.md)**
+
+**所以如果要加新基因请参考[How-To-Add-New-Gene.md](How-To-Add-New-Gene.md)这个文档**
 
 Flight Rising的工具 / Flight Rising Game's Tool
 
