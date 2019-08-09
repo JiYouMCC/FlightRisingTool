@@ -37,9 +37,7 @@ function ageChangeInit() {
   initGeneSelect('a_Tertiary_gene', 'Tertiary', defaultAge);
   initBreedSelect('o_breed', defaultAge);
   initBreedSelect('a_breed', defaultAge);
-  $("[data-localize]").localize("lg/basic", {
-    language: language_code
-  });
+  localize(language_code);
 }
 
 function initGeneSelect(id, type, age) {

@@ -29,9 +29,7 @@ function ageChangeInit() {
   initBreedSelect('o_breed', defaultAge);
   initBreedSelect('a_breed', defaultAge);
   initBreedSelect('target_Breed', defaultAge);
-  $("[data-localize]").localize("lg/basic", {
-    language: language_code
-  });
+  localize(language_code)
 }
 
 function initBreedSelect(id, age) {
@@ -204,10 +202,8 @@ $("[id$=_breed]").change(function() {
       .text(" " + rate1 + "% ")
     );
   }
+  localize(language_code)
 
-  $("[data-localize]").localize("lg/basic", {
-    language: language_code
-  });
 });
 
 $("[id$=_gene]").change(function() {
@@ -272,10 +268,7 @@ $("[id$=_gene]").change(function() {
       .text(" " + rate1 + "% ")
     );
   }
-
-  $("[data-localize]").localize("lg/basic", {
-    language: language_code
-  });
+  localize(language_code)
 });
 
 $("[id$=_color]").change(function() {
@@ -302,9 +295,7 @@ $("[id$=_color]").change(function() {
     $('#' + color_type + '_color_result').append(row);
   };
   $('[data-toggle="tooltip"]').tooltip();
-  $("[data-localize]").localize("lg/basic", {
-    language: language_code
-  });
+  localize(language_code)
 });
 
 $("[id^=target]").change(function() {
