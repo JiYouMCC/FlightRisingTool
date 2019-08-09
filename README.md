@@ -8,6 +8,8 @@
 Flight Rising的工具 / Flight Rising Game's Tool
 
 ![](http://fr.jithee.name/img/BlueCP.png)
+![](http://fr.jithee.name/img/TundraCP.png)
+![](http://fr.jithee.name/img/SliverCP.png)
 
 选择两只龙的品种、基因和颜色，能显示出后代的品种、基因和颜色的范围或几率。Choose the breed, genes and colors of one dragon and another dragon, the breeds' rate colors' range and genes' rate will be shown.
 
