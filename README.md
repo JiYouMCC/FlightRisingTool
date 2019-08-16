@@ -7,6 +7,7 @@
 
 Flight Rising的工具 / Flight Rising Game's Tool
 
+![](http://fr.jithee.name/img/GuMaoCP.png)
 ![](http://fr.jithee.name/img/BlueCP.png)
 ![](http://fr.jithee.name/img/TundraCP.png)
 
