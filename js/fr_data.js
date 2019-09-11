@@ -19,6 +19,7 @@ FRData.ModernPrimaryGeneList = [
     ['Clown', 'Common', '175000 T'],
     ['Falcon', 'Common', '170000 T'],
     ['Laced', 'Common', '140000 T'],
+    ['Leopard', 'Common', '140000 T'],
     ['Piebald', 'Common', '235000 T'],
     ['Savannah', 'Common', '235000 T'],
     ['Speckle', 'Common', '125000 T'],
@@ -50,6 +51,7 @@ FRData.ModernPrimaryGeneList = [
 FRData.ModernSecondaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
+    ['Clouded', 'Common', '120000 T'],
     ['Current', 'Common', '165000 T'],
     ['Daub', 'Common', '165000 T'],
     ['Edged', 'Common', '120000 T'],
