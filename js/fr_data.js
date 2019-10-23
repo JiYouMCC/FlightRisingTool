@@ -39,6 +39,7 @@ FRData.ModernPrimaryGeneList = [
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
     ['Skink', 'Limited', '95000 T (Baldwin)'],
+    ['Slime', 'Limited', '?'],
 
     ['Crystal', 'Rare', '1500 G'],
     ['Iridescent', 'Rare', '1500 G'],
@@ -74,6 +75,7 @@ FRData.ModernSecondaryGeneList = [
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
     ['Toxin', 'Limited', '100000 T (Baldwin)'],
     ['Trail', 'Limited', '100000 T (Baldwin)'],
+    ['Sludge', 'Limited', '?'],
 
     ['Alloy', 'Rare', '1200 G'],
     ['Bee', 'Rare', '1200 G'],
