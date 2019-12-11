@@ -17,6 +17,7 @@ FRData.ModernPrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Clown', 'Common', '175000 T'],
+    ['Fade', 'Common', '?'],
     ['Falcon', 'Common', '170000 T'],
     ['Laced', 'Common', '140000 T'],
     ['Leopard', 'Common', '140000 T'],
@@ -52,6 +53,7 @@ FRData.ModernPrimaryGeneList = [
 FRData.ModernSecondaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
+    ['Blend', 'Common', '?'],
     ['Clouded', 'Common', '120000 T'],
     ['Current', 'Common', '165000 T'],
     ['Daub', 'Common', '165000 T'],
@@ -107,6 +109,8 @@ FRData.ModernTertiaryGeneList = [
     ['Scales', 'Limited', '100000 T (Baldwin)'],
     ['Smirch', 'Limited', '200000 T'],
     ['Spines', 'Limited', '190000 T'],
+    ['Veined', 'Limited', '?'],
+
 
     ['Circuit', 'Rare', '1200 G'],
     ['Filigree', 'Rare', '1200 G'],
@@ -164,15 +168,16 @@ FRData.AncientTertiaryGeneList = [
     ['Thylacine', 'Common', '77500 T'],
     ['Underbelly', 'Common', '75000 T'],
 
-    ['Blossom', 'Limited', '?'],
-    ['Runes', 'Limited', '77500 T'],
-    ['Scorpion', 'Limited', '45000 T (?)'],
-    ['Weathered', 'Limited', 'The Coliseum'],
-
     ['Ghost', 'Uncommon', '80000 T'],
     ['Ringlets', 'Uncommon', '77500 T'],
     ['Smoke', 'Uncommon', '95000 T'],
     ['Wintercoat', 'Uncommon', '95000 T'],
+
+    ['Blossom', 'Limited', '?'],
+    ['Runes', 'Limited', '77500 T'],
+    ['Scorpion', 'Limited', '45000 T (?)'],
+    ['Veined', 'Limited', '?'],
+    ['Weathered', 'Limited', 'The Coliseum'],
 
     ['Gnarlhorns', 'Rare', '500 G'],
     ['Opal', 'Rare', '500 G']
