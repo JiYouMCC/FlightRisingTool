@@ -398,7 +398,7 @@ FRData.BreedRuleList = [
     ],
     [
         ['Plentiful', 'Limited'],
-        [0.95, 0.05]
+        [0.97, 0.03]
     ],
     [
         ['Plentiful', 'Rare'],
@@ -414,7 +414,7 @@ FRData.BreedRuleList = [
     ],
     [
         ['Common', 'Limited'],
-        [0.89, 0.11]
+        [0.9, 0.1]
     ],
     [
         ['Common', 'Rare'],
@@ -426,7 +426,7 @@ FRData.BreedRuleList = [
     ],
     [
         ['Uncommon', 'Limited'],
-        [0.86, 0.14]
+        [0.85, 0.15]
     ],
     [
         ['Uncommon', 'Rare'],
@@ -461,7 +461,7 @@ FRData.GeneRuleList = [
     ],
     [
         ['Plentiful', 'Limited'],
-        [0.95, 0.05]
+        [0.97, 0.03]
     ],
     [
         ['Plentiful', 'Rare'],
@@ -477,7 +477,7 @@ FRData.GeneRuleList = [
     ],
     [
         ['Common', 'Limited'],
-        [0.92, 0.08]
+        [0.9, 0.1]
     ],
     [
         ['Common', 'Rare'],
