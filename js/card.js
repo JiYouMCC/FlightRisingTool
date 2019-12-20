@@ -89,14 +89,27 @@ function initBreedSelect(id, age) {
 }
 
 function initAgeSelect(id) {
-  for (var i = 0; i < FRTool.Ages.length; i++) {
-    $('#' + id).append(
-      $("<option></option>")
-      .attr("data-localize", FRTool.Ages[i].Name)
-      .attr("class", FRTool.Ages[i].Name)
-      .attr("value", FRTool.Ages[i].Name)
-      .text(FRTool.Ages[i].Name)
-    );
+  var name = "Modern";
+  $('#' + id).append(
+    $("<option></option>")
+    .attr("data-localize", name)
+    .attr("class", name)
+    .attr("value", name)
+    .text(name)
+  );
+  name = "Ancient";
+  var group = $("<optgroup></optgroup>")
+    .attr("data-localize", name)
+    .attr("label", name);
+  var breeds = FRTool.AncientBreeds;
+  for (var j = 0; j < breeds.length; j++) {
+    group.append($("<option></option>")
+      .attr("data-localize", breeds[j].Name)
+      .attr("value", breeds[j].Name)
+      .text(breeds[j].Name));
+  };
+  if (breeds.length > 0) {
+    $('#' + id).append(group);
   }
 }
 
@@ -333,45 +346,89 @@ $("[id$=age]").change(function() {
 
 $("[id=draw]").click(function() {
   var age = $('#age').val();
-  var card_data = {
-    'dragon1': {
-      'id': $('#o_id').val(),
-      'name': $('#o_name').val(),
-      'breed': FRTool[age + 'Breed'][$('#o_breed').val()],
-      'primarygene': FRTool[age + 'PrimaryGene'][$('#o_Primary_gene').val()],
-      'secondarygene': FRTool[age + 'SecondaryGene'][$('#o_Secondary_gene').val()],
-      'tertiarygene': FRTool[age + 'TertiaryGene'][$('#o_Tertiary_gene').val()],
-      'primarycolor': FRTool.Color[$('#o_primary_color').val()],
-      'secondarycolor': FRTool.Color[$('#o_secondary_color').val()],
-      'tertiarycolor': FRTool.Color[$('#o_tertiary_color').val()],
-      'imgflip': $('#o_flip').is(':checked')
-    },
-    'dragon2': {
-      'id': $('#a_id').val(),
-      'name': $('#a_name').val(),
-      'breed': FRTool[age + 'Breed'][$('#a_breed').val()],
-      'primarygene': FRTool[age + 'PrimaryGene'][$('#a_Primary_gene').val()],
-      'secondarygene': FRTool[age + 'SecondaryGene'][$('#a_Secondary_gene').val()],
-      'tertiarygene': FRTool[age + 'TertiaryGene'][$('#a_Tertiary_gene').val()],
-      'primarycolor': FRTool.Color[$('#a_primary_color').val()],
-      'secondarycolor': FRTool.Color[$('#a_secondary_color').val()],
-      'tertiarycolor': FRTool.Color[$('#a_tertiary_color').val()],
-      'imgflip': $('#a_flip').is(':checked')
-    },
-    'dragonName': {
-      'enable': true,
-      'font': $('#name_font').val(),
-      'color': $('#name_Color').val(),
-      'shadowcolor': $('#name_shadow_Color').val()
-    },
-    'geneColor': {
-      'left': $('#gene_left_Color').val(),
-      'right': $('#gene_right_Color').val(),
-      'basic': $('#gene_Color').val()
-    },
-    'geneFont': $('#gene_font').val(),
-    'lineColor': $('#line_Color').val(),
-    'background': $('#background').val()
+  if (age == 'Modern') {
+    var card_data = {
+      'dragon1': {
+        'id': $('#o_id').val(),
+        'name': $('#o_name').val(),
+        'breed': FRTool[age + 'Breed'][$('#o_breed').val()],
+        'primarygene': FRTool[age + 'PrimaryGene'][$('#o_Primary_gene').val()],
+        'secondarygene': FRTool[age + 'SecondaryGene'][$('#o_Secondary_gene').val()],
+        'tertiarygene': FRTool[age + 'TertiaryGene'][$('#o_Tertiary_gene').val()],
+        'primarycolor': FRTool.Color[$('#o_primary_color').val()],
+        'secondarycolor': FRTool.Color[$('#o_secondary_color').val()],
+        'tertiarycolor': FRTool.Color[$('#o_tertiary_color').val()],
+        'imgflip': $('#o_flip').is(':checked')
+      },
+      'dragon2': {
+        'id': $('#a_id').val(),
+        'name': $('#a_name').val(),
+        'breed': FRTool[age + 'Breed'][$('#a_breed').val()],
+        'primarygene': FRTool[age + 'PrimaryGene'][$('#a_Primary_gene').val()],
+        'secondarygene': FRTool[age + 'SecondaryGene'][$('#a_Secondary_gene').val()],
+        'tertiarygene': FRTool[age + 'TertiaryGene'][$('#a_Tertiary_gene').val()],
+        'primarycolor': FRTool.Color[$('#a_primary_color').val()],
+        'secondarycolor': FRTool.Color[$('#a_secondary_color').val()],
+        'tertiarycolor': FRTool.Color[$('#a_tertiary_color').val()],
+        'imgflip': $('#a_flip').is(':checked')
+      },
+      'dragonName': {
+        'enable': true,
+        'font': $('#name_font').val(),
+        'color': $('#name_Color').val(),
+        'shadowcolor': $('#name_shadow_Color').val()
+      },
+      'geneColor': {
+        'left': $('#gene_left_Color').val(),
+        'right': $('#gene_right_Color').val(),
+        'basic': $('#gene_Color').val()
+      },
+      'geneFont': $('#gene_font').val(),
+      'lineColor': $('#line_Color').val(),
+      'background': $('#background').val()
+    }
+  } else {
+     var card_data = {
+      'dragon1': {
+        'id': $('#o_id').val(),
+        'name': $('#o_name').val(),
+        'breed': FRTool['AncientBreed'][$('#o_breed').val()],
+        'primarygene': FRTool[age + 'PrimaryGene'][$('#o_Primary_gene').val()],
+        'secondarygene': FRTool[age + 'SecondaryGene'][$('#o_Secondary_gene').val()],
+        'tertiarygene': FRTool[age + 'TertiaryGene'][$('#o_Tertiary_gene').val()],
+        'primarycolor': FRTool.Color[$('#o_primary_color').val()],
+        'secondarycolor': FRTool.Color[$('#o_secondary_color').val()],
+        'tertiarycolor': FRTool.Color[$('#o_tertiary_color').val()],
+        'imgflip': $('#o_flip').is(':checked')
+      },
+      'dragon2': {
+        'id': $('#a_id').val(),
+        'name': $('#a_name').val(),
+        'breed': FRTool['AncientBreed'][$('#a_breed').val()],
+        'primarygene': FRTool[age + 'PrimaryGene'][$('#a_Primary_gene').val()],
+        'secondarygene': FRTool[age + 'SecondaryGene'][$('#a_Secondary_gene').val()],
+        'tertiarygene': FRTool[age + 'TertiaryGene'][$('#a_Tertiary_gene').val()],
+        'primarycolor': FRTool.Color[$('#a_primary_color').val()],
+        'secondarycolor': FRTool.Color[$('#a_secondary_color').val()],
+        'tertiarycolor': FRTool.Color[$('#a_tertiary_color').val()],
+        'imgflip': $('#a_flip').is(':checked')
+      },
+      'dragonName': {
+        'enable': true,
+        'font': $('#name_font').val(),
+        'color': $('#name_Color').val(),
+        'shadowcolor': $('#name_shadow_Color').val()
+      },
+      'geneColor': {
+        'left': $('#gene_left_Color').val(),
+        'right': $('#gene_right_Color').val(),
+        'basic': $('#gene_Color').val()
+      },
+      'geneFont': $('#gene_font').val(),
+      'lineColor': $('#line_Color').val(),
+      'background': $('#background').val()
+    }
+
   }
   drawCard('canvas_1', card_data);
 });

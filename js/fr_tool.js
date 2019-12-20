@@ -43,28 +43,52 @@ FRTool.ModernTertiaryGene = function(name, odds, price) {
     FRTool.ModernTertiaryGenes.push(this);
 }
 
-FRTool.AncientPrimaryGene = function(name, odds, price) {
+FRTool.GaolerPrimaryGene = function(name, odds, price) {
     this.Name = name;
     this.Odds = FRTool.Odds[odds];
     this.Price = price;
-    FRTool.AncientPrimaryGene[name] = this;
-    FRTool.AncientPrimaryGenes.push(this);
+    FRTool.GaolerPrimaryGene[name] = this;
+    FRTool.GaolerPrimaryGenes.push(this);
 }
 
-FRTool.AncientSecondaryGene = function(name, odds, price) {
+FRTool.GaolerSecondaryGene = function(name, odds, price) {
     this.Name = name;
     this.Odds = FRTool.Odds[odds];
     this.Price = price;
-    FRTool.AncientSecondaryGene[name] = this;
-    FRTool.AncientSecondaryGenes.push(this);
+    FRTool.GaolerSecondaryGene[name] = this;
+    FRTool.GaolerSecondaryGenes.push(this);
 }
 
-FRTool.AncientTertiaryGene = function(name, odds, price) {
+FRTool.GaolerTertiaryGene = function(name, odds, price) {
     this.Name = name;
     this.Odds = FRTool.Odds[odds];
     this.Price = price;
-    FRTool.AncientTertiaryGene[name] = this;
-    FRTool.AncientTertiaryGenes.push(this);
+    FRTool.GaolerTertiaryGene[name] = this;
+    FRTool.GaolerTertiaryGenes.push(this);
+}
+
+FRTool.BanescalePrimaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.BanescalePrimaryGene[name] = this;
+    FRTool.BanescalePrimaryGenes.push(this);
+}
+
+FRTool.BanescaleSecondaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.BanescaleSecondaryGene[name] = this;
+    FRTool.BanescaleSecondaryGenes.push(this);
+}
+
+FRTool.BanescaleTertiaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.BanescaleTertiaryGene[name] = this;
+    FRTool.BanescaleTertiaryGenes.push(this);
 }
 
 FRTool.Color = function(name, color) {
@@ -100,9 +124,12 @@ FRTool.initFR = function(data) {
     FRTool.ModernPrimaryGenes = [];
     FRTool.ModernSecondaryGenes = [];
     FRTool.ModernTertiaryGenes = [];
-    FRTool.AncientPrimaryGenes = [];
-    FRTool.AncientSecondaryGenes = [];
-    FRTool.AncientTertiaryGenes = [];
+    FRTool.GaolerPrimaryGenes = [];
+    FRTool.GaolerSecondaryGenes = [];
+    FRTool.GaolerTertiaryGenes = [];
+    FRTool.BanescalePrimaryGenes = [];
+    FRTool.BanescaleSecondaryGenes = [];
+    FRTool.BanescaleTertiaryGenes = [];
     FRTool.ModernBreeds = [];
     FRTool.AncientBreeds = [];
     FRTool.Colors = [];
@@ -133,16 +160,28 @@ FRTool.initFR = function(data) {
         new FRTool.ModernTertiaryGene(data.ModernTertiaryGeneList[i][0], data.ModernTertiaryGeneList[i][1], data.ModernTertiaryGeneList[i][2]);
     };
 
-    for (var i = 0; i < data.AncientPrimaryGeneList.length; i++) {
-        new FRTool.AncientPrimaryGene(data.AncientPrimaryGeneList[i][0], data.AncientPrimaryGeneList[i][1], data.AncientPrimaryGeneList[i][2]);
+    for (var i = 0; i < data.GaolerPrimaryGeneList.length; i++) {
+        new FRTool.GaolerPrimaryGene(data.GaolerPrimaryGeneList[i][0], data.GaolerPrimaryGeneList[i][1], data.GaolerPrimaryGeneList[i][2]);
     };
 
-    for (var i = 0; i < data.AncientSecondaryGeneList.length; i++) {
-        new FRTool.AncientSecondaryGene(data.AncientSecondaryGeneList[i][0], data.AncientSecondaryGeneList[i][1], data.AncientSecondaryGeneList[i][2]);
+    for (var i = 0; i < data.GaolerSecondaryGeneList.length; i++) {
+        new FRTool.GaolerSecondaryGene(data.GaolerSecondaryGeneList[i][0], data.GaolerSecondaryGeneList[i][1], data.GaolerSecondaryGeneList[i][2]);
     };
 
-    for (var i = 0; i < data.AncientTertiaryGeneList.length; i++) {
-        new FRTool.AncientTertiaryGene(data.AncientTertiaryGeneList[i][0], data.AncientTertiaryGeneList[i][1], data.AncientTertiaryGeneList[i][2]);
+    for (var i = 0; i < data.GaolerTertiaryGeneList.length; i++) {
+        new FRTool.GaolerTertiaryGene(data.GaolerTertiaryGeneList[i][0], data.GaolerTertiaryGeneList[i][1], data.GaolerTertiaryGeneList[i][2]);
+    };
+
+     for (var i = 0; i < data.BanescalePrimaryGeneList.length; i++) {
+        new FRTool.BanescalePrimaryGene(data.BanescalePrimaryGeneList[i][0], data.BanescalePrimaryGeneList[i][1], data.BanescalePrimaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.BanescaleSecondaryGeneList.length; i++) {
+        new FRTool.BanescaleSecondaryGene(data.BanescaleSecondaryGeneList[i][0], data.BanescaleSecondaryGeneList[i][1], data.BanescaleSecondaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.BanescaleTertiaryGeneList.length; i++) {
+        new FRTool.BanescaleTertiaryGene(data.BanescaleTertiaryGeneList[i][0], data.BanescaleTertiaryGeneList[i][1], data.BanescaleTertiaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.ColorList.length; i++) {
@@ -194,7 +233,7 @@ FRTool.getColorRange = function(color1, color2) {
 }
 
 FRTool.getBreedRate = function(breed1, breed2) {
-    if (breed1 instanceof FRTool.AncientBreed && breed2 instanceof FRTool.AncientBreed || breed1 instanceof FRTool.ModernBreed && breed2 instanceof FRTool.ModernBreed ) {
+    if (breed1 instanceof FRTool.AncientBreed && breed2 instanceof FRTool.AncientBreed || breed1 instanceof FRTool.ModernBreed && breed2 instanceof FRTool.ModernBreed) {
         if (breed1 == breed2) {
             return [1];
         }
@@ -210,11 +249,19 @@ FRTool.getBreedRate = function(breed1, breed2) {
 
 FRTool.getBreed = function(odds, age) {
     var breeds = [];
-    for (var i = 0; i < FRTool[age + "Breeds"].length; i++) {
-        if (FRTool[age + "Breeds"][i].Odds == odds) {
-            breeds.push(FRTool[age + "Breeds"][i]);
+    if (age == 'Modern') {
+        for (var i = 0; i < FRTool[age + "Breeds"].length; i++) {
+            if (FRTool[age + "Breeds"][i].Odds == odds) {
+                breeds.push(FRTool[age + "Breeds"][i]);
+            }
+        };
+    } else {
+        for (var i = 0; i < FRTool["AncientBreeds"].length; i++) {
+            if (FRTool["AncientBreeds"][i].Odds == odds && FRTool["AncientBreeds"][i].Name == age) {
+                breeds.push(FRTool["AncientBreeds"][i]);
+            }
         }
-    };
+    }
     return breeds;
 }
 
@@ -230,7 +277,15 @@ FRTool.getGene = function(odds, type, age) {
 }
 
 FRTool.getGeneRate = function(gene1, gene2) {
-    if ((gene1 instanceof FRTool.ModernPrimaryGene && gene2 instanceof FRTool.ModernPrimaryGene) || (gene1 instanceof FRTool.ModernSecondaryGene && gene2 instanceof FRTool.ModernSecondaryGene) || (gene1 instanceof FRTool.ModernTertiaryGene && gene2 instanceof FRTool.ModernTertiaryGene || gene1 instanceof FRTool.AncientPrimaryGene && gene2 instanceof FRTool.AncientPrimaryGene) || (gene1 instanceof FRTool.AncientSecondaryGene && gene2 instanceof FRTool.AncientSecondaryGene) || (gene1 instanceof FRTool.AncientTertiaryGene && gene2 instanceof FRTool.AncientTertiaryGene)) {
+    if ((gene1 instanceof FRTool.ModernPrimaryGene && gene2 instanceof FRTool.ModernPrimaryGene) 
+        || (gene1 instanceof FRTool.ModernSecondaryGene && gene2 instanceof FRTool.ModernSecondaryGene) 
+        || (gene1 instanceof FRTool.ModernTertiaryGene && gene2 instanceof FRTool.ModernTertiaryGene 
+        || gene1 instanceof FRTool.GaolerPrimaryGene && gene2 instanceof FRTool.GaolerPrimaryGene) 
+        || (gene1 instanceof FRTool.GaolerSecondaryGene && gene2 instanceof FRTool.GaolerSecondaryGene) 
+        || (gene1 instanceof FRTool.GaolerTertiaryGene && gene2 instanceof FRTool.GaolerTertiaryGene)
+        || (gene1 instanceof FRTool.BanescalePrimaryGene && gene2 instanceof FRTool.BanescalePrimaryGene) 
+        || (gene1 instanceof FRTool.BanescaleSecondaryGene && gene2 instanceof FRTool.BanescaleSecondaryGene) 
+        || (gene1 instanceof FRTool.BanescaleTertiaryGene && gene2 instanceof FRTool.BanescaleTertiaryGene)) {
         if (gene1 == gene2) {
             return [1];
         }

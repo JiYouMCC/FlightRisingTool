@@ -57,30 +57,57 @@ for (var i = 0; i < FRTool.ModernTertiaryGenes.length; i++) {
     );
 }
 
-for (var i = 0; i < FRTool.AncientPrimaryGenes.length; i++) {
-    $('#ancient_primary_gene_list').find("tbody").append(
+for (var i = 0; i < FRTool.GaolerPrimaryGenes.length; i++) {
+    $('#gaoler_primary_gene_list').find("tbody").append(
         $("<tr></tr>")
-        .append($("<td></td>").text(FRTool.AncientPrimaryGenes[i].Name).attr("data-localize", FRTool.AncientPrimaryGenes[i].Name))
-        .append($("<td></td>").text(FRTool.AncientPrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.AncientPrimaryGenes[i].Odds.Name))
-        .append($("<td></td>").text(FRTool.AncientPrimaryGenes[i].Price))
+        .append($("<td></td>").text(FRTool.GaolerPrimaryGenes[i].Name).attr("data-localize", FRTool.GaolerPrimaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.GaolerPrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.GaolerPrimaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.GaolerPrimaryGenes[i].Price))
     );
 }
 
-for (var i = 0; i < FRTool.AncientSecondaryGenes.length; i++) {
-    $('#ancient_secondary_gene_list').find("tbody").append(
+for (var i = 0; i < FRTool.GaolerSecondaryGenes.length; i++) {
+    $('#gaoler_secondary_gene_list').find("tbody").append(
         $("<tr></tr>")
-        .append($("<td></td>").text(FRTool.AncientSecondaryGenes[i].Name).attr("data-localize", FRTool.AncientSecondaryGenes[i].Name))
-        .append($("<td></td>").text(FRTool.AncientSecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.AncientSecondaryGenes[i].Odds.Name))
-        .append($("<td></td>").text(FRTool.AncientSecondaryGenes[i].Price))
+        .append($("<td></td>").text(FRTool.GaolerSecondaryGenes[i].Name).attr("data-localize", FRTool.GaolerSecondaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.GaolerSecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.GaolerSecondaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.GaolerSecondaryGenes[i].Price))
     );
 }
 
-for (var i = 0; i < FRTool.AncientTertiaryGenes.length; i++) {
-    $('#ancient_tertiary_gene_list').find("tbody").append(
+for (var i = 0; i < FRTool.GaolerTertiaryGenes.length; i++) {
+    $('#gaoler_tertiary_gene_list').find("tbody").append(
         $("<tr></tr>")
-        .append($("<td></td>").text(FRTool.AncientTertiaryGenes[i].Name).attr("data-localize", FRTool.AncientTertiaryGenes[i].Name))
-        .append($("<td></td>").text(FRTool.AncientTertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.AncientTertiaryGenes[i].Odds.Name))
-        .append($("<td></td>").text(FRTool.AncientTertiaryGenes[i].Price))
+        .append($("<td></td>").text(FRTool.GaolerTertiaryGenes[i].Name).attr("data-localize", FRTool.GaolerTertiaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.GaolerTertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.GaolerTertiaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.GaolerTertiaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.BanescalePrimaryGenes.length; i++) {
+    $('#banescale_primary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.BanescalePrimaryGenes[i].Name).attr("data-localize", FRTool.BanescalePrimaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.BanescalePrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.BanescalePrimaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.BanescalePrimaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.BanescaleSecondaryGenes.length; i++) {
+    $('#banescale_secondary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.BanescaleSecondaryGenes[i].Name).attr("data-localize", FRTool.BanescaleSecondaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.BanescaleSecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.BanescaleSecondaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.BanescaleSecondaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.BanescaleTertiaryGenes.length; i++) {
+    $('#banescale_tertiary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.BanescaleTertiaryGenes[i].Name).attr("data-localize", FRTool.BanescaleTertiaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.BanescaleTertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.BanescaleTertiaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.BanescaleTertiaryGenes[i].Price))
     );
 }
 
@@ -201,9 +228,12 @@ allowSort("ancient_breed_list");
 allowSort("primary_gene_list");
 allowSort("secondary_gene_list");
 allowSort("tertiary_gene_list");
-allowSort("ancient_primary_gene_list");
-allowSort("ancient_secondary_gene_list");
-allowSort("ancient_tertiary_gene_list");
+allowSort("gaoler_primary_gene_list");
+allowSort("gaoler_secondary_gene_list");
+allowSort("gaoler_tertiary_gene_list");
+allowSort("banescale_primary_gene_list");
+allowSort("banescale_secondary_gene_list");
+allowSort("banescale_tertiary_gene_list");
 allowSort("color_list");
 allowSort("breed_rule_list");
 allowSort("gene_rule_list");
