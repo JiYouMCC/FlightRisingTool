@@ -1,7 +1,7 @@
 var defaultAge = 'Modern';
 
 function initAgeSelect(id) {
-  for (var i = 0; i < FRTool.Ages.length; i++) {
+/*  for (var i = 0; i < FRTool.Ages.length; i++) {
     $('#' + id).append(
       $("<option></option>")
       .attr("data-localize", FRTool.Ages[i].Name)
@@ -9,7 +9,29 @@ function initAgeSelect(id) {
       .attr("value", FRTool.Ages[i].Name)
       .text(FRTool.Ages[i].Name)
     );
-  }
+  }*/
+  var name = "Modern";
+  $('#' + id).append(
+      $("<option></option>")
+      .attr("data-localize", name)
+      .attr("class", name)
+      .attr("value", name)
+      .text(name)
+    );
+  name = "Ancient";
+  var group = $("<optgroup></optgroup>")
+      .attr("data-localize", name)
+      .attr("label", name);
+  var breeds = FRTool.AncientBreeds;
+  for (var j = 0; j < breeds.length; j++) {
+      group.append($("<option></option>")
+        .attr("data-localize", breeds[j].Name)
+        .attr("value", breeds[j].Name)
+        .text(breeds[j].Name));
+    };
+    if (breeds.length > 0) {
+      $('#' + id).append(group);
+    }
 }
 
 function ageChangeInit() {
@@ -149,8 +171,13 @@ $("[id$=_breed]").change(function() {
   $('#breed_result').text("");
   Cookies.set('o_breed', $('#o_breed').val());
   Cookies.set('a_breed', $('#a_breed').val());
-  var o_breed = FRTool[defaultAge + 'Breed'][$('#o_breed').val()];
-  var a_breed = FRTool[defaultAge + 'Breed'][$('#a_breed').val()];
+  if (defaultAge == "Modern") {
+    var o_breed = FRTool[defaultAge + 'Breed'][$('#o_breed').val()];
+    var a_breed = FRTool[defaultAge + 'Breed'][$('#a_breed').val()];
+  } else {
+    var o_breed = FRTool['AncientBreed'][$('#o_breed').val()];
+    var a_breed = FRTool['AncientBreed'][$('#a_breed').val()];
+  }
   var rate = FRTool.getBreedRate(o_breed, a_breed);
   if (rate.length == 1) {
     var rate0 = rate[0] * 100 | 0;
