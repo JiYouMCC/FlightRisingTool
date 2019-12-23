@@ -1,37 +1,28 @@
 var defaultAge = 'Modern';
 
 function initAgeSelect(id) {
-/*  for (var i = 0; i < FRTool.Ages.length; i++) {
-    $('#' + id).append(
-      $("<option></option>")
-      .attr("data-localize", FRTool.Ages[i].Name)
-      .attr("class", FRTool.Ages[i].Name)
-      .attr("value", FRTool.Ages[i].Name)
-      .text(FRTool.Ages[i].Name)
-    );
-  }*/
-  var name = "Modern";
+  var name = FRTool.Age["Modern"].Name;
   $('#' + id).append(
-      $("<option></option>")
-      .attr("data-localize", name)
-      .attr("class", name)
-      .attr("value", name)
-      .text(name)
-    );
-  name = "Ancient";
+    $("<option></option>")
+    .attr("data-localize", name)
+    .attr("class", name)
+    .attr("value", name)
+    .text(name)
+  );
+  name = FRTool.Age["Ancient"].Name;
   var group = $("<optgroup></optgroup>")
-      .attr("data-localize", name)
-      .attr("label", name);
+    .attr("data-localize", name)
+    .attr("label", name);
   var breeds = FRTool.AncientBreeds;
   for (var j = 0; j < breeds.length; j++) {
-      group.append($("<option></option>")
-        .attr("data-localize", breeds[j].Name)
-        .attr("value", breeds[j].Name)
-        .text(breeds[j].Name));
-    };
-    if (breeds.length > 0) {
-      $('#' + id).append(group);
-    }
+    group.append($("<option></option>")
+      .attr("data-localize", breeds[j].Name)
+      .attr("value", breeds[j].Name)
+      .text(breeds[j].Name));
+  };
+  if (breeds.length > 0) {
+    $('#' + id).append(group);
+  }
 }
 
 function ageChangeInit() {

@@ -2,7 +2,7 @@ FRTool.initFR(FRData);
 var DEFAULT_FONT = "14pt cursive";
 var DEFAULT_BACKGROUND = "transparent";
 var DEFAULT_NAME_FONT = "24pt cursive";
-var defaultAge = 'Modern';
+var defaultAge = FRTool.Age["Modern"].Name;
 
 function getRandomNumber(range) {
   return range[Math.floor(Math.random() * range.length)];
@@ -27,7 +27,7 @@ function getImgUrl(dragonID, isLeft) {
 function ageChangeInit() {
   defaultAge = $('#age').val();
   if (defaultAge == undefined || defaultAge == "") {
-    defaultAge = 'Modern';
+    defaultAge = FRTool.Age["Modern"].Name;
   }
   initGeneSelect('o_Primary_gene', 'Primary', defaultAge);
   initGeneSelect('a_Primary_gene', 'Primary', defaultAge);
@@ -89,7 +89,7 @@ function initBreedSelect(id, age) {
 }
 
 function initAgeSelect(id) {
-  var name = "Modern";
+  var name = FRTool.Age["Modern"].Name;
   $('#' + id).append(
     $("<option></option>")
     .attr("data-localize", name)
@@ -97,7 +97,7 @@ function initAgeSelect(id) {
     .attr("value", name)
     .text(name)
   );
-  name = "Ancient";
+  name = FRTool.Age["Ancient"].Name;
   var group = $("<optgroup></optgroup>")
     .attr("data-localize", name)
     .attr("label", name);
@@ -346,7 +346,7 @@ $("[id$=age]").change(function() {
 
 $("[id=draw]").click(function() {
   var age = $('#age').val();
-  if (age == 'Modern') {
+  if (age == FRTool.Age["Modern"].Name) {
     var card_data = {
       'dragon1': {
         'id': $('#o_id').val(),
