@@ -186,10 +186,10 @@ FRData.GaolerTertiaryGeneList = [
 FRData.BanescalePrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
-    ['Laced', 'Common', ''],
-    ['Marble', 'Common', ''],
-    ['Savannah', 'Common', ''],
-    ['Tiger', 'Common', ''],
+    ['Laced', 'Common', '70000 T'],
+    ['Marble', 'Common', '90000 T'],
+    ['Savannah', 'Common', '70000 T'],
+    ['Tiger', 'Common', '67500 T'],
 
     ['Cherub', 'Uncommon', ''],
     ['Chevron', 'Uncommon', ''],
@@ -232,6 +232,7 @@ FRData.BanescaleTertiaryGeneList = [
 
     ['Contour', 'Common', ''],
     ['Trimmings', 'Common', ''],
+    ['Underbelly', 'Common',''],
 
     ['Crackle', 'Uncommon', ''],
     ['Lace', 'Uncommon', ''],
@@ -451,7 +452,7 @@ FRData.ModernBreedList = [
 
 FRData.AncientBreedList = [
     ['Gaoler', 'Common', ['Meat', 'Plants']],
-    ['Banescale', 'Common', []]
+    ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']]
 ]
 
 FRData.BreedRuleList = [
