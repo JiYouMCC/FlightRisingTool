@@ -105,6 +105,7 @@ FRData.ModernTertiaryGeneList = [
     ['Capsule', 'Limited', '110000 T (Baldwin)'],
     ['Firefly', 'Limited', "Swipp's Swap Stand"],
     ['Gembond', 'Limited', '200000 T'],
+    ['Keel', 'Limited', '100000 T (Baldwin)'],
     ['Runes', 'Limited', '190000 T'],
     ['Scales', 'Limited', '100000 T (Baldwin)'],
     ['Smirch', 'Limited', '200000 T'],
