@@ -1,5 +1,5 @@
 # FlightRisingTool
-**Hi all, I'm back. Feel free to contact me by Github/FR for suggestions/bugs/requests. :D**
+**Hi all, I'm AFK again. But feel free to contact me by Github for suggestions/bugs/requests. :D**
 
 **If you want to add new gene, please refer to [How-To-Add-New-Gene.md](How-To-Add-New-Gene.md)**
 
