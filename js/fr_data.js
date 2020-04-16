@@ -105,6 +105,7 @@ FRData.ModernTertiaryGeneList = [
     ['Capsule', 'Limited', '110000 T (Baldwin)'],
     ['Firefly', 'Limited', "Swipp's Swap Stand"],
     ['Gembond', 'Limited', '200000 T'],
+    ['Keel', 'Limited', '100000 T (Baldwin)'],
     ['Runes', 'Limited', '190000 T'],
     ['Scales', 'Limited', '100000 T (Baldwin)'],
     ['Smirch', 'Limited', '200000 T'],
@@ -186,10 +187,10 @@ FRData.GaolerTertiaryGeneList = [
 FRData.BanescalePrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
-    ['Laced', 'Common', ''],
-    ['Marble', 'Common', ''],
-    ['Savannah', 'Common', ''],
-    ['Tiger', 'Common', ''],
+    ['Laced', 'Common', '70000 T'],
+    ['Marble', 'Common', '90000 T'],
+    ['Savannah', 'Common', '70000 T'],
+    ['Tiger', 'Common', '67500 T'],
 
     ['Cherub', 'Uncommon', ''],
     ['Chevron', 'Uncommon', ''],
@@ -232,6 +233,7 @@ FRData.BanescaleTertiaryGeneList = [
 
     ['Contour', 'Common', ''],
     ['Trimmings', 'Common', ''],
+    ['Underbelly', 'Common',''],
 
     ['Crackle', 'Uncommon', ''],
     ['Lace', 'Uncommon', ''],
@@ -451,7 +453,7 @@ FRData.ModernBreedList = [
 
 FRData.AncientBreedList = [
     ['Gaoler', 'Common', ['Meat', 'Plants']],
-    ['Banescale', 'Common', []]
+    ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']]
 ]
 
 FRData.BreedRuleList = [
