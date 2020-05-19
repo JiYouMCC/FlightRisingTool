@@ -17,13 +17,14 @@ FRData.ModernPrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Clown', 'Common', '175000 T'],
-    ['Fade', 'Common', '?'],
+    ['Fade', 'Common', '125000 T'],
     ['Falcon', 'Common', '170000 T'],
     ['Laced', 'Common', '140000 T'],
     ['Leopard', 'Common', '140000 T'],
     ['Piebald', 'Common', '235000 T'],
     ['Savannah', 'Common', '235000 T'],
     ['Speckle', 'Common', '125000 T'],
+    ['Swirl', 'Common', '150000 T'],
     ['Tapir', 'Common', '185000 T'],
     ['Tiger', 'Common', '135000 T'],
 
@@ -40,7 +41,7 @@ FRData.ModernPrimaryGeneList = [
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
     ['Skink', 'Limited', '95000 T (Baldwin)'],
-    ['Slime', 'Limited', '?'],
+    ['Slime', 'Limited', '100000 T (Baldwin)'],
 
     ['Crystal', 'Rare', '1500 G'],
     ['Iridescent', 'Rare', '1500 G'],
@@ -53,13 +54,14 @@ FRData.ModernPrimaryGeneList = [
 FRData.ModernSecondaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
-    ['Blend', 'Common', '?'],
+    ['Blend', 'Common', '100000 T'],
     ['Clouded', 'Common', '120000 T'],
     ['Current', 'Common', '165000 T'],
     ['Daub', 'Common', '165000 T'],
     ['Edged', 'Common', '120000 T'],
     ['EyeSpots', 'Common', '110000 T'],
     ['Freckle', 'Common', '90000 T'],
+    ['Marbled', 'Common', '130000 T'],
     ['Paint', 'Common', '165000 T'],
     ['Peregrine', 'Common', '140000 T'],
     ['Safari', 'Common', '120000 T'],
@@ -77,7 +79,7 @@ FRData.ModernSecondaryGeneList = [
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
     ['Toxin', 'Limited', '100000 T (Baldwin)'],
     ['Trail', 'Limited', '100000 T (Baldwin)'],
-    ['Sludge', 'Limited', '?'],
+    ['Sludge', 'Limited', '90000 T (Baldwin)'],
 
     ['Alloy', 'Rare', '1200 G'],
     ['Bee', 'Rare', '1200 G'],
@@ -110,12 +112,13 @@ FRData.ModernTertiaryGeneList = [
     ['Scales', 'Limited', '100000 T (Baldwin)'],
     ['Smirch', 'Limited', '200000 T'],
     ['Spines', 'Limited', '190000 T'],
-    ['Veined', 'Limited', '?'],
+    ['Veined', 'Limited', '100000 T (Baldwin)'],
 
 
     ['Circuit', 'Rare', '1200 G'],
     ['Filigree', 'Rare', '1200 G'],
     ['Glimmer', 'Rare', '1200 G'],
+    ['Glowtail', 'Rare', '1200 G'],
     ['Opal', 'Rare', '1200 G'],
     ['Stained', 'Rare', '1200 G']
 ]
@@ -135,7 +138,7 @@ FRData.GaolerPrimaryGeneList = [
     ['Mosaic', 'Uncommon', '150000 T'],
 
     ['Phantom', 'Limited', 'The Coliseum'],
-    ['Pinstripe', 'Limited', '50000 T (?)'],
+    ['Pinstripe', 'Limited', '50000 T (Baldwin)'],
 
     ['Crystal', 'Rare', '750 G'],
     ['Wasp', 'Rare', '750 G']
@@ -156,7 +159,7 @@ FRData.GaolerSecondaryGeneList = [
     ['Rosette', 'Uncommon', '50000 T'],
 
     ['Spirit', 'Limited', 'The Coliseum'],
-    ['Trail', 'Limited', '50000 T (?)'],
+    ['Trail', 'Limited', '50000 T (Baldwin)'],
 
     ['Bee', 'Rare', '600 G'],
     ['Facet', 'Rare', '600 G'],
@@ -174,10 +177,10 @@ FRData.GaolerTertiaryGeneList = [
     ['Smoke', 'Uncommon', '95000 T'],
     ['Wintercoat', 'Uncommon', '95000 T'],
 
-    ['Blossom', 'Limited', '?'],
+    ['Blossom', 'Limited', "Swipp's Swap Stand"],
     ['Runes', 'Limited', '77500 T'],
-    ['Scorpion', 'Limited', '45000 T (?)'],
-    ['Veined', 'Limited', '?'],
+    ['Scorpion', 'Limited', '45000 T (Baldwin)'],
+    ['Veined', 'Limited', '50000 T (Baldwin)'],
     ['Weathered', 'Limited', 'The Coliseum'],
 
     ['Gnarlhorns', 'Rare', '500 G'],
@@ -192,62 +195,62 @@ FRData.BanescalePrimaryGeneList = [
     ['Savannah', 'Common', '70000 T'],
     ['Tiger', 'Common', '67500 T'],
 
-    ['Cherub', 'Uncommon', ''],
-    ['Chevron', 'Uncommon', ''],
-    ['Jaguar', 'Uncommon', ''],
-    ['Ragged', 'Uncommon', ''],
+    ['Cherub', 'Uncommon', '92500 T'],
+    ['Chevron', 'Uncommon', '100000 T'],
+    ['Jaguar', 'Uncommon', '70000 T'],
+    ['Ragged', 'Uncommon', '100000 T'],
 
-    ['Candycane', 'Limited', ''],
-    ['Pinstripe', 'Limited', ''],
-    ['Poison', 'Limited', ''],
-    ['Skink', 'Limited', ''],
+    ['Candycane', 'Limited', 'The Coliseum'],
+    ['Pinstripe', 'Limited', '50000 T (Baldwin)'],
+    ['Poison', 'Limited', '50000 T (Baldwin)'],
+    ['Skink', 'Limited', '47500 T (Baldwin)'],
 
-    ['Metallic', 'Rare', ''],
-    ['Petals', 'Rare', '']
+    ['Metallic', 'Rare', '750 G'],
+    ['Petals', 'Rare', '750 G']
 ]
 
 FRData.BanescaleSecondaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
-    ['Edged', 'Common', ''],
-    ['Mottle', 'Common', ''],
-    ['Safari', 'Common', ''],
-    ['Stripes', 'Common', ''],
+    ['Edged', 'Common', '60000 T'],
+    ['Mottle', 'Common', '60000 T'],
+    ['Safari', 'Common', '49000 T'],
+    ['Stripes', 'Common', '45000'],
 
-    ['Arrow', 'Uncommon', ''],
-    ['Rosette', 'Uncommon', ''],
-    ['Seraph', 'Uncommon', ''],
-    ['Tear', 'Uncommon', ''],
+    ['Arrow', 'Uncommon', '80000 T'],
+    ['Rosette', 'Uncommon', '50000 T'],
+    ['Seraph', 'Uncommon', '49000 T'],
+    ['Tear', 'Uncommon', '80000 T'],
 
-    ['Spinner', 'Limited', ''],
-    ['Sugarplum', 'Limited', ''],
-    ['Toxin', 'Limited', ''],
-    ['Trail', 'Limited', ''],
+    ['Spinner', 'Limited', '47500 T (Baldwin)'],
+    ['Sugarplum', 'Limited', 'The Coliseum'],
+    ['Toxin', 'Limited', '50000 T (Baldwin)'],
+    ['Trail', 'Limited', '50000 T (Baldwin)'],
 
-    ['Alloy', 'Rare', ''],
-    ['Butterfly', 'Rare', '']
+    ['Alloy', 'Rare', '600 G'],
+    ['Butterfly', 'Rare', '600 G']
 ]
 
 FRData.BanescaleTertiaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
-    ['Contour', 'Common', ''],
-    ['Trimmings', 'Common', ''],
-    ['Underbelly', 'Common',''],
+    ['Contour', 'Common', '75000 T'],
+    ['Trimmings', 'Common', '75000 T'],
+    ['Underbelly', 'Common','75000 T'],
 
-    ['Crackle', 'Uncommon', ''],
-    ['Lace', 'Uncommon', ''],
-    ['Ghost', 'Uncommon', ''],
-    ['Ringlets', 'Uncommon', ''],
+    ['Crackle', 'Uncommon', '95000 T'],
+    ['Lace', 'Uncommon', '77500 T'],
+    ['Ghost', 'Uncommon', '80000 T'],
+    ['Ringlets', 'Uncommon', '77500 T'],
 
-    ['Porcupine', 'Limited', '?'],
-    ['Skeletal', 'Limited', ''],
-    ['Squiggle', 'Limited', ''],
+    ['Porcupine', 'Limited', '50000 T (Baldwin)'],
+    ['Skeletal', 'Limited', 'The Coliseum'],
+    ['Squiggle', 'Limited', "Swipp's Swap Stand"],
 
-    ['Fans', 'Rare', ''],
-    ['Filigree', 'Rare', ''],
-    ['Plumage', 'Rare', ''],
-    ['Wraith', 'Rare', '']
+    ['Fans', 'Rare', '500 G'],
+    ['Filigree', 'Rare', '500 G'],
+    ['Plumage', 'Rare', '500 G'],
+    ['Wraith', 'Rare', '500 G']
 ]
 
 FRData.ColorList = [
