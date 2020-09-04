@@ -6,6 +6,10 @@
 
 ![](img/step1.png)
 
+If you have forked before, try merge code first.
+
+If you don know how to merge. You can add a Issue here, list the new gene and details. I can do coding when I'm free.
+
 ## Step 2 Modify js/fr_data.js
 第二步：修改js/fr_data.js
 
