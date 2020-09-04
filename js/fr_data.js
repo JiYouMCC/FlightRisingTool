@@ -118,7 +118,7 @@ FRData.ModernTertiaryGeneList = [
     ['Glimmer', 'Rare', '1200 G'],
     ['Opal', 'Rare', '1200 G'],
     ['Stained', 'Rare', '1200 G']
-]
+    ['Glowtail', 'Rare', '1200 G']
 
 FRData.GaolerPrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
