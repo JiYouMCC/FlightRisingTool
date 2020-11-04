@@ -172,6 +172,7 @@ FRData.GaolerTertiaryGeneList = [
     ['Thylacine', 'Common', '77500 T'],
     ['Underbelly', 'Common', '75000 T'],
 
+    ['Braids', 'Uncommon', '85000 T'],
     ['Ghost', 'Uncommon', '80000 T'],
     ['Ringlets', 'Uncommon', '77500 T'],
     ['Smoke', 'Uncommon', '95000 T'],
