@@ -112,6 +112,8 @@
     "Slime": "Slime",
     "Fade": "Fade",
     "Swirl": "Swirl",
+    "Mosaic": "Mosaic",
+    "Stitched": "Stitched",
 
     "Current": "Current",
     "Daub": "Daub",
@@ -146,6 +148,8 @@
     "Sludge": "Sludge",
     "Blend": "Blend",
     "Marbled": "Marbled",
+    "Breakup": "Breakup",
+    "Patchwork": "Patchwork",
     
     "Underbelly": "Underbelly",
     "Thylacine": "Thylacine",
@@ -178,7 +182,7 @@
     "Veined": "Veined",
     "Keel": "Keel",
     "Glowtail": "Glowtail",
-    "Braids": "Braids"
+    "Braids": "Braids",
     
     "Fae": "Fae",
     "Guardian": "Guardian",
