@@ -112,6 +112,8 @@
     "Slime": "史莱姆 Slime",
     "Fade": "褪色 Fade",
     "Swirl": "Swirl",
+    "Mosaic": "Mosaic",
+    "Stitched": "Stitched",
     
     "Current": "水纹 Current",
     "Daub": "豹纹 Daub",
@@ -146,6 +148,8 @@
     "Sludge": "软泥怪 Sludge",
     "Blend": "搅拌 Blend",
     "Marbled": "Marbled",
+    "Breakup": "Breakup",
+    "Patchwork": "Patchwork",
 
     "Underbelly": "肚皮 Underbelly",
     "Thylacine": "袋狼 Thylacine",
@@ -178,7 +182,7 @@
     "Veined": "脉状 Veined",
     "Keel": "Keel",
     "Glowtail": "Glowtail",
-    "Braids": "Braids"
+    "Braids": "Braids",
 
     "Fae": "精灵 Fae",
     "Guardian": "守护 Guardian",
