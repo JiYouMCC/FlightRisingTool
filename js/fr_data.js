@@ -43,7 +43,7 @@ FRData.ModernPrimaryGeneList = [
     ['Poison', 'Limited', '100000 T (Baldwin)'],
     ['Skink', 'Limited', '95000 T (Baldwin)'],
     ['Slime', 'Limited', '100000 T (Baldwin)'],
-    ['Stitched', 'Limited' '100000 T (Baldwin)'],
+    ['Stitched', 'Limited', '100000 T (Baldwin)'],
 
     ['Crystal', 'Rare', '1500 G'],
     ['Iridescent', 'Rare', '1500 G'],
@@ -70,7 +70,7 @@ FRData.ModernSecondaryGeneList = [
     ['Striation', 'Common', '120000 T'],
     ['Stripes', 'Common', '90000 T'],
 
-    ['Breakup', 'Uncommon' '200000 T'],
+    ['Breakup', 'Uncommon', '200000 T'],
     ['Hex', 'Uncommon', '160000 T'],
     ['Hypnotic', 'Uncommon', '185000 T'],
     ['Morph', 'Uncommon', 'The Coliseum'],
