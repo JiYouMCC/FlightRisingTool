@@ -34,6 +34,7 @@ FRData.ModernPrimaryGeneList = [
     ['Jaguar', 'Uncommon', '250000 T'],
     ['Jupiter', 'Uncommon', '230000 T'],
     ['Lionfish', 'Uncommon', '230000 T'],
+    ['Mosaic', 'Uncommon', '300000 T'],
     ['Python', 'Uncommon', 'The Coliseum'],
     ['Ripple', 'Uncommon', '250000 T'],
     ['Vipera', 'Uncommon', '235000 T'],
@@ -42,6 +43,7 @@ FRData.ModernPrimaryGeneList = [
     ['Poison', 'Limited', '100000 T (Baldwin)'],
     ['Skink', 'Limited', '95000 T (Baldwin)'],
     ['Slime', 'Limited', '100000 T (Baldwin)'],
+    ['Stitched', 'Limited' '100000 T (Baldwin)'],
 
     ['Crystal', 'Rare', '1500 G'],
     ['Iridescent', 'Rare', '1500 G'],
@@ -68,6 +70,7 @@ FRData.ModernSecondaryGeneList = [
     ['Striation', 'Common', '120000 T'],
     ['Stripes', 'Common', '90000 T'],
 
+    ['Breakup', 'Uncommon' '200000 T'],
     ['Hex', 'Uncommon', '160000 T'],
     ['Hypnotic', 'Uncommon', '185000 T'],
     ['Morph', 'Uncommon', 'The Coliseum'],
@@ -76,6 +79,7 @@ FRData.ModernSecondaryGeneList = [
     ['Saturn', 'Uncommon', '160000 T'],
     ['Seraph', 'Uncommon', '125000 T'],
 
+    ['Patchwork', 'Limited', '100000 T (Baldwin)'],
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
     ['Toxin', 'Limited', '100000 T (Baldwin)'],
     ['Trail', 'Limited', '100000 T (Baldwin)'],
@@ -172,6 +176,7 @@ FRData.GaolerTertiaryGeneList = [
     ['Thylacine', 'Common', '77500 T'],
     ['Underbelly', 'Common', '75000 T'],
 
+    ['Braids', 'Uncommon', '85000 T'],
     ['Ghost', 'Uncommon', '80000 T'],
     ['Ringlets', 'Uncommon', '77500 T'],
     ['Smoke', 'Uncommon', '95000 T'],
