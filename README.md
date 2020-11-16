@@ -1,5 +1,5 @@
 # FlightRisingTool
-**Hi all, I'm AFK again. But feel free to contact me by Github for suggestions/bugs/requests. :D**
+**Hi all, I'm back again. Feel free to contact me by Github/Fr messages for suggestions/bugs/requests. :D**
 
 **If you want to add new gene, please refer to [How-To-Add-New-Gene.md](How-To-Add-New-Gene.md)**
 
@@ -32,6 +32,12 @@ http://fr.jithee.name/
 [Localize v0.1.0](https://github.com/coderifous/jquery-localize)
 
 ## Contributors / 贡献者
+
+[weeveryin](https://github.com/weeveryin)
+
+[angelwings001](https://github.com/angelwings001)
+
+[nogitsune1992](https://github.com/nogitsune1992)
 
 [shinykari](https://github.com/shinykari)
 
