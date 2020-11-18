@@ -91,6 +91,30 @@ FRTool.BanescaleTertiaryGene = function(name, odds, price) {
     FRTool.BanescaleTertiaryGenes.push(this);
 }
 
+FRTool.VeilspunPrimaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.VeilspunPrimaryGene[name] = this;
+    FRTool.VeilspunPrimaryGenes.push(this);
+}
+
+FRTool.VeilspunSecondaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.VeilspunSecondaryGene[name] = this;
+    FRTool.VeilspunSecondaryGenes.push(this);
+}
+
+FRTool.VeilspunTertiaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.VeilspunTertiaryGene[name] = this;
+    FRTool.VeilspunTertiaryGenes.push(this);
+}
+
 FRTool.Color = function(name, color) {
     this.Name = name;
     this.Color = color;
@@ -130,6 +154,9 @@ FRTool.initFR = function(data) {
     FRTool.BanescalePrimaryGenes = [];
     FRTool.BanescaleSecondaryGenes = [];
     FRTool.BanescaleTertiaryGenes = [];
+    FRTool.VeilspunPrimaryGenes = [];
+    FRTool.VeilspunSecondaryGenes = [];
+    FRTool.VeilspunTertiaryGenes = [];
     FRTool.ModernBreeds = [];
     FRTool.AncientBreeds = [];
     FRTool.Colors = [];
@@ -172,7 +199,7 @@ FRTool.initFR = function(data) {
         new FRTool.GaolerTertiaryGene(data.GaolerTertiaryGeneList[i][0], data.GaolerTertiaryGeneList[i][1], data.GaolerTertiaryGeneList[i][2]);
     };
 
-     for (var i = 0; i < data.BanescalePrimaryGeneList.length; i++) {
+    for (var i = 0; i < data.BanescalePrimaryGeneList.length; i++) {
         new FRTool.BanescalePrimaryGene(data.BanescalePrimaryGeneList[i][0], data.BanescalePrimaryGeneList[i][1], data.BanescalePrimaryGeneList[i][2]);
     };
 
@@ -182,6 +209,18 @@ FRTool.initFR = function(data) {
 
     for (var i = 0; i < data.BanescaleTertiaryGeneList.length; i++) {
         new FRTool.BanescaleTertiaryGene(data.BanescaleTertiaryGeneList[i][0], data.BanescaleTertiaryGeneList[i][1], data.BanescaleTertiaryGeneList[i][2]);
+    };
+
+     for (var i = 0; i < data.VeilspunPrimaryGeneList.length; i++) {
+        new FRTool.VeilspunPrimaryGene(data.VeilspunPrimaryGeneList[i][0], data.VeilspunPrimaryGeneList[i][1], data.VeilspunPrimaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.VeilspunSecondaryGeneList.length; i++) {
+        new FRTool.VeilspunSecondaryGene(data.VeilspunSecondaryGeneList[i][0], data.VeilspunSecondaryGeneList[i][1], data.VeilspunSecondaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.VeilspunTertiaryGeneList.length; i++) {
+        new FRTool.VeilspunTertiaryGene(data.VeilspunTertiaryGeneList[i][0], data.VeilspunTertiaryGeneList[i][1], data.VeilspunTertiaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.ColorList.length; i++) {
@@ -285,7 +324,10 @@ FRTool.getGeneRate = function(gene1, gene2) {
         || (gene1 instanceof FRTool.GaolerTertiaryGene && gene2 instanceof FRTool.GaolerTertiaryGene)
         || (gene1 instanceof FRTool.BanescalePrimaryGene && gene2 instanceof FRTool.BanescalePrimaryGene) 
         || (gene1 instanceof FRTool.BanescaleSecondaryGene && gene2 instanceof FRTool.BanescaleSecondaryGene) 
-        || (gene1 instanceof FRTool.BanescaleTertiaryGene && gene2 instanceof FRTool.BanescaleTertiaryGene)) {
+        || (gene1 instanceof FRTool.BanescaleTertiaryGene && gene2 instanceof FRTool.BanescaleTertiaryGene)
+        || (gene1 instanceof FRTool.VeilspunPrimaryGene && gene2 instanceof FRTool.VeilspunPrimaryGene) 
+        || (gene1 instanceof FRTool.VeilspunSecondaryGene && gene2 instanceof FRTool.VeilspunSecondaryGene) 
+        || (gene1 instanceof FRTool.VeilspunTertiaryGene && gene2 instanceof FRTool.VeilspunTertiaryGene)) {
         if (gene1 == gene2) {
             return [1];
         }

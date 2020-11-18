@@ -111,6 +111,33 @@ for (var i = 0; i < FRTool.BanescaleTertiaryGenes.length; i++) {
     );
 }
 
+for (var i = 0; i < FRTool.VeilspunPrimaryGenes.length; i++) {
+    $('#veilspun_primary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.VeilspunPrimaryGenes[i].Name).attr("data-localize", FRTool.VeilspunPrimaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.VeilspunPrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.VeilspunPrimaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.VeilspunPrimaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.VeilspunSecondaryGenes.length; i++) {
+    $('#veilspun_secondary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.VeilspunSecondaryGenes[i].Name).attr("data-localize", FRTool.VeilspunSecondaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.VeilspunSecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.VeilspunSecondaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.VeilspunSecondaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.VeilspunTertiaryGenes.length; i++) {
+    $('#veilspun_tertiary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.VeilspunTertiaryGenes[i].Name).attr("data-localize", FRTool.VeilspunTertiaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.VeilspunTertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.VeilspunTertiaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.VeilspunTertiaryGenes[i].Price))
+    );
+}
+
 for (var i = 0; i < FRTool.Colors.length; i++) {
     $('#color_list').find("tbody").append(
         $("<tr></tr>")

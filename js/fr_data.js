@@ -258,6 +258,18 @@ FRData.BanescaleTertiaryGeneList = [
     ['Wraith', 'Rare', '500 G']
 ]
 
+FRData.VeilspunPrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T']
+]
+
+FRData.VeilspunSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T']
+]
+
+FRData.VeilspunTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T']
+]
+
 FRData.ColorList = [
     ['Maize', '#FFFDEA'],
     ['Cream', '#FFEFDC'],
@@ -461,7 +473,8 @@ FRData.ModernBreedList = [
 
 FRData.AncientBreedList = [
     ['Gaoler', 'Common', ['Meat', 'Plants']],
-    ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']]
+    ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']],
+    ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']]
 ]
 
 FRData.BreedRuleList = [
