@@ -258,6 +258,69 @@ FRData.BanescaleTertiaryGeneList = [
     ['Wraith', 'Rare', '500 G']
 ]
 
+FRData.VeilspunPrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Fade', 'Common', ''],
+    ['Laced', 'Common', ''],
+    ['Tapir', 'Common', ''],
+
+    ['Arc', 'Uncommon', ''],
+    ['Bright', 'Uncommon', ''],
+    ['Jupiter', 'Uncommon', ''],
+    ['Shell', 'Uncommon', ''],
+    ['Sphinxmoth', 'Uncommon', ''],
+    ['Vipera', 'Uncommon', ''],
+
+    ['Skink', 'Limited', ''],
+
+    ['Starmap', 'Rare', ''],
+    ['Stitched', 'Rare', ''],
+    ['Wasp', 'Rare', '']
+]
+
+FRData.VeilspunSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Blend', 'Common', ''],
+    ['Edged', 'Common', ''],
+    ['Striation', 'Common', ''],
+
+    ['Hawkmoth', 'Uncommon', ''],
+    ['Hypnotic', 'Uncommon', ''],
+    ['Loop', 'Uncommon', ''],
+    ['Saturn', 'Uncommon', ''],
+    ['Vivid', 'Uncommon', ''],
+    ['Web', 'Uncommon', ''],
+
+    ['Patchwork', 'Limited', ''],
+    ['Spinner', 'Limited', ''],
+
+    ['Bee', 'Rare', ''],
+    ['Constellation', 'Rare', '']
+]
+
+FRData.VeilspunTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Peacock', 'Common', ''],
+
+    ['Crackle', 'Uncommon', ''],
+    ['Flecks', 'Uncommon', ''],
+    ['Okapi', 'Uncommon', ''],
+    ['Runes', 'Uncommon', ''],
+    ['Thorns', 'Uncommon', ''],
+
+    ['Beetle', 'Limited', ''],
+    ['Branches', 'Limited', ''],
+    ['Capsule', 'Limited', ''],
+    ['Firefly', 'Limited', ''],
+
+    ['Diaphanous', 'Rare', ''],
+    ['Mop', 'Rare', ''],
+    ['Opal', 'Rare', '']
+]
+
 FRData.ColorList = [
     ['Maize', '#FFFDEA'],
     ['Cream', '#FFEFDC'],
@@ -461,7 +524,8 @@ FRData.ModernBreedList = [
 
 FRData.AncientBreedList = [
     ['Gaoler', 'Common', ['Meat', 'Plants']],
-    ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']]
+    ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']],
+    ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']]
 ]
 
 FRData.BreedRuleList = [
