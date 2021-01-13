@@ -178,7 +178,7 @@ function drawGene(canvasContext, font, gene1, gene2, color, leftcolor, rightcolo
   if (gene1 == gene2) {
     canvasContext.textAlign = "center";
     canvasContext.fillStyle = color;
-    canvasContext.fillText(gene1.Name, imgWidth / 2, y);
+    canvasContext.fillText(gene1.Name.replace("-Gene",""), imgWidth / 2, y);
     canvasContext.fillRect((imgWidth - width) / 2, y + 4, width, 3);
   } else {
     var rate = FRTool.getGeneRate(gene1, gene2);
@@ -188,7 +188,7 @@ function drawGene(canvasContext, font, gene1, gene2, color, leftcolor, rightcolo
     canvasContext.fillRect(imgWidth / 2 - width - 1, y + 4, width * 2 * rate[0], 3);
     canvasContext.textAlign = "start";
     canvasContext.fillStyle = rightcolor;
-    canvasContext.fillText(gene2.Name, imgWidth / 2 + 6, y);
+    canvasContext.fillText(gene2.Name.replace("-Gene",""), imgWidth / 2 + 6, y);
     canvasContext.fillRect(imgWidth / 2 - width + 1 + width * 2 * rate[0], y + 4, width * 2 * rate[1], 3);
   }
 }

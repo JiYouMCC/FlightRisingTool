@@ -179,7 +179,7 @@ FRData.GaolerTertiaryGeneList = [
     ['Braids', 'Uncommon', '85000 T'],
     ['Ghost', 'Uncommon', '80000 T'],
     ['Ringlets', 'Uncommon', '77500 T'],
-    ['Smoke', 'Uncommon', '95000 T'],
+    ['Smoke-Gene', 'Uncommon', '95000 T'],
     ['Wintercoat', 'Uncommon', '95000 T'],
 
     ['Blossom', 'Limited', "Swipp's Swap Stand"],
@@ -303,7 +303,7 @@ FRData.VeilspunSecondaryGeneList = [
 FRData.VeilspunTertiaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
-    ['Peacock', 'Common', ''],
+    ['Peacock-Gene', 'Common', ''],
     ['Underbelly', 'Common', ''],
 
     ['Crackle', 'Uncommon', ''],
