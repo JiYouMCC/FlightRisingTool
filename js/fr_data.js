@@ -304,6 +304,7 @@ FRData.VeilspunTertiaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Peacock', 'Common', ''],
+    ['Underbelly', 'Common', ''],
 
     ['Crackle', 'Uncommon', ''],
     ['Flecks', 'Uncommon', ''],
@@ -318,7 +319,8 @@ FRData.VeilspunTertiaryGeneList = [
 
     ['Diaphanous', 'Rare', ''],
     ['Mop', 'Rare', ''],
-    ['Opal', 'Rare', '']
+    ['Opal', 'Rare', ''],
+    ['Stained', 'Rare', '']
 ]
 
 FRData.ColorList = [
