@@ -184,7 +184,7 @@ function drawGene(canvasContext, font, gene1, gene2, color, leftcolor, rightcolo
     var rate = FRTool.getGeneRate(gene1, gene2);
     canvasContext.textAlign = "end";
     canvasContext.fillStyle = leftcolor;
-    canvasContext.fillText(gene1.Name, imgWidth / 2 - 6, y);
+    canvasContext.fillText(gene1.Name.replace("-Gene",""), imgWidth / 2 - 6, y);
     canvasContext.fillRect(imgWidth / 2 - width - 1, y + 4, width * 2 * rate[0], 3);
     canvasContext.textAlign = "start";
     canvasContext.fillStyle = rightcolor;
