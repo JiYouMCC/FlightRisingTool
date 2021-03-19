@@ -177,19 +177,60 @@ for (key in FRTool.GeneRoles) {
 
 $("body").attr("data-spy", "scroll");
 $("body").attr("data-target", "#affix-nav");
-for (var i = 0; i < $("h4").length; i++) {
-    $($("h4")[i]).attr("id", "title_" + i);
-    var text = $($("h4")[i]).text();
-    $("<li></li>").append(
-            $("<a></a>")
-            .attr("href", "#title_" + i)
-            .attr("data-localize", text)
-            .text(text)
-        )
-        .attr("data-toggle", "tooltip")
-        .attr("data-placement", "text")
-        .insertBefore('#nav_bottom');
+
+
+var headers = $('html').find("h3,h4");
+var maxHead = 3;
+for (var i = 0; i < headers.length; i++) {
+    $(headers[i]).attr("id", "title_" + i);
+    var currentHead = parseInt(headers[i].tagName[1]);
+    if (currentHead < maxHead) {
+        maxHead = currentHead;
+    }
 }
+
+console.log(maxHead)
+
+var links = $("<ol></ol>").attr("id", "affix-nav-ul").attr("class", "nav nav-stacked").attr("role", "tablist");
+
+var currentParent = links;
+var lastLi = null;
+var currentClass = maxHead;
+
+for (var i = 0; i < headers.length; i++) {
+  var currentHead = parseInt(headers[i].tagName[1]);
+  if (currentHead > currentClass) {
+    while (currentHead > currentClass) {
+      var newUl = $("<ol></ol>").addClass("nav").addClass("nav-stacked");
+      if (lastLi != null){
+        lastLi.append(newUl);
+      } else {
+        currentParent.append(newUl);
+      }
+      
+      currentClass += 1;
+      currentParent = newUl;
+    }
+  } else if (currentHead < currentClass) {
+    while (currentHead < currentClass) {
+      currentClass -= 1;
+      currentParent = currentParent.parent().parent();
+    }
+  } 
+  
+  lastLi = $("<li></li>").append(
+                $("<a></a>")
+                .attr("affix_to","#" + headers[i].id)
+                .attr("href", "#title_" + i)
+                .attr("data-localize", $(headers[i]).text())
+                .text($(headers[i]).text())
+            )
+            .attr("data-toggle", "tooltip")
+            .attr("data-placement", "text");
+  currentParent.append(lastLi);
+}
+
+links.insertBefore('#nav_bottom');
 
 $('#affix-nav').affix({
     offset: {
@@ -261,6 +302,9 @@ allowSort("gaoler_tertiary_gene_list");
 allowSort("banescale_primary_gene_list");
 allowSort("banescale_secondary_gene_list");
 allowSort("banescale_tertiary_gene_list");
+allowSort("veilspun_primary_gene_list");
+allowSort("veilspun_secondary_gene_list");
+allowSort("veilspun_tertiary_gene_list");
 allowSort("color_list");
 allowSort("breed_rule_list");
 allowSort("gene_rule_list");
