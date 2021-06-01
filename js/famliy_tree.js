@@ -112,6 +112,7 @@ function drawDragon(canvasContext, dragon, withName, callback) {
     if (withName) {
       canvasContext.strokeRect(x, y + 80, 80, 20);
       canvasContext.textAlign = "center";
+      canvasContext.textBaseline = 'middle';
       var genderS = (dragon.gender == GENDER.MALE)?'♂':'♀';
       canvasContext.fillText(genderS + ' '+dragon.name, x + 40, y + 90);
     }
