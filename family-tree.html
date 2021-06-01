@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/gutools.css" rel="stylesheet">
+    <link href="css/fr.css" rel="stylesheet">
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    <title data-localize="Flight Rising Tool">Flight Rising</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="top" class="page_head panel panel-default">
+        <div class="panel-heading">
+          <h2><strong data-localize="Flight Rising Tool">Flight Rising</strong>.<strong data-localize="Data">Data</strong></strong></h2>
+          <h5>#<span data-localize="Data description">Data table.</span>
+        </div>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a target="_blank" title="To my blog" data-toggle="tooltip" data-placement="bottom" class="navbar-brand" href="http://www.jithee.name">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a data-localize="Breeding Tool" href="/" role="button" aria-haspopup="true" aria-expanded="false">Breeding Tool</a>
+              </li>
+              <li>
+                <a data-localize="Breeding Card" href="card.html" role="button" aria-haspopup="true" aria-expanded="false">Breeding Card</a>
+              </li>
+                <li class="active">
+                  <a data-localize="Data" href="data.html" role="button" aria-haspopup="true" aria-expanded="false">Data</a>
+                </li>
+                <li>
+                  <a data-localize="Github Repository" href="https://github.com/JiYouMCC/FlightRisingTool" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Github Repository</a>
+                </li>
+                <li>
+                  <a data-localize="Find me in FR" href="http://flightrising.com/main.php?p=view&tab=userpage&id=200704" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Find me in FR</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <span data-localize="Language">English</span><span class="caret"></span></a>
+                  <ul id="dropdown_language" class="dropdown-menu"></ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="text-center table-responsive">
+            <canvas id="canvas_ft" class="canvas_ft" width="640" height="240">
+          Your browser does not support the canvas element.
+            </canvas>
+          </div>
+          <div class="form-group text-center"><button data-localize="Generate" class="btn btn-default" id="draw">Generate</button></div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <strong data-localize="Dargon list">Dargon list</strong>
+            </div>
+            <div class="panel-body">
+              <textarea id="lists" class="form-control"></textarea>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-3">
+          <div id="stand"></div>
+          <div id="affix-nav" class="hidden-xs hidden-sm">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <a title="放我出去！放我出去！" data-toggle="tooltip" data-placement="bottom" target="_blank" href="http://flightrising.com/main.php?dragon=19880223"><img class="img-responsive center-block" src="img/cup.png"></a>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <ol id="affix-nav-ul" class="nav nav-stacked" role="tablist">
+            <li id="nav_top"><a href="#top"><span class="glyphicon glyphicon-triangle-top"></span></a></li>
+            <li id="nav_bottom"><a href="#bottom"><span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+            </ol>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom" class="page_footer panel panel-default">
+        <div class="panel-footer">
+          <h5>
+            <span><strong>Powered By</strong> <a target="_blank" href="https://pages.github.com/">Github Pages</a>.</span><span><strong>Last Update</strong> 2019-10-23.</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <script src="lib/js.cookie.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+   <!--  <script src="lib/jquery.localize.min.js"></script> -->
+    <script src="js/famliy_tree.js"></script>
+  </body>
+</html>
