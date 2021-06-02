@@ -182,19 +182,19 @@ function drawLines(canvasContext, dragon, withName) {
     } else {
       //长辈往下
       pX = offsetX + dragon.location[1] * (imageSize + gap) + imageSize / 2;
-      pY = offsetY + dragon.location[0] * height + height - imageSize;
+      pY = offsetY + dragon.location[0] * height + height -gap;
       canvasContext.beginPath();
       canvasContext.moveTo(pX, pY);
-      canvasContext.lineTo(pX, pY + imageSize / 2);
+      canvasContext.lineTo(pX, pY + gap / 2);
       canvasContext.stroke();
       //横线
       canvasContext.beginPath();
-      canvasContext.moveTo(pX, pY + imageSize / 2);
-      canvasContext.lineTo(childX, pY + imageSize / 2);
+      canvasContext.moveTo(pX, pY + gap / 2);
+      canvasContext.lineTo(childX, pY + gap / 2);
       canvasContext.stroke();
       //孩子线
       canvasContext.beginPath();
-      canvasContext.moveTo(childX, pY + imageSize / 2);
+      canvasContext.moveTo(childX, pY + gap / 2);
       canvasContext.lineTo(childX, childY);
       canvasContext.stroke();
     }
