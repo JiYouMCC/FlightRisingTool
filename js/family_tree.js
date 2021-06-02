@@ -65,6 +65,7 @@ function findDragonByName(name) {
 }
 
 function init(date) {
+  dragonList = [];
   date.forEach(dragonDateItem => {
     new Dragon(
       dragonDateItem[0],
@@ -239,3 +240,11 @@ var date = [
 
 init(date);
 drawTree(true);
+
+function generate() {
+  date = JSON.parse("[" + $('#lists').val() + "]");
+  init(date);
+  drawTree(true);
+}
+
+$("[id=draw]").click(generate);
