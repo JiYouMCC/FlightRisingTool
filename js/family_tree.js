@@ -3,12 +3,14 @@ var GENDER = {
   FEMALE: 1
 };
 
-var offsetX = 50;
-var offsetY = 50;
-var imageSize = 130;
-var textHeight = 30;
-var gap = 40;
+var offsetX = 10;
+var offsetY = 10;
+var imageSize = 125;
+var textHeight = 20;
+var gapX = 25;
+var gapY = 50;
 var DEFAULT_BACKGROUND = "transparent";
+var withName = true;
 
 var dragonList = [];
 
@@ -104,8 +106,8 @@ function drawImage(canvasContext, src, x, y, callback) {
 function drawDragon(canvasContext, dragon, withName, callback) {
   if (dragon) {
     var location = dragon.location;
-    var height = withName ? imageSize + textHeight + gap : imageSize + gap;
-    var x = offsetX + location[1] * (imageSize + gap);
+    var height = withName ? imageSize + textHeight + gapY : imageSize + gapY;
+    var x = offsetX + location[1] * (imageSize + gapX);
     var y = offsetY + location[0] * height;
     // draw image
     canvasContext.strokeRect(x, y, imageSize, imageSize);
@@ -125,18 +127,18 @@ function drawDragon(canvasContext, dragon, withName, callback) {
 }
 
 function pairPix(dragon, mate, withName) {
-  var height = withName ? imageSize + textHeight + gap : imageSize + gap;
+  var height = withName ? imageSize + textHeight + gapY : imageSize + gapY;
   if (mate.location[1] < dragon.location[1]) {
     //配偶在左边
-    var dragonX = offsetX + dragon.location[1] * (imageSize + gap);
+    var dragonX = offsetX + dragon.location[1] * (imageSize + gapX);
     var dragonY = offsetY + dragon.location[0] * height + imageSize / 2;
-    var mateX = offsetX + mate.location[1] * (imageSize + gap) + imageSize;
+    var mateX = offsetX + mate.location[1] * (imageSize + gapX) + imageSize;
     var mateY = offsetY + mate.location[0] * height + imageSize / 2;
   } else {
     //配偶在右边
-    var dragonX = offsetX + dragon.location[1] * (imageSize + gap) + imageSize;
+    var dragonX = offsetX + dragon.location[1] * (imageSize + gapX) + imageSize;
     var dragonY = offsetY + dragon.location[0] * height + imageSize / 2;
-    var mateX = offsetX + mate.location[1] * (imageSize + gap);
+    var mateX = offsetX + mate.location[1] * (imageSize + gapX);
     var mateY = offsetY + mate.location[0] * height + imageSize / 2;
   }
   return [dragonX, dragonY, mateX, mateY];
@@ -157,9 +159,9 @@ function drawLines(canvasContext, dragon, withName) {
   });
   //孩子
   dragon.children().forEach(child => {
-    var height = withName ? imageSize + textHeight + gap : imageSize + gap;
+    var height = withName ? imageSize + textHeight + gapY : imageSize + gapY;
     var nameHeight =  withName ? textHeight : 0;
-    var childX = offsetX + child.location[1] * (imageSize + gap) + imageSize / 2;
+    var childX = offsetX + child.location[1] * (imageSize + gapX) + imageSize / 2;
     var childY = offsetY + child.location[0] * height;
     if (child.father && child.mother) {
       //双亲
@@ -167,34 +169,34 @@ function drawLines(canvasContext, dragon, withName) {
       //长辈往下
       canvasContext.beginPath();
       canvasContext.moveTo((pPix[0] + pPix[2]) / 2, pPix[1]);
-      canvasContext.lineTo((pPix[0] + pPix[2]) / 2, pPix[1] + imageSize / 2 + nameHeight + gap / 2);
+      canvasContext.lineTo((pPix[0] + pPix[2]) / 2, pPix[1] + imageSize / 2 + nameHeight + gapY / 2);
       canvasContext.stroke();
       //横线
       canvasContext.beginPath();
-      canvasContext.moveTo((pPix[0] + pPix[2]) / 2, pPix[1] + imageSize / 2 + nameHeight + gap / 2);
-      canvasContext.lineTo(childX, pPix[1] + imageSize / 2 + nameHeight + gap / 2);
+      canvasContext.moveTo((pPix[0] + pPix[2]) / 2, pPix[1] + imageSize / 2 + nameHeight + gapY / 2);
+      canvasContext.lineTo(childX, pPix[1] + imageSize / 2 + nameHeight + gapY / 2);
       canvasContext.stroke();
       //孩子线
       canvasContext.beginPath();
-      canvasContext.moveTo(childX, pPix[1] + imageSize / 2 + textHeight + gap / 2);
+      canvasContext.moveTo(childX, pPix[1] + imageSize / 2 + nameHeight + gapY / 2);
       canvasContext.lineTo(childX, childY);
       canvasContext.stroke();
     } else {
       //长辈往下
-      pX = offsetX + dragon.location[1] * (imageSize + gap) + imageSize / 2;
-      pY = offsetY + dragon.location[0] * height + height -gap;
+      pX = offsetX + dragon.location[1] * (imageSize + gapX) + imageSize / 2;
+      pY = offsetY + dragon.location[0] * height + height - gapY;
       canvasContext.beginPath();
       canvasContext.moveTo(pX, pY);
-      canvasContext.lineTo(pX, pY + gap / 2);
+      canvasContext.lineTo(pX, pY + gapY / 2);
       canvasContext.stroke();
       //横线
       canvasContext.beginPath();
-      canvasContext.moveTo(pX, pY + gap / 2);
-      canvasContext.lineTo(childX, pY + gap / 2);
+      canvasContext.moveTo(pX, pY + gapY / 2);
+      canvasContext.lineTo(childX, pY + gapY / 2);
       canvasContext.stroke();
       //孩子线
       canvasContext.beginPath();
-      canvasContext.moveTo(childX, pY + gap / 2);
+      canvasContext.moveTo(childX, pY + gapY / 2);
       canvasContext.lineTo(childX, childY);
       canvasContext.stroke();
     }
@@ -213,9 +215,9 @@ function drawTree(withName) {
       maxLY = dragon.location[1];
     }
   });
-  var height = withName ? imageSize + textHeight + gap : imageSize + gap;
-  var canvasHeight = offsetX + height * (maxLX + 1) - gap + offsetX;
-  var canvasWidth = offsetY + (imageSize + gap) * (maxLY + 1) - gap + offsetY;
+  var height = withName ? imageSize + textHeight + gapY : imageSize + gapY;
+  var canvasHeight = offsetY + height * (maxLX + 1) - gapY + offsetX;
+  var canvasWidth = offsetX + (imageSize + gapX) * (maxLY + 1) - gapX + offsetY;
   canvas.setAttribute('width', canvasWidth);
   canvas.setAttribute('height', canvasHeight);
   var canvasContext = canvas.getContext("2d");
@@ -224,27 +226,12 @@ function drawTree(withName) {
   dragonList.forEach(dragon => drawLines(canvasContext, dragon, withName))
 }
 
-var date = [
-  ['66097884', 'Mistletoe', 'M', [0, 2], '', ''],
-  ['64879516', 'Nivur', 'F', [0, 3], '', ''],
-  ['67700989', 'TreePlanter', 'M', [1, 1], '66097884', '64879516'],
-  ['66780586', 'DarkRing', 'F', [1, 0], '', ''],
-  ['66611170', 'Unnamed', 'M', [2, 3.5], '', ''],
-  ['68519855', 'Sleepy', 'F', [2, 2.5], '66222638', '66993894'],
-  ['69398228', 'RaggedGauze', 'F', [2, 0.5], '67700989', '66780586'],
-  ['19643291', 'Kongzhu', 'M', [2, 1.5], '', ''],
-  ['66993894', 'Oreo', 'F', [1, 2], '66097884', '64879516'],
-  ['69443377', 'MnM', 'F', [1, 4], '66097884', '64879516'],
-  ['66222638', 'GuangMingYouBei', 'M', [1, 3], '', '']
-];
-
-init(date);
-drawTree(true);
-
 function generate() {
   date = JSON.parse("[" + $('#lists').val() + "]");
   init(date);
-  drawTree(true);
+  drawTree(withName);
 }
+
+generate();
 
 $("[id=draw]").click(generate);
