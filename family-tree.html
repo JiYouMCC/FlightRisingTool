@@ -8,14 +8,14 @@
     <link href="css/gutools.css" rel="stylesheet">
     <link href="css/fr.css" rel="stylesheet">
     <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
-    <title data-localize="Flight Rising Tool">Flight Rising</title>
+    <title data-localize="Flight Rising Tool">Flight Rising Tool</title>
   </head>
   <body>
     <div class="container">
       <div id="top" class="page_head panel panel-default">
         <div class="panel-heading">
-          <h2><strong data-localize="Flight Rising Tool">Flight Rising</strong>.<strong data-localize="Data">Data</strong></strong></h2>
-          <h5>#<span data-localize="Data description">Data table.</span>
+          <h2><strong data-localize="Flight Rising Tool">Flight Rising</strong>.<strong data-localize="Data">Family Tree</strong></strong></h2>
+          <h5>#<span data-localize="Data description">Family tree.</span>
         </div>
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
@@ -71,17 +71,28 @@
               <strong data-localize="Dargon list">Dargon list</strong>
             </div>
             <div class="panel-body">
-              <textarea id="lists" class="form-control">["66097884", "Mistletoe", "M", [0, 2], ", "],
-  ["64879516", "Nivur", "F", [0, 3], ", "],
-  ["67700989", "TreePlanter", "M", [1, 1], "66097884", "64879516"],
-  ["66780586", "DarkRing", "F", [1, 0], ", "],
-  ["66611170", "Unnamed", "M", [2, 3.5], ", "],
-  ["68519855", "Sleepy", "F", [2, 2.5], "66222638", "66993894"],
-  ["69398228", "RaggedGauze", "F", [2, 0.5], "67700989", "66780586"],
-  ["19643291", "Kongzhu", "M", [2, 1.5], ", "],
-  ["66993894", "Oreo", "F", [1, 2], "66097884", "64879516"],
-  ["69443377", "MnM", "F", [1, 4], "66097884", "64879516"],
-  ["66222638", "GuangMingYouBei", "M", [1, 3], ", "]</textarea>
+              <div class="alert alert-warning" role="alert">
+                <p><strong>Format: </strong>["dragon Id", "dragon name", "gender (M/F)", the location(start from zero) [line, row], "father's id", "mother's id"],</p>
+                <p>Split by ,</p>
+                <p>End without ,</p>
+                <p>Example as below</p>
+              </div>
+              <textarea rows="10" id="lists" class="form-control">["66097884", "Mistletoe", "M", [0, 2], "", ""],
+["64879516", "Nivur", "F", [0, 3], "", ""],
+["67700989", "TreePlanter", "M", [1, 1], "66097884", "64879516"],
+["66780586", "DarkRing", "F", [1, 0], "", ""],
+["66611170", "Unnamed", "M", [2, 3.5], "", ""],
+["68519855", "Sleepy", "F", [2, 2.5], "66222638", "66993894"],
+["69398228", "RaggedGauze", "F", [2, 0.5], "67700989", "66780586"],
+["19643291", "Kongzhu", "M", [2, 1.5], "", ""],
+["66993894", "Oreo", "F", [1, 2], "66097884", "64879516"],
+["69443377", "MnM", "F", [1, 4], "66097884", "64879516"],
+["66222638", "GuangMingYouBei", "M", [1, 3], "", ""]</textarea>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <strong data-localize="Advances settings">Advances settings</strong>
             </div>
           </div>
           </div>
