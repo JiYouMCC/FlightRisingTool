@@ -119,7 +119,7 @@ function drawDragon(canvasContext, dragon, withName, callback) {
       canvasContext.strokeRect(x, y + imageSize, imageSize, textHeight);
       canvasContext.textAlign = "center";
       canvasContext.textBaseline = 'middle';
-      canvasContext.font = "14px cursive";
+      canvasContext.font = "12px Kristen ITC";
       var genderS = (dragon.gender == GENDER.MALE) ? '♂' : '♀';
       canvasContext.fillText(genderS + ' ' + dragon.name, x + imageSize / 2, y + imageSize + textHeight / 2);
     }
@@ -222,7 +222,7 @@ function drawTree(withName) {
   canvas.setAttribute('height', canvasHeight);
   var canvasContext = canvas.getContext("2d");
   canvasContext.clearRect(0, 0, canvasHeight, canvasWidth);
-  dragonList.forEach(dragon => drawDragon(canvasContext, dragon, withName, console.log(dragon.name)))
+  dragonList.forEach(dragon => drawDragon(canvasContext, dragon, withName, function(){console.log(dragon.name)}))
   dragonList.forEach(dragon => drawLines(canvasContext, dragon, withName))
 }
 
