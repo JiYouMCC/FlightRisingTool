@@ -5,10 +5,10 @@ var GENDER = {
 
 var offsetX = 10;
 var offsetY = 10;
-var imageSize = 75;
+var imageSize = 125;
 var textHeight = 20;
-var gapX = 20;
-var gapY = 30;
+var gapX = 25;
+var gapY = 50;
 var DEFAULT_BACKGROUND = "transparent";
 var withName = true;
 
