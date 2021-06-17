@@ -280,6 +280,7 @@ FRData.BanescaleTertiaryGeneList = [
 FRData.VeilspunPrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
+    ['Clown', 'Common', ''],
     ['Fade', 'Common', ''],
     ['Laced', 'Common', ''],
     ['Tapir', 'Common', ''],
@@ -538,6 +539,7 @@ FRData.ModernBreedList = [
 
     ['Bogsneak', 'Uncommon',['Plants','Meat']],
     ['Skydancer', 'Uncommon', ['Plants', 'Insects']],
+    ['Obelisk', 'Uncommon', ['Insects', 'Seafood']],
 
     ['Imperial', 'Limited', ['Insects', 'Meat', 'Seafood', 'Plants']],
     ['Nocturne', 'Limited', ['Meat', 'Insects']],
