@@ -30,6 +30,7 @@ FRData.ModernPrimaryGeneList = [
 
     ['Bar', 'Uncommon', '250000 T'],
     ['Cherub', 'Uncommon', '185000 T'],
+    ['Flaunt', 'Uncommon', ''],
     ['Giraffe', 'Uncommon', '225000 T'],
     ['Jaguar', 'Uncommon', '250000 T'],
     ['Jupiter', 'Uncommon', '230000 T'],
@@ -78,6 +79,7 @@ FRData.ModernSecondaryGeneList = [
     ['Rosette', 'Uncommon', '185000 T'],
     ['Saturn', 'Uncommon', '160000 T'],
     ['Seraph', 'Uncommon', '125000 T'],
+    ['Flare', 'Uncommon', ''],
 
     ['Patchwork', 'Limited', '100000 T (Baldwin)'],
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
