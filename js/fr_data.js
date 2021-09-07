@@ -79,7 +79,7 @@ FRData.ModernSecondaryGeneList = [
     ['Rosette', 'Uncommon', '185000 T'],
     ['Saturn', 'Uncommon', '160000 T'],
     ['Seraph', 'Uncommon', '125000 T'],
-    ['Flare', 'Uncommon', ''],
+    ['Flair', 'Uncommon', ''],
 
     ['Patchwork', 'Limited', '100000 T (Baldwin)'],
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
