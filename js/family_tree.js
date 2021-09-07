@@ -3,15 +3,15 @@ var GENDER = {
   FEMALE: 1
 };
 
-var offsetX = 5;
-var offsetY = 5;
-var imageSize = 100;
-var textHeight = 15;
-var gapX = 20;
-var gapY = 30;
+var offsetX = 10;
+var offsetY = 10;
+var imageSize = 125;
+var textHeight = 20;
+var gapX = 25;
+var gapY = 50;
 var DEFAULT_BACKGROUND = "transparent";
 var withName = true;
-var textFont = "10px Kristen ITC"
+var textFont = "12px Kristen ITC"
 
 var dragonList = [];
 
