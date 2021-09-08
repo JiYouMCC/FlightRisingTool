@@ -11,7 +11,7 @@ var gapX = 25;
 var gapY = 50;
 var DEFAULT_BACKGROUND = "transparent";
 var withName = true;
-
+var textFont = "12px Kristen ITC";
 var dragonList = [];
 
 class Dragon {
@@ -119,7 +119,7 @@ function drawDragon(canvasContext, dragon, withName, callback) {
       canvasContext.strokeRect(x, y + imageSize, imageSize, textHeight);
       canvasContext.textAlign = "center";
       canvasContext.textBaseline = 'middle';
-      canvasContext.font = "12px Kristen ITC";
+      canvasContext.font = textFont;
       var genderS = (dragon.gender == GENDER.MALE) ? '♂' : '♀';
       canvasContext.fillText(genderS + ' ' + dragon.name, x + imageSize / 2, y + imageSize + textHeight / 2);
     }
@@ -169,7 +169,7 @@ function drawLines(canvasContext, dragon, withName) {
   //孩子
   dragon.children().forEach(child => {
     var height = withName ? imageSize + textHeight + gapY : imageSize + gapY;
-    var nameHeight =  withName ? textHeight : 0;
+    var nameHeight = withName ? textHeight : 0;
     var childX = offsetX + child.location[1] * (imageSize + gapX) + imageSize / 2;
     var childY = offsetY + child.location[0] * height;
     if (child.father && child.mother) {
@@ -238,9 +238,21 @@ function drawTree(withName) {
 }
 
 function generate() {
+  initFormat();
   date = JSON.parse("[" + $('#lists').val() + "]");
   init(date);
   drawTree(withName);
+}
+
+function initFormat() {
+  offsetX = parseInt($('#offsetx').val());
+  offsetY = parseInt($('#offsety').val());
+  gapX = parseInt($('#gapx').val());
+  gapY = parseInt($('#gapy').val());
+  imageSize = parseInt($('#imagesize').val());
+  textHeight = parseInt($('#textheight').val());
+  withName = $('#withname').is(':checked');
+  textFont = $('#textfont').val();
 }
 
 generate();
