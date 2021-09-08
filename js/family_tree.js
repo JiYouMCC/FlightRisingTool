@@ -176,19 +176,21 @@ function drawLines(canvasContext, dragon, withName) {
     if (child.father && child.mother) {
       //双亲
       var pPix = pairPix(child.father, child.mother, withName);
+      var py = pPix[1];
+      py = pPix[1] > pPix[3] ? pPix[1] : pPix[3];
       //长辈往下
       canvasContext.beginPath();
-      canvasContext.moveTo((pPix[0] + pPix[2]) / 2, pPix[1]);
-      canvasContext.lineTo((pPix[0] + pPix[2]) / 2, pPix[1] + imageSize / 2 + nameHeight + gapY / 2);
+      canvasContext.moveTo((pPix[0] + pPix[2]) / 2, py);
+      canvasContext.lineTo((pPix[0] + pPix[2]) / 2, childY - gapY / 2);
       canvasContext.stroke();
       //横线
       canvasContext.beginPath();
-      canvasContext.moveTo((pPix[0] + pPix[2]) / 2, pPix[1] + imageSize / 2 + nameHeight + gapY / 2);
-      canvasContext.lineTo(childX, pPix[1] + imageSize / 2 + nameHeight + gapY / 2);
+      canvasContext.moveTo((pPix[0] + pPix[2]) / 2, childY - gapY / 2);
+      canvasContext.lineTo(childX, childY - gapY / 2);
       canvasContext.stroke();
       //孩子线
       canvasContext.beginPath();
-      canvasContext.moveTo(childX, pPix[1] + imageSize / 2 + nameHeight + gapY / 2);
+      canvasContext.moveTo(childX, childY - gapY / 2);
       canvasContext.lineTo(childX, childY);
       canvasContext.stroke();
     } else {
