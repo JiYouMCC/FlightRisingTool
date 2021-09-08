@@ -239,9 +239,21 @@ function drawTree(withName) {
 }
 
 function generate() {
+  initFormat();
   date = JSON.parse("[" + $('#lists').val() + "]");
   init(date);
   drawTree(withName);
+}
+
+function initFormat() {
+  offsetX = parseInt($('#offsetx').val());
+  offsetY = parseInt($('#offsety').val());
+  gapX = parseInt($('#gapx').val());
+  gapY = parseInt($('#gapy').val());
+  imageSize = parseInt($('#imagesize').val());
+  textHeight = parseInt($('#textheight').val());
+  withName = $('#withname').is(':checked');
+  textFont = $('#textfont').val();
 }
 
 generate();
