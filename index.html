@@ -1,26 +1,100 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/gutools.css" rel="stylesheet">
-    <link href="css/fr.css" rel="stylesheet">
-    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/gutools.css" rel="stylesheet" />
+    <link href="css/fr.css" rel="stylesheet" />
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
     <title data-localize="Flight Rising Tool">Flight Rising Tool</title>
+    <style>
+      #parent-section .form-group .col-sm-4 {
+        padding: 0;
+      }
+
+      #parent-section .form-group .col-sm-5 {
+        padding-right: 0;
+      }
+
+      #parent-section .form-group {
+        margin: 0 0 10px 0;
+      }
+
+      #parent-section .form-group label {
+        padding: 0;
+        padding-right: 10px;
+      }
+
+      #rate-section .form-group .col-sm-4 {
+        padding: 0;
+      }
+
+      #rate-section .form-group .col-sm-5 {
+        padding-right: 0;
+      }
+
+      #rate-section .form-group {
+        margin: 0 0 10px 0;
+      }
+
+      #rate-section .form-group label {
+        padding: 0;
+        padding-right: 10px;
+      }
+
+      #rate-section .alert {
+        margin-bottom: 15px;
+      }
+
+      #rate-section hr {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      #rate-section .form-group:last-of-type {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: 992px) {
+        .col-md-push-9 {
+          margin-top: -74%;
+        }
+      }
+
+      @media (min-width: 1180px) {
+        .col-md-push-9 {
+          margin-top: -62%;
+          max-width: 22%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="page_head panel panel-default">
         <div class="panel-heading">
-          <h2><strong data-localize="Flight Rising Tool">Flight Rising Tool</strong>.<strong data-localize="Breeding Tool">Breeding Tool</strong></h2>
-          <h5>#<span data-localize="Breeding Tool description">Get color range and gene rate of two dragons.</span></h5>
+          <h2>
+            <strong data-localize="Flight Rising Tool">Flight Rising Tool</strong>
+            .
+            <strong data-localize="Breeding Tool">Breeding Tool</strong>
+          </h2>
+          <h5>
+            #
+            <span data-localize="Breeding Tool description">Get color range and gene rate of two dragons.</span>
+          </h5>
         </div>
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -34,26 +108,51 @@
               <ul class="nav navbar-nav">
                 <li class="active">
                   <a data-localize="Breeding Tool" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Breeding Tool</a>
-              </li>
-              <li>
-                <a data-localize="Breeding Card" href="card.html" role="button" aria-haspopup="true" aria-expanded="false">Breeding Card</a>
-              </li>
+                </li>
+                <li>
+                  <a data-localize="Breeding Card" href="card.html" role="button" aria-haspopup="true" aria-expanded="false">Breeding Card</a>
+                </li>
                 <li>
                   <a data-localize="Data" href="data.html" role="button" aria-haspopup="true" aria-expanded="false">Data</a>
                 </li>
                 <li>
-                  <a data-localize="Family Tree" href="family-tree.html" role="button" aria-haspopup="true" aria-expanded="false">Family Tree <span class="badge badge-pill badge-dark">BETA</span></a>
+                  <a data-localize="Family Tree" href="family-tree.html" role="button" aria-haspopup="true" aria-expanded="false">
+                    Family Tree
+                    <span class="badge badge-pill badge-dark">BETA</span>
+                  </a>
                 </li>
                 <li>
-                  <a data-localize="Github Repository" href="https://github.com/JiYouMCC/FlightRisingTool" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Github Repository</a>
+                  <a
+                    data-localize="Github Repository"
+                    href="https://github.com/JiYouMCC/FlightRisingTool"
+                    target="_blank"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Github Repository
+                  </a>
                 </li>
                 <li>
-                  <a data-localize="Find me in FR" href="http://flightrising.com/main.php?p=view&tab=userpage&id=200704" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Find me in FR</a>
+                  <a
+                    data-localize="Find me in FR"
+                    href="http://flightrising.com/main.php?p=view&tab=userpage&id=200704"
+                    target="_blank"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Find me in FR
+                  </a>
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <span data-localize="Language">English</span><span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                    <span data-localize="Language">English</span>
+                    <span class="caret"></span>
+                  </a>
                   <ul id="dropdown_language" class="dropdown-menu"></ul>
                 </li>
               </ul>
@@ -64,215 +163,301 @@
       <div class="row">
         <div class="col-md-9">
           <div class="panel panel-default">
-            <div class="panel-heading"><strong data-localize="Age">Age</strong></div>
+            <div class="panel-heading"><strong data-localize="Parents">Parent Dragons</strong></div>
             <div class="panel-body">
-              <div class="form-group">
-                <label data-localize="Age" class="col-sm-2 control-label">Age</label>
+              <div class="row" style="margin-bottom: 20px">
+                <label data-localize="Age" class="col-sm-2 col-sm-offset-3 control-label">Age</label>
                 <div class="col-sm-4">
                   <select id="age" class="form-control"></select>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-          <div class="col-sm-6">
-            <div class="panel panel-default">
-              <div class="panel-heading"><strong data-localize="One Dragon">One Dragon</strong></div>
-              <div class="panel-body">
-                <div class="form-horizontal">
-                  <div class="form-group">
-                    <label data-localize="Breed" class="col-sm-3 control-label">Breed</label>
-                    <div class="col-sm-4">
-                      <select id="o_breed" class="form-control"></select>
+              <div id="parent-section">
+                <div class="col-sm-6" style="padding: 0px; margin-left: -5px">
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                      <label data-localize="Breed" class="col-sm-3 control-label">Breed</label>
+                      <div class="col-sm-6">
+                        <select id="o_breed" class="form-control"></select>
+                      </div>
                     </div>
-                    <div class="col-sm-4"></div>
+                    <div class="form-group">
+                      <label data-localize="Primary Gene" class="col-sm-3 control-label">Pri Gene</label>
+                      <div class="col-sm-4">
+                        <select id="o_Primary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="o_primary_color" class="form-control"></select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label data-localize="Secondary Gene" class="col-sm-3 control-label">Sec Gene</label>
+                      <div class="col-sm-4">
+                        <select id="o_Secondary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="o_secondary_color" class="form-control"></select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label data-localize="Tertiary Gene" class="col-sm-3 control-label">Tert Gene</label>
+                      <div class="col-sm-4">
+                        <select id="o_Tertiary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="o_tertiary_color" class="form-control"></select>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label data-localize="Primary Gene" class="col-sm-3 control-label">Pri Gene</label>
-                    <div class="col-sm-4">
-                      <select id="o_Primary_gene" class="form-control"></select>
+                </div>
+                <div class="col-sm-6" style="padding: 0px; padding-left: 10px">
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                      <label data-localize="Breed" class="col-sm-3 control-label">Breed</label>
+                      <div class="col-sm-6">
+                        <select id="a_breed" class="form-control"></select>
+                      </div>
                     </div>
-                    <div class="col-sm-5">
-                      <select id="o_primary_color" class="form-control"></select>
+                    <div class="form-group">
+                      <label data-localize="Primary Gene" class="col-sm-3 control-label">Pri Gene</label>
+                      <div class="col-sm-4">
+                        <select id="a_Primary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="a_primary_color" class="form-control"></select>
+                      </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label data-localize="Secondary Gene" class="col-sm-3 control-label">Sec Gene</label>
-                    <div class="col-sm-4">
-                      <select id="o_Secondary_gene" class="form-control"></select>
+                    <div class="form-group">
+                      <label data-localize="Secondary Gene" class="col-sm-3 control-label">Sec Gene</label>
+                      <div class="col-sm-4">
+                        <select id="a_Secondary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="a_secondary_color" class="form-control"></select>
+                      </div>
                     </div>
-                    <div class="col-sm-5">
-                      <select id="o_secondary_color" class="form-control"></select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label data-localize="Tertiary Gene" class="col-sm-3 control-label">Tert Gene</label>
-                    <div class="col-sm-4">
-                      <select id="o_Tertiary_gene" class="form-control"></select>
-                    </div>
-                    <div class="col-sm-5">
-                      <select id="o_tertiary_color" class="form-control"></select>
+                    <div class="form-group">
+                      <label data-localize="Tertiary Gene" class="col-sm-3 control-label">Tert Gene</label>
+                      <div class="col-sm-4">
+                        <select id="a_Tertiary_gene" class="form-control"></select>
+                      </div>
+                      <div class="col-sm-5">
+                        <select id="a_tertiary_color" class="form-control"></select>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="panel panel-default">
-              <div class="panel-heading"><strong data-localize="Another Dragon">Another Dragon</strong></div>
-              <div class="panel-body">
-                <div class="form-horizontal">
-                  <div class="form-group">
-                    <label data-localize="Breed" class="col-sm-3 control-label" >Breed</label>
-                    <div class="col-sm-4">
-                      <select id="a_breed" class="form-control"></select>
-                    </div>
-                    <div class="col-sm-4"></div>
-                  </div>
-                  <div class="form-group">
-                    <label data-localize="Primary Gene" class="col-sm-3 control-label">Pri Gene</label>
-                    <div class="col-sm-4">
-                      <select id="a_Primary_gene" class="form-control"></select>
-                    </div>
-                    <div class="col-sm-5">
-                      <select id="a_primary_color" class="form-control"></select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label data-localize="Secondary Gene" class="col-sm-3 control-label">Sec Gene</label>
-                    <div class="col-sm-4">
-                      <select id="a_Secondary_gene" class="form-control"></select>
-                    </div>
-                    <div class="col-sm-5">
-                      <select id="a_secondary_color" class="form-control"></select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label data-localize="Tertiary Gene" class="col-sm-3 control-label">Tert Gene</label>
-                    <div class="col-sm-4">
-                      <select id="a_Tertiary_gene" class="form-control"></select>
-                    </div>
-                    <div class="col-sm-5">
-                      <select id="a_tertiary_color" class="form-control"></select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
+        </div>
+        <div class="col-md-6">
           <div class="panel panel-default">
             <div class="panel-heading"><strong data-localize="Result">Result</strong></div>
             <div class="panel-body">
               <div class="form-horizontal">
                 <div class="form-group">
                   <label data-localize="Breed" class="col-sm-2 control-label">Breed</label>
-                  <div style="padding-top: 7px;" class="col-sm-5">
+                  <div style="padding-top: 7px" class="col-sm-4">
                     <div class="progress">
-                      <div id="breed_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                      <div id="breed_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                      <div
+                        id="breed_bar_0"
+                        class="progress-bar progress-bar-info"
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      ></div>
+                      <div
+                        id="breed_bar_1"
+                        class="progress-bar progress-bar-danger"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 0%"
+                      >
+                        0%
+                      </div>
                     </div>
                     <div class="label_text" id="breed_result"></div>
                   </div>
                 </div>
                 <div class="form-group">
                   <label data-localize="Primary Gene" class="col-sm-2 control-label">Pri Gene</label>
-                  <div style="padding-top: 7px;" class="col-sm-5">
+                  <div style="padding-top: 7px" class="col-sm-4">
                     <div class="progress">
-                      <div id="gene_Primary_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                      <div id="gene_Primary_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                      <div
+                        id="gene_Primary_bar_0"
+                        class="progress-bar progress-bar-info"
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      ></div>
+                      <div
+                        id="gene_Primary_bar_1"
+                        class="progress-bar progress-bar-danger"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 0%"
+                      >
+                        0%
+                      </div>
                     </div>
                     <div class="label_text" id="Primary_result"></div>
                   </div>
-                  <div id="primary_color_result" class="col-sm-5 label_text"></div>
+                  <div id="primary_color_result" class="col-sm-6 label_text"></div>
                 </div>
                 <div class="form-group">
                   <label data-localize="Secondary Gene" class="col-sm-2 control-label">Sec Gene</label>
-                  <div style="padding-top: 7px;" class="col-sm-5">
+                  <div style="padding-top: 7px" class="col-sm-4">
                     <div class="progress">
-                      <div id="gene_Secondary_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                      <div id="gene_Secondary_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                      <div
+                        id="gene_Secondary_bar_0"
+                        class="progress-bar progress-bar-info"
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      ></div>
+                      <div
+                        id="gene_Secondary_bar_1"
+                        class="progress-bar progress-bar-danger"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 0%"
+                      >
+                        0%
+                      </div>
                     </div>
                     <div class="label_text" id="Secondary_result"></div>
                   </div>
-                  <div id="secondary_color_result" class="col-sm-5 label_text">
-                  </div>
+                  <div id="secondary_color_result" class="col-sm-6 label_text"></div>
                 </div>
                 <div class="form-group">
                   <label data-localize="Tertiary Gene" class="col-sm-2 control-label">Tert Gene</label>
-                  <div style="padding-top: 7px;" class="col-sm-5">
+                  <div style="padding-top: 7px" class="col-sm-4">
                     <div class="progress">
-                      <div id="gene_Tertiary_bar_0" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                      <div id="gene_Tertiary_bar_1" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">0%</div>
+                      <div
+                        id="gene_Tertiary_bar_0"
+                        class="progress-bar progress-bar-info"
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      ></div>
+                      <div
+                        id="gene_Tertiary_bar_1"
+                        class="progress-bar progress-bar-danger"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 0%"
+                      >
+                        0%
+                      </div>
                     </div>
                     <div class="label_text" id="Tertiary_result"></div>
                   </div>
-                  <div id="tertiary_color_result" class="col-sm-5 label_text"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading"><strong data-localize="Rate calculator">Rate calculator</strong></div>
-            <div class="panel-body">
-              <div data-localize="Rate note" class="alert alert-warning" role="alert">Suppose gender ratio is 1:1.</div>
-              <div class="form-horizontal">
-                <div class="form-group">
-                  <label data-localize="Gender" class="col-sm-2 control-label">Gender</label>
-                  <div class="col-sm-4">
-                    <select id="target_gender" class="form-control"><option data-localize="None" value="none">None</option></select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label data-localize="Breed" class="col-sm-2 control-label">Breed</label>
-                  <div class="col-sm-4">
-                    <select id="target_Breed" class="form-control"><option data-localize="None" value="none">None</option></select>
-                  </div>
-                </div>
-                <div class="form-group">
-                    <label data-localize="Primary Gene" class="col-sm-2 control-label">Pri Gene</label>
-                    <div class="col-sm-4">
-                      <select id="target_primaryGene" class="form-control"><option data-localize="None" value="none">None</option></select>
-                    </div>
-                    <div class="col-sm-4">
-                      <select id="target_primary_Color" class="form-control"><option data-localize="None" value="none">None</option></select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label data-localize="Secondary Gene" class="col-sm-2 control-label">Sec Gene</label>
-                    <div class="col-sm-4">
-                      <select id="target_secondaryGene" class="form-control"><option data-localize="None" value="none">None</option></select>
-                    </div>
-                    <div class="col-sm-4">
-                      <select id="target_secondary_Color" class="form-control"><option data-localize="None" value="none">None</option></select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label data-localize="Tertiary Gene" class="col-sm-2 control-label">Tert Gene</label>
-                    <div class="col-sm-4">
-                      <select id="target_tertiaryGene" class="form-control"><option data-localize="None" value="none">None</option></select>
-                    </div>
-                    <div class="col-sm-4">
-                      <select id="target_tertiary_Color" class="form-control"><option data-localize="None" value="none">None</option></select>
-                    </div>
-                </div>
-                <hr />
-                <div class="form-group">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-4">
-                      <input data-localize="Calculate" type="button" class="form-control" id="cal_breed" value="Calculate">
-                    </div>
-                    <div id="input_result" class="col-sm-4 label_text">--.-------- %</div>
+                  <div id="tertiary_color_result" class="col-sm-6 label_text"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong data-localize="Rate calculator">Rate calculator</strong></div>
+            <div id="rate-section" class="panel-body">
+              <div data-localize="Rate note" class="alert alert-warning" role="alert">Suppose gender ratio is 1:1.</div>
+              <div class="form-horizontal">
+                <div class="form-group">
+                  <label data-localize="Gender" class="col-sm-2 control-label">Gender</label>
+                  <div class="col-sm-4">
+                    <select id="target_gender" class="form-control">
+                      <option data-localize="None" value="none">None</option>
+                    </select>
+                  </div>
+                  <label data-localize="Breed" class="col-sm-2 control-label">Breed</label>
+                  <div class="col-sm-4">
+                    <select id="target_Breed" class="form-control">
+                      <option data-localize="None" value="none">None</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-localize="Primary Gene" class="col-sm-3 control-label">Pri Gene</label>
+                  <div class="col-sm-4">
+                    <select id="target_primaryGene" class="form-control">
+                      <option data-localize="None" value="none">None</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-5">
+                    <select id="target_primary_Color" class="form-control">
+                      <option data-localize="None" value="none">None</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-localize="Secondary Gene" class="col-sm-3 control-label">Sec Gene</label>
+                  <div class="col-sm-4">
+                    <select id="target_secondaryGene" class="form-control">
+                      <option data-localize="None" value="none">None</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-5">
+                    <select id="target_secondary_Color" class="form-control">
+                      <option data-localize="None" value="none">None</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-localize="Tertiary Gene" class="col-sm-3 control-label">Tert Gene</label>
+                  <div class="col-sm-4">
+                    <select id="target_tertiaryGene" class="form-control">
+                      <option data-locaßlize="None" value="none">None</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-5">
+                    <select id="target_tertiary_Color" class="form-control">
+                      <option data-localize="None" value="none">None</option>
+                    </select>
+                  </div>
+                </div>
+                <hr />
+                <div class="form-group">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-4">
+                    <input data-localize="Calculate" type="button" class="form-control" id="cal_breed" value="Calculate" />
+                  </div>
+                  <div id="input_result" class="col-sm-4 label_text">--.-------- %</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-md-push-9">
           <div class="panel panel-default">
             <div class="panel-body">
-              <a data-localize="Dragon say" data-toggle="tooltip" title="Let me out! Let me out!" data-placement="bottom" target="_blank" href="http://flightrising.com/main.php?dragon=19880223"><img class="img-responsive center-block" src="img/cup-big.png"></a>
+              <a
+                data-localize="Dragon say"
+                data-toggle="tooltip"
+                title="Let me out! Let me out!"
+                data-placement="bottom"
+                target="_blank"
+                href="http://flightrising.com/main.php?dragon=19880223"
+              >
+                <img class="img-responsive center-block" src="img/cup-big.png" />
+              </a>
             </div>
           </div>
         </div>
@@ -280,7 +465,15 @@
       <div class="page_footer panel panel-default">
         <div class="panel-footer">
           <h5>
-            <span><strong>Powered By</strong> <a target="_blank" href="https://pages.github.com/">Github Pages</a>.</span><span><strong>Last Update</strong> 2021-08-03.</span>
+            <span>
+              <strong>Powered By</strong>
+              <a target="_blank" href="https://pages.github.com/">Github Pages</a>
+              .
+            </span>
+            <span>
+              <strong>Last Update</strong>
+              2021-08-03.
+            </span>
           </h5>
         </div>
       </div>
@@ -288,7 +481,7 @@
     <script src="lib/js.cookie.min.js"></script>
     <script src="lib/jquery.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
-<!--     <script src="lib/jquery.localize.min.js"></script> -->
+    <!--     <script src="lib/jquery.localize.min.js"></script> -->
     <script src="js/language.js"></script>
     <script src="js/fr_data.js"></script>
     <script src="js/fr_tool.js"></script>

@@ -32,7 +32,7 @@
     "Calculate": {
         "data-loading-text": "Calculating...",
         "value": "Calculate"
-    },    
+    },
     "Generate": "Generate",
     "Settings": "Settings",
     "Gene Font": "Gene Font",
@@ -66,18 +66,16 @@
     "Modern": "Modern",
     "Ancient": "Ancient",
     "Age": "Age",
+    "Parents": "Parent Dragons",
     "Dragon say": "Let me out! Let me out!",
-
     "Plentiful": "Plentiful",
     "Common": "Common",
     "Uncommon": "Uncommon",
     "Limited": "Limited",
     "Rare": "Rare",
-
     "Male": "Male",
     "Female": "Female",
     "None": "None",
-
     "Basic": "Basic",
     "Clown": "Clown",
     "Piebald": "Piebald",
@@ -115,7 +113,6 @@
     "Mosaic": "Mosaic",
     "Stitched": "Stitched",
     "Flaunt": "Flaunt",
-
     "Current": "Current",
     "Daub": "Daub",
     "EyeSpots": "EyeSpots",
@@ -152,7 +149,6 @@
     "Breakup": "Breakup",
     "Patchwork": "Patchwork",
     "Flair": "Flair",
-    
     "Underbelly": "Underbelly",
     "Thylacine": "Thylacine",
     "Crackle": "Crackle",
@@ -185,7 +181,6 @@
     "Keel": "Keel",
     "Glowtail": "Glowtail",
     "Braids": "Braids",
-    
     "Fae": "Fae",
     "Guardian": "Guardian",
     "Tundra": "Tundra",
@@ -204,7 +199,6 @@
     "Banescale": "Banescale",
     "Veilspun": "Veilspun",
     "Obelisk": "Obelisk",
-
     "Maize": "Maize",
     "Cream": "Cream",
     "Antique": "Antique",
