@@ -166,6 +166,7 @@ FRData.GaolerSecondaryGeneList = [
     ['Streak', 'Common', '80000 T'],
     ['Striation', 'Common', '60000 T'],
     ['Stripes', 'Common', '45000 T'],
+    ['Blend', 'Common', '50000 T'],
 
     ['Breakup', 'Uncommon', '100000 T'],
     ['Hex', 'Uncommon', '80000 T'],
