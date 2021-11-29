@@ -38,6 +38,7 @@ FRData.ModernPrimaryGeneList = [
     ['Mosaic', 'Uncommon', '300000 T'],
     ['Python', 'Uncommon', 'The Coliseum'],
     ['Ripple', 'Uncommon', '250000 T'],
+    ['Ribbon', 'Uncommon', ''],
     ['Vipera', 'Uncommon', '235000 T'],
 
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
@@ -72,6 +73,7 @@ FRData.ModernSecondaryGeneList = [
     ['Stripes', 'Common', '90000 T'],
 
     ['Breakup', 'Uncommon', '200000 T'],
+    ['Eel', 'Uncommon', ''],
     ['Hex', 'Uncommon', '160000 T'],
     ['Hypnotic', 'Uncommon', '185000 T'],
     ['Morph', 'Uncommon', 'The Coliseum'],
@@ -134,6 +136,7 @@ FRData.GaolerPrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Clown', 'Common', ''],
+    ['Fade', 'Common', ''],
     ['Falcon', 'Common', '85000 T'],
     ['Laced', 'Common', ''],
     ['Piebald', 'Common', '117500 T'],
@@ -157,6 +160,7 @@ FRData.GaolerPrimaryGeneList = [
 FRData.GaolerSecondaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
+    ['Blend', 'Common', ''],
     ['Current', 'Common', ''],
     ['Daub', 'Common', '82500 T'],
     ['Edged', 'Common', ''],
@@ -192,6 +196,7 @@ FRData.GaolerTertiaryGeneList = [
     ['Wintercoat', 'Uncommon', '95000 T'],
 
     ['Blossom', 'Limited', "Swipp's Swap Stand"],
+    ['Capsule', 'Limited', ''],
     ['Runes', 'Limited', '77500 T'],
     ['Scorpion', 'Limited', '45000 T (Baldwin)'],
     ['Veined', 'Limited', '50000 T (Baldwin)'],
@@ -206,6 +211,7 @@ FRData.GaolerTertiaryGeneList = [
 FRData.BanescalePrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
+    ['Fade', 'Common', ''],
     ['Clown', 'Common', ''],
     ['Falcon', 'Common', ''],
     ['Laced', 'Common', '70000 T'],
@@ -232,6 +238,7 @@ FRData.BanescalePrimaryGeneList = [
 FRData.BanescaleSecondaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
+    ['Blend', 'Common', ''],
     ['Current', 'Common', ''],
     ['Edged', 'Common', '60000 T'],
     ['EyeSpots', 'Common', ''],
@@ -268,6 +275,7 @@ FRData.BanescaleTertiaryGeneList = [
     ['Ghost', 'Uncommon', '80000 T'],
     ['Ringlets', 'Uncommon', '77500 T'],
 
+    ['Capsule', 'Limited', ''],
     ['Porcupine', 'Limited', '50000 T (Baldwin)'],
     ['Skeletal', 'Limited', 'The Coliseum'],
     ['Squiggle', 'Limited', "Swipp's Swap Stand"],
