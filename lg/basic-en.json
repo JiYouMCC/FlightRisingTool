@@ -377,5 +377,12 @@
     "Pink": "Pink",
     "Bubblegum": "Bubblegum",
     "Rose": "Rose",
-    "Pearl": "Pearl"
+    "Pearl": "Pearl",
+
+"Ground":"Ground",
+"Fissure":"Fissure",
+"Sarcophagus":"Sarcophagus",
+"Pinions":"Pinions",
+"Gliders":"Gliders",
+"Angler":"Angler"
 }
