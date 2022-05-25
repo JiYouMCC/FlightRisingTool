@@ -115,6 +115,30 @@ FRTool.VeilspunTertiaryGene = function(name, odds, price) {
     FRTool.VeilspunTertiaryGenes.push(this);
 }
 
+FRTool.AberrationPrimaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.AberrationPrimaryGene[name] = this;
+    FRTool.AberrationPrimaryGenes.push(this);
+}
+
+FRTool.AberrationSecondaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.AberrationSecondaryGene[name] = this;
+    FRTool.AberrationSecondaryGenes.push(this);
+}
+
+FRTool.AberrationTertiaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.AberrationTertiaryGene[name] = this;
+    FRTool.AberrationTertiaryGenes.push(this);
+}
+
 FRTool.Color = function(name, color) {
     this.Name = name;
     this.Color = color;
@@ -157,6 +181,9 @@ FRTool.initFR = function(data) {
     FRTool.VeilspunPrimaryGenes = [];
     FRTool.VeilspunSecondaryGenes = [];
     FRTool.VeilspunTertiaryGenes = [];
+    FRTool.AberrationPrimaryGenes = [];
+    FRTool.AberrationSecondaryGenes = [];
+    FRTool.AberrationTertiaryGenes = [];
     FRTool.ModernBreeds = [];
     FRTool.AncientBreeds = [];
     FRTool.Colors = [];
@@ -221,6 +248,18 @@ FRTool.initFR = function(data) {
 
     for (var i = 0; i < data.VeilspunTertiaryGeneList.length; i++) {
         new FRTool.VeilspunTertiaryGene(data.VeilspunTertiaryGeneList[i][0], data.VeilspunTertiaryGeneList[i][1], data.VeilspunTertiaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.AberrationPrimaryGeneList.length; i++) {
+        new FRTool.AberrationPrimaryGene(data.AberrationPrimaryGeneList[i][0], data.AberrationPrimaryGeneList[i][1], data.AberrationPrimaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.AberrationSecondaryGeneList.length; i++) {
+        new FRTool.AberrationSecondaryGene(data.AberrationSecondaryGeneList[i][0], data.AberrationSecondaryGeneList[i][1], data.AberrationSecondaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.AberrationTertiaryGeneList.length; i++) {
+        new FRTool.AberrationTertiaryGene(data.AberrationTertiaryGeneList[i][0], data.AberrationTertiaryGeneList[i][1], data.AberrationTertiaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.ColorList.length; i++) {

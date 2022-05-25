@@ -363,8 +363,86 @@ FRData.VeilspunTertiaryGeneList = [
     ['Mop', 'Rare', ''],
     ['Opal', 'Rare', ''],
     ['Stained', 'Rare', '']
+]
 
-    
+FRData.AberrationPrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Fade', 'Common', ''],
+    ['Falcon', 'Common', ''],
+    ['Savannah', 'Common', ''],
+    ['Speckle', 'Common', ''],
+    ['Swirl', 'Common', ''],
+    ['Tapir', 'Common', ''],
+
+    ['Bar', 'Uncommon', ''],
+    ['Giraffe', 'Uncommon', ''],
+    ['Jaguar', 'Uncommon', ''],
+    ['Lionfish', 'Uncommon', ''],
+    ['Ribbon', 'Uncommon', ''],
+    ['Vipera', 'Uncommon', ''],
+
+    ['Diamond', 'Limited', ''],
+    ['Ground', 'Limited', ''],
+    ['Orb', 'Limited', ''],
+    ['Slime', 'Limited', ''],
+    ['Stitched', 'Limited', ''],
+
+    ['Crystal', 'Rare', ''],
+    ['Pharoh', 'Rare', ''],
+    ['Wasp', 'Rare', '']
+]
+
+FRData.AberrationSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Blend', 'Common', ''],
+    ['Freckled', 'Common', ''],
+    ['Marbled', 'Common', ''],
+    ['Peregrine', 'Common', ''],
+    ['Safari', 'Common', ''],
+    ['Striation', 'Common', ''],
+
+    ['Daub', 'Uncommon', ''],
+    ['Eel', 'Uncommon', ''],
+    ['Hex', 'Uncommon', ''],
+    ['Hypnotic', 'Uncommon', ''],
+    ['Noxtide', 'Uncommon', ''],
+    ['Rosette', 'Uncommon', ''],
+
+    ['Fissure', 'Limited', ''],
+    ['Patchwork', 'Limited', ''],
+    ['Sludge', 'Limited', ''],
+    ['Spade', 'Limited', ''],
+    ['Weaver', 'Limited', ''],
+
+    ['Bee', 'Rare', ''],
+    ['Facet', 'Rare', ''],
+    ['Sarcophagus', 'Rare', '']
+]
+
+FRData.AberrationTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Kumo', 'Common', ''],
+    ['Peacock-Gene', 'Common', ''],
+    ['Thylacine', 'Common', ''],
+
+    ['Fangs', 'Uncommon', ''],
+    ['Ghost', 'Uncommon', ''],
+    ['Sparkle', 'Uncommon', ''],
+
+    ['Capsule', 'Limited', ''],
+    ['Firefly', 'Limited', ''],
+    ['Mucous', 'Limited', ''],
+    ['Polkadot', 'Limited', ''],
+    ['Polypore', 'Limited', ''],
+    ['Scales', 'Limited', ''],
+    ['Veined', 'Limited', ''],
+
+    ['Frills', 'Rare', ''],
+    ['Glowtail', 'Rare', ''],
+    ['Jewels', 'Rare', '']
 ]
 
 FRData.ColorList = [
@@ -572,7 +650,8 @@ FRData.ModernBreedList = [
 FRData.AncientBreedList = [
     ['Gaoler', 'Common', ['Meat', 'Plants']],
     ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']],
-    ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']]
+    ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
+    ['Aberration', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']]
 ]
 
 FRData.BreedRuleList = [
