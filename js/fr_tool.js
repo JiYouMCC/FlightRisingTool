@@ -366,7 +366,10 @@ FRTool.getGeneRate = function(gene1, gene2) {
         || (gene1 instanceof FRTool.BanescaleTertiaryGene && gene2 instanceof FRTool.BanescaleTertiaryGene)
         || (gene1 instanceof FRTool.VeilspunPrimaryGene && gene2 instanceof FRTool.VeilspunPrimaryGene) 
         || (gene1 instanceof FRTool.VeilspunSecondaryGene && gene2 instanceof FRTool.VeilspunSecondaryGene) 
-        || (gene1 instanceof FRTool.VeilspunTertiaryGene && gene2 instanceof FRTool.VeilspunTertiaryGene)) {
+        || (gene1 instanceof FRTool.VeilspunTertiaryGene && gene2 instanceof FRTool.VeilspunTertiaryGene)
+        || (gene1 instanceof FRTool.AberrationPrimaryGene && gene2 instanceof FRTool.AberrationPrimaryGene) 
+        || (gene1 instanceof FRTool.AberrationSecondaryGene && gene2 instanceof FRTool.AberrationSecondaryGene) 
+        || (gene1 instanceof FRTool.AberrationTertiaryGene && gene2 instanceof FRTool.AberrationTertiaryGene)) {
         if (gene1 == gene2) {
             return [1];
         }
