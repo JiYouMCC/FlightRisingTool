@@ -384,9 +384,14 @@ FRTool.getGeneRate = function(gene1, gene2) {
 }
 
 FRTool.calRate = function(info1, info2, target, age) {
-    var result = 1.0
+    var result = 1.0;
+    var ageBreed = age;
     if (target.gender != undefined) {
         result *= 0.5;
+    }
+
+    if (age != FRTool.Age["Modern"].Name) {
+        age = FRTool.Age["Ancient"].Name;
     }
 
     if (target.breed != undefined) {
@@ -440,9 +445,9 @@ FRTool.calRate = function(info1, info2, target, age) {
     }
 
     if (target.primaryGene != undefined) {
-        var primaryGene = FRTool[age + "PrimaryGene"][target.primaryGene]
-        var primaryGene1 = FRTool[age + "PrimaryGene"][info1.primaryGene];
-        var primaryGene2 = FRTool[age + "PrimaryGene"][info2.primaryGene];
+        var primaryGene = FRTool[ageBreed + "PrimaryGene"][target.primaryGene]
+        var primaryGene1 = FRTool[ageBreed + "PrimaryGene"][info1.primaryGene];
+        var primaryGene2 = FRTool[ageBreed + "PrimaryGene"][info2.primaryGene];
         var rate = FRTool.getGeneRate(primaryGene1, primaryGene2);
         if (primaryGene == primaryGene1) {
             result *= rate[0];
@@ -454,9 +459,9 @@ FRTool.calRate = function(info1, info2, target, age) {
     }
 
     if (target.secondaryGene != undefined) {
-        var secondaryGene = FRTool[age + "SecondaryGene"][target.secondaryGene]
-        var secondaryGene1 = FRTool[age + "SecondaryGene"][info1.secondaryGene];
-        var secondaryGene2 = FRTool[age + "SecondaryGene"][info2.secondaryGene];
+        var secondaryGene = FRTool[ageBreed + "SecondaryGene"][target.secondaryGene]
+        var secondaryGene1 = FRTool[ageBreed + "SecondaryGene"][info1.secondaryGene];
+        var secondaryGene2 = FRTool[ageBreed + "SecondaryGene"][info2.secondaryGene];
         var rate = FRTool.getGeneRate(secondaryGene1, secondaryGene2);
         if (secondaryGene == secondaryGene1) {
             result *= rate[0];
@@ -468,9 +473,9 @@ FRTool.calRate = function(info1, info2, target, age) {
     }
 
     if (target.tertiaryGene != undefined) {
-        var tertiaryGene = FRTool[age + "TertiaryGene"][target.tertiaryGene]
-        var tertiaryGene1 = FRTool[age + "TertiaryGene"][info1.tertiaryGene];
-        var tertiaryGene2 = FRTool[age + "TertiaryGene"][info2.tertiaryGene];
+        var tertiaryGene = FRTool[ageBreed + "TertiaryGene"][target.tertiaryGene]
+        var tertiaryGene1 = FRTool[ageBreed + "TertiaryGene"][info1.tertiaryGene];
+        var tertiaryGene2 = FRTool[ageBreed + "TertiaryGene"][info2.tertiaryGene];
         var rate = FRTool.getGeneRate(tertiaryGene1, tertiaryGene2);
         if (tertiaryGene == tertiaryGene1) {
             result *= rate[0];
