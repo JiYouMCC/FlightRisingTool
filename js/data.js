@@ -138,6 +138,33 @@ for (var i = 0; i < FRTool.VeilspunTertiaryGenes.length; i++) {
     );
 }
 
+for (var i = 0; i < FRTool.AberrationPrimaryGenes.length; i++) {
+    $('#aberration_primary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.AberrationPrimaryGenes[i].Name).attr("data-localize", FRTool.AberrationPrimaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.AberrationPrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.AberrationPrimaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.AberrationPrimaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.AberrationSecondaryGenes.length; i++) {
+    $('#aberration_secondary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.AberrationSecondaryGenes[i].Name).attr("data-localize", FRTool.AberrationSecondaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.AberrationSecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.AberrationSecondaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.AberrationSecondaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.AberrationTertiaryGenes.length; i++) {
+    $('#aberration_tertiary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.AberrationTertiaryGenes[i].Name).attr("data-localize", FRTool.AberrationTertiaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.AberrationTertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.AberrationTertiaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.AberrationTertiaryGenes[i].Price))
+    );
+}
+
 for (var i = 0; i < FRTool.Colors.length; i++) {
     $('#color_list').find("tbody").append(
         $("<tr></tr>")
