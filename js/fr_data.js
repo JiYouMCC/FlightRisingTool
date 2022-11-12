@@ -22,7 +22,6 @@ FRData.ModernPrimaryGeneList = [
     ['Laced', 'Common', '140000 T'],
     ['Leopard', 'Common', '140000 T'],
     ['Piebald', 'Common', '235000 T'],
-    ['Points', 'Common', '130000 T'],
     ['Savannah', 'Common', '235000 T'],
     ['Speckle', 'Common', '125000 T'],
     ['Swirl', 'Common', '150000 T'],
@@ -109,6 +108,7 @@ FRData.ModernTertiaryGeneList = [
 
     ['Contour', 'Common', '150000 T'],
     ['Peacock-Gene', 'Common', '150000 T'],
+    ['Points', 'Common', '130000 T'],
     ['Thylacine', 'Common', '155000 T'],
     ['Underbelly', 'Common', '150000 T'],
 
