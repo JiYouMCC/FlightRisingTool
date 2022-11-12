@@ -22,6 +22,7 @@ FRData.ModernPrimaryGeneList = [
     ['Laced', 'Common', '140000 T'],
     ['Leopard', 'Common', '140000 T'],
     ['Piebald', 'Common', '235000 T'],
+    ['Points', 'Common', '130000 T'],
     ['Savannah', 'Common', '235000 T'],
     ['Speckle', 'Common', '125000 T'],
     ['Swirl', 'Common', '150000 T'],
