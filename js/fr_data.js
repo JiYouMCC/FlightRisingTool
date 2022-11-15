@@ -108,6 +108,7 @@ FRData.ModernTertiaryGeneList = [
 
     ['Contour', 'Common', '150000 T'],
     ['Peacock-Gene', 'Common', '150000 T'],
+    ['Points', 'Common', '130000 T'],
     ['Thylacine', 'Common', '155000 T'],
     ['Underbelly', 'Common', '150000 T'],
 
