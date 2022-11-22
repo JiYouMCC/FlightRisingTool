@@ -33,7 +33,7 @@ http://fr.jithee.name/
 
 ## Contributors / 贡献者
 
-UI refine: [sunlanterns]https://github.com/sunlanterns
+UI refine: [sunlanterns](https://github.com/sunlanterns)
 
 [mayali-fr](https://github.com/mayali-fr)
 
