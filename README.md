@@ -33,6 +33,8 @@ http://fr.jithee.name/
 
 ## Contributors / 贡献者
 
+[mayali-fr](https://github.com/mayali-fr)
+
 [weeveryin](https://github.com/weeveryin)
 
 [angelwings001](https://github.com/angelwings001)
