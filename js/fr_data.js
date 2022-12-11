@@ -42,6 +42,7 @@ FRData.ModernPrimaryGeneList = [
     ['Vipera', 'Uncommon', '235000 T'],
 
     ['Boulder', 'Limited', ''],
+    ['Tide', 'Limited', ''],
     ['Ground', 'Limited', ''],
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
@@ -88,6 +89,7 @@ FRData.ModernSecondaryGeneList = [
 
     ['Fissure', 'Limited', ''],
     ['Myrid', 'Limited', ''],
+    ['Foam', 'Limited', ''],
     ['Patchwork', 'Limited', '100000 T (Baldwin)'],
     ['Sludge', 'Limited', '90000 T (Baldwin)'],
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
@@ -465,6 +467,97 @@ FRData.AberrationTertiaryGeneList = [
     ['Jewels', 'Rare', '']
 ]
 
+FRData.UndertidePrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Checkers', 'Common', '80000'],
+    ['Fade', 'Common', '62500'],
+    ['Falcon', 'Common', '85000 T'],
+    ['Savannah', 'Common', '70000'],
+    ['Speckle', 'Common', '62500 T'],
+    ['Swirl', 'Common', '75000 T'],
+
+    ['Bar', 'Uncommon', '125000 T'],
+    ['Boa', 'Uncommon', ' 85000'],
+    ['Cherub', 'Uncommon', '92500'],
+    ['Giraffe', 'Uncommon', '112500 T'],
+    ['Ribbon', 'Uncommon', '95000 T'],
+    ['Lionfish', 'Uncommon', '125000 T'],
+    ['Ripple', 'Uncommon', '125000'],
+    ['Wolf', 'Uncommon', '80000 T'],
+
+    ['Boulder', 'Limited', '5000 T (Baldwin)'],
+    ['Octopus', 'Limited', '50000 T (Baldwin)'],
+    ['Poison', 'Limited', '50000 T (Baldwin)'],
+    ['Pinstripe', 'Limited', '50000 T (Baldwin)'],
+    ['Tide', 'Limited', '5000 T (Baldwin)'],
+    
+    ['Crystal', 'Rare', '750 G'],
+    ['Pharaoh', 'Rare', '750 G'],
+    ['Wasp', 'Rare', '750 G']
+]
+
+FRData.UndertideSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Blend', 'Common', '50000'],
+    ['Chess', 'Common', '80000'],
+    ['Freckle', 'Common', '45000 T'],
+    ['Marbled', 'Common', '65000 T'],
+    ['Peregrine', 'Common', '70000 T'],
+    ['Safari', 'Common', '49000 T'],
+
+    ['Current', 'Uncommon', '82500 T'],
+    ['Daub', 'Uncommon', '82500 T'],
+    ['Eel', 'Uncommon', '77500 T'],
+    ['Hex', 'Uncommon', '80000 T'],
+    ['Noxtide', 'Uncommon', '85000 T'],
+    ['Pack', 'Uncommon', '70000 T'],
+    ['Saddle', 'Uncommon', '75000 T'],
+    ['Seraph', 'Uncommon', '62500 T'],
+
+    ['Foam', 'Limited', '5000 T (Baldwin)'],
+    ['Myriad', 'Limited', '5000 T (Baldwin)'],
+    ['Rings', 'Limited', '50000 T (Baldwin)'],
+    ['Toxin', 'Limited', '50000 T (Baldwin)'],
+    ['Trail', 'Limited', '50000 T (Baldwin)'],
+
+    ['Bee', 'Rare', '600 G'],
+    ['Facet', 'Rare', '600 G'],
+    ['Sarcophagus', 'Rare', '600 G']
+]
+
+FRData.UndertideTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Underbelly', 'Common', '75000 T'],
+
+    ['Crackle', 'Uncommon', '95000 T'],
+    ['Ghost', 'Uncommon', '80000 T'],
+    ['Okapi', 'Uncommon', '95000 T'],
+    ['Plating', 'Uncommon', '90000 T'],
+    ['Pufferfish', 'Uncommon', '80000 T'],
+    ['Ringlets', 'Uncommon', '77500 T'],
+    ['Sparkle', 'Uncommon', '75000 T'],
+
+    ['Capsule', 'Limited', '55000 T (Baldwin)'],
+    ['Featherbeard', 'Limited', "The Coliseum"],
+    ['Flecks', 'Limited', 'The Coliseum'],
+    ['Nudibranch', 'Limited', '45000 T (Baldwin)'],
+    ['Runes', 'Limited', '95000 T'],
+    ['Veined', 'Limited', '50000 T (Baldwin)'],
+
+    ['Circuit', 'Rare', '500 G'],
+    ['Filigree', 'Rare', '500 G'],
+    ['Gembond', 'Rare', '100000 T'],
+    ['Remora', 'Rare', '500 G'],
+    ['Sailfin', 'Rare', '500 G'],
+    ['Soap', 'Rare', '500 G'],
+    ['Stained', 'Rare', '500 G'],
+    ['Tentacles', 'Rare', '500 G']
+
+]
+
 FRData.ColorList = [
     ['Maize', '#FFFDEA'],
     ['Cream', '#FFEFDC'],
@@ -671,6 +764,7 @@ FRData.AncientBreedList = [
     ['Gaoler', 'Common', ['Meat', 'Plants']],
     ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']],
     ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
+    ['Undertide', 'Common', ['Plants', 'Seafood']],
     ['Aberration', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']]
 ]
 
