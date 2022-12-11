@@ -203,6 +203,7 @@
     "Bogsneak": "Bogsneak",
     "Gaoler": "Gaoler",
     "Banescale": "Banescale",
+    "Undertide": "Undertide",
     "Veilspun": "Veilspun",
     "Obelisk": "Obelisk",
     "Maize": "Maize",
@@ -382,11 +383,26 @@
     "Bubblegum": "Bubblegum",
     "Rose": "Rose",
     "Pearl": "Pearl",
-
-"Ground":"Ground",
-"Fissure":"Fissure",
-"Sarcophagus":"Sarcophagus",
-"Pinions":"Pinions",
-"Gliders":"Gliders",
-"Angler":"Angler"
+    "Ground":"Ground",
+    "Fissure":"Fissure",
+    "Sarcophagus":"Sarcophagus",
+    "Pinions":"Pinions",
+    "Gliders":"Gliders",
+    "Angler":"Angler"
+    "Tide":"Tide"  
+    "Foam":"Foam"
+    "Boa":"Boa"  
+    "Octopus":"Octopus"
+    "Checkers":"Checkers"  
+    "Chess":"Chess"  
+    "Wolf":"Wolf"
+    "Pack":"Pack"  
+    "Remora":"Remora"
+    "Sailfin":"Sailfin"
+    "Saddle":"Saddle"  
+    "Rings":"Rings"
+    "Pufferfish":"Pufferfish"  
+    "Plating":"Plating"  
+    "Nudibranch":"Nudibranch"
+    "Featherbeard":"Featherbeard"
 }
