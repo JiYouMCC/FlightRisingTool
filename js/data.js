@@ -137,6 +137,32 @@ for (var i = 0; i < FRTool.VeilspunTertiaryGenes.length; i++) {
         .append($("<td></td>").text(FRTool.VeilspunTertiaryGenes[i].Price))
     );
 }
+for (var i = 0; i < FRTool.UndertidePrimaryGenes.length; i++) {
+    $('#veilspun_primary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.UndertidePrimaryGenes[i].Name).attr("data-localize", FRTool.UndertidePrimaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.UndertidePrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.UndertidePrimaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.UndertidePrimaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.UndertideSecondaryGenes.length; i++) {
+    $('#veilspun_secondary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.UndertideSecondaryGenes[i].Name).attr("data-localize", FRTool.UndertideSecondaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.UndertideSecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.UndertideSecondaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.UndertideSecondaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.UndertideTertiaryGenes.length; i++) {
+    $('#veilspun_tertiary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.UndertideTertiaryGenes[i].Name).attr("data-localize", FRTool.UndertideTertiaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.UndertideTertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.UndertideTertiaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.UndertideTertiaryGenes[i].Price))
+    );
+}
 
 for (var i = 0; i < FRTool.AberrationPrimaryGenes.length; i++) {
     $('#aberration_primary_gene_list').find("tbody").append(
@@ -332,6 +358,9 @@ allowSort("banescale_tertiary_gene_list");
 allowSort("veilspun_primary_gene_list");
 allowSort("veilspun_secondary_gene_list");
 allowSort("veilspun_tertiary_gene_list");
+allowSort("undertide_primary_gene_list");
+allowSort("undertide_secondary_gene_list");
+allowSort("undertide_tertiary_gene_list");
 allowSort("color_list");
 allowSort("breed_rule_list");
 allowSort("gene_rule_list");
