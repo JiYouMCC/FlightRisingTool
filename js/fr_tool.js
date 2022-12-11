@@ -139,6 +139,30 @@ FRTool.AberrationTertiaryGene = function(name, odds, price) {
     FRTool.AberrationTertiaryGenes.push(this);
 }
 
+FRTool.UndertidePrimaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.UndertidePrimaryGene[name] = this;
+    FRTool.UndertidePrimaryGenes.push(this);
+}
+
+FRTool.UndertideSecondaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.UndertideSecondaryGene[name] = this;
+    FRTool.UndertideSecondaryGenes.push(this);
+}
+
+FRTool.UndertideTertiaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.UndertideTertiaryGene[name] = this;
+    FRTool.UndertideTertiaryGenes.push(this);
+}
+
 FRTool.Color = function(name, color) {
     this.Name = name;
     this.Color = color;
@@ -178,6 +202,9 @@ FRTool.initFR = function(data) {
     FRTool.BanescalePrimaryGenes = [];
     FRTool.BanescaleSecondaryGenes = [];
     FRTool.BanescaleTertiaryGenes = [];
+    FRTool.UndertidePrimaryGenes = [];
+    FRTool.UndertideSecondaryGenes = [];
+    FRTool.UndertideTertiaryGenes = [];
     FRTool.VeilspunPrimaryGenes = [];
     FRTool.VeilspunSecondaryGenes = [];
     FRTool.VeilspunTertiaryGenes = [];
@@ -236,6 +263,18 @@ FRTool.initFR = function(data) {
 
     for (var i = 0; i < data.BanescaleTertiaryGeneList.length; i++) {
         new FRTool.BanescaleTertiaryGene(data.BanescaleTertiaryGeneList[i][0], data.BanescaleTertiaryGeneList[i][1], data.BanescaleTertiaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.UndertidePrimaryGeneList.length; i++) {
+        new FRTool.UndertidePrimaryGene(data.BanescalePrimaryGeneList[i][0], data.UndertidePrimaryGeneList[i][1], data.UndertidePrimaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.UndertideSecondaryGeneList.length; i++) {
+        new FRTool.UndertideSecondaryGene(data.UndertideSecondaryGeneList[i][0], data.UndertideSecondaryGeneList[i][1], data.UndertideSecondaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.UndertideTertiaryGeneList.length; i++) {
+        new FRTool.UndertideTertiaryGene(data.BanescaleTertiaryGeneList[i][0], data.UndertideTertiaryGeneList[i][1], data.UndertideTertiaryGeneList[i][2]);
     };
 
      for (var i = 0; i < data.VeilspunPrimaryGeneList.length; i++) {
@@ -358,12 +397,15 @@ FRTool.getGeneRate = function(gene1, gene2) {
     if ((gene1 instanceof FRTool.ModernPrimaryGene && gene2 instanceof FRTool.ModernPrimaryGene) 
         || (gene1 instanceof FRTool.ModernSecondaryGene && gene2 instanceof FRTool.ModernSecondaryGene) 
         || (gene1 instanceof FRTool.ModernTertiaryGene && gene2 instanceof FRTool.ModernTertiaryGene 
-        || gene1 instanceof FRTool.GaolerPrimaryGene && gene2 instanceof FRTool.GaolerPrimaryGene) 
+        || (gene1 instanceof FRTool.GaolerPrimaryGene && gene2 instanceof FRTool.GaolerPrimaryGene) 
         || (gene1 instanceof FRTool.GaolerSecondaryGene && gene2 instanceof FRTool.GaolerSecondaryGene) 
         || (gene1 instanceof FRTool.GaolerTertiaryGene && gene2 instanceof FRTool.GaolerTertiaryGene)
         || (gene1 instanceof FRTool.BanescalePrimaryGene && gene2 instanceof FRTool.BanescalePrimaryGene) 
         || (gene1 instanceof FRTool.BanescaleSecondaryGene && gene2 instanceof FRTool.BanescaleSecondaryGene) 
         || (gene1 instanceof FRTool.BanescaleTertiaryGene && gene2 instanceof FRTool.BanescaleTertiaryGene)
+        || (gene1 instanceof FRTool.UndertidePrimaryGene && gene2 instanceof FRTool.UndertidePrimaryGene) 
+        || (gene1 instanceof FRTool.UndertideSecondaryGene && gene2 instanceof FRTool.UndertideSecondaryGene) 
+        || (gene1 instanceof FRTool.UndertideTertiaryGene && gene2 instanceof FRTool.UndertideTertiaryGene)
         || (gene1 instanceof FRTool.VeilspunPrimaryGene && gene2 instanceof FRTool.VeilspunPrimaryGene) 
         || (gene1 instanceof FRTool.VeilspunSecondaryGene && gene2 instanceof FRTool.VeilspunSecondaryGene) 
         || (gene1 instanceof FRTool.VeilspunTertiaryGene && gene2 instanceof FRTool.VeilspunTertiaryGene)
