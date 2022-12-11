@@ -60,6 +60,9 @@
     "Banescale Primary Gene List": "古戟一基因列表",
     "Banescale Secondary Gene List": "古戟二基因列表",
     "Banescale Tertiary Gene List": "古戟三基因列表",
+    "Undertide Primary Gene List": "Undertide 一基因列表",
+    "Undertide Secondary Gene List": "Undertide 二基因列表",
+    "Undertide Tertiary Gene List": "Undertide 三基因列表",
     "Color List": "颜色列表",
     "Breed Role List": "品种规则列表",
     "Gene Role List": "基因规则列表",
@@ -199,6 +202,7 @@
     "Coatl": "羽蛇 Coatl",
     "Bogsneak": "脖子 Bogsneak",
     "Gaoler": "古毛 Gaoler",
+    "Gaoler": "Undertide",
     "Banescale": "古戟 Banescale",
     "Veilspun": "古蚊 Veilspun",
     "Obelisk": "狮子 Obelisk",
@@ -379,11 +383,26 @@
     "Bubblegum": "泡泡糖 Bubblegum",
     "Rose": "玫瑰色 Rose",
     "Pearl": "珍珠色 Pearl",
-
-"Ground":"Ground",
-"Fissure":"Fissure",
-"Sarcophagus":"Sarcophagus",
-"Pinions":"Pinions",
-"Gliders":"Gliders",
-"Angler":"Angler"
+    "Ground":"Ground",
+    "Fissure":"Fissure",
+    "Sarcophagus":"Sarcophagus",
+    "Pinions":"Pinions",
+    "Gliders":"Gliders",
+    "Angler":"Angler"
+    "Tide":"Tide"  
+    "Foam":"Foam"
+    "Boa":"Boa"  
+    "Octopus":"Octopus"
+    "Checkers":"Checkers"  
+    "Chess":"Chess"  
+    "Wolf":"Wolf"
+    "Pack":"Pack"  
+    "Remora":"Remora"
+    "Sailfin":"Sailfin"
+    "Saddle":"Saddle"  
+    "Rings":"Rings"
+    "Pufferfish":"Pufferfish"  
+    "Plating":"Plating"  
+    "Nudibranch":"Nudibranch"
+    "Featherbeard":"Featherbeard"
 }
