@@ -406,7 +406,7 @@ FRData.AberrationPrimaryGeneList = [
     ['Stitched', 'Limited', ''],
 
     ['Crystal', 'Rare', ''],
-    ['Pharoh', 'Rare', ''],
+    ['Pharaoh', 'Rare', ''],
     ['Wasp', 'Rare', '']
 ]
 
