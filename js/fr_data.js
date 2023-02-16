@@ -43,6 +43,7 @@ FRData.ModernPrimaryGeneList = [
 
     ['Boulder', 'Limited', ''],
     ['Ground', 'Limited', ''],
+    ['Tide', 'Limited', ''],
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
     ['Skink', 'Limited', '95000 T (Baldwin)'],
@@ -88,6 +89,7 @@ FRData.ModernSecondaryGeneList = [
 
     ['Fissure', 'Limited', ''],
     ['Myrid', 'Limited', ''],
+    ['Foam', 'Limited', ''],
     ['Patchwork', 'Limited', '100000 T (Baldwin)'],
     ['Sludge', 'Limited', '90000 T (Baldwin)'],
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
@@ -445,6 +447,7 @@ FRData.AberrationTertiaryGeneList = [
     ['Kumo', 'Common', ''],
     ['Peacock-Gene', 'Common', ''],
     ['Thylacine', 'Common', ''],
+    ['Underbelly', 'Common', '75000 T'],
 
     ['Fangs', 'Uncommon', ''],
     ['Flecks', 'Uncommon', ''],
