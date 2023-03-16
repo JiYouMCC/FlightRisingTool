@@ -380,13 +380,14 @@
     "Rose": "Rose",
     "Pearl": "Pearl",
 
-    "Ground":"Ground",
-    "Fissure":"Fissure",
+    "Ground": "Ground",
+    "Fissure": "Fissure",
     "Pharaoh": "Pharaoh",
-    "Sarcophagus":"Sarcophagus",
-    "Pinions":"Pinions",
-    "Gliders":"Gliders",
-    "Angler":"Angler",
-    "Tide":"Tide",
-    "Foam":"Foam"
+    "Sarcophagus": "Sarcophagus",
+    "Pinions": "Pinions",
+    "Gliders": "Gliders",
+    "Angler": "Angler",
+    "Tide": "Tide",
+    "Foam": "Foam",
+    "Paisley": "Paisley"
 }

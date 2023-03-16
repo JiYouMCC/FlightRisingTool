@@ -44,6 +44,7 @@ FRData.ModernPrimaryGeneList = [
     ['Boulder', 'Limited', ''],
     ['Ground', 'Limited', ''],
     ['Tide', 'Limited', ''],
+    ['Fern', 'Limited', ''],
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
     ['Skink', 'Limited', '95000 T (Baldwin)'],
@@ -90,6 +91,7 @@ FRData.ModernSecondaryGeneList = [
     ['Fissure', 'Limited', ''],
     ['Myrid', 'Limited', ''],
     ['Foam', 'Limited', ''],
+    ['Paisley', 'Limited', ''],
     ['Patchwork', 'Limited', '100000 T (Baldwin)'],
     ['Sludge', 'Limited', '90000 T (Baldwin)'],
     ['Spinner', 'Limited', '95000 T (Baldwin)'],
@@ -245,6 +247,7 @@ FRData.BanescalePrimaryGeneList = [
     ['Ragged', 'Uncommon', '100000 T'],
     ['Ripple', 'Uncommon', ''],
 
+    ['Fern', 'Limited', ''],
     ['Candycane', 'Limited', 'The Coliseum'],
     ['Pinstripe', 'Limited', '50000 T (Baldwin)'],
     ['Poison', 'Limited', '50000 T (Baldwin)'],
@@ -274,6 +277,7 @@ FRData.BanescaleSecondaryGeneList = [
     ['Seraph', 'Uncommon', '49000 T'],
     ['Tear', 'Uncommon', '80000 T'],
 
+    ['Paisley', 'Limited', ''],
     ['Spinner', 'Limited', '47500 T (Baldwin)'],
     ['Sugarplum', 'Limited', 'The Coliseum'],
     ['Toxin', 'Limited', '50000 T (Baldwin)'],
@@ -329,6 +333,7 @@ FRData.VeilspunPrimaryGeneList = [
     ['Vipera', 'Uncommon', ''],
 
     ['Skink', 'Limited', ''],
+    ['Fern', 'Limited', ''],
 
     ['Starmap', 'Rare', ''],
     ['Stitched', 'Rare', ''],
@@ -353,6 +358,7 @@ FRData.VeilspunSecondaryGeneList = [
 
     ['Patchwork', 'Limited', ''],
     ['Spinner', 'Limited', ''],
+    ['Paisley', 'Limited', ''],
 
     ['Bee', 'Rare', ''],
     ['Constellation', 'Rare', '']
