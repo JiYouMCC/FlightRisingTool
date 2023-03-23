@@ -465,6 +465,10 @@ FRData.AberrationTertiaryGeneList = [
     ['Jewels', 'Rare', '']
 ]
 
+FRData.UndertidePrimaryGeneList = []
+FRData.UndertideSecondaryGeneList = []
+FRData.UndertideTertiaryGeneList = []
+
 FRData.ColorList = [
     ['Maize', '#FFFDEA'],
     ['Cream', '#FFEFDC'],
@@ -671,7 +675,8 @@ FRData.AncientBreedList = [
     ['Gaoler', 'Common', ['Meat', 'Plants']],
     ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']],
     ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
-    ['Aberration', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']]
+    ['Aberration', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
+    ['Undertide', 'Common', ['Seafood', 'Plants']]
 ]
 
 FRData.BreedRuleList = [
