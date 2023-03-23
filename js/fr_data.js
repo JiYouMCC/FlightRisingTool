@@ -48,6 +48,7 @@ FRData.ModernPrimaryGeneList = [
     ['Skink', 'Limited', '95000 T (Baldwin)'],
     ['Slime', 'Limited', '100000 T (Baldwin)'],
     ['Stitched', 'Limited', '100000 T (Baldwin)'],
+    ['Tide', 'Limited', ''],
 
     ['Crystal', 'Rare', '1500 G'],
     ['Iridescent', 'Rare', '1500 G'],
@@ -87,6 +88,7 @@ FRData.ModernSecondaryGeneList = [
     ['Seraph', 'Uncommon', '125000 T'],
 
     ['Fissure', 'Limited', ''],
+    ['Foam', 'Limited', ''],
     ['Myrid', 'Limited', ''],
     ['Patchwork', 'Limited', '100000 T (Baldwin)'],
     ['Sludge', 'Limited', '90000 T (Baldwin)'],
