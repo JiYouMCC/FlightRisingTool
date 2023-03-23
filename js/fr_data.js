@@ -465,9 +465,95 @@ FRData.AberrationTertiaryGeneList = [
     ['Jewels', 'Rare', '']
 ]
 
-FRData.UndertidePrimaryGeneList = []
-FRData.UndertideSecondaryGeneList = []
-FRData.UndertideTertiaryGeneList = []
+FRData.UndertidePrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Checkers', 'Common', ''],
+    ['Fade', 'Common', ''],
+    ['Falcon', 'Common', ''],
+    ['Savannah', 'Common', ''],
+    ['Speckle', 'Common', ''],
+    ['Swirl', 'Common', ''],
+
+    ['Bar', 'Uncommon', ''],
+    ['Boa', 'Uncommon', ''],
+    ['Cherub', 'Uncommon', ''],
+    ['Giraffe', 'Uncommon', ''],
+    ['Lionfish', 'Uncommon', ''],
+    ['Ribbon', 'Uncommon', ''],
+    ['Ripple', 'Uncommon', ''],
+    ['Wolf', 'Uncommon', ''],
+
+    ['Boulder', 'Limited', ''],
+    ['Octopus', 'Limited', ''],
+    ['Pinstripe', 'Limited', ''],
+    ['Poison', 'Limited', ''],
+    ['Tide', 'Limited', ''],
+
+    ['Crystal', 'Rare', ''],
+    ['Pharoh', 'Rare', ''],
+    ['Wasp', 'Rare', '']
+]
+
+FRData.UndertideSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Blend', 'Common', ''],
+    ['Chess', 'Common', ''],
+    ['Freckled', 'Common', ''],
+    ['Marbled', 'Common', ''],
+    ['Peregrine', 'Common', ''],
+    ['Safari', 'Common', ''],
+
+    ['Current', 'Uncommon', ''],
+    ['Daub', 'Uncommon', ''],
+    ['Eel', 'Uncommon', ''],
+    ['Hex', 'Uncommon', ''],
+    ['Noxtide', 'Uncommon', ''],
+    ['Pack', 'Uncommon', ''],
+    ['Saddle', 'Uncommon', ''],
+    ['Seraph', 'Uncommon', ''],
+
+    ['Foam', 'Limited', ''],
+    ['Myrid', 'Limited', ''],
+    ['Rings', 'Limited', ''],
+    ['Toxin', 'Limited', ''],
+    ['Trail', 'Limited', ''],
+
+    ['Bee', 'Rare', ''],
+    ['Facet', 'Rare', ''],
+    ['Sarcophagus', 'Rare', '']
+]
+
+FRData.UndertideTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Underbelly', 'Common', ''],
+
+    ['Crackle', 'Uncommon', ''],
+    ['Ghost', 'Uncommon', ''],
+    ['Okapi', 'Uncommon', ''],
+    ['Plating', 'Uncommon', ''],
+    ['Pufferfish', 'Uncommon', ''],
+    ['Ringlets', 'Uncommon', ''],
+    ['Sparkle', 'Uncommon', ''],
+
+    ['Capsule', 'Limited', ''],
+    ['Featherbeard', 'Limited', ''],
+    ['Flecks', 'Limited', ''],
+    ['Nudibranch', 'Limited', ''],
+    ['Runes', 'Limited', ''],
+    ['Veined', 'Limited', ''],
+
+    ['Circuit', 'Rare', ''],
+    ['Filigree', 'Rare', ''],
+    ['Gembond', 'Rare', ''],
+    ['Remora', 'Rare', ''],
+    ['Sailfin', 'Rare', ''],
+    ['Soap', 'Rare', ''],
+    ['Stained', 'Rare', ''],
+    ['Tentacles', 'Rare', '']
+]
 
 FRData.ColorList = [
     ['Maize', '#FFFDEA'],
