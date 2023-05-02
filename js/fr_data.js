@@ -132,6 +132,7 @@ FRData.ModernTertiaryGeneList = [
     ['Smirch', 'Limited', '200000 T'],
     ['Spines', 'Limited', '190000 T'],
     ['Veined', 'Limited', '100000 T (Baldwin)'],
+    ['Flutter', 'Limited', ''],
 
     ['Circuit', 'Rare', '1200 G'],
     ['Filigree', 'Rare', '1200 G'],
@@ -744,6 +745,7 @@ FRData.ModernBreedList = [
     ['Tundra', 'Plentiful', ['Plants']],
 
     ['Pearlcatcher', 'Common', ['Insects', 'Plants']],
+    ['Aether', 'Common', ['Insects', 'Plants']],
     ['Ridgeback', 'Common', ['Seafood']],
     ['Snapper', 'Common', ['Plants', 'Seafood']],
     ['Spiral', 'Common', ['Insects', 'Meet']],
