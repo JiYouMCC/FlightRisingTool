@@ -717,7 +717,7 @@ FRData.AetherTertiaryGeneList = [
 
     ['Circuit', 'Rare', ''],
     ['Glowtail', 'Rare', ''],
-    ['Monrch', 'Rare', ''],
+    ['Monarch', 'Rare', ''],
     ['Space', 'Rare', ''],
     ['Stained', 'Rare', ''],
     ['Wish', 'Rare', '']
