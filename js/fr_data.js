@@ -931,7 +931,7 @@ FRData.AncientBreedList = [
     ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
     ['Aberration', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
     ['Undertide', 'Common', ['Seafood', 'Plants']],
-    ['Aether', 'Common', ['Insects', 'Plants']],
+    ['Aether', 'Common', ['Insects', 'Plants']]
 ]
 
 FRData.BreedRuleList = [
