@@ -691,7 +691,7 @@ FRData.AetherSecondaryGeneList = [
     ['Alloy', 'Rare', ''],
     ['Butterfly', 'Rare', ''],
     ['Flicker', 'Rare', ''],
-    [Constellation', 'Rare', '']
+    ['Constellation', 'Rare', '']
 ]
 FRData.AetherTertiaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
