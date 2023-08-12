@@ -43,6 +43,7 @@ FRData.ModernPrimaryGeneList = [
 
     ['Boulder', 'Limited', ''],
     ['Ground', 'Limited', ''],
+    ['Fern', 'Limited', ''],
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
     ['Skink', 'Limited', '95000 T (Baldwin)'],
