@@ -63,8 +63,6 @@ FRData.ModernPrimaryGeneList = [
 ]
 
 FRData.ModernSecondaryGeneList = [
-    ['Alloy', 'Rare', '1200 G'],
-
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Blend', 'Common', '100000 T'],
