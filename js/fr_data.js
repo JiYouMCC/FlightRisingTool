@@ -566,6 +566,96 @@ FRData.UndertideTertiaryGeneList = [
     ['Tentacles', 'Rare', '']
 ]
 
+FRData.AetherPrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Clown', 'Common', ''],
+    ['Fade', 'Common', ''],
+    ['Laced', 'Common', ''],
+    ['Piebald', 'Common', ''],
+    ['Spool', 'Common', ''],
+
+    ['Bar', 'Uncommon', ''],
+    ['Cinder', 'Uncommon', ''],
+    ['Flaunt', 'Uncommon', ''],
+    ['Jaguar', 'Uncommon', ''],
+    ['Jupiter', 'Uncommon', ''],
+    ['Lionfish', 'Uncommon', ''],
+    ['Mosaic', 'Uncommon', ''],
+    ['Python', 'Uncommon', ''],
+
+    ['Boulder', 'Limited', ''],
+    ['Candy', 'Limited', ''],
+    ['Skink', 'Limited', ''],
+    ['Stitched', 'Limited', ''],
+    ['Tide', 'Limited', ''],
+
+    ['Metallic', 'Rare', ''],
+    ['Petals', 'Rare', ''],
+    ['Starmap', 'Rare', ''],
+    ['Twinkle', 'Rare', '']
+]
+
+FRData.AetherSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Blend', 'Common', ''],
+    ['Edged', 'Common', ''],
+    ['EyeSpots', 'Common', ''],
+    ['Paint', 'Common', ''],
+    ['Thread', 'Common', ''],
+
+    ['Blaze', 'Uncommon', ''],
+    ['Breakup', 'Uncommon', ''],
+    ['Daub', 'Uncommon', ''],
+    ['Flair', 'Uncommon', ''],
+    ['Morph', 'Uncommon', ''],
+    ['Noxtide', 'Uncommon', ''],
+    ['Rosette', 'Uncommon', ''],
+    ['Saturn', 'Uncommon', ''],
+
+    ['Foam', 'Limited', ''],
+    ['Lcing', 'Limited', ''],
+    ['Myrid', 'Limited', ''],
+    ['Patchwork', 'Limited', ''],
+    ['Spinner', 'Limited', ''],
+
+    ['Alloy', 'Rare', ''],
+    ['Butterfly', 'Rare', ''],
+    ['Constellation', 'Rare', ''],
+    ['Flicker', 'Rare', '']
+]
+
+FRData.AetherTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Contour', 'Common', ''],
+    ['Points', 'Common', ''],
+    ['Underbelly', 'Common', ''],
+
+    ['Gembond', 'Uncommon', ''],
+    ['Lace', 'Uncommon', ''],
+    ['Smoke', 'Uncommon', ''],
+    ['Sparkle', 'Uncommon', ''],
+    ['Spines', 'Uncommon', ''],
+    ['Stinger', 'Uncommon', ''],
+    ['Whiskers', 'Uncommon', ''],
+
+    ['Carnivore', 'Limited', ''],
+    ['Flutter', 'Limited', ''],
+    ['Keel', 'Limited', ''],
+    ['Mandibles', 'Limited', ''],
+    ['Scales', 'Limited', ''],
+    ['Smirch', 'Limited', ''],
+
+    ['Circuit', 'Rare', ''],
+    ['Glowtail', 'Rare', ''],
+    ['Monarch', 'Rare', ''],
+    ['Space', 'Rare', ''],
+    ['Stained', 'Rare', ''],
+    ['Wish', 'Rare', '']
+]
+
 FRData.ColorList = [
     ['Maize', '#FFFDEA'],
     ['Cream', '#FFEFDC'],
@@ -774,8 +864,7 @@ FRData.AncientBreedList = [
     ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
     ['Aberration', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
     ['Undertide', 'Common', ['Seafood', 'Plants']],
-    ['Aether', 'Common', ['Plants', 'Insects']],
-    ['Sandsurge', 'Common', ['Meat', 'Insects']]
+    ['Aether', 'Common', ['Plants', 'Insects']]
 ]
 
 FRData.BreedRuleList = [
