@@ -27,7 +27,7 @@ FRData.ModernPrimaryGeneList = [
     ['Speckle', 'Common', '125000 T'],
     ['Swirl', 'Common', '150000 T'],
     ['Tapir', 'Common', '185000 T'],
-    ['Tiger', 'Common', '135000 T'], 
+    ['Tiger', 'Common', '135000 T'],
 
     ['Cherub', 'Uncommon', '185000 T'],
     ['Cider', 'Uncommon', '185000 T'],
@@ -103,6 +103,7 @@ FRData.ModernSecondaryGeneList = [
     ['Toxin', 'Limited', '100000 T (Baldwin)'],
     ['Trail', 'Limited', '100000 T (Baldwin)'],
 
+    ['Alloy', 'Rare', '1200 G'],
     ['Bee', 'Rare', '1200 G'],
     ['Butterfly', 'Rare', '1200 G'],
     ['Constellation', 'Rare', '1200 G'],
