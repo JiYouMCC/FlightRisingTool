@@ -53,7 +53,7 @@ FRData.ModernPrimaryGeneList = [
     ['Tide', 'Limited', ''],
 
     ['Crystal', 'Rare', '1500 G'],
-    ['Harlequin', 'Rare', '1500 G']
+    ['Harlequin', 'Rare', '1500 G'],
     ['Iridescent', 'Rare', '1500 G'],
     ['Metallic', 'Rare', '1500 G'],
     ['Petals', 'Rare', '1500 G'],
