@@ -16,6 +16,7 @@ FRData.GenderList = [
 FRData.ModernPrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
+    ['Bar', 'Common', '250000 T'],
     ['Clown', 'Common', '175000 T'],
     ['Fade', 'Common', '125000 T'],
     ['Falcon', 'Common', '170000 T'],
@@ -26,10 +27,10 @@ FRData.ModernPrimaryGeneList = [
     ['Speckle', 'Common', '125000 T'],
     ['Swirl', 'Common', '150000 T'],
     ['Tapir', 'Common', '185000 T'],
-    ['Tiger', 'Common', '135000 T'],
+    ['Tiger', 'Common', '135000 T'], 
 
-    ['Bar', 'Uncommon', '250000 T'],
     ['Cherub', 'Uncommon', '185000 T'],
+    ['Cider', 'Uncommon', '185000 T'],
     ['Flaunt', 'Uncommon', ''],
     ['Giraffe', 'Uncommon', '225000 T'],
     ['Jaguar', 'Uncommon', '250000 T'],
@@ -42,6 +43,7 @@ FRData.ModernPrimaryGeneList = [
     ['Vipera', 'Uncommon', '235000 T'],
 
     ['Boulder', 'Limited', ''],
+    ['Fern', 'Limited', ''],
     ['Ground', 'Limited', ''],
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
@@ -51,6 +53,7 @@ FRData.ModernPrimaryGeneList = [
     ['Tide', 'Limited', ''],
 
     ['Crystal', 'Rare', '1500 G'],
+    ['Harlequin', 'Rare', '1500 G']
     ['Iridescent', 'Rare', '1500 G'],
     ['Metallic', 'Rare', '1500 G'],
     ['Petals', 'Rare', '1500 G'],
@@ -764,7 +767,9 @@ FRData.AncientBreedList = [
     ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']],
     ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
     ['Aberration', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
-    ['Undertide', 'Common', ['Seafood', 'Plants']]
+    ['Undertide', 'Common', ['Seafood', 'Plants']],
+    ['Aether', 'Common', ['Plants', 'Insects']],
+    ['Sandsurge', 'Common', ['Meat', 'Insects']]
 ]
 
 FRData.BreedRuleList = [
