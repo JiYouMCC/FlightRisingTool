@@ -381,10 +381,14 @@
     "Pearl": "Pearl",
     "Undertide": "Undertide",
 
-"Ground":"Ground",
-"Fissure":"Fissure",
-"Sarcophagus":"Sarcophagus",
-"Pinions":"Pinions",
-"Gliders":"Gliders",
-"Angler":"Angler"
+    "Ground": "Ground",
+    "Fissure": "Fissure",
+    "Pharaoh": "Pharaoh",
+    "Sarcophagus": "Sarcophagus",
+    "Pinions": "Pinions",
+    "Gliders": "Gliders",
+    "Angler": "Angler",
+    "Fern-Gene": "Fern",
+    "Paisley": "Paisley",
+    "Koi": "Koi"
 }
