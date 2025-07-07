@@ -638,6 +638,7 @@ FRData.AetherPrimaryGeneList = [
     ['Laced', 'Common', ''],
     ['Piebald', 'Common', ''],
     ['Spool', 'Common', ''],
+    ['Wrought', 'Common', ''],
 
     ['Bar', 'Uncommon', ''],
     ['Cinder', 'Uncommon', ''],
@@ -667,6 +668,7 @@ FRData.AetherSecondaryGeneList = [
     ['Edged', 'Common', ''],
     ['EyeSpots', 'Common', ''],
     ['Paint', 'Common', ''],
+    ['Spire', 'Common', ''],
     ['Thread', 'Common', ''],
 
     ['Blaze', 'Uncommon', ''],
@@ -695,6 +697,7 @@ FRData.AetherTertiaryGeneList = [
 
     ['Contour', 'Common', ''],
     ['Points', 'Common', ''],
+    ['Thylacine', 'Common', ''],
     ['Underbelly', 'Common', ''],
 
     ['Gembond', 'Uncommon', ''],
