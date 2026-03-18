@@ -347,8 +347,8 @@ FRData.BanescalePrimaryGeneList = [
 
     ['Crystal', 'Rare', '750 G'],
     ['Metallic', 'Rare', '750 G'],
-    ['Petals', 'Rare', '750 G']
-    ['Pharaoh', 'Rare', '750 G'],
+    ['Petals', 'Rare', '750 G'],
+    ['Pharaoh', 'Rare', '750 G']
 ]
 
 FRData.BanescaleSecondaryGeneList = [
