@@ -192,6 +192,33 @@ for (var i = 0; i < FRTool.UndertideTertiaryGenes.length; i++) {
     );
 }
 
+for (var i = 0; i < FRTool.AetherPrimaryGenes.length; i++) {
+    $('#aether_primary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.AetherPrimaryGenes[i].Name).attr("data-localize", FRTool.AetherPrimaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.AetherPrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.AetherPrimaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.AetherPrimaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.AetherSecondaryGenes.length; i++) {
+    $('#aether_secondary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.AetherSecondaryGenes[i].Name).attr("data-localize", FRTool.AetherSecondaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.AetherSecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.AetherSecondaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.AetherSecondaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.AetherTertiaryGenes.length; i++) {
+    $('#aether_tertiary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.AetherTertiaryGenes[i].Name).attr("data-localize", FRTool.AetherTertiaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.AetherTertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.AetherTertiaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.AetherTertiaryGenes[i].Price))
+    );
+}
+
 for (var i = 0; i < FRTool.Colors.length; i++) {
     $('#color_list').find("tbody").append(
         $("<tr></tr>")
@@ -365,6 +392,9 @@ allowSort("aberration_tertiary_gene_list");
 allowSort("undertide_primary_gene_list");
 allowSort("undertide_secondary_gene_list");
 allowSort("undertide_tertiary_gene_list");
+allowSort("aether_primary_gene_list");
+allowSort("aether_secondary_gene_list");
+allowSort("aether_tertiary_gene_list");
 allowSort("color_list");
 allowSort("breed_rule_list");
 allowSort("gene_rule_list");
