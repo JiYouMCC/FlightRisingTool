@@ -16,6 +16,7 @@ FRData.GenderList = [
 FRData.ModernPrimaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
+    ['Checkers', 'Common', '160000 T'],
     ['Clown', 'Common', '175000 T'],
     ['Fade', 'Common', '125000 T'],
     ['Falcon', 'Common', '170000 T'],
@@ -47,6 +48,7 @@ FRData.ModernPrimaryGeneList = [
     ['Chrysocolla', 'Limited', ''],
     ['Fern', 'Limited', ''],
     ['Ground', 'Limited', ''],
+    ['Love', 'Limited', ''],
     ['Orb', 'Limited', ''],
     ['Pinstripe', 'Limited', '100000 T (Baldwin)'],
     ['Poison', 'Limited', '100000 T (Baldwin)'],
@@ -142,6 +144,7 @@ FRData.ModernTertiaryGeneList = [
     ['Smoke', 'Uncommon', '190000 T'],
     ['Sparkle', 'Uncommon', ''],
     ['Spines', 'Uncommon', '190000 T'],
+    ['Gecko', 'Uncommon', '170000 T'],
 
     ['Capsule', 'Limited', '110000 T (Baldwin)'],
     ['Firebreather', 'Limited', ""],
@@ -635,6 +638,7 @@ FRData.AetherPrimaryGeneList = [
     ['Laced', 'Common', ''],
     ['Piebald', 'Common', ''],
     ['Spool', 'Common', ''],
+    ['Wrought', 'Common', ''],
 
     ['Bar', 'Uncommon', ''],
     ['Cinder', 'Uncommon', ''],
@@ -664,6 +668,7 @@ FRData.AetherSecondaryGeneList = [
     ['Edged', 'Common', ''],
     ['EyeSpots', 'Common', ''],
     ['Paint', 'Common', ''],
+    ['Spire', 'Common', ''],
     ['Thread', 'Common', ''],
 
     ['Blaze', 'Uncommon', ''],
@@ -692,6 +697,7 @@ FRData.AetherTertiaryGeneList = [
 
     ['Contour', 'Common', ''],
     ['Points', 'Common', ''],
+    ['Thylacine', 'Common', ''],
     ['Underbelly', 'Common', ''],
 
     ['Gembond', 'Uncommon', ''],
