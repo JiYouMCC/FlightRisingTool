@@ -61,26 +61,32 @@ $("[id^=language_]").click(function() {
 
 function getLanguageJson(language, callback) {
     if (json_cache[language]) {
-        json = json_cache[language];
-        callback(json);
-    } else {
-        var jsonFile;
-        for (var i = 0; i < language_setting.languages.length; i++) {
-            if (language_setting.languages[i].code == language) {
-                jsonFile = language_setting.languages[i].file;
-                break;
-            }
+        callback(json_cache[language]);
+        return;
+    }
+    // Use inline data if available (works with file:// and avoids AJAX)
+    if (typeof FRLanguageData !== 'undefined' && FRLanguageData[language]) {
+        json_cache[language] = FRLanguageData[language];
+        callback(FRLanguageData[language]);
+        return;
+    }
+    // Fallback: load via AJAX
+    var jsonFile;
+    for (var i = 0; i < language_setting.languages.length; i++) {
+        if (language_setting.languages[i].code == language) {
+            jsonFile = language_setting.languages[i].file;
+            break;
         }
-        if (jsonFile) {
-            $.getJSON(jsonFile, function(data) {
-                json_cache[language] = data;
-                callback(data);
-            }).fail(function() {
-                callback(undefined);
-            });
-        } else {
+    }
+    if (jsonFile) {
+        $.getJSON(jsonFile, function(data) {
+            json_cache[language] = data;
+            callback(data);
+        }).fail(function() {
             callback(undefined);
-        }
+        });
+    } else {
+        callback(undefined);
     }
 }
 
