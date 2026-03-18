@@ -521,9 +521,9 @@ FRData.VeilspunSecondaryGeneList = [
 
     ['Bee', 'Rare', ''],
     ['Butterfly', 'Rare', ''],
-    ['Constellation', 'Rare', '']
+    ['Constellation', 'Rare', ''],
     ['Facet', 'Rare', ''],
-    ['Sarcophagus', 'Rare', ''],
+    ['Sarcophagus', 'Rare', '']
 ]
 
 FRData.VeilspunTertiaryGeneList = [
