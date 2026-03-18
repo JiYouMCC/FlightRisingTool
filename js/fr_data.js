@@ -1107,7 +1107,7 @@ FRData.ColorList = [
     ['Jade', '#61AB89'],
     ['Spearmint', '#148E67'],
     ['Thicket', '#005E48'],
-    ['Peacock-Gene', '#1F4739'],
+    ['Peacock', '#1F4739'],
     ['Emerald', '#20603F'],
     ['Shamrock', '#236925'],
     ['Jungle', '#1E361A'],
