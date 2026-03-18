@@ -137,7 +137,7 @@ FRData.ModernTertiaryGeneList = [
 
     ['Contour', 'Common', '150000 T'],
     ['Darts', 'Common', '170000 T'],
-    ['Peacock', 'Common', '150000 T'],
+    ['Peacock-Gene', 'Common', '150000 T'],
     ['Points', 'Common', '130000 T'],
     ['Thylacine', 'Common', '155000 T'],
     ['Underbelly', 'Common', '150000 T'],
@@ -398,7 +398,7 @@ FRData.BanescaleTertiaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Contour', 'Common', '75000 T'],
-    ['Peacock', 'Common', '75000 T'],
+    ['Peacock-Gene', 'Common', '75000 T'],
     ['Trimmings', 'Common', '75000 T'],
     ['Underbelly', 'Common','75000 T'],
 
@@ -530,7 +530,7 @@ FRData.VeilspunTertiaryGeneList = [
     ['Basic', 'Plentiful', '10000 T'],
 
     ['Contour', 'Common', ''],
-    ['Peacock', 'Common', ''],
+    ['Peacock-Gene', 'Common', ''],
     ['Underbelly', 'Common', ''],
 
     ['Crackle', 'Uncommon', ''],
@@ -666,7 +666,7 @@ FRData.AberrationTertiaryGeneList = [
 
     ['Contour', 'Common', ''],
     ['Kumo', 'Common', ''],
-    ['Peacock', 'Common', ''],
+    ['Peacock-Gene', 'Common', ''],
     ['Thylacine', 'Common', ''],
     ['Underbelly', 'Common', ''],
 
@@ -1107,7 +1107,7 @@ FRData.ColorList = [
     ['Jade', '#61AB89'],
     ['Spearmint', '#148E67'],
     ['Thicket', '#005E48'],
-    ['Peacock', '#1F4739'],
+    ['Peacock-Gene', '#1F4739'],
     ['Emerald', '#20603F'],
     ['Shamrock', '#236925'],
     ['Jungle', '#1E361A'],
