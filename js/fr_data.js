@@ -389,8 +389,8 @@ FRData.BanescaleSecondaryGeneList = [
     ['Weaver', 'Limited', ''],
 
     ['Alloy', 'Rare', '600 G'],
-    ['Butterfly', 'Rare', '600 G']
-    ['Facet', 'Rare', '600 G']
+    ['Butterfly', 'Rare', '600 G'],
+    ['Facet', 'Rare', '600 G'],
     ['Sarcophagus', 'Rare', '600 G']
 ]
 
