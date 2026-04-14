@@ -43,6 +43,7 @@ FRData.ModernPrimaryGeneList = [
     ['Mosaic', 'Uncommon', '300000 T'],
     ['Ribbon', 'Uncommon', ''],
     ['Ripple', 'Uncommon', '250000 T'],
+    ['Sphinxmoth', 'Uncommon', '105000 T'],
     ['Vipera', 'Uncommon', '235000 T'],
 
     ['Boulder', 'Limited', ''],
@@ -96,6 +97,7 @@ FRData.ModernSecondaryGeneList = [
     ['Eel', 'Uncommon', ''],
     ['EyeSpots', 'Uncommon', '110000 T'],
     ['Flair', 'Uncommon', ''],
+    ['Hawkmoth', 'Uncommon', '90000 T'],
     ['Hex', 'Uncommon', '160000 T'],
     ['Hypnotic', 'Uncommon', '185000 T'],
     ['Noxtide', 'Uncommon', '170000 T'],
