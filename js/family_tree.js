@@ -11,6 +11,7 @@ var gapX = 25;
 var gapY = 50;
 var DEFAULT_BACKGROUND = "transparent";
 var withName = true;
+var roundAvatar = false;
 var textFont = "12px Kristen ITC";
 var dragonList = [];
 
@@ -97,7 +98,16 @@ function drawImage(canvasContext, src, x, y, callback) {
     var img = new Image();
     img.src = src;
     img.onload = function() {
-      canvasContext.drawImage(img, x, y, imageSize, imageSize);
+      if (roundAvatar) {
+        canvasContext.save();
+        canvasContext.beginPath();
+        canvasContext.arc(x + imageSize / 2, y + imageSize / 2, imageSize / 2, 0, Math.PI * 2);
+        canvasContext.clip();
+        canvasContext.drawImage(img, x, y, imageSize, imageSize);
+        canvasContext.restore();
+      } else {
+        canvasContext.drawImage(img, x, y, imageSize, imageSize);
+      }
       callback();
     }
   }
@@ -110,13 +120,21 @@ function drawDragon(canvasContext, dragon, withName, callback) {
     var x = offsetX + location[1] * (imageSize + gapX);
     var y = offsetY + location[0] * height;
     // draw image
-    canvasContext.strokeRect(x, y, imageSize, imageSize);
+    if (roundAvatar) {
+      canvasContext.beginPath();
+      canvasContext.arc(x + imageSize / 2, y + imageSize / 2, imageSize / 2, 0, Math.PI * 2);
+      canvasContext.stroke();
+    } else {
+      canvasContext.strokeRect(x, y, imageSize, imageSize);
+    }
     drawImage(canvasContext, getImgUrl(dragon.did), x, y, function() {
       callback();
     });
     // draw name
     if (withName) {
-      canvasContext.strokeRect(x, y + imageSize, imageSize, textHeight);
+      if (!roundAvatar) {
+        canvasContext.strokeRect(x, y + imageSize, imageSize, textHeight);
+      }
       canvasContext.textAlign = "center";
       canvasContext.textBaseline = 'middle';
       canvasContext.font = textFont;
@@ -252,6 +270,7 @@ function initFormat() {
   imageSize = parseInt($('#imagesize').val());
   textHeight = parseInt($('#textheight').val());
   withName = $('#withname').is(':checked');
+  roundAvatar = $('#roundavatar').is(':checked');
   textFont = $('#textfont').val();
 }
 
