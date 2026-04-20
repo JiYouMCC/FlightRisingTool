@@ -36,6 +36,7 @@ var FRLanguageData = {
         "data-loading-text": "Calculating...",
         "value": "Calculate"
     },
+    "Family Tree": "Family Tree",
     "Generate": "Generate",
     "Settings": "Settings",
     "Gene Font": "Gene Font",
@@ -470,6 +471,7 @@ var FRLanguageData = {
         "data-loading-text": "计算中……",
         "value": "计算"
     },
+    "Family Tree": "家谱",
     "Generate": "生成",
     "Settings": "设置",
     "Gene Font": "基因字体",
